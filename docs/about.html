@@ -2187,7 +2187,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: black;
   }
 
@@ -2351,6 +2350,26 @@ Modules
 
 
 <div class="d-article">
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+</style>
+<p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/2f761d4/dist/bootstrap-toc.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" /></p>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/2f761d4/dist/bootstrap-toc.min.js"></script>
+<body data-spy="scroll" data-target="#toc">
+<nav id="toc" data-spy="affix" data-toggle="toc">
+</nav>
 <p><strong>Lendvai Tamás Purchase Requisition – Beszerzési igény</strong></p>
 <p><strong>Általános információk:</strong> beszerzési igények több szempontból csoportosíthatók, az alábbiakban a tárgyuk, jellegük és előállításuk szerint teszünk különbséget.</p>
 <p><strong>Tárgyuk szerint:</strong> beszerzési igénylések elsősorban anyag- és árukészletekre adhatók le a gyártási, illetve a tovább értékesítendő áruk esetében az értékesítéssel összefüggésben. Emellett természetesen lehetőség van tárgyi eszközöket igényelni, illetve azonnali felhasználásra (költségnem számlákra és költséghelyekre) igényelni. Szintén lehetőség van azonnali felhasználású / továbbszámlázott szolgáltatások igénylésére. Az igénylések egy speciális formája, amikor pl.: munkavállalók belső katalógusból rendelnek pl.: irodai eszközöket, és ebből rendelés készül. Az igénylés általános alapfeltétele az anyag, áru, szolgáltatás, tárgyi eszköz törzsadata, tehát amire, vagy amivel kapcsolatban leadjuk a rendelést.</p>
@@ -2541,7 +2560,8 @@ Modules
 <p><img src="LT_PR\media\image33.png" style="width:6.30208in;height:6.21875in" /></p>
 <p><strong>Quota Arrangement -&gt; A tételhez tartozó kvótamegállapodásokat lehet megtekinteni / módosítani</strong></p>
 <p><img src="LT_PR\media\image34.png" style="width:5.39583in;height:4.04167in" /></p>
-<p>Az alábbi videó az egyedi és csoportos megjelenítés és módosítás lehetőségeit mutatja be.</p>
+Az alábbi videó az egyedi és csoportos megjelenítés és módosítás lehetőségeit mutatja be.
+</body>
 <script>
 // Open the Modal
 function openModal() {

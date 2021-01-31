@@ -410,6 +410,18 @@ style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman
 
 </div>
 
+```{r,echo=FALSE}
+
+books.url = httr::GET("https://raw.githubusercontent.com/vijay564/R-Maincode/master/books.xml")
+books.parse <- XML::xmlParse(books.url)
+# 
+books.root <- XML::xmlRoot(books.parse)
+books.xml <- XML::xmlToDataFrame(books.root, stringsAsFactors = FALSE)
+# 
+formattable::formattable(books.xml)
+```
+
+
 ##  12.2.5.Mr. Container:
 
 <div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
