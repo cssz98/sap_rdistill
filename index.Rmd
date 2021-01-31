@@ -1,0 +1,536 @@
+---
+title: "Asd"
+description: |
+  asdasd
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+
+<html xmlns:ns0="urn:schemas-microsoft-com:office:smarttags">
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/2f761d4/dist/bootstrap-toc.min.css">
+
+<meta http-equiv=Content-Type content="text/html; charset=windows-1250">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>PHP OOP</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sendnya;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:8.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+h1
+	{mso-style-link:"Címsor 1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	text-indent:4pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:16.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:red;
+	text-decoration:underline;}
+h2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.3pt;
+	text-indent:-7.1pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:15.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:aqua;
+	text-decoration:underline;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	text-indent:-7.1pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:13.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:#00B050;
+	text-decoration:underline;}
+h4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:35.45pt;
+	text-indent:-7.1pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:8.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:blue;
+	text-decoration:underline;}
+h5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	text-indent:-7.1pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:8.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:#1F497D;
+	text-decoration:underline;}
+h6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:85.1pt;
+	text-indent:-42.55pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:8.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:black;
+	text-decoration:underline;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:106.3pt;
+	text-align:justify;
+	text-indent:-35.4pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:141.7pt;
+	text-align:justify;
+	text-indent:-35.4pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:177.1pt;
+	text-align:justify;
+	text-indent:-35.4pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:1.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:8.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:1.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:8.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:49.65pt;
+	text-indent:-7.1pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:2.0cm;
+	text-indent:-7.05pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12pt;
+	font-family:"Arial Narrow",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;}
+span.Cmsor1Char
+	{mso-style-name:"Címsor 1 Char";
+	mso-style-link:"Címsor 1";
+	font-family:"Arial Narrow",sans-serif;
+	color:red;
+	font-weight:bold;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:42.55pt 42.55pt 51.05pt 42.55pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:595.3pt 841.9pt;
+	margin:42.55pt 42.55pt 51.05pt 42.55pt;}
+div.WordSection2
+	{page:WordSection2;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/2f761d4/dist/bootstrap-toc.min.js"></script>
+
+</head>
+
+<body lang=HU link=blue vlink="#954F72" style='word-wrap:break-word' data-spy="scroll" data-target="#toc">
+
+<nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+
+<div class=WordSection1>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:2.0cm;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:0cm;text-indent:0cm'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>BTN:Next|</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>DDN:Project=lddAnim, DDN:Location=Packages, DDN:Package=Model,
+TBX:Class name=<span style='color:red'>User</span> <span style='color:red'>//Automatikusan
+nagybetűsíti táblanevet mert osztály lesz!,</span> CHK:Create persistence
+unit=Yes, BTN:Next|</p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>//Utolsó képernyőn nem állít semmit, <b>BTN:Finish</b></p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Az osztály automatikusan létrejött kódját ellenőrizni, a
+szükségtelen setter metódusokat letörölni (pl. elsődleges kulcsét)</p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<b><u><span style='font-size:10.0pt;font-family:"Arial Narrow",sans-serif;
+color:red'><br clear=all style='page-break-before:always'>
+</span></u></b>
+
+<div class=WordSection2>
+
+#  12.Java Webalkalmazás SPRING technológiával
+
+##  12.1.Mintaprojekt:
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Lásd basic|SpringTest projekt, frontenden KezilabdaSpring.html</p>
+
+</div>
+
+## 12.2.DEF:
+
+## 12.2.1.Spring:
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Keretrendszer, ugyanarra jó mint a szervlet technológia, csak
+sokkal automatizáltabb</p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>MVC architektúrájú webes alkalmazásokat gyárt</p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Controllerekbe restfulAPI-kat gyárt: szerverből hív
+szolgáltatásokat, sokkal gyorsabb fejl</p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Dependency injection: automatikusan letölti összes szükséges
+jar-t webes repositoryból, </p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:Wingdings'>J</span> configurálja,
+berakja megfelelő helyre </p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:Wingdings'>L</span> nem mindig lehet
+látni hova, </p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:Wingdings'>L</span> felsleges jar-okat
+húzhatunk le, amit nem is fogunk használni)</p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:Wingdings'>L</span> gépváltáskor
+dependency errort okoz</p>
+
+</div>
+
+## 12.2.2.SpringBoot
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Springre, épül, plusz technológiákat is bevon pl. Jenkins,
+Servlet technológia</p>
+
+</div>
+
+##  12.2.3.POJO
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Hagyományos Java osztályok</p>
+
+</div>
+
+##  12.2.4.BeanClass
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Olyan POJO, amiben van szabályos konstruktor, getter, setter</p>
+
+</div>
+
+##  12.2.5.Mr. Container:
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Pl. egy logint megírhatok service-ben statikusnak, de megírhatom
+dinamikusan is, csak előtte példányt kell létrehoznom, de ha mindenki erre
+külön példányt hoz létre, az erőforrás igényes. Olyan példányt csinálunk, amit
+majd több függvény hívása kapcsán is használható. A példány tulajdonságainak
+értékeiben naplózza az életciklusát, ki mikor mit tett vele a frontendről.
+Ennek függvényében engedi vagy nem engedi függvények futását, pl típus függő
+validációkat. (Statikusan ezt nem lehetne megcsinálni.) Spring Request mapping
+automatikusan hozza létre, nem kézzel csináljuk</p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>A garbage collector nem írtja le a container példányt, csak ha
+már kontrollert sem használja senki.</p>
+
+</div>
+
+##  12.2.6.Csomagoló eszközök
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Kész alkalmazást gyártó eszöz: itt jar fájlt gyárt, és pom.xml
+kezel ami a projekt dependenciák listája</p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Pl. Ant, Maven, Grapple </p>
+
+</div>
+
+##  12.3.Tutorial
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><b>URL:</b> <a
+href="https://www.udemy.com/course/java-spring-framework-masterclass/">https://www.udemy.com/course/java-spring-framework-masterclass/</a>
+</p>
+
+</div>
+
+##  12.4.Telepítés
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>NetBeans|Tools|Plugins|TAB:Avaliable plugin|BTN:Check for new|TBX:Search=
+spring|CHK:NB Springboot|BTN:Install|BTN:Next|CHK:Restart ide|BTN:OK</p>
+
+</div>
+
+##  12.5.Projekt létrehoz
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>NetBeansFile|New projekt|Maven|Springboot basic project|TBX:Name=SpringTest|BTN:Create</p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>FRM:Projects:Bacic|Project files|POM.XML – dependencia leírás</p>
+
+</div>
+
+##  12.6.Üres projekt próba futtat
+
+```{r}
+table(iris)
+```
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><b>BTN:Clean+Build</b> – újraépít maven-t, ha nem sikeres, töröld
+a test packaget, utána még jó lehet, ha nem a teszt dependenciák rosszak. Üres
+jar fájllal kezd és beleteszi dependenciákat.</p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Documents/NetBeansProj/SpringTest/Target/basic-0.0.1-snapshot.jar
+kb 7Mb létrejön</p>
+
+</div>
+
+##  12.7.Controller létrehoz
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>NetBeans|FRM:Projects|LIN:basic|LIN:Source
+pacakeges|LIN:com.example|Jobbkatt|New|Java package|</p>
+
+</div>
+
+# 13.-------
+
+
+
+
+
+</div>
+
+</body>
+
+</html>

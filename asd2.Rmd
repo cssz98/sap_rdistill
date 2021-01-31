@@ -1,0 +1,1466 @@
+---
+title:  'asd'
+---
+
+
+
+
+<html xmlns:ns0="urn:schemas-microsoft-com:office:smarttags">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1250">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>PHP OOP</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sendnya;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:8.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+h1
+	{mso-style-link:"Címsor 1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	text-indent:4pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:red;
+	text-decoration:underline;}
+h2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.3pt;
+	text-indent:-7.1pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:15.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:aqua;
+	text-decoration:underline;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	text-indent:-7.1pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:13.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:#00B050;
+	text-decoration:underline;}
+h4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:35.45pt;
+	text-indent:-7.1pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:blue;
+	text-decoration:underline;}
+h5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	text-indent:-7.1pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:11.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:#1F497D;
+	text-decoration:underline;}
+h6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:85.1pt;
+	text-indent:-42.55pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:black;
+	text-decoration:underline;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:106.3pt;
+	text-align:justify;
+	text-indent:-35.4pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:141.7pt;
+	text-align:justify;
+	text-indent:-35.4pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:177.1pt;
+	text-align:justify;
+	text-indent:-35.4pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:1.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:8.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:1.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:8.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoMacroText, li.MsoMacroText, div.MsoMacroText
+	{mso-style-link:"Makró szövege Char";
+	margin-top:0cm;
+	margin-right:7.1pt;
+	margin-bottom:2px;
+	margin-left:0cm;
+	line-height:75%;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Courier New";}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:49.65pt;
+	text-indent:-7.1pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:2.0cm;
+	text-indent:-7.05pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:8.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoList3, li.MsoList3, div.MsoList3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:63.8pt;
+	text-align:justify;
+	text-indent:-7.65pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+span.MakrszvegeChar
+	{mso-style-name:"Makró szövege Char";
+	mso-style-link:"Makró szövege";
+	font-family:"Courier New";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:42.55pt 42.55pt 51.05pt 42.55pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:595.3pt 841.9pt;
+	margin:42.55pt 42.55pt 51.05pt 42.55pt;}
+div.WordSection2
+	{page:WordSection2;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=HU link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<div style='border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.3pt;margin-right:0cm'>
+
+</div>
+
+# 10.6.Controller (Servlet) package létrehozása
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>NetBeans|FRM:Projects|LIN:kezilabda1|LIN:Source
+packages|Jobbkatt|New…|Java package|DDN:Name=Controller, BTN:OK</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+## 10.6.1.Servlet osztály létrehozása
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+###  10.6.1.1.DEF
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Egy speciális Servlet típusú osztály, ami a Glassfish szerverre
+kívülről hívható Servleteket telepít adott URL-re (itt most localhost) </p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Amiknek segítségével a frontend AJAX-ból meghívhatja a Service
+csomag CRUD+A metódusait </p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>JSON-on keresztül kommunikálva (vagy pl. XML-ben):</p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Request: Frontend-&gt;Szerver:</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:2.0cm;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Egyezményesen „task” kulccsal jön a service CRUD+A neve, amit meg
+kell hívni</p>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>A bemenő paramétereik a paraméter nevével egyező kulccsal jönnek</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Response: Szerver-&gt;Frontend: </p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:2.0cm;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>C, U, D egyezményesen „msg” kulccsal siker/sikertelenség jelzést
+ad szöveggé konvertált JSONObject-ben</p>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>R és A szöveggé konvertált visszatérő JSONArray-t ad ki</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Nem tárgyaljuk, hogyan lehet azon URL-eket korlátozni, honnan
+érhetik el a servletet, itt most mindenhonnan elérhetik</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+###  10.6.1.2.Létrehozás
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>NetBeans|FRM:Projects|LIN:kezilabda1|LIN:Source packages|LIN:Service|Jobbkatt|New…|<span
+style='color:red'>Servlet</span>|</p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>DDN:Name=JatekosServlet, BTN:Next|</p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>CHK:Add information to deployment descriptor Web.XML=Yes,
+BTN:Finish //Ne felejtsd el!</p>
+
+</div>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>package
+Controller; <b><span style='color:red'>//Controllerbe menjen!</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>import
+Service.JatekosService;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>import
+java.io.IOException;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>import
+java.io.PrintWriter;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>import
+javax.servlet.ServletException;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>import
+javax.servlet.http.HttpServlet;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>import
+javax.servlet.http.HttpServletRequest;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>import
+javax.servlet.http.HttpServletResponse;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>import
+org.json.JSONObject;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>public
+class JatekosServlet extends HttpServlet {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+protected void processRequest(HttpServletRequest request, HttpServletResponse
+response)</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+throws ServletException, IOException {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+response.setContentType(&quot;<b><span style='color:red'>application/json</span></b>&quot;);
+<b><span style='color:red'>//Üzenetformátomot beállítani!</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+<span style='color:red;background:yellow'>PrintWriter out =
+response.getWriter(); <b>//Szöveges output webkeresőhöz rendelése</b></span></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>        try { <b>//Alapértelmezett try</b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>            <b>//Adott kliens sessionhoz tartalmazó
+service példány deklarálása</b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>            JatekosService js = new JatekosService();</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>            <b>//Szerver-&gt;kliens üzeneti
+alapértelmezett JSON objektum deklarálása</b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>            JSONObject obj = new JSONObject();</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>            if (request.getParameter(&quot;task&quot;)
+!= null) { <b>//Ha bejött frontendről task...</b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>                <b>//Ide kell kézzel megírni
+CRUD+A task kezelő if-eket…</b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>                <b>//………………………………………………………………………</b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>            }            </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>        }</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>        catch (Exception e) { <b>//Hiba esetén...</b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>            out.write(e.toString() + &quot;
+Error:Servlet&quot;); <b>//Alapértelmezett hibaüzenet webre</b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+color:red;background:yellow'>        }</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>    }</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>}</span></p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif;background:yellow'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='background:yellow'>A kijelölt részeket kézzel kell beírni, mert rosszul hozza
+a minta kódban!</span></p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+###  10.6.1.3.Servlet beregisztrálását szerverre ellenőrizni
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>NetBeans|FRM:Projects|LIN:kezilabda1 project|LIN:Configuration
+files|LIN:Web.XML|Duplakatt</p>
+
+</div>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>&lt;?xml
+version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>&lt;web-app
+version=&quot;3.1&quot; xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;
+xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee
+http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&quot;&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+&lt;servlet&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&lt;servlet-name&gt;JatekosServlet&lt;/servlet-name&gt; <b><span
+style='color:red'>//Legyen servlet bejegyzés!</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&lt;servlet-class&gt;Controller.JatekosServlet&lt;/servlet-class&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+&lt;/servlet&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+&lt;servlet-mapping&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&lt;servlet-name&gt;JatekosServlet&lt;/servlet-name&gt; <b><span
+style='color:red'>//Legyen servlet mapping bejegyzés!</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&lt;url-pattern&gt;/JatekosServlet&lt;/url-pattern&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+&lt;/servlet-mapping&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+&lt;session-config&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&lt;session-timeout&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+30</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&lt;/session-timeout&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+&lt;/session-config&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>&lt;/web-app&gt;</span></p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+###  10.6.1.4.Taskok írása
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm'>
+
+<h5 style='margin-left:7.1pt'><u><span style='text-decoration:none'> 10.6.1.4.1.</span></u>Általános
+séma</h5>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>frontendről érkezik a request JSON formátumban, <b>request.getParameter(„Kulcs”)</b>-al
+lehet belőle kulccsal jelölt, nem tipizált értékeket kiszedni (mindet
+autokonvertálja szöveggé ha kell)</p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Először egy if-ben vizsgáljuk, hogy adott CRUD+A műveletre
+vonatkozik a <b>task</b>, ha igen…</p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>A már létrehozott service osztály példány CRUD+A metódusát egy
+if-ben hívom meg, bemenő paramétereiket getParaméterrel, nevükkel szedem ki a
+request-ből szövegként</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:2.0cm;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Siker esetén <b>„msg”</b> kulccsal siker jelzést <b>put</b>-olok
+a korábban létrehozott JSONObjekt-be</p>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Hiba esetén <b>„msg”</b> kulccsal sikertelenség jelzést</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><b>out.write</b>-olom a JSONObjektet stringgé konvertálva a
+frontendre, kiv. Read és AllRecods, ahol a Service példány metódustól kapok
+JSONArray-t, és azt <b>out.write</b>-olom stringgé konvertálva</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm'>
+
+<h5 style='margin-left:7.1pt'><u><span style='text-decoration:none'> 10.6.1.4.2.</span></u>Create</h5>
+
+</div>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>if
+(request.getParameter(&quot;task&quot;).equals(&quot;<b><span style='color:
+red'>addNewJatekos</span></b>&quot;)) { <b><span style='color:red'>//Ha task addNewJatekos…</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+if(js.addNewJatekos(</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+request.getParameter(&quot;nev&quot;), <b><span style='color:red'>//Paraméterek
+a requestből a nevük alapján szövegként</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+request.getParameter(&quot;szulEv&quot;), </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+request.getParameter(&quot;golok&quot;), </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+request.getParameter(&quot;nem&quot;), </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>     
+  request.getParameter(&quot;csapatID&quot;)</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+)) {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+obj.put(&quot;msg&quot;, &quot;Sikeres játékos létrehozás: &quot; +
+request.getParameter(&quot;nev&quot;)); <b><span style='color:red'>//Siker
+jelzés</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>    }</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+else {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+obj.put(&quot;msg&quot;, &quot;Sikertelen játékos létrehozás: &quot; +
+request.getParameter(&quot;nev&quot;)); <b><span style='color:red'>//Hiba
+jelzés</span></b>                      </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>    }</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+out.write(obj.toString()); <b><span style='color:red'>//Siker jelzés küldése
+frontendnek szöveggé konvertált JSONban</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>}</span></p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm'>
+
+<h5 style='margin-left:7.1pt'><u><span style='text-decoration:none'> 10.6.1.4.3.</span></u>Read     
+</h5>
+
+</div>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>if
+(request.getParameter(&quot;task&quot;).equals(&quot;getJatekos&quot;)) { //Ha
+task getJatekos...</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+out.write(js.getJatekos(</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+request.getParameter(&quot;jatekosID&quot;) </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+).toString());                    </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>}</span></p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm'>
+
+<h5 style='margin-left:7.1pt'><u><span style='text-decoration:none'> 10.6.1.4.4.</span></u>Update        
+</h5>
+
+</div>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>if
+(request.getParameter(&quot;task&quot;).equals(&quot;updateJatekos&quot;)) {
+//Ha task updateJatekos...</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+if(js.updateJatekos(</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+request.getParameter(&quot;jatekosID&quot;), </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+request.getParameter(&quot;nev&quot;), </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+request.getParameter(&quot;golok&quot;), </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+request.getParameter(&quot;csapatID&quot;)</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+)) {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+obj.put(&quot;msg&quot;, &quot;Sikeres játékos módosítás: &quot; +
+request.getParameter(&quot;jatekosID&quot;));                        </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>    }</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+else {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+obj.put(&quot;msg&quot;, &quot;Sikertelen játékos módosítás: &quot;  +
+request.getParameter(&quot;jatekosID&quot;));                        </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>    }</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+out.write(obj.toString());</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>}</span></p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm'>
+
+<h5 style='margin-left:7.1pt'><u><span style='text-decoration:none'> 10.6.1.4.5.</span></u>Delete      
+</h5>
+
+</div>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>if
+(request.getParameter(&quot;task&quot;).equals(&quot;deleteJatekos&quot;)) {
+//Ha task deleteJatekos...</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+if(js.deleteJatekos(request.getParameter(&quot;jatekosID&quot;))) {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+obj.put(&quot;msg&quot;, &quot;Sikeres játékos törlés: &quot; + request.getParameter(&quot;jatekosID&quot;));</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>    }</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+else {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+obj.put(&quot;msg&quot;, &quot;Sikertelen játékos törlés: &quot;  +
+request.getParameter(&quot;jatekosID&quot;));</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>    }</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+out.write(obj.toString());</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>}</span></p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm'>
+
+<h5 style='margin-left:7.1pt'><u><span style='text-decoration:none'> 10.6.1.4.6.</span></u>AllRecords</h5>
+
+</div>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>if
+(request.getParameter(&quot;task&quot;).equals(&quot;getAllJatekos&quot;)) {
+//Ha task getAllJatekos...</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+out.write(js.getAlljatekos().toString());</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>}</span></p>
+
+</div>
+
+</div>
+
+<b><u><span style='font-size:9.0pt;font-family:"Arial Narrow",sans-serif;
+color:aqua'><br clear=all style='page-break-before:always'>
+</span></u></b>
+
+<div class=WordSection2>
+
+<div style='border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.3pt;margin-right:0cm'>
+
+</div>
+
+# 10.7.Frontend HTML oldal létrehozása
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+</div>
+
+## 10.7.1.Kezelők meghívása az index.html kezdőoldalon
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>NetBeans|FRM:Projects|LIN:Kezilabda1 project|LIN:Web
+pages|LIN:Index.html|Duplakatt:</p>
+
+</div>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>&lt;!DOCTYPE
+html&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>&lt;html&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+&lt;head&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&lt;title&gt;<b><span style='color:red'>Kézilabda Oldal</span></b>&lt;/title&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&lt;meta charset=&quot;UTF-8&quot;&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+<b><span style='color:red;background:yellow'>&lt;!-- Stíluslap kezelő megadása
+--&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        &lt;link rel=&quot;stylesheet&quot;
+href=&quot;https://use.fontawesome.com/releases/v5.8.2/css/all.css&quot;
+crossorigin=&quot;anonymous&quot;&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        <b><span style='color:red'>&lt;!-- CSS kezelő
+megadása --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        &lt;link rel=&quot;stylesheet&quot;
+href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css&quot;&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        <b><span style='color:red'>&lt;!-- Ajax kezelő
+megadása --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        &lt;script
+src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        <b><span style='color:red'>&lt;!-- jQuery kezelő
+megadása --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        &lt;script
+src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js&quot;&gt;&lt;/script&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        <b><span style='color:red'>&lt;!-- JavaScript kezelő
+megadása --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        &lt;script
+src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        <b><span style='color:red'>&lt;!-- Saját
+JavaScriptek --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        &lt;script&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        <b><span style='color:red'>//CRUD+A kezelő
+függvények</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>            </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        <b><span style='color:red'>//Oldalbetöltés (onload)
+előtt induló főprogram</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>            </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif;
+background:yellow'>        &lt;/script&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+&lt;/head&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+&lt;body&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+&lt;/body&gt;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>&lt;/html&gt;</span></p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif;background:yellow'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='background:yellow'>A sárgával jelölt részeket kézzel kell hozzáadni!</span></p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>A kezelők az első futtatáskor letöltik a script könyvtáraikat a NetBeans|FRM:Projects|LIN:Kezilabda1
+project|LIN:Remote files könyvtárba a legfrisebb aktuális verzióban (<span
+style='color:red'>ezért az 1. futtatás jóval lassabban fog indulni, mint
+normálisan</span>).</p>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+##  10.7.2.Egy adatbázis táblához/Entity Class-hoz tartozó JavaScript CRUD+AF függvények írása
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+###  10.7.2.1.Cél
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>A modern frontend programozás célja, hogy minimalizálja az
+oldalra rakandó statikus elemeket, és szinte mindent dinamikusan hozzon létre,
+ezáltal biztosítva a kód újrafelhasználhatóságot különböző oldalak közt</p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Ezért a CRUD+A függvények írásánál az a cél, hogy az oldalon
+statikusan egyetlen kopasz, üres <b>&lt;Table &gt;&lt;/Table&gt;</b> elemre
+legyen hozzájuk szükség, ráadásul azt is paraméterezzük, milyen nevű <b>Table</b>-be
+dolgozzanak</p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>A tábla elrendezésével biztosítjuk, hogy minden CRUD+A kezelő
+elem elférjen benne:</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+<div class="column">
+<img src="asd1_images/image001.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+</div>
+
+</div>
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times;</span>
+<div class="modal-content">
+<div class="mySlides">
+<div class="numbertext">1 / 4</div>
+<img src="asd1_images/image002.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div class="caption-container">
+<p id="caption"></p>
+</div>
+<div class="column">
+<img class="demo cursor" src="asd1_images/image001.jpg" style="width:100%" onclick="currentSlide(1)">
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+###  10.7.2.2.Általános függvényszerkezeti séma
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>JavaScript nem szigorúan típusos: változókat <b>var</b>-al kell
+deklarálni, de nem muszáj a típusukat megadni, bármely típust bármely típusba
+autokonvertál, ha tud </p>
+
+<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>JavaScript nem objektum orientált (majd későbbi verziója a
+TypeScript lesz az), csak struktúrált, így csak oldal betöltődés előtt lefutó
+főprogram meg függvények vannak benne:</p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><b>function</b> kulcszóval kezdődik, majd a CRUD+AF neve jön</p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Bemenő paraméterlistája nem tipizált, és akkor üres, ha fel tudja
+adatokat felszedni valamilyen HTML-elemből</p>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Visszatérő értéke nem tipizált, és nem kötelező, hogy legyen</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:2.0cm;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Ha HTML elemekből szed fel bemenő adatot, akkor az legyen egy <b>id=osztalynevMezonev</b>
+-vel hivatkozott <b>form</b>, és abban legyen egy azonos nevű <b>input</b> elem
+(mert az <b>input id</b>-vel hivatkozása problémás). <b>var</b>-al változót
+deklarálunk a <b>form</b>-ra és <b>.elements[0].value</b>-vel szedhetjük ki
+belőle az értéket</p>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Ezt használjuk egy szervernek küldendő, <b>kuldendo</b> nevű JSON
+összeállítása során a <b>„mezonev”:</b> kulcsokkal jelőlt paraméterek
+értékadására. <span style='color:red'>A JSON-ból nem felejtjük ki <b>„task”</b>:
+kulccsal beadni a Servleten megírt task nevét</span>.</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>Ezután <b>$.ajax({</b> fejléccel összeállítjuk az AJAX-hívást:</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:2.0cm;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>url: „osztalynevServlet”, //servlet meghívása</p>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>type</b>: „post”, //Post típusú üzenet legyen, vagyis a
+webkereső címsorában ne látsszon a JSON tartalma</p>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>data</b>: <b>kuldendo</b> //Összeállított JSON szerverre
+küldése</p>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>success</b>: <b>function(vissza) { … }</b> //Mit kell tenni
+sikeres szerver válasz esetén, ahol a <b>vissza</b> nevű JSON-ban jönnek az
+adatok szerverről:</p>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>alert(vissza.msg); </b>//Fejlesztési időszakban mindig adjak
+webkereső alert-be siker esetén is jelzést, hogy tudjam, mi történt meg</p>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>vissza[index].mezonev </b>//szerverről jövő rekordok
+mezőértékeit megadhatom HTML elemek .innerHTML vagy .value tulajdonságának,
+megjelenítve őket</p>
+
+<p class=MsoList3 style='margin-left:7.1pt;text-indent:-7.1pt'><span
+style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><b>error</b>: <b>function(vissza) { … }</b> //Mit kell tenni
+sikertelen szerver válasz esetén, ahol a <b>vissza</b> nevű JSON-ban jönnek az
+adatok szerverről.</p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+###  10.7.2.3.Create
+
+</div>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>function
+addNewJatekos(targetTable) {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosNev = document.getElementById(&quot;jatekosNev&quot;); <b><span
+style='color:red'>&lt;!-- Bemenő adatokat tartalmazó form HTML elemek
+deklarálása --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosSzulEv = document.getElementById(&quot;jatekosSzulEv&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosGolok = document.getElementById(&quot;jatekosGolok&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosNem = document.getElementById(&quot;jatekosNem&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosCsapatID = document.getElementById(&quot;jatekosCsapatID&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var kuldendo = { <b><span style='color:red'>&lt;!-- Egy kuldendo nevű JSON-ba
+töltöm a bemenőket --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&quot;task&quot;: &quot;addNewJatekos&quot;, <b><span style='color:red'>&lt;!--
+Mindig a task megadással kezdődik, nem felejtjük el! --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&quot;nev&quot;: jatekosNev.elements[0].value, <span style='color:red'>&lt;!—Paraméter
+felszedése form elem-ben lévő input értékéből--&gt;</span></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&quot;szulEv&quot;: jatekosSzulEv.elements[0].value, </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&quot;golok&quot;: jatekosGolok.elements[0].value,</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+&quot;nem&quot;: jatekosNem.elements[0].value, </span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>        &quot;csapatID&quot;:
+jatekosCsapatID.elements[0].value</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+};</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+$.ajax({ <b><span style='color:red'>&lt;!—AJAX hívás kezdete --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+url: &quot;JatekosServlet&quot;, <b><span style='color:red'>&lt;!-- Servlet
+címe --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+type: &quot;post&quot;,     <b><span style='color:red'>&lt;!-- Küldött adat ne
+legyen látható webkereső címsorban --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+data: kuldendo, <b><span style='color:red'>&lt;!—Küldés a szervernek --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+success: function(vissza) { <b><span style='color:red'>&lt;!-- Szerver válasza
+vissza-ba kerül --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+alert(&quot;Szerver válasza: &quot; + vissza.msg); <span style='color:red'>&lt;!--Debug
+időszakban siker esetén is alertel,majd kiveszi--&gt;</span></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+getAllJatekos(targetTable,-1,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;);
+<b><span style='color:red'>&lt;!—Tábla újrarajzolása szűrés nélkül --&gt;</span></b></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+},</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+error: function(vissza) {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+alert(&quot;Kapcsolati hiba! &quot; + vissza.msg);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+getAllJatekos(targetTable,-1,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+}</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+});</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>}</span></p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+###  10.7.2.4.Read
+
+</div>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>function
+getJatekos() {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosID = document.getElementById(&quot;jatekosID&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosNev = document.getElementById(&quot;jatekosNev&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosSzulEv = document.getElementById(&quot;jatekosSzulEv&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosGolok = document.getElementById(&quot;jatekosGolok&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosNem = document.getElementById(&quot;jatekosNem&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosCsapatID = document.getElementById(&quot;jatekosCsapatID&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var kuldendo = {&quot;task&quot;: &quot;getJatekos&quot;,
+&quot;jatekosID&quot;: jatekosID.elements[0].value};</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+$.ajax({</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+url: &quot;JatekosServlet&quot;,</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+type: &quot;post&quot;,</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+data: kuldendo,</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+success: function(vissza) { <span style='color:red'>&lt;!—Szerver vissza
+válaszból felnyomja formok inputjaiba az adatokat --&gt;</span></span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+alert(&quot;Játékos keresése: &quot; + jatekosID.elements[0].value);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+jatekosID.elements[0].value = vissza[0].jatekosID;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+jatekosNev.elements[0].value = vissza[0].nev;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+jatekosSzulEv.elements[0].value = vissza[0].szulEv;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+jatekosGolok.elements[0].value = vissza[0].golok;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+jatekosNem.elements[0].value = vissza[0].nem;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+jatekosCsapatID.elements[0].value = vissza[0].csapatID;</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+},</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+error: function(vissza) {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>           
+alert(&quot;Kapcsolati hiba játékos keresésénél: &quot; +
+jatekosID.elements[0].value);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>       
+}</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+});</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>}</span></p>
+
+</div>
+
+<div style='border:none;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+###  10.7.2.5.Update
+
+</div>
+
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 0cm;
+margin-left:0cm;margin-right:7.1pt'>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>function
+updateJatekos(targetTable, jatekosID) {</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosNev = document.getElementById(&quot;jatekosNevUpd&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosGolok = document.getElementById(&quot;jatekosGolokUpd&quot;);</span></p>
+
+<p class=MsoMacroText><span style='font-family:"Arial Narrow",sans-serif'>   
+var jatekosCsapatID = </span></p>
+
+</div>
+
+</div>
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+
+</html>
+
+
