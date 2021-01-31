@@ -222,12 +222,17 @@ img.hover-shadow {
 
 /******** Navbar ********/
 
-a.nav-toggle {
+.nav-toggle {
 	position: absolute;
 	right: 60px;
 	top: 0;
 }
 
+.distill-site-header.responsive a.nav-toggle {
+	position: absolute;
+	right: 60px;
+	top: 0;
+}
 
 
 .nav-dropbtn , a+ a {
