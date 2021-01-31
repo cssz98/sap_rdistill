@@ -71,7 +71,7 @@ h1
 	text-autospace:none;
 	border:none;
 	padding:0cm;
-	font-size:16.0pt;
+	font-size:10.0pt;
 	font-family:"Arial Narrow",sans-serif;
 	color:red;
 	text-decoration:underline;}
@@ -116,7 +116,7 @@ h4
 	text-autospace:none;
 	border:none;
 	padding:0cm;
-	font-size:8.0pt;
+	font-size:12.0pt;
 	font-family:"Arial Narrow",sans-serif;
 	color:blue;
 	text-decoration:underline;}
@@ -130,7 +130,7 @@ h5
 	text-autospace:none;
 	border:none;
 	padding:0cm;
-	font-size:8.0pt;
+	font-size:11.0pt;
 	font-family:"Arial Narrow",sans-serif;
 	color:#1F497D;
 	text-decoration:underline;}
@@ -144,7 +144,7 @@ h6
 	text-autospace:none;
 	border:none;
 	padding:0cm;
-	font-size:8.0pt;
+	font-size:10.0pt;
 	font-family:"Arial Narrow",sans-serif;
 	color:black;
 	text-decoration:underline;}
@@ -207,6 +207,19 @@ p.MsoFooter, li.MsoFooter, div.MsoFooter
 	padding:0cm;
 	font-size:8.0pt;
 	font-family:"Arial Narrow",sans-serif;}
+p.MsoMacroText, li.MsoMacroText, div.MsoMacroText
+	{mso-style-link:"Makró szövege Char";
+	margin-top:0cm;
+	margin-right:7.1pt;
+	margin-bottom:2px;
+	margin-left:0cm;
+	line-height:75%;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Courier New";}
 p.MsoList, li.MsoList, div.MsoList
 	{margin-top:0cm;
 	margin-right:0cm;
@@ -217,7 +230,7 @@ p.MsoList, li.MsoList, div.MsoList
 	text-autospace:none;
 	border:none;
 	padding:0cm;
-	font-size:12pt;
+	font-size:12.0pt;
 	font-family:"Arial Narrow",sans-serif;}
 p.MsoList2, li.MsoList2, div.MsoList2
 	{margin-top:0cm;
@@ -229,17 +242,25 @@ p.MsoList2, li.MsoList2, div.MsoList2
 	text-autospace:none;
 	border:none;
 	padding:0cm;
-	font-size:12pt;
+	font-size:8.0pt;
 	font-family:"Arial Narrow",sans-serif;}
-a:link, span.MsoHyperlink
-	{color:blue;}
-span.Cmsor1Char
-	{mso-style-name:"Címsor 1 Char";
-	mso-style-link:"Címsor 1";
-	font-family:"Arial Narrow",sans-serif;
-	color:red;
-	font-weight:bold;
-	text-decoration:underline;}
+p.MsoList3, li.MsoList3, div.MsoList3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:63.8pt;
+	text-align:justify;
+	text-indent:-7.65pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+span.MakrszvegeChar
+	{mso-style-name:"Makró szövege Char";
+	mso-style-link:"Makró szövege";
+	font-family:"Courier New";}
 .MsoChpDefault
 	{font-size:10.0pt;}
  /* Page Definitions */
@@ -258,9 +279,9 @@ div.WordSection2
 	{margin-bottom:0cm;}
 ul
 	{margin-bottom:0cm;}
+
 -->
 </style>
-
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/2f761d4/dist/bootstrap-toc.min.js"></script>

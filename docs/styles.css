@@ -1,4 +1,4 @@
-/* NO TOC on mobile */
+/******** TOC ********/
 @media screen and (max-width: 767px){
 
   .affix{
@@ -23,7 +23,7 @@
 }
 
 
-/* cover */
+/******** Cover ********/
 
 .hero-image {
 	position: relative;
@@ -84,8 +84,7 @@
 
 
 
-
-/* Photo slide */
+/******** Slides ********/
 
 .row > .column {
   padding: 0 8px;
@@ -218,4 +217,20 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/******** Navbar ********/
+
+a.nav-toggle {
+	position: absolute;
+	right: 60px;
+	top: 0;
+}
+
+
+
+.nav-dropbtn , a+ a {
+  background: red;
+}
 }

@@ -28,5 +28,4 @@ output:
     includes:
       in_header: 
       - header.html
-      - hypothesis.html
       - hero-image.html
