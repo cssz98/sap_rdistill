@@ -20,7 +20,12 @@
 	position: fixed;
 	top: 23%;
 	left: 1%;
+	font-size: 1px;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+	max-height: 465px;
 }
+
 
 
 /******** Cover ********/

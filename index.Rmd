@@ -17,8 +17,10 @@ knitr::opts_chunk$set(echo = FALSE)
 <html xmlns:ns0="urn:schemas-microsoft-com:office:smarttags">
 
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/2f761d4/dist/bootstrap-toc.min.css">
+
+
+<link rel="stylesheet" href="toc_css/bootstrap.min.css">
+<link rel="stylesheet" href="toc_css/bootstrap-toc.css">
 
 <meta http-equiv=Content-Type content="text/html; charset=windows-1250">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
@@ -522,27 +524,6 @@ style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman
 
 </div>
 
-##  12.6.Üres projekt próba futtat
-
-```{r}
-table(iris)
-```
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><b>BTN:Clean+Build</b> – újraépít maven-t, ha nem sikeres, töröld
-a test packaget, utána még jó lehet, ha nem a teszt dependenciák rosszak. Üres
-jar fájllal kezd és beleteszi dependenciákat.</p>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Documents/NetBeansProj/SpringTest/Target/basic-0.0.1-snapshot.jar
-kb 7Mb létrejön</p>
-
-</div>
 
 ##  12.7.Controller létrehoz
 
@@ -556,9 +537,16 @@ pacakeges|LIN:com.example|Jobbkatt|New|Java package|</p>
 
 </div>
 
-# 13.-------
+## 13.-------
 
 
+
+
+##  12.6.Üres projekt próba futtat
+
+```{r}
+formattable::formattable(iris)
+```
 
 
 
