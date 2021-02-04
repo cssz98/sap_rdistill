@@ -27,8 +27,8 @@ nav[data-toggle=toc] .nav>li>a:hover {
 nav[data-toggle=toc] .nav>.active:focus>a,
 nav[data-toggle=toc] .nav>.active:hover>a,
 nav[data-toggle=toc] .nav>.active>a {
-  padding-left: 18px;
-	font-weight: 700;
+  padding-left: 2px;
+	font-weight: bold;
 	color: white;
 	background-image: linear-gradient(to left, rgba(0, 108, 181,0), rgb(0, 108, 181));
 

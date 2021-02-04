@@ -1,5 +1,5 @@
-name: "E-Study Guide"
-title: "E-Study Guide"
+name: "SAP E-Study Guide"
+title: "SAP E-Study Guide"
 output_dir: docs
 navbar:
   search: true
