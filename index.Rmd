@@ -1,557 +1,279 @@
 ---
-title: "Asd"
+title: "Introduction"
 description: |
-  asdasd
+
 site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
 ```
-
-
-<html xmlns:ns0="urn:schemas-microsoft-com:office:smarttags">
-
-<head>
-
 
 <link rel="stylesheet" href="toc_css/bootstrap.min.css">
 <link rel="stylesheet" href="toc_css/bootstrap-toc.css">
 
-<meta http-equiv=Content-Type content="text/html; charset=windows-1250">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<title>PHP OOP</title>
 
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Sendnya;
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:"Calibri Light";
-	panose-1:2 15 3 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:"Arial Narrow";
-	panose-1:2 11 6 6 2 2 2 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:42.55pt;
-	text-align:justify;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	font-size:8.0pt;
-	font-family:"Arial Narrow",sans-serif;}
-h1
-	{mso-style-link:"Címsor 1 Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:14.2pt;
-	text-indent:4pt;
-	page-break-after:avoid;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:10.0pt;
-	font-family:"Arial Narrow",sans-serif;
-	color:red;
-	text-decoration:underline;}
-h2
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:21.3pt;
-	text-indent:-7.1pt;
-	page-break-after:avoid;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:15.0pt;
-	font-family:"Arial Narrow",sans-serif;
-	color:aqua;
-	text-decoration:underline;}
-h3
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:1.0cm;
-	text-indent:-7.1pt;
-	page-break-after:avoid;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:13.0pt;
-	font-family:"Arial Narrow",sans-serif;
-	color:#00B050;
-	text-decoration:underline;}
-h4
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:35.45pt;
-	text-indent:-7.1pt;
-	page-break-after:avoid;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:12.0pt;
-	font-family:"Arial Narrow",sans-serif;
-	color:blue;
-	text-decoration:underline;}
-h5
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:42.55pt;
-	text-indent:-7.1pt;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:11.0pt;
-	font-family:"Arial Narrow",sans-serif;
-	color:#1F497D;
-	text-decoration:underline;}
-h6
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:85.1pt;
-	text-indent:-42.55pt;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:10.0pt;
-	font-family:"Arial Narrow",sans-serif;
-	color:black;
-	text-decoration:underline;}
-p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
-	{margin-top:12.0pt;
-	margin-right:0cm;
-	margin-bottom:3.0pt;
-	margin-left:106.3pt;
-	text-align:justify;
-	text-indent:-35.4pt;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	font-size:8.0pt;
-	font-family:"Arial",sans-serif;}
-p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
-	{margin-top:12.0pt;
-	margin-right:0cm;
-	margin-bottom:3.0pt;
-	margin-left:141.7pt;
-	text-align:justify;
-	text-indent:-35.4pt;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	font-size:8.0pt;
-	font-family:"Arial",sans-serif;
-	font-style:italic;}
-p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
-	{margin-top:12.0pt;
-	margin-right:0cm;
-	margin-bottom:3.0pt;
-	margin-left:177.1pt;
-	text-align:justify;
-	text-indent:-35.4pt;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	font-size:9.0pt;
-	font-family:"Arial",sans-serif;
-	font-style:italic;}
-p.MsoHeader, li.MsoHeader, div.MsoHeader
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:1.0pt;
-	margin-left:0cm;
-	text-align:justify;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:8.0pt;
-	font-family:"Arial Narrow",sans-serif;}
-p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{margin-top:1.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	text-align:justify;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:8.0pt;
-	font-family:"Arial Narrow",sans-serif;}
-p.MsoMacroText, li.MsoMacroText, div.MsoMacroText
-	{mso-style-link:"Makró szövege Char";
-	margin-top:0cm;
-	margin-right:7.1pt;
-	margin-bottom:2px;
-	margin-left:0cm;
-	line-height:75%;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:9.0pt;
-	font-family:"Courier New";}
-p.MsoList, li.MsoList, div.MsoList
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:49.65pt;
-	text-indent:-7.1pt;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:12.0pt;
-	font-family:"Arial Narrow",sans-serif;}
-p.MsoList2, li.MsoList2, div.MsoList2
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:2.0cm;
-	text-indent:-7.05pt;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:8.0pt;
-	font-family:"Arial Narrow",sans-serif;}
-p.MsoList3, li.MsoList3, div.MsoList3
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:63.8pt;
-	text-align:justify;
-	text-indent:-7.65pt;
-	punctuation-wrap:simple;
-	text-autospace:none;
-	border:none;
-	padding:0cm;
-	font-size:9.0pt;
-	font-family:"Arial Narrow",sans-serif;}
-span.MakrszvegeChar
-	{mso-style-name:"Makró szövege Char";
-	mso-style-link:"Makró szövege";
-	font-family:"Courier New";}
-.MsoChpDefault
-	{font-size:10.0pt;}
- /* Page Definitions */
- @page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:42.55pt 42.55pt 51.05pt 42.55pt;}
-div.WordSection1
-	{page:WordSection1;}
-@page WordSection2
-	{size:595.3pt 841.9pt;
-	margin:42.55pt 42.55pt 51.05pt 42.55pt;}
-div.WordSection2
-	{page:WordSection2;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
-
--->
-</style>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/2f761d4/dist/bootstrap-toc.min.js"></script>
 
-</head>
-
-<body lang=HU link=blue vlink="#954F72" style='word-wrap:break-word' data-spy="scroll" data-target="#toc">
+<body data-spy="scroll" data-target="#toc">
 
 <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
 
-<div class=WordSection1>
 
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:2.0cm;margin-right:0cm'>
+**Köszönetnyilvánítás.** A tantárgy a Pécsi Tudományegyetem
+Természettudományi Kar, a PTE TTK Szentágothai Szakkollégium és a
+Közgazdaságtudományi Kar Pénzügy és Számviteli Intézet támogatásával
+jött létre. A tantárgy indításában köszönet illeti meg a
+Természettudományi Kar oktatási dékánhelyettesét, dr. habil. Trócsányi
+András egyetemi docenst, dr. Hatvani Zsolt szakkollégium igazgatót, és
+dr. habil. Pauler Gábor egyetemi docenst, SAP tantárgy felelőst,
+valamint Meisl Gábor tanár urat. Szintén köszönet illeti a
+Közgazdaságtudományi Kar Pénzügy és Számviteli Intézet oktatóit a
+tantárgy befogadásáért, különösen Balogh Virgínia tanárnőt a szeminárium
+menedzselésében.
+
+
+**A tantárgy teljesítése.** A tantárgy rendszeres, aktív órai
+részvétellel, órai munkával és a házi feladatok megoldásával, illetve az
+ezekből származó pontok szerzésével teljesíthető.
+
+**Határidők.** 2021. február 13-ig mindenkinek csapatot kell
+választania, és be kell jelentkeznie az SAP rendszerbe.
+
+**A tantárgy célja.** A szeminárium elsődleges célja az SAP-s
+felhasználói szintű, gazdasági munkakörök betöltésének megalapozása.
+Álláspontom szerint a PTE Közgazdaságtudományi Kar képzésein szerezhető
+magas színvonalú, versenyképes tudásra épített SAP vállalatirányítási
+rendszer ismerete lehetővé teszi a szakmai gyakorlatok, gyakornoki
+programok, valamint belépő szintű pozíciók sikeres megpályázását. A
+minőségi pozíciókra kiírt álláshirdetések gyakran fogalmazzák meg
+elvárásként az SAP ismereteket. Tekintettel arra, hogy a felsőoktatási
+versenyben más intézmények ezt felismerték az álláspályázatok során jó
+eséllyel olyan pályázókkal kell versenyezni, akik ilyen tudással
+rendelkezhetnek. Annak érdekében, hogy más egyetemeken végzett
+hallgatókkal szemben eredményesen lehessen fellépni egy-egy pozíció
+elnyeréséért, kulcsfontosságúnak tartom az elméleti alapozottságú,
+gyakorlati megközelítésű SAP ismereteket.
+
+**Tantárgy szakirodalma.** A tantárgyhoz egy elektronikus tananyag
+fejlesztése zajlik a PTE TTK keretében, dr. Pauler Gábor szakmai
+felügyeletével. A tananyag jellegzetessége, hogy tartalmát tekintve nem
+zárt és statikus jellegű, hanem dinamikus ezért az újabb tudáselemek
+megjelenésével folyamatosan bővül és módosul. Az elektronikus tananyag
+nem vállalkozik azonban a részletes monográfiák idézésére. Ezért a
+vállalatirányítási rendszerek, a beszerzési folyamatok és a számviteli
+ismeretek tekintetében az alábbi könyvek elolvasása javasolt
+(erőteljesen). Az elektronikus tananyagban elhelyezem, hogy az adott
+részhez melyik fejezetet szükséges elolvasni. Ezek elolvasása szükséges
+az órai programhasználat szakmai / tartalmi dimenziójának megértéséhez.
+
+-   **Tarcsi Ádám, Molnár Bálint: Vállalatirányítási rendszerek
+    gazdaságinformatikai megközelítésben (SAP).** ELTE
+    Társadalomtudományi Kar, 2011. Elérhető:
+    <https://regi.tankonyvtar.hu/hu/tartalom/tamop412A/2011-0052_40_vallalatiranyitasi_rendszerek_gazdasaginformatikai_megkozelitesben/index.scorml>
+    (2021. 02. 04.)
+
+-   **Takács András, Márkus Gábor: Számviteli alapismeretek.** PTE
+    Közgazdaságtudományi Kar. Pécs, 2019. Elérhető:
+    <https://digitalia.lib.pte.hu/hu/pub/takacs-a-markus-g-szamviteli-alapismeretek-pte-ktk-pecs-2019-4393>
+    (2021. 02. 04.)
+
+> **[Beszerzési részhez (ajánlott):]{.ul}**
+
+-   **P. K. Agrawal:** **SAP MM Purchasing: Technical Reference and
+    Learning Guide.** PHI Learning Private Limited. Delhi, 2014. 912. p.
+    13 Euróért elérhető E-bookként. (Ebben a könyvben minden benne van,
+    ami felhasználói és rendszerbeállítás szintjén előfordul a
+    beszerzési modulban, (személyes véleményem szerint ennyi pénzért
+    kiemelt mértékben megéri.) Megvásárolható:
+    <https://www.amazon.com/SAP-MM-PURCHASING-TECHNICAL-REFERENCE-ebook/dp/B00LPGBWX2/ref=sr_1_4?crid=2ZAJO773J9HX9&dchild=1&keywords=sap+purchasing&qid=1610966550&sprefix=sap+purchase%2Caps%2C483&sr=8-4>
+    (2021. 02. 04.)
+
+> **[Financial Accounting modulhoz (ingyenesen elérhető
+> szakkönyvek):]{.ul}**
+
+-   **FICO Team GCL & PETL: SAP-FI-CO User Manual.** Greaves Cotton
+    > Limited & Premium Energy & Transmissions Limited. Mumbai, 2009.
+
+> Elérhető:
+> <https://sapfidocz.files.wordpress.com/2013/01/sap-fico-complete-end-user-manual-realtime-project.pdf>
+> (2021. 02. 04.)
+
+-   **Jayachandran KS MBA (Fin), SAP FI: SAP FICO User Guide.** Flemingo
+    > International Limited. 2010.
+
+> Elérhető: <https://www.academia.edu/8036298/SAP_FICO_USER_GUIDE>
+> (2021. 02. 04.)
+
+-   **<https://erproof.com/fi/free-training/>** (2021. 02. 04.)
+
+> **Saját tananyag:**
+
+-  https://github.com/cssz98/sap_rdistill
+
+**A tantárgy tartalma, kiegészítések.** A szeminárium a beszerzési
+folyamatokra, a szállítói modulra, valamint a főkönyvi lekérdezések
+alapszintű bemutatására vállalkozik. Emellett érdeklődés esetén
+közreadhatok bankra, házi pénztárra és tárgyi eszközre vonatkozó magyar
+nyelvű, SAP tanácsadó irodák által készített anyagokat.
+
+**Tantárgy eddigi eredményei.** A 2020/21-es tanév őszi szemeszterében
+megvalósult SAP Financial Accounting képzés segítségével egy hallgató
+helyezkedett el egy német vállalatcsoport magyarországi vállalatában SAP
+könyvelő gyakornoki pozícióban.
+
+**Miért SAP?** Hazánkban az SAP az 1990-es évektől, a német működő tőke
+beérkezésével jelent meg. Elsőként a nagy autóipari összeszerelők és
+gyártók, majd azok beszállítóinak megérkezése révén terjedt. A működő
+tőke közvetett tudástranszfere hatására a hazai, illetve a magyar
+tulajdonú beszállítók is ezt a rendszert kezdték használni annak
+érdekében, hogy versenyképességüket emeljék. Az SAP a szolgáltatási
+szférába és a közszférába is átlépett, tehát gyakorlatilag minden
+szektort lefedett. Más tekintetben az SAP nem egy dobozos szoftver,
+hanem olyan platform, amelynek alapfolyamataira vállalatspecifikus
+megoldások fejleszthetők, és a fejlesztésekben, illetve a folyamatos
+optimalizálásban, jogszabályi harmonizációban jelentős pénzügyi
+lehetőségek vannak. A fejlesztéseket közel 20 SAP tanácsadó cég végzi,
+ezek a cégek gyakran hirdetnek gyakornoki programot, amelyhez alaptudás
+birtokában érdemes csatlakozni (SAP Hungary Kft.; ERP Consulting Zrt.;
+itelligence Hungary Kft.; BSIS9 Kft.; Onespire Zrt.; BCS Business
+Consulting Services Kft.
+
+**SAP, vagy ERP tudás.** A szeminárium során SAP vállalatirányitási
+rendszer egyes területeinek használatát lehet alapszinten elsajátítani.
+A programhasználati ismeretek azonban viszonylag könnyen konvertálhatók
+más fejlett vállalatirányítási ERP rendszerbe, különösen MS Dynamics
+Axapta 2012 és Oracle rendszerekbe. Ennek alapja az, hogy az órán
+tanulandó felhasználói ismeretek standard és szabvány üzleti megoldások,
+illetve standard üzleti megoldásokon alapulnak. A tranzakciók alapjai
+70%-ban azonosak a három rendszerben.
+
+**SAP rendszereket használnak az alábbi vállalatok a teljesség igénye
+nélkül:**
+
+ALTEO Nyrt., AUDI HUNGARIA Zrt., AVL Hungary Kft., BAT,
+\'\'BALLUFF-ELEKTRONIKA\'\' Kft. BESSER HUNGARIA Kft., BioCo
+Magyarország Kft., Bonafarm, BOS Magyarország Bt., Bosch Csoport,
+Budapest Consultans Kft., Chinoin Zrt. / SANOFI AVENTIS, Continental
+Automotive Hungary Kft., Dana Hungary Gyártó Kft., DMRV Zrt., ELTER
+Világítás Kft., Experis, FCA Central and Eastern Europe Kft., FEJÉRVÍZ
+ZRt., \'FHL BJÖRN HUNGARY\'\' Kft., FŐTÁV ZRt., Gentherm Hungary Kft.,
+Givaudan Hungary Kft., Grafton Recruitment, Harman Becker Kft., Hauni,
+Hydro Extrusion Hungary Kft., IMPC Personnel Hungária Kft., ISD DUNAFERR
+Zrt., Jabil Circuit Magyarország Kft., Jacobs Douwe Egberts HU Zrt.,
+Karrier Hungária Kft., Kayser Automotive Hungária Kft., KNORR-BREMSE
+Hungária Kft., KPMG Global Services Hungary Kft., KUKA Robotics Hungária
+Kft., Media Markt Saturn Hold.Magyo.Kft., Mercedes-Benz Manufacturing
+Hungary Kft., MP Solutions Kft., MTB Magyar Takarékszövetkezeti Bank
+Zrt., Nitrogénművek Zrt. , Óbudai Egyetem, OTP Bank Nyrt., PAYER
+INDUSTRIES HUNGARY Kft., Profession Services, Raiffeisen Bank Zrt.,
+Reményi Csomagolástechnika Kft., Richter Gedeon Nyrt., SAMSUNG SDI
+Magyarország Zrt., Schindler Hungária Kft., SCHMITZ CARGOBULL
+MAGYARORSZÁG Kft. , Siemens Healthcare Kft., Sofidel Hungary Kft.,
+Tech-Con Hungária Kft., Testo kft., Thermo Fisher , thyssenkrupp
+Components Technology Hungary Kft., Tiszamenti Regionális Vízművek Zrt.,
+TS Hungaria Kft., UPS Healthcare Hungary Zrt., Villeroy & Boch
+Magyarország Kft., Vitesco Technologies Hungary Kft., Waberer\'s
+International Nyrt., WALLACE & WEBB Kft., Wienerberger Zrt., WIZZ Air
+Hungary Zrt., ZOLLNER Kft, Zöld-Ker Kft.
+
+**SAP rendszert nagy valószínűséggel használó, 500 fő feletti
+feldolgozóipari nagyvállalatok területi elhelyezkedése és adatbázisa.**
+
+![](mm\image1.png){width="6.291666666666667in"
+height="3.09375in"}
+
+**<https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b>**
+(2021. 02. 04.)
+
+**A tantárgy megközelítése és feldolgozása.** A szeminárium felhasználói
+megközelítésben dolgozza fel a beszerzési folyamatok és a szállítói
+modul használatát. Az álláshirdetések és a gyakornoki programok ismerete
+alapján a beszállítói folyamatok és a szállítói modul jelenti a belépési
+pontot, tehát feldolgozására került a hangsúly.
+
+**SAP verzió és jogosultság.** A szeminárium során a Természettudományi
+Kar fenntartásában és előfizetésében lévő SAP ERP R/3-as IDES (demó)
+rendszer használatára van lehetőség SAP Super User jogosultság mellett
+(tehát minden standard felhasználói és rendszerbeállítási művelet
+elérhető).
+
+**SAP oktatás rövid története a PTE TTK-n.**
+
+-   Dr. Pauler Gábor habil. egyetemi docensnek köszönhetően 2009-ben
+    indult a Pollack Mihály Műszaki Főiskolán hallgatói kezdeményezésre,
+    az ELTE SAP Excellence center szakmai segítségével
+
+-   2011-ben átkerült a TTK-ra, elsőként a Szentágothai Szakkollégium
+    kurzusaként indult
+
+-   2014 tavaszán indult az ITSH finanszírozásában (4.5MFt) az első SAP
+    szuperkurzus a TTK-n
+
+-   Az ITSH támogatása megerősítette az SAP oktatás kari pozícióját
+
+-   2015-ben indult az ITSH finanszírozásában a második SAP szuperkurzus
+    a TTK-n.
+
+-   2014-től szerepel az SAP a kötelező tantárgyak között
+    (gazdaságinformatikus, programtervező)
+
+-   2011-2020 között 60 hallgató tudott SAP karrierben elhelyezkedni
+
+-   2011-2020 között számos SAP rész került szakkollégiumi tantárgyként
+    oktatásra
+
+**A PTE TTK SAP oktatói.** Az SAP tantárgyfelelőse dr. Pauler Gábor
+habil. egyetemi docens, aki a logisztikai, beszerzési, gyártási, és
+raktármenedzsment részt oktatja. Meisl Gábor az SAP programnyelvét az
+ABAP-ot oktatja, illetve a SECATT folyamat optimalizálást.
+
+**A tantárgy keretében szerezhető tudással megpályázható szintek.**
+Tekintettel arra, hogy a tantárgy a beszerzési és szállítói modulok
+alapszintű használatát mutatja be, egyes esetekben részletesen,
+elsősorban a belépő szintű felhasználói munkakörökre készít fel.
+Elhelyezkedés tekintve elsősorban Magyarországon működő feldolgozóipari
+tőkeerős közép- és nagyvállalatok, valamint a világ más részén működő
+feldolgozóipari vállalatainak kiszolgálására létrehozott (Shared Service
+Center) központokban. Valószínűsíthetően a pozíciókban néhány tranzakció
+napi szintű ellátása lesz a feladat. Az álláshirdetések meghatározó
+részét ismerve elmondható, hogy a könyvelőirodás munkaköröktől eltérően
+az all-in-one mindenre kiterjedő tudás helyett, egy-egy feladatcsoportra
+történő specializálódás figyelhető meg a kezdő pozíciók esetében.
+Emellett természetesen jelen vannak a komplex munkakörök (szállító,
+bank, vevő), de ezek inkább a tapasztalattal már rendelkező
+munkavállalóknak reálisak. A munka mennyisége alapján azonban 1-1
+(rész)modul ellátása is elegendő feladatot tartalmaz. Az alábbiakban
+olvasható néhány felhasználói szintű, specializált SAP-s munkakör. A
+feldolgozóipari vállalatok esetében lehet tisztán adminisztrációs
+munkakör és lehet olyan munkakör, amelynek az adminisztráció csak egy
+részét képezi. A Shared Service Center előnye, hogy viszonylag könnyen
+be lehet kerülni, és egy multis karriert lehet megalapozni vele.
+
+**Néhány feldolgozóipari beszerzési munkakör:**
+
+![](mm\image2.png){width="6.291666666666667in"
+height="3.8333333333333335in"}
+
+![](mm\image3.png){width="6.291666666666667in"
+height="3.3020833333333335in"}
+
+![](mm\image4.png){width="6.291666666666667in"
+height="4.270833333333333in"}
+
+**Néhány kiszervezett (Shared Service) munkakörre vonatkozó olyan
+álláshirdetés, amely a beszerzés és a szállítói modul tartalmát fedi
+le.**
+
+![](mm\image5.png){width="4.547909011373578in"
+height="4.020833333333333in"}
+
+![](mm\image6.png){width="6.291666666666667in"
+height="6.010416666666667in"}
 
-<p class=MsoList2 style='margin-left:0cm;text-indent:0cm'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>BTN:Next|</p>
 
-</div>
 
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>DDN:Project=lddAnim, DDN:Location=Packages, DDN:Package=Model,
-TBX:Class name=<span style='color:red'>User</span> <span style='color:red'>//Automatikusan
-nagybetűsíti táblanevet mert osztály lesz!,</span> CHK:Create persistence
-unit=Yes, BTN:Next|</p>
-
-<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>//Utolsó képernyőn nem állít semmit, <b>BTN:Finish</b></p>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Az osztály automatikusan létrejött kódját ellenőrizni, a
-szükségtelen setter metódusokat letörölni (pl. elsődleges kulcsét)</p>
-
-</div>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-</div>
-
-<b><u><span style='font-size:10.0pt;font-family:"Arial Narrow",sans-serif;
-color:red'><br clear=all style='page-break-before:always'>
-</span></u></b>
-
-<div class=WordSection2>
-
-#  12.Java Webalkalmazás SPRING technológiával
-
-##  12.1.Mintaprojekt:
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Lásd basic|SpringTest projekt, frontenden KezilabdaSpring.html</p>
-
-</div>
-
-## 12.2.DEF:
-
-## 12.2.1.Spring:
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Keretrendszer, ugyanarra jó mint a szervlet technológia, csak
-sokkal automatizáltabb</p>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>MVC architektúrájú webes alkalmazásokat gyárt</p>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Controllerekbe restfulAPI-kat gyárt: szerverből hív
-szolgáltatásokat, sokkal gyorsabb fejl</p>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Dependency injection: automatikusan letölti összes szükséges
-jar-t webes repositoryból, </p>
-
-<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span style='font-family:Wingdings'>J</span> configurálja,
-berakja megfelelő helyre </p>
-
-<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span style='font-family:Wingdings'>L</span> nem mindig lehet
-látni hova, </p>
-
-<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span style='font-family:Wingdings'>L</span> felsleges jar-okat
-húzhatunk le, amit nem is fogunk használni)</p>
-
-<p class=MsoList2 style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span style='font-family:Wingdings'>L</span> gépváltáskor
-dependency errort okoz</p>
-
-</div>
-
-## 12.2.2.SpringBoot
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Springre, épül, plusz technológiákat is bevon pl. Jenkins,
-Servlet technológia</p>
-
-</div>
-
-##  12.2.3.POJO
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Hagyományos Java osztályok</p>
-
-</div>
-
-##  12.2.4.BeanClass
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Olyan POJO, amiben van szabályos konstruktor, getter, setter</p>
-
-</div>
-
-```{r,echo=FALSE}
-
-books.url = httr::GET("https://raw.githubusercontent.com/vijay564/R-Maincode/master/books.xml")
-books.parse <- XML::xmlParse(books.url)
-# 
-books.root <- XML::xmlRoot(books.parse)
-books.xml <- XML::xmlToDataFrame(books.root, stringsAsFactors = FALSE)
-# 
-formattable::formattable(books.xml)
-```
-
-
-##  12.2.5.Mr. Container:
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Pl. egy logint megírhatok service-ben statikusnak, de megírhatom
-dinamikusan is, csak előtte példányt kell létrehoznom, de ha mindenki erre
-külön példányt hoz létre, az erőforrás igényes. Olyan példányt csinálunk, amit
-majd több függvény hívása kapcsán is használható. A példány tulajdonságainak
-értékeiben naplózza az életciklusát, ki mikor mit tett vele a frontendről.
-Ennek függvényében engedi vagy nem engedi függvények futását, pl típus függő
-validációkat. (Statikusan ezt nem lehetne megcsinálni.) Spring Request mapping
-automatikusan hozza létre, nem kézzel csináljuk</p>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>A garbage collector nem írtja le a container példányt, csak ha
-már kontrollert sem használja senki.</p>
-
-</div>
-
-##  12.2.6.Csomagoló eszközök
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Kész alkalmazást gyártó eszöz: itt jar fájlt gyárt, és pom.xml
-kezel ami a projekt dependenciák listája</p>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>Pl. Ant, Maven, Grapple </p>
-
-</div>
-
-##  12.3.Tutorial
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><b>URL:</b> <a
-href="https://www.udemy.com/course/java-spring-framework-masterclass/">https://www.udemy.com/course/java-spring-framework-masterclass/</a>
-</p>
-
-</div>
-
-##  12.4.Telepítés
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>NetBeans|Tools|Plugins|TAB:Avaliable plugin|BTN:Check for new|TBX:Search=
-spring|CHK:NB Springboot|BTN:Install|BTN:Next|CHK:Restart ide|BTN:OK</p>
-
-</div>
-
-##  12.5.Projekt létrehoz
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>NetBeansFile|New projekt|Maven|Springboot basic project|TBX:Name=SpringTest|BTN:Create</p>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>FRM:Projects:Bacic|Project files|POM.XML – dependencia leírás</p>
-
-</div>
-
-
-##  12.7.Controller létrehoz
-
-<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:42.55pt;margin-right:0cm'>
-
-<p class=MsoList style='margin-left:5.65pt;text-indent:-5.65pt'><span
-style='font-family:"Arial",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span>NetBeans|FRM:Projects|LIN:basic|LIN:Source
-pacakeges|LIN:com.example|Jobbkatt|New|Java package|</p>
-
-</div>
-
-## 13.-------
-
-
-
-
-##  12.6.Üres projekt próba futtat
-
-```{r}
-formattable::formattable(iris)
-```
-
-
-
-</div>
 
 </body>
-
-</html>
