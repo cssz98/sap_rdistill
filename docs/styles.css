@@ -259,7 +259,7 @@ img.hover-shadow {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  background: #2098D1;
+  background: #3F5763;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -273,7 +273,7 @@ img.hover-shadow {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #e1e1e1;
+  background: #0F2E3D;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition-property: transform;
@@ -301,7 +301,7 @@ img.hover-shadow {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  background: #2098D1;
+  background: #3F5763;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -315,7 +315,7 @@ img.hover-shadow {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #e1e1e1;
+  background: #0F2E3D;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition-property: transform;
@@ -434,7 +434,8 @@ b, strong {
 
 
 
-
-
+.distill-site-footer p {
+	text-align: center;
+}
 
 
