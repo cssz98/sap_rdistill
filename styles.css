@@ -427,15 +427,24 @@ p {
 
 b, strong {
 	font-weight: 700;
-	text-decoration: underline;
 }
 
 
-
+.uri {
+	color: blue;
+}
 
 
 .distill-site-footer p {
 	text-align: center;
 }
 
+
+
+
+
+d-article li:last-child {
+	margin-bottom: 0;
+	font-size: 14px;
+}
 
