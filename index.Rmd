@@ -22,7 +22,6 @@ knitr::opts_chunk$set(echo = FALSE)
 </div>
 
 
-
 <h2>Bevezetés</h2>
 
 **Köszönetnyilvánítás.** A tantárgy a Pécsi Tudományegyetem
@@ -180,8 +179,12 @@ Hungary Zrt., ZOLLNER Kft, Zöld-Ker Kft.
 **SAP rendszert nagy valószínűséggel használó, 500 fő feletti
 feldolgozóipari nagyvállalatok területi elhelyezkedése és adatbázisa.**
 
-![](mm\image1.png){width="6.291666666666667in"
-height="3.09375in"}
+
+```{r}
+knitr::include_url("https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b")
+```
+
+
 
 **<https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b>**
 (2021. 02. 04.)
