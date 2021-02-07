@@ -9,18 +9,22 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-<link rel="stylesheet" href="toc_css/bootstrap.min.css">
-<link rel="stylesheet" href="toc_css/bootstrap-toc.css">
 
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/2f761d4/dist/bootstrap-toc.min.js"></script>
+<link href="styles/bootstrap.css" rel="stylesheet">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+<link href="styles/jquery.tocify.css" rel="stylesheet">
+<link href="styles/prettify.css" type="text/css" rel="stylesheet" />
 
-<body data-spy="scroll" data-target="#toc">
 
-<nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+<body>
 
+<div id="toc">
+</div><!--/.well -->
+
+
+
+<h2>Introduction</h2>
 
 **Köszönetnyilvánítás.** A tantárgy a Pécsi Tudományegyetem
 Természettudományi Kar, a PTE TTK Szentágothai Szakkollégium és a
@@ -28,7 +32,7 @@ Közgazdaságtudományi Kar Pénzügy és Számviteli Intézet támogatásával
 jött létre. A tantárgy indításában köszönet illeti meg a
 Természettudományi Kar oktatási dékánhelyettesét, dr. habil. Trócsányi
 András egyetemi docenst, dr. Hatvani Zsolt szakkollégium igazgatót, és
-dr. habil. Pauler Gábor egyetemi docenst, SAP tantárgy felelőst,
+dr. habil. Pauler Gábor egyetemi docenst, SAP tantárgyfelelőst,
 valamint Meisl Gábor tanár urat. Szintén köszönet illeti a
 Közgazdaságtudományi Kar Pénzügy és Számviteli Intézet oktatóit a
 tantárgy befogadásáért, különösen Balogh Virgínia tanárnőt a szeminárium
@@ -271,7 +275,7 @@ height="6.010416666666667in"}
 
 
 
-<h1>Az SAP számviteli felépítésének alapjai I.</h1>
+<h2>Az SAP számviteli felépítésének alapjai I.</h2>
 
 
 
@@ -463,6 +467,27 @@ főkönyvi modulban tudunk kimutatásokat készíteni.
 ![](mm2\image12.png){width="4.458333333333333in"
 height="2.4791666666666665in"}
 
+
+
+
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.tocify.js"></script>
+<script src="js/prettify.js"></script>
+<script>
+$(function() {
+
+var toc = $("#toc").tocify({
+selectors: "h2,h3,h4,h5"
+}).data("toc-tocify");
+
+prettyPrint();
+$(".optionName").popover({ trigger: "hover" });
+
+});
+</script>
 
 
 
