@@ -473,6 +473,12 @@ height="2.4791666666666665in"}
 
 
 
+```{r out.height = "800px", out.width='100%'}
+knitr::include_graphics("asd.pdf")
+```
+
+
+
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
 <script src="js/bootstrap.js"></script>
