@@ -1,30 +1,5 @@
 /******** TOC ********/
-@media screen and (max-width: 767px){
 
-  .affix{
-    display: none;
-  }
-  
-  .top-text {
-    font-size: 25px;
-  }
-
-  .bottom-text {
-    font-size: 40px;
-  }
-  
-  
-}
-
-.affix {
-	position: fixed;
-	top: 23%;
-	left: 1%;
-	font-size: 1px;
-	overflow-y: auto;
-	scroll-behavior: smooth;
-	max-height: 465px;
-}
 
 
 @media (max-width: 767px) {
@@ -345,7 +320,7 @@ img.hover-shadow {
 
 
 
-/******** ********/
+/******** Hyperlink on image ********/
 
 
 #container {
@@ -419,14 +394,6 @@ img.hover-shadow {
 }
 
 
-
-
-
-
-
-
-
-
 /******** Text ********/
 
 p {
@@ -434,16 +401,23 @@ p {
 	text-align: justify;
 }
 
-
 b, strong {
 	font-weight: 700;
 }
-
 
 .uri {
 	color: blue;
 }
 
+
+d-article li:last-child {
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+
+
+/******** Footer ********/
 
 .distill-site-footer p {
 	text-align: center;
@@ -452,9 +426,4 @@ b, strong {
 
 
 
-
-d-article li:last-child {
-	margin-bottom: 0;
-	font-size: 14px;
-}
 
