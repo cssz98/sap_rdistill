@@ -14,17 +14,16 @@ knitr::opts_chunk$set(echo = FALSE)
 <link href="styles/bootstrap.css" rel="stylesheet">
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
 <link href="styles/jquery.tocify.css" rel="stylesheet">
-<link href="styles/prettify.css" type="text/css" rel="stylesheet" />
 
 
 <body>
 
 <div id="toc">
-</div><!--/.well -->
+</div>
 
 
 
-<h2>Introduction</h2>
+<h2>Bevezetés</h2>
 
 **Köszönetnyilvánítás.** A tantárgy a Pécsi Tudományegyetem
 Természettudományi Kar, a PTE TTK Szentágothai Szakkollégium és a
@@ -475,7 +474,6 @@ height="2.4791666666666665in"}
 <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.tocify.js"></script>
-<script src="js/prettify.js"></script>
 <script>
 $(function() {
 
