@@ -474,7 +474,7 @@ height="2.4791666666666665in"}
 
 
 ```{r out.height = "800px", out.width='100%'}
-knitr::include_graphics("asd.pdf")
+knitr::include_graphics("geo_.pdf")
 ```
 
 
