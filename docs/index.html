@@ -2045,7 +2045,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <script type="application/json" class="js-hypothesis-config">
     {
-      "theme": "classic"
+      "theme": "clean"
     }
   </script>
   <script async src="https://hypothes.is/embed.js"></script>
@@ -2083,7 +2083,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           margin: 0px 0px 20px 0px;
       }
   }
-
 
 
 
@@ -2147,161 +2146,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
 
-
-  /******** Slides ********/
-
-  .row > .column {
-    padding: 0 8px;
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  /* Create four equal columns that floats next to eachother */
-  .column {
-    float: left;
-    width: 25%;
-  }
-
-  /* The Modal (background) */
-  #myModal {
-  	display: none;
-  	position: fixed;
-  	z-index: 1;
-  	padding-top: 100px;
-  	left: 0;
-  	top: 0;
-  	width: 100%;
-  	height: 100%;
-  	background-color: black;
-  	overflow: auto;
-  }
-
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 50%;
-    max-width: 1200px;
-  }
-
-  /* The Close Button */
-  .close {
-  	color: white;
-  	position: absolute;
-  	top: 54px;
-  	right: 83px;
-  	font-size: 35px;
-  	font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  span.close.cursor{
-    
-  color:white;
-  font-size: 50px;
-  }
-
-
-  .numbertext {
-  	color: white;
-  	font-size: 12px;
-  	padding: 8px 12px;
-  	position: absolute;
-  	top: 0;
-  	background-image: linear-gradient(to left, rgba(0, 108, 181,0), rgb(0, 108, 181));
-  	font-weight: bold;
-  }
-
-
-
-  /* Hide the slides by default */
-  .mySlides {
-    display: none;
-  }
-
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-
-
-  /* Caption text */
-  .caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-  }
-
-  img.demo {
-    opacity: 0.6;
-  }
-
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-
-  img.hover-shadow {
-    transition: 0.3s;
-  }
-
-  .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-
-  /******** Navbar ********/
-
-  .nav-toggle {
-  	position: absolute;
-  	right: 60px;
-  	top: 0;
-  }
-
-  .distill-site-header.responsive a.nav-toggle {
-  	position: absolute;
-  	right: 60px;
-  	top: 0;
-  }
 
 
 
@@ -2471,7 +2315,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /******** Text ********/
 
   p {
-  	font-size: 14px;
+  	font-size: 13px;
   	text-align: justify;
   }
 
@@ -2502,6 +2346,35 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+  figure .caption, .figure .caption, figure figcaption {
+  	font-size: 10px;
+  	text-align: center;
+  }
+
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -2525,6 +2398,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html" class="title">SAP E-Study Guide</a>
 <a href="index.html">Introduction</a>
 <a href="materials_managment.html">Materials Managment</a>
+<a href="ewm.html">Extended Warehouse Managment</a>
+<a href="fin.html">Financial Accounting</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
@@ -2551,7 +2426,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </div>
 <h2>
-Bevezetés
+<strong>Bevezetés</strong>
 </h2>
 <p><strong>Köszönetnyilvánítás.</strong> A tantárgy a Pécsi Tudományegyetem Természettudományi Kar, a PTE TTK Szentágothai Szakkollégium és a Közgazdaságtudományi Kar Pénzügy és Számviteli Intézet támogatásával jött létre. A tantárgy indításában köszönet illeti meg a Természettudományi Kar oktatási dékánhelyettesét, dr. habil. Trócsányi András egyetemi docenst, dr. Hatvani Zsolt szakkollégium igazgatót, és dr. habil. Pauler Gábor egyetemi docenst, SAP tantárgyfelelőst, valamint Meisl Gábor tanár urat. Szintén köszönet illeti a Közgazdaságtudományi Kar Pénzügy és Számviteli Intézet oktatóit a tantárgy befogadásáért, különösen Balogh Virgínia tanárnőt a szeminárium menedzselésében.</p>
 <p><strong>A tantárgy teljesítése.</strong> A tantárgy rendszeres, aktív órai részvétellel, órai munkával és a házi feladatok megoldásával, illetve az ezekből származó pontok szerzésével teljesíthető.</p>
@@ -2611,39 +2486,39 @@ Bevezetés
 <p><img src="intro/image5.png" style="width:4.54791in;height:4.02083in" /></p>
 <p><img src="intro/image6.png" style="width:6.29167in;height:6.01042in" /></p>
 <h2>
-Az SAP számviteli felépítésének alapjai I.
+<strong>Az SAP számviteli felépítésének alapjai I.</strong>
 </h2>
 <p>Az SAP és szinte bármely kettős könyvvitelre alkalmas közép- és nagyvállalati rendszer párhuzamosan használja a szintetikát és az analitikát. Ezen a helyen nem célunk ezek tartalmát részletezni (lásd ezzel kapcsolatban: Takács &amp; Márkus, 2019), kizárólag alapszinten vázoljuk fel a leginkább fontosnak tartott szempontokat.</p>
 <p><strong>Az analitika általános ismérvei.</strong> A vagyonrészek részletes nyilvántartását részmodulok és segédkönyvek végzik, amelyek kapcsolatban állnak a szintetikus könyvelést végző főkönyvvel. A segédkönyvek a főkönyvbe, illetve a főkönyvi számlákra adnak fel rendszeresen értékeket. Az analitika feladata az egyes vagyonrészek részletes nyilvántartása, segédkönyvek / segédnaplók és segédszámlák használatával. Az analitikus elszámolás mennyiségben, értékben, illetve mennyiségben és értékben történhet. Alapszabály, „hogy az analitikus nyilvántartásnak mindig meg kell egyeznie a szintetikával, tekintettel arra, hogy a könyvelési adatok a szintetikába az analitikából kerülnek be feladások segítésével, kivéve azokat a gazdasági eseményeket, ahol nincsen szükség analitikus nyilvántartásra." (Lukács, 2016, 22. o.) Az analitikus nyilvántartás egyik segédeszköze a leltározás.</p>
 <p><strong>Az analitika feladata.</strong> Megállapítható, hogy „a számviteli információrendszer legfontosabb inputjai az elsődleges bizonylatok, melyek feldolgozását elsőként az analitikus nyilvántartás végzi el." (Takács &amp; Márkus, 2019, 92. o.) Az analitikához kapcsolódó segédkönyv feladata a bizonylatok érkeztetése, rögzítése és feldolgozása mellett a különböző szempontok szerint összeállított kimutatások előállítása. Lényeges, hogy az analitikát „nem egyetlen homogén rendszerként kell értelmezni, hanem különböző területeket átölelő alrendszerek halmazaként. Az analitika konkrét formájának és szerkezetének kialakítása a gazdálkodó egység hatásköre. A gyakorlati tapasztalatok alapján az analitika legalább a következő alrendszereket foglalja magában." (Takács &amp; Márkus, 2019, 92. o.)</p>
 <p>Takács András és Márkus Gábor munkája alapján megállapíthatjuk, hogy az elsődleges bizonylatok, illetve azok feldolgozása alapján az analitikus, részletező nyilvántartás a feladások alapján juttatja az érték szerinti adatokat a főkönyvnek. (Takács &amp; Márkus, 2019, 92. o.)</p>
-<p><img src="mm2/image1.png" style="width:5.45123in;height:3.9375in" /></p>
+<p><img src="intro/2/image1.png" style="width:5.45123in;height:3.9375in" /></p>
 <p><strong>Az alábbiakban a mérlegcsoportok („A" típusú mérlegösszeállítás) szerint haladunk.</strong> A bal oldali képernyőfelvétel a vagyonrész mérlegbesorolását, a jobb oldali a vagyonrészhez kapcsolódó analitikus nyilvántartást és segédkönyveket tartalmazó felhasználói modult tartalmazza.</p>
 <p><strong>A/I. és A/II.</strong> <strong>A befektetett eszközök közül az immateriális javak és a tárgyi eszköz</strong>ök könyvelését, adminisztrációját, értékcsökkenésének számítását, stb. a pénzügyi számvitel (Financial Accounting) modul tárgyi eszközök (Fixed Asset) részmodulban tudjuk elvégezni. Az SAP rendszer külön tartja nyilván a befejezetlen beruházás és a befektetett eszközök csoportjait. A befektetett eszközök tekintetében kiemelten lényeges az eszközök azonosító adatainak, bekerülési értékének (a költségek szétosztásának), az aktiválás időpontjának tárolása. Emellett meghatározó jelentőségű az értékcsökkenés számításának és az állományváltozásból adódó értékeknek a felvezetése a főkönyvi számlákra.</p>
-<p><img src="mm2/image2.png" style="width:6.30208in;height:3.04167in" /></p>
+<p><img src="intro/2/image2.png" style="width:6.30208in;height:3.04167in" /></p>
 <p>A szeminárium során nem vesszük a tárgyi eszközök modult, azonban két, SAP tanácsadó irodától származó magyar nyelvű leírásom, és egy angol nyelvű rendszerbeállítási monográfiával rendelkezem. A tárgyi eszköz könyvelésével összefüggésben van a beruházás menedzsment modul.</p>
-<p><img src="mm2/image3.png" style="width:6.30208in;height:3.6875in" /></p>
+<p><img src="intro/2/image3.png" style="width:6.30208in;height:3.6875in" /></p>
 <p><strong>A/II/1.</strong> <strong>A tárgyi eszköz közül az ingatlanok</strong> részletes könyvelését az ingatlankezelő modulok segítik (Real Estate Mgmt.; Flexible Real Estate Mgmt.).</p>
-<p><img src="mm2/image4.png" style="width:6.29167in;height:3.0625in" /></p>
+<p><img src="intro/2/image4.png" style="width:6.29167in;height:3.0625in" /></p>
 <p><strong>A/III. Befektetett pénzügy eszközöket (és a vállalat teljes pénzügyi rendszerét)</strong> a pénzügyi ellátás lánc modul (Financial Supply Chain Management), és annak részmoduljai, köztük a pénzügyi és kockázatkezelő modul (Treasury and Risk Management) támogatja. A modul kiemelten összetett, gyakorlatilag SAP az SAP-ban jellegű. Alapvető feladata a gazdasági szervezet hosszú- és rövid lejáratú követeléseinek és kötelezettségeinek, illetve az e mögött álló üzleti kapcsolatoknak a részletes nyilvántartása, menedzselése.</p>
-<p><img src="mm2/image5.png" style="width:6.29167in;height:6.9375in" /></p>
+<p><img src="intro/2/image5.png" style="width:6.29167in;height:6.9375in" /></p>
 <p>A befektetett pénzügyi eszközökben és a hosszú lejáratú kötelezettségben szereplő lízing nyilvántartását a lízing könyvelési (Lease Accounting) modul végzi.</p>
-<p><img src="mm2/image6.png" style="width:6.29167in;height:4.26042in" /></p>
+<p><img src="intro/2/image6.png" style="width:6.29167in;height:4.26042in" /></p>
 <p><strong>B/2. Forgóeszközökön belüli készleteket</strong>, a tárgyi eszközökre, és az 5-ös számlaosztályra is vonatkozó beszerzési folyamatokat az anyaggazdálkodás modul (Materials Management) kezeli. A modulban található Service Master viszont az 5-ös számlaosztály költségnemeire beszerezhető szolgáltatásokat tartalmazza.</p>
-<p><img src="mm2/image7.png" style="width:6.29167in;height:3.85417in" /></p>
+<p><img src="intro/2/image7.png" style="width:6.29167in;height:3.85417in" /></p>
 <p>Az analitikus feladatok elvégző modul legfontosabb feladata a vásárolt anyag- és árukészletekről részletező nyilvántartást vezetni. Erről a későbbiekben részletesen írunk.</p>
 <p><strong>B/IV. Pénzeszközök mindennapi</strong> könyvelési műveleteit a bank modul (Banks) tartalmazza. A modul a pénztár készpénzállományának, valamint a pénzintézeti bankszámlákat kezeli. Különösen lényeges a kimenő és bejövő utalások nyilvántartása, könyvelése, és a bankszámlakivonatok feldolgozása.</p>
-<p><img src="mm2/image8.png" style="width:6.29167in;height:3.0625in" /></p>
+<p><img src="intro/2/image8.png" style="width:6.29167in;height:3.0625in" /></p>
 <p><strong>B/II/1. Áruszállításból és szolgáltatásokból</strong> származó követelések analitikus nyilvántartását a vevői modulban (Account Receivable) vezetjük.</p>
-<p><img src="mm2/image9.png" style="width:6.29167in;height:3.13542in" /></p>
+<p><img src="intro/2/image9.png" style="width:6.29167in;height:3.13542in" /></p>
 <p><strong>F/III/4. Kötelezettségek \ Rövid lejáratú kötelezettségek \ Kötelezettségek áruszállításból és szolgáltatásból.</strong></p>
-<p><img src="mm2/image10.png" style="width:6.29167in;height:3.94792in" /></p>
+<p><img src="intro/2/image10.png" style="width:6.29167in;height:3.94792in" /></p>
 <p><strong>5-ös számlaosztályra</strong> a dolgozók bérét a bérszámfejtési modullal (Payroll) tudjuk előállítani.</p>
-<p><img src="mm2/image11.png" style="width:3.19792in;height:3.20833in" /></p>
+<p><img src="intro/2/image11.png" style="width:3.19792in;height:3.20833in" /></p>
 <p><strong>Az analitikus könyvelés</strong> fenti alrendszerei a számviteli törvényben rögzített egyedi értékelés elve szerint „minden egyes vagyonelemről egyedi, külön nyilvántartást vezet." Az SAP minden egyes vagyonelemről létrehoz egy nyilvántartólapot, amelyen a jogszabályokban meghatározott adatkörök szerepelnek, „az egyedi értékelés elve bizonyos esetekben sajtosan érvényesül, hiszen néhány speciális esetben (például készleteknél, tárgyi eszközöknél, vagy értékpapíroknál, ahol nagy mennyiségű, de teljesen azonos paraméterekkel rendelkező eszközről van szó) a csoportos nyilvántartás is megfelel az egyedi értékelés elvének." (Takács &amp; Márkus, 2019, 94. o.)</p>
 <p><strong>Szintetikus könyvelés.</strong> A segédkönyvekből és modulokból történő feladások alapján „a gazdasági események hatásai a szintetikus nyilvántartásban (szintetikában) is rögzítésre kerülnek. A szintetikus nyilvántartás gyakorlatilag a kettős könyvvitel szabályai szerinti könyvelést jelenti … A beszámoló összeállításának elsődleges információforrását a szintetika képezi, hiszen a legfontosabb kimutatások (a mérleg és az eredménykimutatás) a naprakész kettős könyvvitel információiból állíthatók össze. Ugyanakkor a beszámoló bizonyos részeinek (különösen a szöveges, tájékoztató jellegű részek) összeállításához nélkülözhetetlenek az analitikából származó eredeti adatok." (Takács &amp; Márkus, 2019, 91-92. o.) Fogalmi meghatározás szintjén megállapítható, hogy a <strong>„</strong>szintetika, azaz a főkönyvi nyilvántartás a kettős könyvviteli szabályok szerinti könyvelést, valamint az ehhez kapcsolódó összesítő-ellenőrző feladatokat foglalja magában. A szintetika szintjén minden növekedés és csökkenés pénzértéken kerül kimutatásra. Legfőbb feladata, hogy beszámolóban szereplő kimutatások összeállításához közvetlenül felhasználható információkat állítson elő. A szintetikus nyilvántartás csak akkor lehet korrekt, ha a háttérben pontos és naprakész analitikus adatok állnak rendelkezésre." (Takács &amp; Márkus, 2019, 96. o.) Forrását tekintve megállapítható, hogy A zárlati teendők után a szintetika és az analitika együttesen már képes a beszámoló elkészítéséhez igényelt valamennyi információt szolgáltatni. Adatforrását tekintve megállapítható, hogy a „szintetika információbázisát … az analitikából érkező feladások képezik. A feladások alapján a gazdasági események folyamatosan rögzítésre kerülnek, számlasoros és idősoros könyvelés formájában is. Az évközi könyvelést az üzleti év végén a könyvviteli zárlat teszi teljessé. A könyvviteli zárlat magában foglalja különböző év végi rendező/pontosító tételek elszámolását, összesítő kimutatások elkészítését, valamint a technikai zárást. A zárlati teendők után a szintetika és az analitika együttesen már képes a beszámoló elkészítéséhez igényelt valamennyi információt szolgáltatni.</p>
 <p><strong>SAP rendszerben a szintetikus könyvelés</strong> részeként főkönyvi számlák között értékeket a főkönyvi modulban tudunk mozgatni, illetve szintén a főkönyvi modulban tudunk kimutatásokat készíteni.</p>
-<p><img src="mm2/image12.png" style="width:4.45833in;height:2.47917in" /></p>
+<p><img src="intro/2/image12.png" style="width:4.45833in;height:2.47917in" /></p>
 <div class="layout-chunk" data-layout="l-body">
 <embed src="geo_.pdf" width="100%" height="800px" type="application/pdf" />
 </div>
@@ -2658,8 +2533,6 @@ var toc = $("#toc").tocify({
 selectors: "h2,h3,h4,h5"
 }).data("toc-tocify");
 
-prettyPrint();
-$(".optionName").popover({ trigger: "hover" });
 
 });
 </script>

@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 </div>
 
 
-<h2>Bevezetés</h2>
+<h2>**Bevezetés**</h2>
 
 **Köszönetnyilvánítás.** A tantárgy a Pécsi Tudományegyetem
 Természettudományi Kar, a PTE TTK Szentágothai Szakkollégium és a
@@ -277,7 +277,7 @@ height="6.010416666666667in"}
 
 
 
-<h2>Az SAP számviteli felépítésének alapjai I.</h2>
+<h2>**Az SAP számviteli felépítésének alapjai I.**</h2>
 
 
 
@@ -319,7 +319,7 @@ elsődleges bizonylatok, illetve azok feldolgozása alapján az analitikus,
 részletező nyilvántartás a feladások alapján juttatja az érték szerinti
 adatokat a főkönyvnek. (Takács & Márkus, 2019, 92. o.)
 
-![](mm2\image1.png){width="5.45123031496063in"
+![](intro\2\image1.png){width="5.45123031496063in"
 height="3.9375in"}
 
 **Az alábbiakban a mérlegcsoportok („A" típusú mérlegösszeállítás)
@@ -340,7 +340,7 @@ időpontjának tárolása. Emellett meghatározó jelentőségű az
 értékcsökkenés számításának és az állományváltozásból adódó értékeknek a
 felvezetése a főkönyvi számlákra.
 
-![](mm2\image2.png){width="6.302083333333333in"
+![](intro\2\image2.png){width="6.302083333333333in"
 height="3.0416666666666665in"}
 
 A szeminárium során nem vesszük a tárgyi eszközök modult, azonban két,
@@ -348,14 +348,14 @@ SAP tanácsadó irodától származó magyar nyelvű leírásom, és egy angol
 nyelvű rendszerbeállítási monográfiával rendelkezem. A tárgyi eszköz
 könyvelésével összefüggésben van a beruházás menedzsment modul.
 
-![](mm2\image3.png){width="6.302083333333333in"
+![](intro\2\image3.png){width="6.302083333333333in"
 height="3.6875in"}
 
 **A/II/1.** **A tárgyi eszköz közül az ingatlanok** részletes
 könyvelését az ingatlankezelő modulok segítik (Real Estate Mgmt.;
 Flexible Real Estate Mgmt.).
 
-![](mm2\image4.png){width="6.291666666666667in"
+![](intro\2\image4.png){width="6.291666666666667in"
 height="3.0625in"}
 
 **A/III. Befektetett pénzügy eszközöket (és a vállalat teljes pénzügyi
@@ -367,14 +367,14 @@ gazdasági szervezet hosszú- és rövid lejáratú követeléseinek és
 kötelezettségeinek, illetve az e mögött álló üzleti kapcsolatoknak a
 részletes nyilvántartása, menedzselése.
 
-![](mm2\image5.png){width="6.291666666666667in"
+![](intro\2\image5.png){width="6.291666666666667in"
 height="6.9375in"}
 
 A befektetett pénzügyi eszközökben és a hosszú lejáratú kötelezettségben
 szereplő lízing nyilvántartását a lízing könyvelési (Lease Accounting)
 modul végzi.
 
-![](mm2\image6.png){width="6.291666666666667in"
+![](intro\2\image6.png){width="6.291666666666667in"
 height="4.260416666666667in"}
 
 **B/2. Forgóeszközökön belüli készleteket**, a tárgyi eszközökre, és az
@@ -383,7 +383,7 @@ anyaggazdálkodás modul (Materials Management) kezeli. A modulban
 található Service Master viszont az 5-ös számlaosztály költségnemeire
 beszerezhető szolgáltatásokat tartalmazza.
 
-![](mm2\image7.png){width="6.291666666666667in"
+![](intro\2\image7.png){width="6.291666666666667in"
 height="3.8541666666666665in"}
 
 Az analitikus feladatok elvégző modul legfontosabb feladata a vásárolt
@@ -396,26 +396,26 @@ pénzintézeti bankszámlákat kezeli. Különösen lényeges a kimenő és bej�
 utalások nyilvántartása, könyvelése, és a bankszámlakivonatok
 feldolgozása.
 
-![](mm2\image8.png){width="6.291666666666667in"
+![](intro\2\image8.png){width="6.291666666666667in"
 height="3.0625in"}
 
 **B/II/1. Áruszállításból és szolgáltatásokból** származó követelések
 analitikus nyilvántartását a vevői modulban (Account Receivable)
 vezetjük.
 
-![](mm2\image9.png){width="6.291666666666667in"
+![](intro\2\image9.png){width="6.291666666666667in"
 height="3.1354166666666665in"}
 
 **F/III/4. Kötelezettségek \\ Rövid lejáratú kötelezettségek \\
 Kötelezettségek áruszállításból és szolgáltatásból.**
 
-![](mm2\image10.png){width="6.291666666666667in"
+![](intro\2\image10.png){width="6.291666666666667in"
 height="3.9479166666666665in"}
 
 **5-ös számlaosztályra** a dolgozók bérét a bérszámfejtési modullal
 (Payroll) tudjuk előállítani.
 
-![](mm2\image11.png){width="3.1979166666666665in"
+![](intro\2\image11.png){width="3.1979166666666665in"
 height="3.2083333333333335in"}
 
 **Az analitikus könyvelés** fenti alrendszerei a számviteli törvényben
@@ -466,7 +466,7 @@ információt szolgáltatni.
 között értékeket a főkönyvi modulban tudunk mozgatni, illetve szintén a
 főkönyvi modulban tudunk kimutatásokat készíteni.
 
-![](mm2\image12.png){width="4.458333333333333in"
+![](intro\2\image12.png){width="4.458333333333333in"
 height="2.4791666666666665in"}
 
 
@@ -490,8 +490,6 @@ var toc = $("#toc").tocify({
 selectors: "h2,h3,h4,h5"
 }).data("toc-tocify");
 
-prettyPrint();
-$(".optionName").popover({ trigger: "hover" });
 
 });
 </script>
