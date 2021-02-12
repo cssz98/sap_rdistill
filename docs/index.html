@@ -2397,8 +2397,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="nav-left">
 <a href="index.html" class="title">SAP E-Study Guide</a>
 <a href="index.html">Introduction</a>
-<a href="materials_managment.html">Materials Managment</a>
-<a href="ewm.html">Extended Warehouse Managment</a>
 <a href="fin.html">Financial Accounting</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
@@ -2486,7 +2484,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="intro/image5.png" style="width:4.54791in;height:4.02083in" /></p>
 <p><img src="intro/image6.png" style="width:6.29167in;height:6.01042in" /></p>
 <h2>
-<strong>Az SAP számviteli felépítésének alapjai I.</strong>
+<strong>SAP számviteli felépítésének alapjai I.</strong>
 </h2>
 <p>Az SAP és szinte bármely kettős könyvvitelre alkalmas közép- és nagyvállalati rendszer párhuzamosan használja a szintetikát és az analitikát. Ezen a helyen nem célunk ezek tartalmát részletezni (lásd ezzel kapcsolatban: Takács &amp; Márkus, 2019), kizárólag alapszinten vázoljuk fel a leginkább fontosnak tartott szempontokat.</p>
 <p><strong>Az analitika általános ismérvei.</strong> A vagyonrészek részletes nyilvántartását részmodulok és segédkönyvek végzik, amelyek kapcsolatban állnak a szintetikus könyvelést végző főkönyvvel. A segédkönyvek a főkönyvbe, illetve a főkönyvi számlákra adnak fel rendszeresen értékeket. Az analitika feladata az egyes vagyonrészek részletes nyilvántartása, segédkönyvek / segédnaplók és segédszámlák használatával. Az analitikus elszámolás mennyiségben, értékben, illetve mennyiségben és értékben történhet. Alapszabály, „hogy az analitikus nyilvántartásnak mindig meg kell egyeznie a szintetikával, tekintettel arra, hogy a könyvelési adatok a szintetikába az analitikából kerülnek be feladások segítésével, kivéve azokat a gazdasági eseményeket, ahol nincsen szükség analitikus nyilvántartásra." (Lukács, 2016, 22. o.) Az analitikus nyilvántartás egyik segédeszköze a leltározás.</p>
@@ -2521,6 +2519,84 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="intro/2/image12.png" style="width:4.45833in;height:2.47917in" /></p>
 <div class="layout-chunk" data-layout="l-body">
 <embed src="geo_.pdf" width="100%" height="800px" type="application/pdf" />
+</div>
+<h2>
+<strong><u>SAP használat alapjai</u></strong>
+</h2>
+<p>A PTE Természettudományi Kar, illetve a szeminárium keretében elérhető SAP ERP R/3-as rendszerben az alábbi modulok, illetve az azokhoz kapcsolódó tranzakciók érhetők el Super User megközelítésben, tehát teljes funkcionalitásukban (felhasználói és rendszerbeállítási szinten).</p>
+<figure>
+<img src="intro_sapbasics/media/image1.jpeg" style="width:6.3in;height:4.29718in" alt="Képtalálatok a következőre: SAP modules" /><figcaption aria-hidden="true">Képtalálatok a következőre: SAP modules</figcaption>
+</figure>
+<p>. ábra Forrás: <a href="https://www.hipfunggroup.com/sap-erp-system/" class="uri">https://www.hipfunggroup.com/sap-erp-system/</a> (2021. 02. 10.)</p>
+<p>Ezekből a modulokból a Materials Management, a Financial Accounting és a Controlling modulok részmoduljaiba tartozó tranzakciókat fogjuk használni.</p>
+<p>Az egyes modulokba tartozó tranzakciók, intéző nézetben elérhető mappákban (Folder) vannak tárolva.</p>
+<p><img src="intro_sapbasics/media/image2.png" style="width:6.30208in;height:6.86458in" /></p>
+<p>Felmerülhet a kérdés, hogy az adott specializált SAP-s munkakörök milyen összefüggésben vannak az elérhető mappákkal és tranzakciókkal. A kérdéssel kapcsolatban megállapítható, hogy a munkakörök és az azokban lévő feladatok nagy mértékben meghatározzák az intéző menüpont tartalmi felépítését. Ezt az Other menu kapcsolóval, illetve szerepek megadásával lehet szemléltetni.</p>
+<p><img src="intro_sapbasics/media/image3.png" style="width:6.30208in;height:0.78125in" /></p>
+<p><strong><u>AIS_APAY_CLERK_US00 Szállítói számla könyvelő</u></strong></p>
+<p><img src="intro_sapbasics/media/image4.png" style="width:6.29167in;height:2.67708in" /></p>
+<p><strong><u>Role VS:: AIS_AR_CLERK_US00 Vevői számla könyvelő</u></strong></p>
+<p><img src="intro_sapbasics/media/image5.png" style="width:6.30208in;height:2.67708in" /></p>
+<p><strong><u>Role VS::FI_AA_ASSET_TRANSACTIONS Tárgyi eszköz könyvelő</u></strong></p>
+<p><img src="intro_sapbasics/media/image6.png" style="width:6.29167in;height:4.4375in" /></p>
+<p>Ezek és az ezekhez hasonló szerepek jogosultságokban tárgyiasulnak. Adott felhasználók jogosultságcsoporthoz tartoznak, és kizárólag a munkakörök szempontjából releváns mappákat láthatják, illetve a feladataikhoz szükséges tranzakciókat használhatják.</p>
+<p><strong><u>Intézőnézet felépítése:</u></strong></p>
+<p><img src="intro_sapbasics/media/image7.png" style="width:6.3in;height:5.95486in" /></p>
+<p>Az intézőből tranzakciók érhetőek el. A tranzakciók mezőkből felépített űrlapokat tartalmaznak. Az egyes mezők és azok értékei pedig adattáblákban helyezkednek el. A tranzakciók jellegük és tartalmuk alapján különböző típusba sorolhatók. Az alábbiakban a törzsadatokra és a folyamatokra vonatkozó tranzakciók között teszünk különbséget.</p>
+<p><strong>Törzsadatok (Master Data):</strong> SAP rendszerben (és más vállalatirányítási rendszerekben) a törzsadatok jellemzően az üzleti folyamatok konstans, nagyrészt állandó jellegű objektumaihoz kapcsolódnak. A törzsadatok értékei általában hosszú időtávra vonatkoznak, és összességükben ritkán változnak. Informatikai értelemben egy-egy objektumosztályba sorolható objektum tulajdonságait írják le. Jellemző törzsek lehetnek a szállítók, vevők, üzleti partnerek, bankfiókok, készletbe tartozó anyagok, áruk, a befektetett eszközök közé sorolható immateriális javak, tárgyi eszközök, befektetett pénzügyi eszközök. A törzsadatokkal az alábbi műveletekre van lehetőség: egyedi felvitel, egyedi megtekintés, egyedi módosítás, módosítások egyedi és tömeges megtekintése, táblázatszerű tömeges megtekintés és módosítás, listaszerű riportok. Ezeket a funkciókat az alábbi táblázat tartalmazza rendszerezetten:</p>
+<p><img src="intro_sapbasics/media/image8.png" style="width:6.30208in;height:3.47917in" /></p>
+<p>. ábra Saját szerkesztés (Lendvai Tamás)</p>
+<p>Amint a szöveges részben is írtuk, illetve a 2-es számú táblázatból is látható, az egyes törzsadatokra vonatkozó tranzakciók sematikusak, sablonosak abban a tekintetben, hogy a létrehozás (Create), a módosítás (Change), a megtekintés (Display), a változások egyedi megtekintése (Display Changes), tömeges megtekintés és karbantartás (Mass Maintance) és a listariportok (List Ereport) valamennyiükre vonatkoznak.</p>
+<p><strong>Folyamatadatok (Process Transaction):</strong></p>
+<p>Kidolgozás alatt</p>
+<p>A <strong>félvés első részében</strong> a fenti táblázatban szereplő törzsadatokra vonatkozó alapműveletek alapszintű használatát fogjuk elsajátítani.</p>
+<p><strong><u>Kezdő feladat:</u></strong></p>
+<p><img src="intro_sapbasics/media/image9.png" style="width:6.30208in;height:0.71875in" /></p>
+<p>Az első feladatunkban fel kell vinni (FI02), meg kell tekinteni (FI03, S_P00_07000008), és riportálni kell bankfiókadatokat. Bankfiókadatokra a szállítók, vevők, és az üzleti partnerek törzsadataiban lesz szükség. Bankfiókadatok nélkül nem tudunk rögzíteni bankszámlaszámot.</p>
+<p><strong>1. Lépés:</strong> Other menu \ SAP_FI_BL_BANK_MASTER_DATA (másoljuk ki) Maintaining Bank Master Data</p>
+<p>Az 1. lépés megtétele opcionális, és ki lehet keresni a tranzakciókat a szokásos elérés alapján is. A role kiválasztását azért tartjuk lényegesnek, mert így látni lehet, hogy adott SAP-s munkakörök milyen jellemző feladatokat tartalmaznak, illetve világossá válik a szerepek és az intéző nézet közötti összefüggés.</p>
+<p><img src="intro_sapbasics/media/image10.png" style="width:6.30208in;height:2.5625in" /></p>
+<p><img src="intro_sapbasics/media/image11.png" style="width:3.44163in;height:1.72917in" /></p>
+<p><img src="intro_sapbasics/media/image12.png" style="width:4.08333in;height:3.70991in" /></p>
+<p>A szerep kiválasztásának hatására az intézőben kizárólag a bankfiók törzsadataival összefüggésben lévő műveletek találjuk meg.</p>
+<p><strong><u>2. Lépés: Hozzunk létre egy új bankfiók törzsadatot (FI01)</u></strong></p>
+<p>Amennyiben nem a szerepek kiválasztásával kívánjuk limitálni a listát, úgy a banki törzsekre vonatkozó tranzakciók elérhetők az alábbi úton is.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_gif/Bank_route.gif" style="display: block; margin: auto;" /></p>
+</div>
+<p><strong>Az elérhető tranzakciók közül az alábbiak használatát tekintjük át.</strong></p>
+<p><img src="intro_sapbasics/media/image13.png" style="width:6.29167in;height:1in" /></p>
+<p>A törzsadatok feltöltéséhez nyissuk meg az alábbi táblázatot:</p>
+<p>A feladat a következő. Mindenki talál a neve mellett olyan banki adatokat, amelyek nem szerepelnek még az SAP adatbázisban. Nyissuk meg az FI01-es tranzakciót, és elsőként adjuk meg az országot HU, majd az A oszlopban található 8 számból álló bankfiók kódot (Branch office code) Bank Key-ként, majd enter.</p>
+<p><img src="intro_sapbasics/media/image14.png" style="width:2.40945in;height:1.125in" /></p>
+<p>Ezt követően értelemszerűen töltsük ki az űrlapot.</p>
+<p><img src="intro_sapbasics/media/image15.png" style="width:6.3in;height:5.14413in" /></p>
+<p>Ezt követően kattintsunk a lemez ikonra és mentsük el. Fogunk kapni egy értesítés a bal alsó sarokban, hogy sikerült a mentés.</p>
+<p><img src="intro_sapbasics/media/image16.png" style="width:2.29167in;height:0.45833in" /></p>
+<p><strong>FI02 - Módosítás</strong></p>
+<p><img src="intro_sapbasics/media/image17.png" style="width:6.30208in;height:1in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_gif/FI02_Change.gif" style="display: block; margin: auto;" /></p>
+</div>
+<p><strong>FI03 – Megtekintés (Display)</strong></p>
+<p><img src="intro_sapbasics/media/image18.png" style="width:6.29167in;height:1.03125in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_gif/FI03_Display.gif" style="display: block; margin: auto;" /></p>
+</div>
+<p><strong>FI04 Változások egyedi megtekintése (Display Changes)</strong></p>
+<p><img src="intro_sapbasics/media/image19.png" style="width:6.29167in;height:1.05208in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_gif/FI04_Display_Changes.gif" style="display: block; margin: auto;" /></p>
+</div>
+<p><strong>S_P00_07000008 – Változások tömeges megtekintése (Display of Bank Changes)</strong></p>
+<p><img src="intro_sapbasics/media/image20.png" style="width:6.29167in;height:1.10417in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_gif/S_P00_07000008_Display_of_Bank_Changes.gif" style="display: block; margin: auto;" /></p>
+</div>
+<p><strong>S_P99_41000166 – Bankok listaszerű lekérdezése (Display Bank Directory)</strong></p>
+<p><img src="intro_sapbasics/media/image21.png" style="width:6.30208in;height:1.03125in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_gif/Display_Bank_Directory.gif" style="display: block; margin: auto;" /></p>
 </div>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery-ui-1.9.1.custom.min.js"></script>

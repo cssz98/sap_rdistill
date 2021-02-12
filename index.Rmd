@@ -277,7 +277,7 @@ height="6.010416666666667in"}
 
 
 
-<h2>**Az SAP számviteli felépítésének alapjai I.**</h2>
+<h2>**SAP számviteli felépítésének alapjai I.**</h2>
 
 
 
@@ -476,6 +476,243 @@ height="2.4791666666666665in"}
 ```{r out.height = "800px", out.width='100%'}
 knitr::include_graphics("geo_.pdf")
 ```
+
+
+
+
+<h2>**[SAP használat alapjai]{.ul}**</h2>
+
+A PTE Természettudományi Kar, illetve a szeminárium keretében elérhető
+SAP ERP R/3-as rendszerben az alábbi modulok, illetve az azokhoz
+kapcsolódó tranzakciók érhetők el Super User megközelítésben, tehát
+teljes funkcionalitásukban (felhasználói és rendszerbeállítási szinten).
+
+![Képtalálatok a következőre: SAP
+modules](intro_sapbasics\media\image1.jpeg){width="6.3in"
+height="4.297182852143482in"}
+
+. ábra Forrás: https://www.hipfunggroup.com/sap-erp-system/ (2021. 02.
+10.)
+
+Ezekből a modulokból a Materials Management, a Financial Accounting és a
+Controlling modulok részmoduljaiba tartozó tranzakciókat fogjuk
+használni.
+
+Az egyes modulokba tartozó tranzakciók, intéző nézetben elérhető
+mappákban (Folder) vannak tárolva.
+
+![](intro_sapbasics\media\image2.png){width="6.302083333333333in"
+height="6.864583333333333in"}
+
+Felmerülhet a kérdés, hogy az adott specializált SAP-s munkakörök milyen
+összefüggésben vannak az elérhető mappákkal és tranzakciókkal. A
+kérdéssel kapcsolatban megállapítható, hogy a munkakörök és az azokban
+lévő feladatok nagy mértékben meghatározzák az intéző menüpont tartalmi
+felépítését. Ezt az Other menu kapcsolóval, illetve szerepek megadásával
+lehet szemléltetni.
+
+![](intro_sapbasics\media\image3.png){width="6.302083333333333in"
+height="0.78125in"}
+
+**[AIS_APAY_CLERK_US00 Szállítói számla könyvelő]{.ul}**
+
+![](intro_sapbasics\media\image4.png){width="6.291666666666667in"
+height="2.6770833333333335in"}
+
+**[Role VS:: AIS_AR_CLERK_US00 Vevői számla könyvelő]{.ul}**
+
+![](intro_sapbasics\media\image5.png){width="6.302083333333333in"
+height="2.6770833333333335in"}
+
+**[Role VS::FI_AA_ASSET_TRANSACTIONS Tárgyi eszköz könyvelő]{.ul}**
+
+![](intro_sapbasics\media\image6.png){width="6.291666666666667in"
+height="4.4375in"}
+
+Ezek és az ezekhez hasonló szerepek jogosultságokban tárgyiasulnak.
+Adott felhasználók jogosultságcsoporthoz tartoznak, és kizárólag a
+munkakörök szempontjából releváns mappákat láthatják, illetve a
+feladataikhoz szükséges tranzakciókat használhatják.
+
+**[Intézőnézet felépítése:]{.ul}**
+
+![](intro_sapbasics\media\image7.png){width="6.3in"
+height="5.954861111111111in"}
+
+Az intézőből tranzakciók érhetőek el. A tranzakciók mezőkből felépített
+űrlapokat tartalmaznak. Az egyes mezők és azok értékei pedig
+adattáblákban helyezkednek el. A tranzakciók jellegük és tartalmuk
+alapján különböző típusba sorolhatók. Az alábbiakban a törzsadatokra és
+a folyamatokra vonatkozó tranzakciók között teszünk különbséget.
+
+**Törzsadatok (Master Data):** SAP rendszerben (és más
+vállalatirányítási rendszerekben) a törzsadatok jellemzően az üzleti
+folyamatok konstans, nagyrészt állandó jellegű objektumaihoz
+kapcsolódnak. A törzsadatok értékei általában hosszú időtávra
+vonatkoznak, és összességükben ritkán változnak. Informatikai értelemben
+egy-egy objektumosztályba sorolható objektum tulajdonságait írják le.
+Jellemző törzsek lehetnek a szállítók, vevők, üzleti partnerek,
+bankfiókok, készletbe tartozó anyagok, áruk, a befektetett eszközök közé
+sorolható immateriális javak, tárgyi eszközök, befektetett pénzügyi
+eszközök. A törzsadatokkal az alábbi műveletekre van lehetőség: egyedi
+felvitel, egyedi megtekintés, egyedi módosítás, módosítások egyedi és
+tömeges megtekintése, táblázatszerű tömeges megtekintés és módosítás,
+listaszerű riportok. Ezeket a funkciókat az alábbi táblázat tartalmazza
+rendszerezetten:
+
+![](intro_sapbasics\media\image8.png){width="6.302083333333333in"
+height="3.4791666666666665in"}
+
+. ábra Saját szerkesztés (Lendvai Tamás)
+
+Amint a szöveges részben is írtuk, illetve a 2-es számú táblázatból is
+látható, az egyes törzsadatokra vonatkozó tranzakciók sematikusak,
+sablonosak abban a tekintetben, hogy a létrehozás (Create), a módosítás
+(Change), a megtekintés (Display), a változások egyedi megtekintése
+(Display Changes), tömeges megtekintés és karbantartás (Mass Maintance)
+és a listariportok (List Ereport) valamennyiükre vonatkoznak.
+
+**Folyamatadatok (Process Transaction):**
+
+Kidolgozás alatt
+
+A **félvés első részében** a fenti táblázatban szereplő törzsadatokra
+vonatkozó alapműveletek alapszintű használatát fogjuk elsajátítani.
+
+**[Kezdő feladat:]{.ul}**
+
+![](intro_sapbasics\media\image9.png){width="6.302083333333333in"
+height="0.71875in"}
+
+Az első feladatunkban fel kell vinni (FI02), meg kell tekinteni (FI03,
+S_P00_07000008), és riportálni kell bankfiókadatokat. Bankfiókadatokra a
+szállítók, vevők, és az üzleti partnerek törzsadataiban lesz szükség.
+Bankfiókadatok nélkül nem tudunk rögzíteni bankszámlaszámot.
+
+**1. Lépés:** Other menu \\ SAP_FI_BL_BANK_MASTER_DATA (másoljuk ki)
+Maintaining Bank Master Data
+
+Az 1. lépés megtétele opcionális, és ki lehet keresni a tranzakciókat a
+szokásos elérés alapján is. A role kiválasztását azért tartjuk
+lényegesnek, mert így látni lehet, hogy adott SAP-s munkakörök milyen
+jellemző feladatokat tartalmaznak, illetve világossá válik a szerepek és
+az intéző nézet közötti összefüggés.
+
+![](intro_sapbasics\media\image10.png){width="6.302083333333333in"
+height="2.5625in"}
+
+![](intro_sapbasics\media\image11.png){width="3.441626202974628in"
+height="1.7291666666666667in"}
+
+![](intro_sapbasics\media\image12.png){width="4.083333333333333in"
+height="3.709909230096238in"}
+
+A szerep kiválasztásának hatására az intézőben kizárólag a bankfiók
+törzsadataival összefüggésben lévő műveletek találjuk meg.
+
+**[2. Lépés: Hozzunk létre egy új bankfiók törzsadatot (FI01)]{.ul}**
+
+Amennyiben nem a szerepek kiválasztásával kívánjuk limitálni a listát,
+úgy a banki törzsekre vonatkozó tranzakciók elérhetők az alábbi úton is.
+
+
+
+```{r,dpi=50,fig.align='center'}
+knitr::include_graphics("intro_gif/Bank_route.gif")
+```
+
+
+**Az elérhető tranzakciók közül az alábbiak használatát tekintjük át.**
+
+![](intro_sapbasics\media\image13.png){width="6.291666666666667in"
+height="1.0in"}
+
+A törzsadatok feltöltéséhez nyissuk meg az alábbi táblázatot:
+
+A feladat a következő. Mindenki talál a neve mellett olyan banki
+adatokat, amelyek nem szerepelnek még az SAP adatbázisban. Nyissuk meg
+az FI01-es tranzakciót, és elsőként adjuk meg az országot HU, majd az A
+oszlopban található 8 számból álló bankfiók kódot (Branch office code)
+Bank Key-ként, majd enter.
+
+![](intro_sapbasics\media\image14.png){width="2.409448818897638in"
+height="1.125in"}
+
+Ezt követően értelemszerűen töltsük ki az űrlapot.
+
+![](intro_sapbasics\media\image15.png){width="6.3in"
+height="5.144132764654418in"}
+
+Ezt követően kattintsunk a lemez ikonra és mentsük el. Fogunk kapni egy
+értesítés a bal alsó sarokban, hogy sikerült a mentés.
+
+![](intro_sapbasics\media\image16.png){width="2.2916666666666665in"
+height="0.4583333333333333in"}
+
+**FI02 - Módosítás**
+
+![](intro_sapbasics\media\image17.png){width="6.302083333333333in"
+height="1.0in"}
+
+```{r,dpi=50,fig.align='center'}
+knitr::include_graphics("intro_gif/FI02_Change.gif")
+```
+
+
+
+**FI03 -- Megtekintés (Display)**
+
+![](intro_sapbasics\media\image18.png){width="6.291666666666667in"
+height="1.03125in"}
+
+```{r,dpi=50,fig.align='center'}
+knitr::include_graphics("intro_gif/FI03_Display.gif")
+```
+
+
+**FI04 Változások egyedi megtekintése (Display Changes)**
+
+![](intro_sapbasics\media\image19.png){width="6.291666666666667in"
+height="1.0520833333333333in"}
+
+```{r,dpi=50,fig.align='center'}
+knitr::include_graphics("intro_gif/FI04_Display_Changes.gif")
+```
+
+
+**S_P00_07000008 -- Változások tömeges megtekintése (Display of Bank
+Changes)**
+
+![](intro_sapbasics\media\image20.png){width="6.291666666666667in"
+height="1.1041666666666667in"}
+
+
+```{r,dpi=50,fig.align='center'}
+knitr::include_graphics("intro_gif/S_P00_07000008_Display_of_Bank_Changes.gif")
+```
+
+
+
+**S_P99_41000166 -- Bankok listaszerű lekérdezése (Display Bank
+Directory)**
+
+![](intro_sapbasics\media\image21.png){width="6.302083333333333in"
+height="1.03125in"}
+
+
+```{r,dpi=50,fig.align='center'}
+knitr::include_graphics("intro_gif/Display_Bank_Directory.gif")
+```
+
+
+
+
+
+
+
+
+
+
 
 
 

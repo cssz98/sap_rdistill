@@ -6,10 +6,6 @@ navbar:
   left:
   - text: Introduction
     href: index.html
-  - text: Materials Managment
-    href: materials_managment.html
-  - text: Extended Warehouse Managment
-    href: ewm.html
   - text: Financial Accounting
     href: fin.html
 output: 

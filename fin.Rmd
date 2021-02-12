@@ -483,8 +483,3 @@ potenciálisan felülmúlják a megszerzett ismeretek előnyeit.
 height="3.7395833333333335in"}
 
 
-
-
-```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("Bank_route.gif")
-```
