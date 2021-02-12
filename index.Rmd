@@ -516,13 +516,6 @@ height="2.4791666666666665in"}
 
 
 
-```{r out.height = "800px", out.width='100%'}
-knitr::include_graphics("geo_.pdf")
-```
-
-
-
-
 <h2>**[SAP használat alapjai]{.ul}**</h2>
 
 A PTE Természettudományi Kar, illetve a szeminárium keretében elérhető

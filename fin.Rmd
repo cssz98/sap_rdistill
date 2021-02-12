@@ -21,6 +21,15 @@ knitr::opts_chunk$set(echo = FALSE)
 </div>
 
 
+
+
+```{r out.height = "800px", out.width='100%'}
+knitr::include_graphics("geo_.pdf")
+```
+
+
+
+
 <h2>**[Pénzügyi és vezetői számviteli környezet felépítése SAP-ban]{.ul}**</h2>
 
 
