@@ -184,10 +184,10 @@ feldolgozóipari nagyvállalatok területi elhelyezkedése és adatbázisa.**
 knitr::include_url("https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b")
 ```
 
+<figcaption>https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b (2021. 02. 04.)</figcaption>
 
 
-**<https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b>**
-(2021. 02. 04.)
+
 
 **A tantárgy megközelítése és feldolgozása.** A szeminárium felhasználói
 megközelítésben dolgozza fel a beszerzési folyamatok és a szállítói
@@ -255,24 +255,31 @@ be lehet kerülni, és egy multis karriert lehet megalapozni vele.
 
 **Néhány feldolgozóipari beszerzési munkakör:**
 
-![](intro\image2.png){width="6.291666666666667in"
-height="3.8333333333333335in"}
 
-![](intro\image3.png){width="6.291666666666667in"
-height="3.3020833333333335in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/image2.png")
+```
 
-![](intro\image4.png){width="6.291666666666667in"
-height="4.270833333333333in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/image3.png")
+```
+
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/image4.png")
+```
 
 **Néhány kiszervezett (Shared Service) munkakörre vonatkozó olyan
 álláshirdetés, amely a beszerzés és a szállítói modul tartalmát fedi
-le.**
+le. **
 
-![](intro\image5.png){width="4.547909011373578in"
-height="4.020833333333333in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/image5.png")
+```
 
-![](intro\image6.png){width="6.291666666666667in"
-height="6.010416666666667in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/image6.png")
+```
 
 
 
@@ -319,8 +326,12 @@ elsődleges bizonylatok, illetve azok feldolgozása alapján az analitikus,
 részletező nyilvántartás a feladások alapján juttatja az érték szerinti
 adatokat a főkönyvnek. (Takács & Márkus, 2019, 92. o.)
 
-![](intro\2\image1.png){width="5.45123031496063in"
-height="3.9375in"}
+
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/2/image1.png")
+```
+
 
 **Az alábbiakban a mérlegcsoportok („A" típusú mérlegösszeállítás)
 szerint haladunk.** A bal oldali képernyőfelvétel a vagyonrész
@@ -340,23 +351,29 @@ időpontjának tárolása. Emellett meghatározó jelentőségű az
 értékcsökkenés számításának és az állományváltozásból adódó értékeknek a
 felvezetése a főkönyvi számlákra.
 
-![](intro\2\image2.png){width="6.302083333333333in"
-height="3.0416666666666665in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/2/image2.png")
+```
+
 
 A szeminárium során nem vesszük a tárgyi eszközök modult, azonban két,
 SAP tanácsadó irodától származó magyar nyelvű leírásom, és egy angol
 nyelvű rendszerbeállítási monográfiával rendelkezem. A tárgyi eszköz
 könyvelésével összefüggésben van a beruházás menedzsment modul.
 
-![](intro\2\image3.png){width="6.302083333333333in"
-height="3.6875in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/2/image3.png")
+```
+
 
 **A/II/1.** **A tárgyi eszköz közül az ingatlanok** részletes
 könyvelését az ingatlankezelő modulok segítik (Real Estate Mgmt.;
 Flexible Real Estate Mgmt.).
 
-![](intro\2\image4.png){width="6.291666666666667in"
-height="3.0625in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/2/image4.png")
+```
+
 
 **A/III. Befektetett pénzügy eszközöket (és a vállalat teljes pénzügyi
 rendszerét)** a pénzügyi ellátás lánc modul (Financial Supply Chain
@@ -367,15 +384,19 @@ gazdasági szervezet hosszú- és rövid lejáratú követeléseinek és
 kötelezettségeinek, illetve az e mögött álló üzleti kapcsolatoknak a
 részletes nyilvántartása, menedzselése.
 
-![](intro\2\image5.png){width="6.291666666666667in"
-height="6.9375in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/2/image5.png")
+```
+
 
 A befektetett pénzügyi eszközökben és a hosszú lejáratú kötelezettségben
 szereplő lízing nyilvántartását a lízing könyvelési (Lease Accounting)
 modul végzi.
 
-![](intro\2\image6.png){width="6.291666666666667in"
-height="4.260416666666667in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/2/image6.png")
+```
+
 
 **B/2. Forgóeszközökön belüli készleteket**, a tárgyi eszközökre, és az
 5-ös számlaosztályra is vonatkozó beszerzési folyamatokat az
@@ -383,8 +404,9 @@ anyaggazdálkodás modul (Materials Management) kezeli. A modulban
 található Service Master viszont az 5-ös számlaosztály költségnemeire
 beszerezhető szolgáltatásokat tartalmazza.
 
-![](intro\2\image7.png){width="6.291666666666667in"
-height="3.8541666666666665in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/2/image7.png")
+```
 
 Az analitikus feladatok elvégző modul legfontosabb feladata a vásárolt
 anyag- és árukészletekről részletező nyilvántartást vezetni. Erről a
@@ -396,27 +418,48 @@ pénzintézeti bankszámlákat kezeli. Különösen lényeges a kimenő és bej�
 utalások nyilvántartása, könyvelése, és a bankszámlakivonatok
 feldolgozása.
 
-![](intro\2\image8.png){width="6.291666666666667in"
-height="3.0625in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/2/image8.png")
+```
+
 
 **B/II/1. Áruszállításból és szolgáltatásokból** származó követelések
 analitikus nyilvántartását a vevői modulban (Account Receivable)
 vezetjük.
 
-![](intro\2\image9.png){width="6.291666666666667in"
-height="3.1354166666666665in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/2/image9.png")
+```
+
 
 **F/III/4. Kötelezettségek \\ Rövid lejáratú kötelezettségek \\
 Kötelezettségek áruszállításból és szolgáltatásból.**
 
-![](intro\2\image10.png){width="6.291666666666667in"
-height="3.9479166666666665in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro/2/image10.png")
+```
+
+
+
+
+<div class="row">
+<div class="column">
+
+```{r,dpi=30}
+knitr::include_graphics("intro/2/image11.png")
+```
+
+</div>
+<div class="column">
+
 
 **5-ös számlaosztályra** a dolgozók bérét a bérszámfejtési modullal
 (Payroll) tudjuk előállítani.
 
-![](intro\2\image11.png){width="3.1979166666666665in"
-height="3.2083333333333335in"}
+</div>
+</div>
+
+
 
 **Az analitikus könyvelés** fenti alrendszerei a számviteli törvényben
 rögzített egyedi értékelés elve szerint „minden egyes vagyonelemről
@@ -487,12 +530,13 @@ SAP ERP R/3-as rendszerben az alábbi modulok, illetve az azokhoz
 kapcsolódó tranzakciók érhetők el Super User megközelítésben, tehát
 teljes funkcionalitásukban (felhasználói és rendszerbeállítási szinten).
 
-![Képtalálatok a következőre: SAP
-modules](intro_sapbasics\media\image1.jpeg){width="6.3in"
-height="4.297182852143482in"}
 
-. ábra Forrás: https://www.hipfunggroup.com/sap-erp-system/ (2021. 02.
-10.)
+
+```{r,dpi=50,fig.align='center',fig.cap='https://www.hipfunggroup.com/sap-erp-system/ (2021. 02.10.)'}
+knitr::include_graphics("intro_sapbasics/media/image1.jpeg")
+```
+
+
 
 Ezekből a modulokból a Materials Management, a Financial Accounting és a
 Controlling modulok részmoduljaiba tartozó tranzakciókat fogjuk
@@ -501,8 +545,12 @@ használni.
 Az egyes modulokba tartozó tranzakciók, intéző nézetben elérhető
 mappákban (Folder) vannak tárolva.
 
-![](intro_sapbasics\media\image2.png){width="6.302083333333333in"
-height="6.864583333333333in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro_sapbasics/media/image2.png")
+```
+
+
 
 Felmerülhet a kérdés, hogy az adott specializált SAP-s munkakörök milyen
 összefüggésben vannak az elérhető mappákkal és tranzakciókkal. A
@@ -560,10 +608,12 @@ tömeges megtekintése, táblázatszerű tömeges megtekintés és módosítás,
 listaszerű riportok. Ezeket a funkciókat az alábbi táblázat tartalmazza
 rendszerezetten:
 
-![](intro_sapbasics\media\image8.png){width="6.302083333333333in"
-height="3.4791666666666665in"}
 
-. ábra Saját szerkesztés (Lendvai Tamás)
+```{r,dpi=50,fig.align='center',fig.cap='Saját szerkesztés (Lendvai Tamás)'}
+knitr::include_graphics("intro_sapbasics/media/image8.png")
+```
+
+
 
 Amint a szöveges részben is írtuk, illetve a 2-es számú táblázatból is
 látható, az egyes törzsadatokra vonatkozó tranzakciók sematikusak,
@@ -581,8 +631,12 @@ vonatkozó alapműveletek alapszintű használatát fogjuk elsajátítani.
 
 **[Kezdő feladat:]{.ul}**
 
-![](intro_sapbasics\media\image9.png){width="6.302083333333333in"
-height="0.71875in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro_sapbasics/media/image9.png")
+```
+
+
 
 Az első feladatunkban fel kell vinni (FI02), meg kell tekinteni (FI03,
 S_P00_07000008), és riportálni kell bankfiókadatokat. Bankfiókadatokra a
@@ -624,8 +678,12 @@ knitr::include_graphics("intro_gif/Bank_route.gif")
 
 **Az elérhető tranzakciók közül az alábbiak használatát tekintjük át.**
 
-![](intro_sapbasics\media\image13.png){width="6.291666666666667in"
-height="1.0in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro_sapbasics/media/image13.png")
+```
+
+
 
 A törzsadatok feltöltéséhez nyissuk meg az alábbi táblázatot:
 
@@ -651,8 +709,13 @@ height="0.4583333333333333in"}
 
 **FI02 - Módosítás**
 
-![](intro_sapbasics\media\image17.png){width="6.302083333333333in"
-height="1.0in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro_sapbasics/media/image17.png")
+```
+
+
+
 
 ```{r,dpi=50,fig.align='center'}
 knitr::include_graphics("intro_gif/FI02_Change.gif")
@@ -662,8 +725,13 @@ knitr::include_graphics("intro_gif/FI02_Change.gif")
 
 **FI03 -- Megtekintés (Display)**
 
-![](intro_sapbasics\media\image18.png){width="6.291666666666667in"
-height="1.03125in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro_sapbasics/media/image18.png")
+```
+
+
+
 
 ```{r,dpi=50,fig.align='center'}
 knitr::include_graphics("intro_gif/FI03_Display.gif")
@@ -672,8 +740,13 @@ knitr::include_graphics("intro_gif/FI03_Display.gif")
 
 **FI04 Változások egyedi megtekintése (Display Changes)**
 
-![](intro_sapbasics\media\image19.png){width="6.291666666666667in"
-height="1.0520833333333333in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro_sapbasics/media/image19.png")
+```
+
+
+
 
 ```{r,dpi=50,fig.align='center'}
 knitr::include_graphics("intro_gif/FI04_Display_Changes.gif")
@@ -683,8 +756,13 @@ knitr::include_graphics("intro_gif/FI04_Display_Changes.gif")
 **S_P00_07000008 -- Változások tömeges megtekintése (Display of Bank
 Changes)**
 
-![](intro_sapbasics\media\image20.png){width="6.291666666666667in"
-height="1.1041666666666667in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro_sapbasics/media/image20.png")
+```
+
+
+
 
 
 ```{r,dpi=50,fig.align='center'}
@@ -696,21 +774,17 @@ knitr::include_graphics("intro_gif/S_P00_07000008_Display_of_Bank_Changes.gif")
 **S_P99_41000166 -- Bankok listaszerű lekérdezése (Display Bank
 Directory)**
 
-![](intro_sapbasics\media\image21.png){width="6.302083333333333in"
-height="1.03125in"}
 
-
-```{r,dpi=50,fig.align='center'}
-knitr::include_graphics("intro_gif/Display_Bank_Directory.gif")
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("intro_sapbasics/media/image21.png")
 ```
 
 
 
 
-
-
-
-
+```{r,dpi=50,fig.align='center'}
+knitr::include_graphics("intro_gif/Display_Bank_Directory.gif")
+```
 
 
 

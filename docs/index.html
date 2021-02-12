@@ -2078,9 +2078,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   @media (max-width: 767px) {
       #toc {
-          position: relative;
-          width: 100%;
-          margin: 0px 0px 20px 0px;
+        display: none;
       }
   }
 
@@ -2375,6 +2373,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
 
+
+
+  .algolia-autocomplete {
+  	display: inline-block;
+  	margin-left: 10px;
+  	vertical-align: sub;
+  	background-color: transparent;
+  	color: black;
+  	padding: 6px;
+  	padding-top: 8px;
+  	padding-bottom: 0;
+  	border-radius: 6px;
+  	border: 1px #0F2E3D solid;
+  	width: 180px;
+  }
+
+
+  figcaption {
+    background-color: #9a9a9a;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -2460,7 +2482,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <iframe src="https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b" width="624" height="400px">
 </iframe>
 </div>
-<p><strong><a href="https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b" class="uri">https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b</a></strong> (2021. 02. 04.)</p>
+<figcaption>
+<a href="https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b" class="uri">https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b</a> (2021. 02. 04.)
+</figcaption>
 <p><strong>A tantárgy megközelítése és feldolgozása.</strong> A szeminárium felhasználói megközelítésben dolgozza fel a beszerzési folyamatok és a szállítói modul használatát. Az álláshirdetések és a gyakornoki programok ismerete alapján a beszállítói folyamatok és a szállítói modul jelenti a belépési pontot, tehát feldolgozására került a hangsúly.</p>
 <p><strong>SAP verzió és jogosultság.</strong> A szeminárium során a Természettudományi Kar fenntartásában és előfizetésében lévő SAP ERP R/3-as IDES (demó) rendszer használatára van lehetőség SAP Super User jogosultság mellett (tehát minden standard felhasználói és rendszerbeállítási művelet elérhető).</p>
 <p><strong>SAP oktatás rövid története a PTE TTK-n.</strong></p>
@@ -2477,12 +2501,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><strong>A PTE TTK SAP oktatói.</strong> Az SAP tantárgyfelelőse dr. Pauler Gábor habil. egyetemi docens, aki a logisztikai, beszerzési, gyártási, és raktármenedzsment részt oktatja. Meisl Gábor az SAP programnyelvét az ABAP-ot oktatja, illetve a SECATT folyamat optimalizálást.</p>
 <p><strong>A tantárgy keretében szerezhető tudással megpályázható szintek.</strong> Tekintettel arra, hogy a tantárgy a beszerzési és szállítói modulok alapszintű használatát mutatja be, egyes esetekben részletesen, elsősorban a belépő szintű felhasználói munkakörökre készít fel. Elhelyezkedés tekintve elsősorban Magyarországon működő feldolgozóipari tőkeerős közép- és nagyvállalatok, valamint a világ más részén működő feldolgozóipari vállalatainak kiszolgálására létrehozott (Shared Service Center) központokban. Valószínűsíthetően a pozíciókban néhány tranzakció napi szintű ellátása lesz a feladat. Az álláshirdetések meghatározó részét ismerve elmondható, hogy a könyvelőirodás munkaköröktől eltérően az all-in-one mindenre kiterjedő tudás helyett, egy-egy feladatcsoportra történő specializálódás figyelhető meg a kezdő pozíciók esetében. Emellett természetesen jelen vannak a komplex munkakörök (szállító, bank, vevő), de ezek inkább a tapasztalattal már rendelkező munkavállalóknak reálisak. A munka mennyisége alapján azonban 1-1 (rész)modul ellátása is elegendő feladatot tartalmaz. Az alábbiakban olvasható néhány felhasználói szintű, specializált SAP-s munkakör. A feldolgozóipari vállalatok esetében lehet tisztán adminisztrációs munkakör és lehet olyan munkakör, amelynek az adminisztráció csak egy részét képezi. A Shared Service Center előnye, hogy viszonylag könnyen be lehet kerülni, és egy multis karriert lehet megalapozni vele.</p>
 <p><strong>Néhány feldolgozóipari beszerzési munkakör:</strong></p>
-<p><img src="intro/image2.png" style="width:6.29167in;height:3.83333in" /></p>
-<p><img src="intro/image3.png" style="width:6.29167in;height:3.30208in" /></p>
-<p><img src="intro/image4.png" style="width:6.29167in;height:4.27083in" /></p>
-<p><strong>Néhány kiszervezett (Shared Service) munkakörre vonatkozó olyan álláshirdetés, amely a beszerzés és a szállítói modul tartalmát fedi le.</strong></p>
-<p><img src="intro/image5.png" style="width:4.54791in;height:4.02083in" /></p>
-<p><img src="intro/image6.png" style="width:6.29167in;height:6.01042in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/image2.png" width="725" style="display: block; margin: auto;" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/image3.png" width="762" style="display: block; margin: auto;" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/image4.png" width="646" style="display: block; margin: auto;" /></p>
+</div>
+<p><strong>Néhány kiszervezett (Shared Service) munkakörre vonatkozó olyan álláshirdetés, amely a beszerzés és a szállítói modul tartalmát fedi le. </strong></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/image5.png" width="534" style="display: block; margin: auto;" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/image6.png" width="500" style="display: block; margin: auto;" /></p>
+</div>
 <h2>
 <strong>SAP számviteli felépítésének alapjai I.</strong>
 </h2>
@@ -2490,29 +2524,57 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><strong>Az analitika általános ismérvei.</strong> A vagyonrészek részletes nyilvántartását részmodulok és segédkönyvek végzik, amelyek kapcsolatban állnak a szintetikus könyvelést végző főkönyvvel. A segédkönyvek a főkönyvbe, illetve a főkönyvi számlákra adnak fel rendszeresen értékeket. Az analitika feladata az egyes vagyonrészek részletes nyilvántartása, segédkönyvek / segédnaplók és segédszámlák használatával. Az analitikus elszámolás mennyiségben, értékben, illetve mennyiségben és értékben történhet. Alapszabály, „hogy az analitikus nyilvántartásnak mindig meg kell egyeznie a szintetikával, tekintettel arra, hogy a könyvelési adatok a szintetikába az analitikából kerülnek be feladások segítésével, kivéve azokat a gazdasági eseményeket, ahol nincsen szükség analitikus nyilvántartásra." (Lukács, 2016, 22. o.) Az analitikus nyilvántartás egyik segédeszköze a leltározás.</p>
 <p><strong>Az analitika feladata.</strong> Megállapítható, hogy „a számviteli információrendszer legfontosabb inputjai az elsődleges bizonylatok, melyek feldolgozását elsőként az analitikus nyilvántartás végzi el." (Takács &amp; Márkus, 2019, 92. o.) Az analitikához kapcsolódó segédkönyv feladata a bizonylatok érkeztetése, rögzítése és feldolgozása mellett a különböző szempontok szerint összeállított kimutatások előállítása. Lényeges, hogy az analitikát „nem egyetlen homogén rendszerként kell értelmezni, hanem különböző területeket átölelő alrendszerek halmazaként. Az analitika konkrét formájának és szerkezetének kialakítása a gazdálkodó egység hatásköre. A gyakorlati tapasztalatok alapján az analitika legalább a következő alrendszereket foglalja magában." (Takács &amp; Márkus, 2019, 92. o.)</p>
 <p>Takács András és Márkus Gábor munkája alapján megállapíthatjuk, hogy az elsődleges bizonylatok, illetve azok feldolgozása alapján az analitikus, részletező nyilvántartás a feladások alapján juttatja az érték szerinti adatokat a főkönyvnek. (Takács &amp; Márkus, 2019, 92. o.)</p>
-<p><img src="intro/2/image1.png" style="width:5.45123in;height:3.9375in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image1.png" width="592" style="display: block; margin: auto;" /></p>
+</div>
 <p><strong>Az alábbiakban a mérlegcsoportok („A" típusú mérlegösszeállítás) szerint haladunk.</strong> A bal oldali képernyőfelvétel a vagyonrész mérlegbesorolását, a jobb oldali a vagyonrészhez kapcsolódó analitikus nyilvántartást és segédkönyveket tartalmazó felhasználói modult tartalmazza.</p>
 <p><strong>A/I. és A/II.</strong> <strong>A befektetett eszközök közül az immateriális javak és a tárgyi eszköz</strong>ök könyvelését, adminisztrációját, értékcsökkenésének számítását, stb. a pénzügyi számvitel (Financial Accounting) modul tárgyi eszközök (Fixed Asset) részmodulban tudjuk elvégezni. Az SAP rendszer külön tartja nyilván a befejezetlen beruházás és a befektetett eszközök csoportjait. A befektetett eszközök tekintetében kiemelten lényeges az eszközök azonosító adatainak, bekerülési értékének (a költségek szétosztásának), az aktiválás időpontjának tárolása. Emellett meghatározó jelentőségű az értékcsökkenés számításának és az állományváltozásból adódó értékeknek a felvezetése a főkönyvi számlákra.</p>
-<p><img src="intro/2/image2.png" style="width:6.30208in;height:3.04167in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image2.png" width="691" style="display: block; margin: auto;" /></p>
+</div>
 <p>A szeminárium során nem vesszük a tárgyi eszközök modult, azonban két, SAP tanácsadó irodától származó magyar nyelvű leírásom, és egy angol nyelvű rendszerbeállítási monográfiával rendelkezem. A tárgyi eszköz könyvelésével összefüggésben van a beruházás menedzsment modul.</p>
-<p><img src="intro/2/image3.png" style="width:6.30208in;height:3.6875in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image3.png" width="643" style="display: block; margin: auto;" /></p>
+</div>
 <p><strong>A/II/1.</strong> <strong>A tárgyi eszköz közül az ingatlanok</strong> részletes könyvelését az ingatlankezelő modulok segítik (Real Estate Mgmt.; Flexible Real Estate Mgmt.).</p>
-<p><img src="intro/2/image4.png" style="width:6.29167in;height:3.0625in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image4.png" width="870" style="display: block; margin: auto;" /></p>
+</div>
 <p><strong>A/III. Befektetett pénzügy eszközöket (és a vállalat teljes pénzügyi rendszerét)</strong> a pénzügyi ellátás lánc modul (Financial Supply Chain Management), és annak részmoduljai, köztük a pénzügyi és kockázatkezelő modul (Treasury and Risk Management) támogatja. A modul kiemelten összetett, gyakorlatilag SAP az SAP-ban jellegű. Alapvető feladata a gazdasági szervezet hosszú- és rövid lejáratú követeléseinek és kötelezettségeinek, illetve az e mögött álló üzleti kapcsolatoknak a részletes nyilvántartása, menedzselése.</p>
-<p><img src="intro/2/image5.png" style="width:6.29167in;height:6.9375in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image5.png" width="697" style="display: block; margin: auto;" /></p>
+</div>
 <p>A befektetett pénzügyi eszközökben és a hosszú lejáratú kötelezettségben szereplő lízing nyilvántartását a lízing könyvelési (Lease Accounting) modul végzi.</p>
-<p><img src="intro/2/image6.png" style="width:6.29167in;height:4.26042in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image6.png" width="871" style="display: block; margin: auto;" /></p>
+</div>
 <p><strong>B/2. Forgóeszközökön belüli készleteket</strong>, a tárgyi eszközökre, és az 5-ös számlaosztályra is vonatkozó beszerzési folyamatokat az anyaggazdálkodás modul (Materials Management) kezeli. A modulban található Service Master viszont az 5-ös számlaosztály költségnemeire beszerezhető szolgáltatásokat tartalmazza.</p>
-<p><img src="intro/2/image7.png" style="width:6.29167in;height:3.85417in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image7.png" width="750" style="display: block; margin: auto;" /></p>
+</div>
 <p>Az analitikus feladatok elvégző modul legfontosabb feladata a vásárolt anyag- és árukészletekről részletező nyilvántartást vezetni. Erről a későbbiekben részletesen írunk.</p>
 <p><strong>B/IV. Pénzeszközök mindennapi</strong> könyvelési műveleteit a bank modul (Banks) tartalmazza. A modul a pénztár készpénzállományának, valamint a pénzintézeti bankszámlákat kezeli. Különösen lényeges a kimenő és bejövő utalások nyilvántartása, könyvelése, és a bankszámlakivonatok feldolgozása.</p>
-<p><img src="intro/2/image8.png" style="width:6.29167in;height:3.0625in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image8.png" width="585" style="display: block; margin: auto;" /></p>
+</div>
 <p><strong>B/II/1. Áruszállításból és szolgáltatásokból</strong> származó követelések analitikus nyilvántartását a vevői modulban (Account Receivable) vezetjük.</p>
-<p><img src="intro/2/image9.png" style="width:6.29167in;height:3.13542in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image9.png" width="614" style="display: block; margin: auto;" /></p>
+</div>
 <p><strong>F/III/4. Kötelezettségek \ Rövid lejáratú kötelezettségek \ Kötelezettségek áruszállításból és szolgáltatásból.</strong></p>
-<p><img src="intro/2/image10.png" style="width:6.29167in;height:3.94792in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image10.png" width="585" style="display: block; margin: auto;" /></p>
+</div>
+<div class="row">
+<div class="column">
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro/2/image11.png" width="491" /></p>
+</div>
+</div>
+<div class="column">
 <p><strong>5-ös számlaosztályra</strong> a dolgozók bérét a bérszámfejtési modullal (Payroll) tudjuk előállítani.</p>
-<p><img src="intro/2/image11.png" style="width:3.19792in;height:3.20833in" /></p>
+</div>
+</div>
 <p><strong>Az analitikus könyvelés</strong> fenti alrendszerei a számviteli törvényben rögzített egyedi értékelés elve szerint „minden egyes vagyonelemről egyedi, külön nyilvántartást vezet." Az SAP minden egyes vagyonelemről létrehoz egy nyilvántartólapot, amelyen a jogszabályokban meghatározott adatkörök szerepelnek, „az egyedi értékelés elve bizonyos esetekben sajtosan érvényesül, hiszen néhány speciális esetben (például készleteknél, tárgyi eszközöknél, vagy értékpapíroknál, ahol nagy mennyiségű, de teljesen azonos paraméterekkel rendelkező eszközről van szó) a csoportos nyilvántartás is megfelel az egyedi értékelés elvének." (Takács &amp; Márkus, 2019, 94. o.)</p>
 <p><strong>Szintetikus könyvelés.</strong> A segédkönyvekből és modulokból történő feladások alapján „a gazdasági események hatásai a szintetikus nyilvántartásban (szintetikában) is rögzítésre kerülnek. A szintetikus nyilvántartás gyakorlatilag a kettős könyvvitel szabályai szerinti könyvelést jelenti … A beszámoló összeállításának elsődleges információforrását a szintetika képezi, hiszen a legfontosabb kimutatások (a mérleg és az eredménykimutatás) a naprakész kettős könyvvitel információiból állíthatók össze. Ugyanakkor a beszámoló bizonyos részeinek (különösen a szöveges, tájékoztató jellegű részek) összeállításához nélkülözhetetlenek az analitikából származó eredeti adatok." (Takács &amp; Márkus, 2019, 91-92. o.) Fogalmi meghatározás szintjén megállapítható, hogy a <strong>„</strong>szintetika, azaz a főkönyvi nyilvántartás a kettős könyvviteli szabályok szerinti könyvelést, valamint az ehhez kapcsolódó összesítő-ellenőrző feladatokat foglalja magában. A szintetika szintjén minden növekedés és csökkenés pénzértéken kerül kimutatásra. Legfőbb feladata, hogy beszámolóban szereplő kimutatások összeállításához közvetlenül felhasználható információkat állítson elő. A szintetikus nyilvántartás csak akkor lehet korrekt, ha a háttérben pontos és naprakész analitikus adatok állnak rendelkezésre." (Takács &amp; Márkus, 2019, 96. o.) Forrását tekintve megállapítható, hogy A zárlati teendők után a szintetika és az analitika együttesen már képes a beszámoló elkészítéséhez igényelt valamennyi információt szolgáltatni. Adatforrását tekintve megállapítható, hogy a „szintetika információbázisát … az analitikából érkező feladások képezik. A feladások alapján a gazdasági események folyamatosan rögzítésre kerülnek, számlasoros és idősoros könyvelés formájában is. Az évközi könyvelést az üzleti év végén a könyvviteli zárlat teszi teljessé. A könyvviteli zárlat magában foglalja különböző év végi rendező/pontosító tételek elszámolását, összesítő kimutatások elkészítését, valamint a technikai zárást. A zárlati teendők után a szintetika és az analitika együttesen már képes a beszámoló elkészítéséhez igényelt valamennyi információt szolgáltatni.</p>
 <p><strong>SAP rendszerben a szintetikus könyvelés</strong> részeként főkönyvi számlák között értékeket a főkönyvi modulban tudunk mozgatni, illetve szintén a főkönyvi modulban tudunk kimutatásokat készíteni.</p>
@@ -2524,13 +2586,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <strong><u>SAP használat alapjai</u></strong>
 </h2>
 <p>A PTE Természettudományi Kar, illetve a szeminárium keretében elérhető SAP ERP R/3-as rendszerben az alábbi modulok, illetve az azokhoz kapcsolódó tranzakciók érhetők el Super User megközelítésben, tehát teljes funkcionalitásukban (felhasználói és rendszerbeállítási szinten).</p>
-<figure>
-<img src="intro_sapbasics/media/image1.jpeg" style="width:6.3in;height:4.29718in" alt="Képtalálatok a következőre: SAP modules" /><figcaption aria-hidden="true">Képtalálatok a következőre: SAP modules</figcaption>
-</figure>
-<p>. ábra Forrás: <a href="https://www.hipfunggroup.com/sap-erp-system/" class="uri">https://www.hipfunggroup.com/sap-erp-system/</a> (2021. 02. 10.)</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-19"></span>
+<img src="intro_sapbasics/media/image1.jpeg" alt="https://www.hipfunggroup.com/sap-erp-system/ (2021. 02.10.)"  />
+<p class="caption">
+Figure 1: <a href="https://www.hipfunggroup.com/sap-erp-system/" class="uri">https://www.hipfunggroup.com/sap-erp-system/</a> (2021. 02.10.)
+</p>
+</div>
+</div>
 <p>Ezekből a modulokból a Materials Management, a Financial Accounting és a Controlling modulok részmoduljaiba tartozó tranzakciókat fogjuk használni.</p>
 <p>Az egyes modulokba tartozó tranzakciók, intéző nézetben elérhető mappákban (Folder) vannak tárolva.</p>
-<p><img src="intro_sapbasics/media/image2.png" style="width:6.30208in;height:6.86458in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_sapbasics/media/image2.png" width="559" style="display: block; margin: auto;" /></p>
+</div>
 <p>Felmerülhet a kérdés, hogy az adott specializált SAP-s munkakörök milyen összefüggésben vannak az elérhető mappákkal és tranzakciókkal. A kérdéssel kapcsolatban megállapítható, hogy a munkakörök és az azokban lévő feladatok nagy mértékben meghatározzák az intéző menüpont tartalmi felépítését. Ezt az Other menu kapcsolóval, illetve szerepek megadásával lehet szemléltetni.</p>
 <p><img src="intro_sapbasics/media/image3.png" style="width:6.30208in;height:0.78125in" /></p>
 <p><strong><u>AIS_APAY_CLERK_US00 Szállítói számla könyvelő</u></strong></p>
@@ -2544,14 +2612,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="intro_sapbasics/media/image7.png" style="width:6.3in;height:5.95486in" /></p>
 <p>Az intézőből tranzakciók érhetőek el. A tranzakciók mezőkből felépített űrlapokat tartalmaznak. Az egyes mezők és azok értékei pedig adattáblákban helyezkednek el. A tranzakciók jellegük és tartalmuk alapján különböző típusba sorolhatók. Az alábbiakban a törzsadatokra és a folyamatokra vonatkozó tranzakciók között teszünk különbséget.</p>
 <p><strong>Törzsadatok (Master Data):</strong> SAP rendszerben (és más vállalatirányítási rendszerekben) a törzsadatok jellemzően az üzleti folyamatok konstans, nagyrészt állandó jellegű objektumaihoz kapcsolódnak. A törzsadatok értékei általában hosszú időtávra vonatkoznak, és összességükben ritkán változnak. Informatikai értelemben egy-egy objektumosztályba sorolható objektum tulajdonságait írják le. Jellemző törzsek lehetnek a szállítók, vevők, üzleti partnerek, bankfiókok, készletbe tartozó anyagok, áruk, a befektetett eszközök közé sorolható immateriális javak, tárgyi eszközök, befektetett pénzügyi eszközök. A törzsadatokkal az alábbi műveletekre van lehetőség: egyedi felvitel, egyedi megtekintés, egyedi módosítás, módosítások egyedi és tömeges megtekintése, táblázatszerű tömeges megtekintés és módosítás, listaszerű riportok. Ezeket a funkciókat az alábbi táblázat tartalmazza rendszerezetten:</p>
-<p><img src="intro_sapbasics/media/image8.png" style="width:6.30208in;height:3.47917in" /></p>
-<p>. ábra Saját szerkesztés (Lendvai Tamás)</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-21"></span>
+<img src="intro_sapbasics/media/image8.png" alt="Saját szerkesztés (Lendvai Tamás)" width="772" />
+<p class="caption">
+Figure 2: Saját szerkesztés (Lendvai Tamás)
+</p>
+</div>
+</div>
 <p>Amint a szöveges részben is írtuk, illetve a 2-es számú táblázatból is látható, az egyes törzsadatokra vonatkozó tranzakciók sematikusak, sablonosak abban a tekintetben, hogy a létrehozás (Create), a módosítás (Change), a megtekintés (Display), a változások egyedi megtekintése (Display Changes), tömeges megtekintés és karbantartás (Mass Maintance) és a listariportok (List Ereport) valamennyiükre vonatkoznak.</p>
 <p><strong>Folyamatadatok (Process Transaction):</strong></p>
 <p>Kidolgozás alatt</p>
 <p>A <strong>félvés első részében</strong> a fenti táblázatban szereplő törzsadatokra vonatkozó alapműveletek alapszintű használatát fogjuk elsajátítani.</p>
 <p><strong><u>Kezdő feladat:</u></strong></p>
-<p><img src="intro_sapbasics/media/image9.png" style="width:6.30208in;height:0.71875in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_sapbasics/media/image9.png" width="643" style="display: block; margin: auto;" /></p>
+</div>
 <p>Az első feladatunkban fel kell vinni (FI02), meg kell tekinteni (FI03, S_P00_07000008), és riportálni kell bankfiókadatokat. Bankfiókadatokra a szállítók, vevők, és az üzleti partnerek törzsadataiban lesz szükség. Bankfiókadatok nélkül nem tudunk rögzíteni bankszámlaszámot.</p>
 <p><strong>1. Lépés:</strong> Other menu \ SAP_FI_BL_BANK_MASTER_DATA (másoljuk ki) Maintaining Bank Master Data</p>
 <p>Az 1. lépés megtétele opcionális, és ki lehet keresni a tranzakciókat a szokásos elérés alapján is. A role kiválasztását azért tartjuk lényegesnek, mert így látni lehet, hogy adott SAP-s munkakörök milyen jellemző feladatokat tartalmaznak, illetve világossá válik a szerepek és az intéző nézet közötti összefüggés.</p>
@@ -2565,7 +2641,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="intro_gif/Bank_route.gif" style="display: block; margin: auto;" /></p>
 </div>
 <p><strong>Az elérhető tranzakciók közül az alábbiak használatát tekintjük át.</strong></p>
-<p><img src="intro_sapbasics/media/image13.png" style="width:6.29167in;height:1in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_sapbasics/media/image13.png" width="495" style="display: block; margin: auto;" /></p>
+</div>
 <p>A törzsadatok feltöltéséhez nyissuk meg az alábbi táblázatot:</p>
 <p>A feladat a következő. Mindenki talál a neve mellett olyan banki adatokat, amelyek nem szerepelnek még az SAP adatbázisban. Nyissuk meg az FI01-es tranzakciót, és elsőként adjuk meg az országot HU, majd az A oszlopban található 8 számból álló bankfiók kódot (Branch office code) Bank Key-ként, majd enter.</p>
 <p><img src="intro_sapbasics/media/image14.png" style="width:2.40945in;height:1.125in" /></p>
@@ -2574,27 +2652,37 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Ezt követően kattintsunk a lemez ikonra és mentsük el. Fogunk kapni egy értesítés a bal alsó sarokban, hogy sikerült a mentés.</p>
 <p><img src="intro_sapbasics/media/image16.png" style="width:2.29167in;height:0.45833in" /></p>
 <p><strong>FI02 - Módosítás</strong></p>
-<p><img src="intro_sapbasics/media/image17.png" style="width:6.30208in;height:1in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_sapbasics/media/image17.png" width="494" style="display: block; margin: auto;" /></p>
+</div>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="intro_gif/FI02_Change.gif" style="display: block; margin: auto;" /></p>
 </div>
 <p><strong>FI03 – Megtekintés (Display)</strong></p>
-<p><img src="intro_sapbasics/media/image18.png" style="width:6.29167in;height:1.03125in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_sapbasics/media/image18.png" width="502" style="display: block; margin: auto;" /></p>
+</div>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="intro_gif/FI03_Display.gif" style="display: block; margin: auto;" /></p>
 </div>
 <p><strong>FI04 Változások egyedi megtekintése (Display Changes)</strong></p>
-<p><img src="intro_sapbasics/media/image19.png" style="width:6.29167in;height:1.05208in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_sapbasics/media/image19.png" width="493" style="display: block; margin: auto;" /></p>
+</div>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="intro_gif/FI04_Display_Changes.gif" style="display: block; margin: auto;" /></p>
 </div>
 <p><strong>S_P00_07000008 – Változások tömeges megtekintése (Display of Bank Changes)</strong></p>
-<p><img src="intro_sapbasics/media/image20.png" style="width:6.29167in;height:1.10417in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_sapbasics/media/image20.png" width="490" style="display: block; margin: auto;" /></p>
+</div>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="intro_gif/S_P00_07000008_Display_of_Bank_Changes.gif" style="display: block; margin: auto;" /></p>
 </div>
 <p><strong>S_P99_41000166 – Bankok listaszerű lekérdezése (Display Bank Directory)</strong></p>
-<p><img src="intro_sapbasics/media/image21.png" style="width:6.30208in;height:1.03125in" /></p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="intro_sapbasics/media/image21.png" width="499" style="display: block; margin: auto;" /></p>
+</div>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="intro_gif/Display_Bank_Directory.gif" style="display: block; margin: auto;" /></p>
 </div>

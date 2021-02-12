@@ -4,11 +4,31 @@ description: |
 
 ---
 
-**[Pénzügyi és vezetői számviteli környezet felépítése SAP-ban]{.ul}**
 
-![C:\\Users\\Dr. Lendvai
-Tamás\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\F2523EDB.tmp](fin\media\image1.png){width="6.3in"
-height="4.191213910761155in"}
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+<link href="styles/bootstrap.css" rel="stylesheet">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+<link href="styles/jquery.tocify.css" rel="stylesheet">
+
+
+<body>
+
+<div id="toc">
+</div>
+
+
+<h2>**[Pénzügyi és vezetői számviteli környezet felépítése SAP-ban]{.ul}**</h2>
+
+
+```{r,dpi=60,fig.align='left'}
+knitr::include_graphics("fin/media/image1.png")
+```
+
+
 
 A szeminárium során elsősorban felhasználói tranzakciókat használunk,
 azonban lényegesnek tartjuk megemlíteni és igény esetén szemléltetni a
@@ -55,9 +75,12 @@ indokolt (pl.: azokban az esetekben, ha csak Magyarországon működik a
 vállalat (szervezet), pl.: PTE, illetve más felsőoktatási intézmények,
 nem kell megadni vállalatcsoportot, mivel ez nem releváns).
 
-![C:\\Users\\Dr. Lendvai
-Tamás\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\F3E398A1.tmp](fin\media\image2.png){width="5.875in"
-height="1.6770833333333333in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image2.png")
+```
+
+
 
 Tehát megállapítható, hogy a szervezeti hierarchia legmagasabb pontján a
 vállalatcsoport áll. A különböző formában, pl.: konszernként,
@@ -80,48 +103,44 @@ Forrás:
 Az alábbiakban nézzünk meg két standard, szabványos SAP szervezeti
 ábrát:
 
-![Képtalálatok a következőre: sap company group
-structure](fin\media\image3.png){width="5.395833333333333in"
-height="4.029032152230971in"}
+```{r,dpi=50,fig.align='center',fig.cap='http://sapmoduletutor.blogspot.com/2015/11/sap-mm-organizational-structure-in-sap.html (2021. 02. 10.)'}
+knitr::include_graphics("fin/media/image3.png")
+```
 
-1\. ábra Forrás:
-http://sapmoduletutor.blogspot.com/2015/11/sap-mm-organizational-structure-in-sap.html
-(2021. 02. 10.)
 
-![Képtalálatok a következőre: sap company group
-hierarchy](fin\media\image4.gif){width="5.0in" height="3.75in"}
+```{r,dpi=50,fig.align='center',fig.cap='https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/1503%20SP%206/en-US/a8ffcc537cbf224be10000000a174cb4.html (2021. 02. 10.)'}
+knitr::include_graphics("fin/media/image4.gif")
+```
 
-2.. ábra Forrás:
-<https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/1503%20SP%206/en-US/a8ffcc537cbf224be10000000a174cb4.html>
-(2021. 02. 10.)
 
 Példák a vállalatcsoportokra:
 
-![C:\\Users\\Dr. Lendvai
-Tamás\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\A66B0457.tmp](fin\media\image5.png){width="6.3in"
-height="3.948737970253718in"}
 
-![Képtalálatok a következőre: thyssenkrupp word
-map](fin\media\image6.jpeg){width="5.452723097112861in"
-height="4.09375in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image5.png")
+```
 
-1\. ábra Forrás:
-<https://www.slideshare.net/VishalHarichund/20150129tkiscompanypresentationtranen>
-(2021. 02. 10.)
 
-![Képtalálatok a következőre: sap word
-map](fin\media\image7.png){width="6.3in" height="3.112795275590551in"}
 
-2\. ábra SAP területi elhelyezkedése. Forrás:
-<https://blogs.sap.com/2018/03/26/sap-labs-network-the-art-of-being-connected/>
-(2021.02. 10.)
+```{r,dpi=50,fig.align='center',fig.cap='https://www.slideshare.net/VishalHarichund/20150129tkiscompanypresentationtranen (2021. 02. 10.)'}
+knitr::include_graphics("fin/media/image6.jpeg")
+```
+
+
+```{r,dpi=50,fig.align='center',fig.cap='https://blogs.sap.com/2018/03/26/sap-labs-network-the-art-of-being-connected/ (2021. 02. 10.)'}
+knitr::include_graphics("fin/media/image7.png")
+```
+
 
 Az alábbi lista a világviszonylatban is meghatározó transznacionális
 vállalatok egy részét tartalmazza.
 
-![Képtalálatok a következőre: biggest companies continental
-bosch](fin\media\image8.png){width="5.791666666666667in"
-height="9.266666666666667in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image8.png")
+```
+
+
 
 **[Vállalat (Company Code)]{.ul}**
 
@@ -131,8 +150,12 @@ cégjegyzékben szereplő entitás. Ezen a szinten készülnek el az
 országspecifikus, az adott ország adóhatósága számára készülő,
 jogszabályokban rögzített jelentések.
 
-![](fin\media\image9.png){width="4.271371391076116in"
-height="4.854166666666667in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image9.png")
+```
+
+
 
 Vállalatot (2. szint) létrehozhatunk teljesen üres állapotból, illetve
 átmásolhatjuk más vállalat adatait az új vállalatunkba. A második
@@ -149,17 +172,24 @@ lehet, hogy célszerűbb a függőviszonyok egy részének - átgondolt -
 
 **[Üzletág a vállalatcsoport alatt (Business Area under Company)]{.ul}**
 
-![C:\\Users\\Dr. Lendvai
-Tamás\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\B641C393.tmp](fin\media\image10.png){width="6.3in"
-height="4.029405074365704in"}
 
-![C:\\Users\\Dr. Lendvai
-Tamás\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\F0F45619.tmp](fin\media\image11.png){width="6.3in"
-height="3.9262871828521435in"}
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image10.png")
+```
 
-![C:\\Users\\Dr. Lendvai
-Tamás\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\F4CF388F.tmp](fin\media\image12.png){width="6.3in"
-height="3.9614173228346456in"}
+
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image11.png")
+```
+
+
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image12.png")
+```
+
+
 
 Mint a Körber Solution példája is mutatja, megállapítható, hogy
 transznacionális vállalatcsoportok tevékenységüket egymástól jól
@@ -170,9 +200,12 @@ gazdasági események kontírozásának tekintetében lesz súlya.
 
 **[Üzletág (Business Area)]{.ul}**
 
-![C:\\Users\\Dr. Lendvai
-Tamás\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\8DEA43F2.tmp](fin\media\image13.png){width="6.135416666666667in"
-height="3.0520833333333335in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image13.png")
+```
+
+
 
 Az üzletágak kialakítására az SAP standard megoldásaiban két lehetőséget
 ad. Az egyik lehetőség a (Segment -) Pénzügyi központ (csoport) --
@@ -213,14 +246,21 @@ irányítást. Lásd.:
 <https://answers.sap.com/questions/6828792/business-area-vs-segment.html>
 (2021. 02. 10.)
 
-![C:\\Users\\Dr. Lendvai
-Tamás\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\7B1B38D0.tmp](fin\media\image14.png){width="6.3in"
-height="4.787999781277341in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image14.png")
+```
+
+
 
 **[Üzleti szegmens (Segment) / Szegmens riport (Segment report)]{.ul}**
 
-![](fin\media\image15.png){width="6.291666666666667in"
-height="3.71875in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image15.png")
+```
+
+
 
 A szegmens a vállalkozás olyan alkotóeleme, amely saját bevételeket
 generál, és saját termékeket, termékvonalakat vagy szolgáltatásokat
@@ -288,8 +328,12 @@ elemezni a vállalat teljesítményét.
 
 **[Példa az üzleti szegmensek felépítésére]{.ul}**
 
-![](fin\media\image16.png){width="5.822916666666667in"
-height="9.708333333333334in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image16.png")
+```
+
+
 
 A legtöbb nagybank különféle üzleti funkcióik alapján több részlegből
 áll (fogyasztói hitelezés, kereskedelmi hitelezés és hitelkártya). A
@@ -305,8 +349,12 @@ kapcsolódhat, amelyhez pedig közvetlenül kapcsolódhat a költséghely.
 **[Pénzügyi központ, vagy más néven nyerségközpont (Profit
 center).]{.ul}**
 
-![](fin\media\image17.png){width="6.291666666666667in"
-height="3.71875in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image17.png")
+```
+
+
 
 A pénzügyi központ csoportok és pénzügyi központok egy adott üzletág,
 üzleti terület alatt helyezkednek el. A vezetői számvitel részének
@@ -389,11 +437,13 @@ sorolhatók, valamint besorolhatók szegmensekbe is.
 
 **[Szervezeti felépítés:]{.ul}**
 
-![Képtalálatok a következőre: profit center organisation
-sap](fin\media\image18.jpeg){width="6.3in" height="4.729937664041994in"}
 
-<https://www.slideshare.net/bnanduri/profit-centeraccounting-50622317>
-(2021. 02. 06.)
+
+```{r,dpi=50,fig.align='center',fig.cap='<https://www.slideshare.net/bnanduri/profit-centeraccounting-50622317 (2021. 02. 06.)'}
+knitr::include_graphics("fin/media/image18.jpeg")
+```
+
+
 
 **[SAP pénzügyi központ felépítése:]{.ul}**
 
@@ -404,23 +454,35 @@ bontani: robbanómotoros személyautó, elektromos személyautó, robbanó
 motoros kerékpár, elektromos motorkerékpár. Az egyik kérdés az, hogy
 milyen szinten szeretnénk mérni a nyereséget.
 
-![](fin\media\image19.png){width="6.291666666666667in"
-height="4.229166666666667in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image19.png")
+```
+
+
 
 **Lényeges,** hogy egy adott pénzügyi központhoz több vállalati kód is
 kapcsolódhat. Tehát például a motorkerékpár gyártásban több vállalat is
 részt vehet. A beszerzés szempontjábók az alábbi egyszerű példát nézzük
 át.
 
-![](fin\media\image20.png){width="6.302083333333333in"
-height="1.5208333333333333in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image20.png")
+```
+
+
 
 **Költséghely, költségközpont (Cost Center).** A költséghely egy
 szervezeten belüli részleg vagy funkció, amely közvetlenül nem növeli a
 nyereséget, de működtetése mégis pénzbe kerül a szervezetnek.
 
-![](fin\media\image17.png){width="6.291666666666667in"
-height="3.71875in"}
+
+```{r,dpi=60,fig.align='center'}
+knitr::include_graphics("fin/media/image17.png")
+```
+
+
 
 A költségközpontok csak közvetett módon járulnak hozzá a társaság
 nyereségességéhez, ellentétben a profitközponttal, amely
@@ -479,7 +541,37 @@ potenciálisan felülmúlják a megszerzett ismeretek előnyeit.
 
 **[SAP költséghely felépítése:]{.ul}**
 
-![http://saphelp.ucc.ovgu.de/NW750/EN/70/acd65378024308e10000000a174cb4/ppt_img.gif](fin\media\image21.gif){width="4.989583333333333in"
-height="3.7395833333333335in"}
 
+```{r,dpi=50,fig.align='center',fig.cap='http://saphelp.ucc.ovgu.de/NW750/EN/70/acd65378024308e10000000a174cb4/ppt_img.gif (2021. 02.04.)'}
+knitr::include_graphics("fin/media/image21.gif")
+```
+
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQur75852cbezwweM1n64uUe4CQMPNr6umhUCoJ1yfuP8jrjIzF505pIoqTXPiBbnOk6CEI-_K2mriu/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="height: 600px;"></iframe>
+
+<figcaption>https://docs.google.com/spreadsheets/d/1ka_UpCylIc1JJzWflMofiyK8SDgXsCCznGPBd6biJJQ/edit?usp=sharing&fbclid=IwAR1OoMnsMeVmoHpTTXH8Qs-TarcPM6-BrBNivQp2I48JtnRqTFoUX10V3Ic </figcaption>
+
+
+
+
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.tocify.js"></script>
+<script>
+$(function() {
+
+var toc = $("#toc").tocify({
+selectors: "h2,h3,h4,h5"
+}).data("toc-tocify");
+
+
+});
+</script>
+
+
+
+
+</body>
 
