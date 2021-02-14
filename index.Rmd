@@ -442,22 +442,15 @@ knitr::include_graphics("intro/2/image10.png")
 
 
 
-<div class="row">
-<div class="column">
-
-```{r,dpi=30}
-knitr::include_graphics("intro/2/image11.png")
-```
-
-</div>
-<div class="column">
-
-
 **5-ös számlaosztályra** a dolgozók bérét a bérszámfejtési modullal
 (Payroll) tudjuk előállítani.
 
-</div>
-</div>
+
+
+
+```{r,dpi=60, fig.align='center'}
+knitr::include_graphics("intro/2/image11.png")
+```
 
 
 
@@ -662,12 +655,13 @@ törzsadataival összefüggésben lévő műveletek találjuk meg.
 Amennyiben nem a szerepek kiválasztásával kívánjuk limitálni a listát,
 úgy a banki törzsekre vonatkozó tranzakciók elérhetők az alábbi úton is.
 
-
+<div class="zoom">
 
 ```{r,dpi=50,fig.align='center'}
 knitr::include_graphics("intro_gif/Bank_route.gif")
 ```
 
+</div>
 
 **Az elérhető tranzakciók közül az alábbiak használatát tekintjük át.**
 
@@ -709,12 +703,13 @@ knitr::include_graphics("intro_sapbasics/media/image17.png")
 
 
 
-
+<div class="zoom">
 ```{r,dpi=50,fig.align='center'}
 knitr::include_graphics("intro_gif/FI02_Change.gif")
 ```
 
 
+</div>
 
 **FI03 -- Megtekintés (Display)**
 
@@ -724,12 +719,12 @@ knitr::include_graphics("intro_sapbasics/media/image18.png")
 ```
 
 
-
+<div class="zoom">
 
 ```{r,dpi=50,fig.align='center'}
 knitr::include_graphics("intro_gif/FI03_Display.gif")
 ```
-
+</div>
 
 **FI04 Változások egyedi megtekintése (Display Changes)**
 
@@ -739,12 +734,13 @@ knitr::include_graphics("intro_sapbasics/media/image19.png")
 ```
 
 
-
+<div class="zoom">
 
 ```{r,dpi=50,fig.align='center'}
 knitr::include_graphics("intro_gif/FI04_Display_Changes.gif")
 ```
 
+</div>
 
 **S_P00_07000008 -- Változások tömeges megtekintése (Display of Bank
 Changes)**
@@ -755,12 +751,14 @@ knitr::include_graphics("intro_sapbasics/media/image20.png")
 ```
 
 
-
+<div class="zoom">
 
 
 ```{r,dpi=50,fig.align='center'}
 knitr::include_graphics("intro_gif/S_P00_07000008_Display_of_Bank_Changes.gif")
 ```
+
+</div>
 
 
 
@@ -775,9 +773,14 @@ knitr::include_graphics("intro_sapbasics/media/image21.png")
 
 
 
+<div class="zoom">
+
 ```{r,dpi=50,fig.align='center'}
 knitr::include_graphics("intro_gif/Display_Bank_Directory.gif")
 ```
+
+</div>
+
 
 
 

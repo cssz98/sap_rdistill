@@ -21,6 +21,526 @@ knitr::opts_chunk$set(echo = FALSE)
 <div id="toc">
 </div>
 
+<h2>1. General Overview: Materials Management (Készletmenedzsment)</h2>
+**Materials Management.** Az anyaggazdálkodás közvetlenül az SAP menüben
+lévő a Logisztika (Logistics) mappában található.
+
+![](intro_keszletek\media\image1.png){width="3.5520833333333335in"
+height="3.40625in"}
+
+Az anyaggazdálkodás (Materials Management) legfontosabb feladata 2-es
+számlaosztályba tartozó anyag- és árukészlet részletes nyilvántartása. A
+modul elsősorban az alábbi mérlegelemeket és számlaosztályokat fedi le.
+
+![](intro_keszletek\media\image2.png){width="6.291666666666667in"
+height="4.71875in"}
+
+Másodsorban azonban lehetőség van 5-ös számlaosztályba tartozó, azonnali
+felhasználású, tehát nem továbbszámlázott szolgáltatások
+nyilvántartására.
+
+**Purchasing.** A készlet beszerzését, a készletek beáramlását segíti a
+beszerzési modul (Purchasing), amely a beszerzési igénylés (Purchase
+Requisition), a beszerzési rendelés (Purchase Order), a szerződés
+(Outline Agreement), az árajánlat (RFQ/Quotation), valamint a törzsadat
+(Master Data) részmodult tartalmazza. A beszerzési modul üzemeltetése
+elsősorban a beszerzési osztályok és csoportok feladatkörébe tartozik. A
+készletek, illetve a tovább számlázott szolgáltatások mellett lehetőség
+van 5-ös számlaosztályra beszerezni azonnali felhasználású
+szolgáltatásokat, illetve 1-es számlaosztályra beszerezni tárgyi
+eszközöket.
+
+![](intro_keszletek\media\image3.png){width="2.5625in"
+height="1.6770833333333333in"}
+
+**Inventory Management.** A készlet mozgatását, az anyagáramlás
+alapszintű szabályozását a készletmenedzsment modul látja el.
+Legfontosabb területei az anyagmozgatás (Goods Movement), az
+anyagbizonylatok (Material Document) és az anyagfoglalások
+(Reservation). A modul üzemeltetéséhez elsősorban a készletkezelési
+feladatok ellátó csoportoknak van jogosultsága.
+
+![](intro_keszletek\media\image4.png){width="2.8541666666666665in"
+height="1.71875in"}
+
+**Logistics Invoice Verification.** A beszerzési folyamatok, különösen a
+készletrendelések könyvelését a LIV modul látja el. Az elnevezése arra
+utal, hogy a modulban lehet könyvelni a logisztikai előzményekkel
+rendelkező szállítói számlákat. A modulban a Document Entry mappában van
+lehetőség a számlák iktatására és könyvelésére, az Automatic Settlement
+mappa a költségek (pl.: szállítási, rakodási, stb.) szétosztást
+támogatja, a GR/IR Account Maintance mappában az áru/számla
+beérkeztetést időben elhatároló főkönyvi számla menedzselését segíti.
+
+![](intro_keszletek\media\image5.png){width="2.8333333333333335in"
+height="2.0833333333333335in"}
+
+**Physical Inventory modul** az anyag- és árukészlet leltározását
+segíti. Ebben a modulban hozhatók létre leltárbizonylatok (Physical
+Inventory Document), végezhetők el készletszámítások (Inventory Count)
+és az eltérések kezelése (Difference).
+
+![](intro_keszletek\media\image6.png){width="3.6145833333333335in"
+height="2.4479166666666665in"}
+
+**Valuation modul** a készlet értékelésére vonatkozik, és segédkönyveket
+használ. A Change in Material Price követi az anyagok értékben
+bekövetkezett változásokat. A Balance Sheet Valuation a mérleg /
+vagyonelemek szerinti értékelést számítja ki. Az ezen belül lévő mappák
+különböző számítási lehetőségeket tartalmaznak: legalacsonyabb költség
+meghatározása (Determination of Lowest Value), LIFO szerinti és FIFO
+szerinti értékelés, valamint ezek eredményei (Results). További
+értékelési lehetőséget tartalmaz a Balance Sheet Valuation with Material
+Ledger, és a Actual Costing/Material Ledger.
+
+![](intro_keszletek\media\image7.png){width="3.8645833333333335in"
+height="3.1979166666666665in"}
+
+**Service Master modullban** a jellemzően 5-ös számlaosztályra,
+költségnemre és költséghelyre könyvelendő szolgáltatásokat lehet
+nyilvántartani.
+
+![](intro_keszletek\media\image8.png){width="3.40625in"
+height="3.15625in"}
+
+A szolgáltatás (Service) mappában lehet felvinni, megtekinteni és
+módosítani a szolgáltatások törzsadatait. A Standard Service Catalog-ban
+a szolgáltatásokból lehet katalógusokat, nyilvántartásokat létrehozni.
+
+**Material Master modulban** lehet létrehozni olyan anyagokat, árukat és
+közvetített szolgáltatásokat, amelyek II/1 mérleg osztályba, illetve a
+21-28-as számlacsoportba tartoznak.
+
+![](intro_keszletek\media\image9.png){width="3.5104166666666665in"
+height="6.1875in"}
+
+Material Master mappában lehet felvinni, módosítani, megtekinteni
+anyagokat, árukat, továbbszámlázott szolgáltatásokat. A Profile mappában
+lehet létrehozn az automata beszerzési igények összeállítása miatt is
+lényeges MRP és Forecast Profile-okat (ezeket később az anyagokhoz lehet
+rendelni. A Batch mappában a sarsz számok beállítására van lehetőség. A
+Special Stock mappában konszignációs szállítói készletekkel kapcsolatos
+tranzakciók érhetők el.
+
+
+
+
+<h2>**[Material Master]{.ul}**</h2>
+
+**1. General Overview**
+
+Mint korábban írtuk a Forgóeszköz \\ Készletek mérlegosztályba, illetve
+a 2-es számlaosztályba tartozó anyag- és árukészletek analitikus
+nyilvántartására az Anyaggazdálkodási modulban (Materials Management)
+van lehetőség. A törzsadatokat a Material-ban tudjuk felvinni,
+megtekinteni és módosítani.
+
+![](intro_mm\media\image1.png){width="4.749743000874891in"
+height="6.520833333333333in"}
+
+**A modul felépítése:**
+
+Az SAP ERP rendszerben előre megadott típusú anyagok értékeit tudjuk a
+Create (Special) és a Create (Genral) mappában felvinni. Az egyes
+anyagtípusok közvetve összevannak kötve a főkönyvi számlákkal. Ezek az
+anyagtípusok igazodnak a nemzetközi számviteli szabványok (IAS) alapján
+készült standard számlatükrökhöz (IFRS, US GAAP), valamint a standard
+magyar számlatükörhöz is. Az egyes típusok lefordításától eltekintünk,
+ugyanakkor az említett számlatükröket bemutatjuk.
+
+**[IFRS]{.ul}**
+
+![](intro_mm\media\image2.png){width="5.510416666666667in"
+height="3.75in"}
+
+**[US GAAP]{.ul}**
+
+![](intro_mm\media\image3.png){width="5.666666666666667in"
+height="2.1979166666666665in"}
+
+**[Magyar standard számlatükör]{.ul}**
+
+![](intro_mm\media\image4.png){width="6.291666666666667in"
+height="2.7916666666666665in"}
+
+**A korábban felvitt készletbe tartozó anyagokat egyenként módosítani**
+MM02-vel, egyedileg megtekinteni MM03-al, csoportosan módosítani és
+megtekinteni MM17-el tudunk. A már rögzített anyagok típusát MMAM-el
+tudjuk megváltoztatni. Minden változást a Display Changes mappában
+tudjuk figyelemmel kísérni. Ezek részletes használatáról később lesz
+szó.
+
+![](intro_mm\media\image5.png){width="2.7083333333333335in"
+height="3.2395833333333335in"}
+
+**A Profil (Profile) mappában** adhatunk meg különböző
+anyagigény-tervezési (MRP) és anyagigény-előrejelzési profilt.
+Mindkettőre az anyagbeszerzés automatizálásáért van szükség. Mindkettő
+esetében arról van szó, hogy előre meghatározunk szabályrendszereket,
+amelyeket később, az anyag törzsadatainak űrlapjain betudunk tölteni.
+Ennek lényege az, hogy már elkészült sablon jellegű standard szabályokat
+vegyünk át, és ne a törzsadatok létrehozása során tervezzük meg. Ezzel
+jelentősen csökkenthető a hiba lehetőségét.
+
+![](intro_mm\media\image6.png){width="3.2083333333333335in"
+height="3.9375in"}
+
+**Sarzs számozást a Batch mappában tudunk létrehozni.**
+
+![](intro_mm\media\image7.png){width="2.2395833333333335in"
+height="2.0416666666666665in"}
+
+Részletesebben a Batch-ről:
+
+<https://www.symbolenterprise.hu/modul/beszerzesi-azonosito-sarzs/>
+(2021. 02. 04)
+
+<https://sioexcise.hu/aas_szoveg/file/452_lot_kod.pdf> (2021. 02. 04)
+
+A **szállító konszignációs készlete** a különleges készletállomány
+(Special Stock) mappában érhető el.
+
+![](intro_mm\media\image8.png){width="2.65625in"
+height="2.0729166666666665in"}
+
+A konszignációs készletekkel kapcsolatban lásd:
+
+Oláh J. & Vad V. A konszignációs készletek jellemzői az ellátási
+láncban. Vezetéstudomány. (15)8. 67-76. pp.
+[**https://core.ac.uk/download/pdf/161069385.pdf**](https://core.ac.uk/download/pdf/161069385.pdf)
+(2021. január 20.)
+
+**[2. Alapanyag (Raw Materials)]{.ul}**
+
+Az alapanyag felvitelével létrehozunk egy logikai objektumot, amelyhez
+majd kapcsolódni fognak a szállítóktól beszerzett konkrét, fizikai
+termékek mennyiségben és értékben is. Ahhoz azonban, hogy a készletünk
+adatbázisában tárolni tudjuk a fizikai készletek valós adatait, elsőként
+a rekordokat kell felvinnünk. Másképpen megfogalmazza, ahhoz, hogy pl.:
+egy alapanyagra (pl.: almát, lisztet, cukrot, krumplit, tejet, dohányt,
+papírt) tudjunk kötni szerződést, megállapodást, megtudjuk rendelni,
+nyilván tudjuk tartani, áttudjuk adni a termelésnek (átalakításra), el
+tudjuk helyezni raktárházakban, üzemekben stb. elsőként az őt leíró
+logikai rekordot kell létrehoznunk. Ennek érdekében készítsük el egy
+tetszőleges alapanyag logikai rekordját.
+
+**Alapanyagok felvitele (központilag):**
+
+![](intro_mm\media\image9.png){width="2.5208333333333335in"
+height="1.1458333333333333in"}
+
+![](intro_mm\media\image10.png){width="3.2177220034995626in"
+height="2.9375in"}
+
+-   **Anyag (Material) cikkszáma, rövid megnevezése.** Két lehetőségünk
+    van. Vagy megadunk egy maximum 18 karakterből álló alfanumerikus
+    kódot (megnevezést), vagy üresen hagyjuk és a rendszer az
+    anyagtípushoz kapcsolódó alapértelmezett számintervallum alapján
+    automatában legenerálja.
+
+-   **Iparág (Industry sector).** Az alapanyaghoz tartozó releváns
+    iparág. Lényege abban áll, hogy a rendszerbeállítástól függően
+    meghatározhatja, a későbbi űrlapok felépítését, az elérhető mezők
+    körét.
+
+-   **Material Type.** Az anyag típusa megegyezik szinte minden esetben
+    a főkönyvben szereplő megnevezésekkel (alapanyag, segédanyag,
+    csomagolóanyag, stb.). Jelentősége számos más tényező mellett abban
+    van, hogy a rendszerbeállítás hatására az anyagtípusokhoz
+    kapcsolódnak a kiválasztható űrlapok köre, valamint a megadható
+    főkönyvi számlák is.
+
+-   **Amennyiben anyagot egy már elkészült anyagról hozunk létre újat,
+    akkor válasszuk a Copy from-ot,** és adjuk meg a cikkszámot.
+
+Ezt követően kattintsunk a **Select Views-ra**, amely listaként sorolja
+fel az anyagtípushoz tartozó lehetséges űrlapokat. Azt, hogy melyik
+űrlapok tartozhatnak egy adott anyagtípushoz a rendszermenedzserek
+határozzák meg a háttérbeállításokban. Általánosságban elmondható, hogy
+az elérhető űrlapok köre anyagtípusonként eltér (pl.: az alapanyag
+esetében nem lesz elérhető az eladási űrlap, mivel az alapanyagokat nem
+értékesítési céllal vesszük meg, hasonlóan a késztermék esetében nem
+lesz beszerzési űrlap, mivel a késztermékeket magunk állítjuk el). Az
+alapanyag (ROH RAW Material) esetében a gyári beállításokkal az alábbi
+űrlapok érhetők el.
+
+![](intro_mm\media\image11.png){width="3.289080271216098in"
+height="4.041666666666667in"}
+
+Az űrlapok kiválasztása, majd mezőkészleteinek kitöltése szükséges lesz
+később az egyes részmodulok üzemeltetéséhez. Pl.: beszerzési
+folyamatokat nem tudunk végezni, ha az anyagnak nincsen Purchasing
+űrlapja, érkeztetést nem tudunk végezni, ha nincsen megadva Plant /
+Storage Location / Warehouse Mgmt űrlap, könyvelést nem tudunk végezni,
+ha nincsen megadva az Accounting 1 & 2 űrlap, értékesítést, ha nincsen
+Sales űrlap. Az alábbi ábrán próbáljuk szemléltetni a szerepüket:
+
+![Képtalálatok a következőre: Material master views
+sap](intro_mm\media\image12.png){width="6.246006124234471in"
+height="4.25in"}
+
+<https://tekslate.com/sap-mm-material-master-data> (2021. 02. 04.)
+
+![Képtalálatok a következőre: Material master views
+sap](intro_mm\media\image13.png){width="6.3in"
+height="4.111094706911636in"}
+
+<https://ganeshsapscm.files.wordpress.com/2015/07/mm-views.png?w=685>
+(2021. 02. 04.)
+
+Az **alapadatok 1, alapadatok 2 (Basic Data 1 & Basic Data 2)** az
+alapértékek (anyagcsoport, mértékegység, súly, kiterjedés,
+alapértelmezett felhasználási hely, stb.) megadását teszi lehetővé. A
+**csoportosítás (Classification)** ezzel szemben az adott anyag
+különböző variánsait tárolja el csoportonként. Ennek előnye, hogy ebben
+az esetben nem kell variánsok szerint újra és újra külön anyagokat
+felvinni, hanem elegendő egyet (vagy néhányat) és annak a variánsait
+megadni. A fenti példánál maradva felviszünk alapanyagként a tejsavó
+fehérjét, és megadunk különböző variánsait csoportosítva (izolátum,
+koncentrátum, laktózmentes izolátum, natív előállítású izolátum, stb.),
+ezzel mentesülhetünk az önálló anyagokként történő felvitelüktől.
+**Beszerzés (Purchasing)** űrlap esetében a beszerzéssel kapcsolatos
+alapértelmezett (később módosítható) értékeket tudjuk megadni. Ezeket
+gyakorlatilag valamennyi beszerzési részmodul felhasználja
+kiindulásképpen. A **megrendelési szöveg (Purchase Order Text)** a
+szállítónak eljuttatandó alapértelmezett beszerzési szöveget tárolja. A
+**külkereskedelemhez szükséges alapértékeket a** **Foreign Trade**
+űrlapon tartjuk nyilván. Ez az űrlap az SAP külkereskedelmi (FT)
+alkalmazás-összetevőjének szállítói, beszerzési információk, anyagok és
+vevői törzsrekordok használatához releváns adatok részletes tárolását
+teszi lehetővé. A rendszer automatizált külkereskedelmi feldolgozása a
+teljes törzsadatoktól függ. Forrás:
+<https://sapbrainsonline.com/mm-tutorial/foreign-trade-data-in-master-records-sap-mm.html>
+(2021. 02. 04.) A **számviteli** alapértelmezett értékeket (értékelési
+osztály, főkönyvi számla, árak) a könyvelési **Accounting 1 & Accounting
+2** űrlap tartalmazza. Az **MRP: Material Requirement Planning** űrlapon
+az anyagigénytervezés beállításaihoz szükséges értékeket tudjuk vezetni.
+Az anyag alapértelmezett üzemi adatait a **General Plant Data 1 /
+Storage Location & General Plant Data 2 / Storage Location** űrlapon
+lehet megadni.
+
+Miután kiválasztottuk a szükséges űrlapokat, az adott alapanyagot el
+kell helyezni a szervezeti környezetben.
+
+**Szervezeti környezet (Organizational Levels)**
+
+A kiválasztott űrlapok alapján és függvényében meg kell adni, hogy az
+alapanyagot melyik szervezeti egységben, az alapanyag esetében üzemben
+(Plant), melyik tárolóhelységben (Storage Location) és melyik
+raktárházban (Warehouse No.) szeretnénk logikailag, illetve fizikailag
+elhelyezni. Megadhatunk standard, előre definiált MRP profilokat is. A
+szervezeti környezet objektumai alapértékekként töltődnek be az egyes
+űrlapokhoz. Órai keretek között használjuk az alábbi értékeket.
+
+![](intro_mm\media\image14.png){width="4.71875in"
+height="2.8792377515310585in"}
+
+**[Alapadatok 1. (Basic Data 1.)]{.ul}**
+
+**Általános adatok (General data)**
+
+![](intro_mm\media\image15.png){width="6.291666666666667in"
+height="2.90625in"}
+
+-   **Anyag nyilvántartási mértékegysége (Base Unit of Measure).** A
+    készletbe tartozó alapanyag alapértelmezett nyilvántartási
+    mértékegysége (lehet pl.: darab, kg, köbméter). A mértékegység
+    szerepe az, hogy minden attól eltérő mértékegységben megadott
+    értéket erre az alapértelmezett mértékegységre fog konvertálni a
+    rendszer (pl.: ha a szállító más mértékegységben szállítja az
+    anyagot).
+
+-   **Divízió (Division).** A divízió megadása az anyagok, termékek,
+    szolgáltatások csoportosítására alkalmasak az eladás és értékesítés
+    tekintetében, ez elsősorban nem az alapanyag, hanem az értékesítendő
+    termékek esetén releváns. A rendszer divíziókat használ az
+    értékesítési területek és üzletágak meghatározásához az egyes
+    anyagok esetében.
+
+-   **X Plant matl status (Cross-**plant material status, valid from):
+    az adott anyaghoz lehet megadni különböző blokkolási státuszokat
+    (anyagmozgatáshoz), illetve ennek a kezdő dátumát.
+
+-   **Anyagcsoport (Material Group).** az anyagokat anyagcsoportba
+    érdemes sorolni. Anyagcsoport segítségével a későbbiekben könnyen
+    lehet keresni, kimutatni, riportálni és összegezni a csoportban
+    szereplő anyagokat. Az anyagcsoport és az anyagtípus között nincsen
+    kapcsolat. az órai munka során jelentősége lesz az anyagcsoportnak a
+    lekérdezéske összeállításának szempontjából.
+
+-   **Laboratórium / Iroda.** Az anyagot felhasználó szervezeti egységet
+    lehet megadni.
+
+![](intro_mm\media\image16.png){width="6.239583333333333in"
+height="1.625in"}
+
+-   **A bruottó és nettó súly (Gross Weight, Net Weight)** értékének
+    megadása a raktárházakmenedzselés (Warehouse Mgmt) modulban megadott
+    tárolókapacitás miatt lényeges.
+
+-   **A térfogat (Volume, Volume unit)** az üzemi tárolás és szállítás
+    tekintetében releváns
+
+-   **Méret / dimenziók (Size / dimensions)** ennek csak tájékoztató
+    szerepe van.
+
+![](intro_mm\media\image17.png){width="6.291666666666667in"
+height="1.6354166666666667in"}
+
+Amennyiben nem alapanyagot, hanem értékesítendő terméket viszünk fel,
+akkor célszerű megadni a csomagolóanyag referenciaszámát is.
+
+**[Osztályozási űrlap]{.ul}**
+
+![](intro_mm\media\image18.png){width="6.302083333333333in"
+height="3.5729166666666665in"}
+
+Az űrlap lehetővé teszi, hogy egy adott alapanyagot további osztályokra
+és variánsokra lehessen bontani. Az eljárás előnye, hogy a Tej példánál
+maradva létre tudunk hozni csoportokat aszerint, hogy a tej, mint
+alapanyag ökológiai, biológiai, nagyüzemi, vagy szabadtartású
+tehenektől, illetve tejgazdaságokból származik. Ennek lényege abban van,
+hogy egy-egy késztermékhez különböző típusú tejre van szükség. Azonban
+nem kell négy féle alapanyagot felvinni, ehelyett elegendő egy
+általánosat létrehozni, és azt megbontani variánsok / típusok szerint.
+
+**[Beszerzési űrlap (Purchase)]{.ul}**
+
+A beszerzési űrlapon szereplő értékek olyan alapértelmezett (default)
+információk, amelyeket a beszerzési folyamatok tranzakciói (más űrlapok)
+átfognak venni (azokban természetesen lehet módosítani).
+
+![](intro_mm\media\image19.png){width="6.3in"
+height="3.196527777777778in"}
+
+-   Az **alapvető mértékegység** (Base Unit of Measure) és a **rendelés
+    mértékegysége** (Order Unit) mellett megadhatunk olyan **beszerzési
+    csoportot** (Purchasing Group), amely az alapanyag operatív
+    beszerzéséért felelős. Amennyiben az alapmértékegységet módosítjuk,
+    úgy a Basic Data 1 űrlapon is módosulni fog. Az anyagcsoport értékét
+    a Basic Data 1 űrlapról másolja át a rendszer, ha itt módosítjuk,
+    ott is módosulni fog.
+
+-   Az űrlapon lévő egyik igen lényeges kapcsoló **az automatikus
+    beszerzési rendelés** (Automate Purchase Order), ha ezt aktiváljuk,
+    akkor a beszerzési igényekből automatizáltan tudunk megrendeléseket
+    generálni.
+
+-   Az anyagfuvarozási **csoport** (Material freight group) az anyagok
+    csoportosítására használják, annak érdekében, hogy azokat
+    árufuvarozási kód és osztály szerint sorolhassák be. A fuvarozási
+    kódokat és az árufuvarozási kódkészlet osztályait az anyagfuvarozási
+    csoport határozza meg. Az árufuvarozási kódkészlet a fuvardíjak
+    meghatározására és a szervizügynökökkel való kommunikációra szolgál.
+
+-   Szintén lényeges mező **a sarzsszám (Batch management)** aktiválása.
+    Lásd ennek részletes leírását:
+    <https://erpcsere.hu/munka_adagszamokkal/> (2021. 02. 04.)
+
+![](intro_mm\media\image20.png){width="6.25in" height="1.625in"}
+
+A beszerzési értékkulcs meghatározza:
+
+-   **Szállítókkal szemben megfogalmazott emlékeztetők, felszólítások
+    (1st Rem./Exped. -- 3rd Rem./Exped.)** napokban kifejezve, arra az
+    esetre, ha az üzleti partner nem szállítja le a a szerződés alapján
+    összeállított és elküldött megrendelés szerinti árut.
+
+-   **Alulszállítási határérték (Underdelivery Tolerance Limit)** az
+    százalékos érték (a rendelési mennyiség alapján), ameddig a
+    leszállított mennyiséget elfogadják. Pl.: a rendelési mennyiség
+    70%-a alatt nem veszem át a szállított mennyiséget, rész szállítást
+    nem vételezek be.
+
+-   **Túlszállítási határérték (Overdelivery Tolerance Limit)** az
+    százalékos érték (a rendelési mennyiség alapján), ameddig a
+    leszállított mennyiséget elfogadják. Pl.: a rendelési mennyiség
+    120%-a feletti árut mennyiséget nem veszem át.
+
+-   **Korlátlan (Indicator: Unlimited Overdelivery Allowed)** eben az
+    esetben bármilyen arányú túlszállítás elfogadható.
+
+![](intro_mm\media\image21.png){width="6.25in"
+height="1.5520833333333333in"}
+
+-   **GR Processing Time (Good Receipt Processing Time):** az
+    anyagérkeztetés alapértelmezett ideje napban kifejezve. Az
+    ellenőrzéshez szükséges anyag beérkezése és a raktárba helyezés után
+    szükséges munkanapok száma.
+
+-   **Quota arrangement usage:** Az itt megadott bejegyzés szabályozza,
+    hogy a teljes rendelési mennyiség hogyan kerül kiszámításra a
+    kvótarendszerben, és ezáltal az anyag melyik ellátási forrása kerül
+    meghatározásra egy adott időpontban. Kvótaelrendezést adható meg a
+    következő mezőkombinációkhoz:
+
+    -   megrendelések: a már megrendelt anyag mennyiségét a
+        kvótarendszer tartalmazza.
+
+    -   beszerzési igények: az anyag beszerzési igénylésében kért teljes
+        mennyiséget a kvótarendszer tartalmazza.
+
+    -   ütemezési megállapodás: az anyag szállítási ütemtervében
+        szereplő teljes mennyiséget a kvótarendszer tartalmazza.
+
+    -   tervezett megrendelések: az anyag tervezett mennyiségben
+        tervezett teljes mennyiségét a kvótarendszer tartalmazza.
+
+    -   anyagtervezés (MRP): a kvótaelrendezési mechanizmust az
+        anyagtervezésben is használják; vagyis az anyagtervezéssel
+        létrehozott tervezett megrendeléseket és beszerzési igényeket a
+        kvótarendszer tartalmazza.
+
+    -   gyártási megrendelések Ennek az anyagnak az összes gyártási
+        megrendelésének teljes mennyiségét a kvótarendszer tartalmazza.
+
+-   **Source list requirement:** meghatározza, hogy a forráslistát fenn
+    kell tartani egy bizonyos üzem külső beszerzése esetén. Aktiválás
+    esetén az ellátási forrást meg kell adni a forráslistában, mielőtt
+    vételi megbízást lehet létrehozni.
+
+![](intro_mm\media\image22.png){width="6.291666666666667in"
+height="5.041666666666667in"}
+
+Az **üzemi / tárolási adatok 1-ben** lehet megadni a tárolás pontos
+helyét (Storage Bin és Picking Area), a tárolási hőmérsékletet (Temp.
+conditions), a konténer tulajdonságát (Container reqmts), a feliratozás
+típusát (Label type), az anyag kiadásának mértékegységét (ha ez eltérne
+az alapmértékegységtől), a tárolási feltételeket (Storage conditions), a
+veszélyességi besorolást (Haz. material number), valamint a tárolási
+időt (Shelf life data).
+
+A Storage Bin-t az alábbi kép szemlélteti:
+
+![Képtalálatok a következőre: picking area
+sap](intro_mm\media\image23.png){width="4.510416666666667in"
+height="3.5208333333333335in"}
+
+<https://www.wisdomjobs.com/e-university/sap-wm-tutorial-244/storage-section-7706.html>
+(2021. 02. 04.)
+
+A Picking Area-t pedig az alábbi:
+
+![Képtalálatok a következőre: Picking
+area](intro_mm\media\image24.jpeg){width="6.3in" height="3.54375in"}
+
+<https://boxes.curtec.com/en/customer-stories/internal-logistics/katoen-natie>
+(2021. 02. 04.)
+
+![](intro_mm\media\image25.png){width="6.270833333333333in"
+height="1.4791666666666667in"}
+
+A Shelf Life data a tárolási időt értékeit tartalmazza. Max. storage
+period = a maximális tárolási idő.
+
+![](intro_mm\media\image26.png){width="6.3in"
+height="3.7591732283464565in"}
+
+A méret és súly adatokat a Basic Data 1 űrlapról veszi át a program. A
+számunka léyeges mezőt az alapértelmezet Pénzügyi Központ megadása
+(Profit Center) jelenti. A beszerzési folyamatokban erre a pénzügyi
+központra fogja a program kontírozni az alapanyagot.
+
 
 
 
