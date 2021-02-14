@@ -762,6 +762,7 @@ knitr::include_graphics("intro_gif/S_P00_07000008_Display_of_Bank_Changes.gif")
 
 
 
+
 **S_P99_41000166 -- Bankok listaszerű lekérdezése (Display Bank
 Directory)**
 

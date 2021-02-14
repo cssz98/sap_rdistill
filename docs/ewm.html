@@ -2456,6 +2456,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html" class="title">SAP E-Study Guide</a>
 <a href="index.html">Introduction</a>
 <a href="fin.html">Financial Accounting</a>
+<a href="ewm.html">EWM</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
@@ -2483,6 +2484,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <title>
 SAP MM Notes
 </title>
+<p><link href="styles/bootstrap.css" rel="stylesheet"> <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet"> <link href="styles/jquery.tocify.css" rel="stylesheet"></p>
 <style>
 <!--
  /* Font Definitions */
@@ -2529,8 +2531,9 @@ h1
     punctuation-wrap:simple;
     text-autospace:none;
     border:none;
-    padding:0cm;
-    font-size:10.0pt;
+    padding:14px;
+    border-left: 1px solid red;
+    font-size:30pt;
     font-family:"Arial Narrow",sans-serif;
     color:red;
     text-decoration:underline;}
@@ -2741,9 +2744,6 @@ p.MsoTitle, li.MsoTitle, div.MsoTitle
     font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;
     font-weight:bold;}
-a:link, span.MsoHyperlink
-    {color:blue;
-    text-decoration:underline;}
 p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
     {margin-top:12.0pt;
     margin-right:0cm;
@@ -2778,85 +2778,13 @@ ul
 </style>
 </head>
 <body lang="HU" link="blue" vlink="#954F72" style="word-wrap:break-word">
+<div id="toc">
+
+</div>
 <div class="WordSection1">
-<p class="MsoTitle">
-SAP MM Jegyzet
-</p>
-<p class="MsoTocHeading">
-Tartalom
-</p>
-<p class="MsoToc1">
-<a href="#_Toc63691781">1. Kiegészítés : SAP EWM<span style="color:windowtext;display:none;text-decoration:none">.. </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc2">
-<a href="#_Toc63691782">1.1. DEF: SAP Kiterjessztett raktárkezelés (Extended Warehouse Management, EWM)<span style="color:windowtext;
-display:none;text-decoration:none"> </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691783">1.1.1. EWM értéknövelt szolgáltatásokat is nyújt:<span style="color:windowtext;display:none;
-text-decoration:none"> </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691784">1.1.2. DEF: Raktári Folyamat Típusok (Warehouse Process Type, WPT)<span style="color:windowtext;display:none;
-text-decoration:none"> </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691785">1.1.3. DEF: Telepítése (Deployment) lehet:<span style="color:windowtext;display:none;text-decoration:none"> </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691786">1.1.4. Hogyan kommunikál egymással az EWM és az ERP, SCM szerveren keresztül?<span style="color:windowtext;
-display:none;text-decoration:none">  </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc2">
-<a href="#_Toc63691787">1.2. EWM GUI tranzakciók<span style="color:windowtext;display:none;text-decoration:none">. </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691788">1.2.1. Workcenter becsatolása StorTyp alá<span style="color:windowtext;display:none;text-decoration:none">. </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691789">1.2.2. Bin létrehozás, esetleges tiltásokkal<span style="color:windowtext;display:none;text-decoration:none"> </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691790">1.2.3. WarehProcTyp létrehozás másolással, módosítva<span style="color:windowtext;display:none;text-decoration:
-none">. </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691791">1.2.4. EWM anyag importálás ERP-ből<span style="color:windowtext;display:none;text-decoration:none"> </span><span style="color:windowtext;display:none;text-decoration:none">2</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691792">1.2.5. TRN:/SCWM/MON: WH monitor<span style="color:windowtext;display:none;text-decoration:none"> </span><span style="color:windowtext;display:none;text-decoration:none">3</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691793">1.2.6. TRN:/SCWM/RFUI: RF kezelő<span style="color:windowtext;display:none;text-decoration:none">. </span><span style="color:windowtext;display:none;text-decoration:none">3</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691794">1.2.7. TRN:/SCWM/PRDI: IBDReq<span style="color:windowtext;display:none;text-decoration:none">. </span><span style="color:windowtext;display:none;text-decoration:none">3</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691795">1.2.8. TRN:/SCWM/PRDO: OBDNotif<span style="color:windowtext;display:none;text-decoration:none"> </span><span style="color:windowtext;display:none;text-decoration:none">3</span></a>
-</p>
-<p class="MsoToc3">
-<a href="#_Toc63691796">1.2.9. TRN:/SCWM/TO_CONF: WH task DEF: Visszajelentés (Confirm)<span style="color:windowtext;display:none;text-decoration:
-none"> </span><span style="color:windowtext;display:none;text-decoration:none">3</span></a>
-</p>
-<p class="MsoNormal">
- 
-</p>
-<p class="MsoNormal">
- 
-</p>
-<p class="MsoNormal">
- 
-</p>
 <p><b><u><span style="font-size:10.0pt;font-family:&quot;Arial Narrow&quot;,sans-serif;
 color:red"><br clear=all style='page-break-before:always'> </span></u></b></p>
-<div style="border:none;border-left:solid red 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:7.1pt;margin-right:0cm">
-<h1 style="margin-left:7.1pt">
-<a name="_Toc63691781"><span style="text-decoration:
-none"> 1.</span>Kiegészítés : SAP EWM</a>
-</h1>
-</div>
+<h1 id="kiegészítés-sap-ewm">Kiegészítés : SAP EWM</h1>
 <div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:14.2pt;margin-right:0cm">
 <h2 style="margin-left:7.1pt">
@@ -3329,6 +3257,20 @@ margin-left:42.55pt;margin-right:0cm">
 </p>
 </div>
 </div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.tocify.js"></script>
+<script>
+$(function() {
+
+var toc = $("#toc").tocify({
+selectors: "h1,h2,h3,h4,h5"
+}).data("toc-tocify");
+
+
+});
+</script>
 </body>
 </html>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
