@@ -34,7 +34,7 @@ knitr::include_graphics("geo_.pdf")
 
 
 ```{r,dpi=60,fig.align='left'}
-knitr::include_graphics("fin/media/image1.png")
+knitr::include_graphics("images/fin/media/image1.png")
 ```
 
 
@@ -86,7 +86,7 @@ nem kell megadni vállalatcsoportot, mivel ez nem releváns).
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image2.png")
+knitr::include_graphics("images/fin/media/image2.png")
 ```
 
 
@@ -113,12 +113,12 @@ Az alábbiakban nézzünk meg két standard, szabványos SAP szervezeti
 ábrát:
 
 ```{r,dpi=50,fig.align='center',fig.cap='http://sapmoduletutor.blogspot.com/2015/11/sap-mm-organizational-structure-in-sap.html (2021. 02. 10.)'}
-knitr::include_graphics("fin/media/image3.png")
+knitr::include_graphics("images/fin/media/image3.png")
 ```
 
 
 ```{r,dpi=50,fig.align='center',fig.cap='https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/1503%20SP%206/en-US/a8ffcc537cbf224be10000000a174cb4.html (2021. 02. 10.)'}
-knitr::include_graphics("fin/media/image4.gif")
+knitr::include_graphics("images/fin/media/image4.gif")
 ```
 
 
@@ -126,18 +126,18 @@ Példák a vállalatcsoportokra:
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image5.png")
+knitr::include_graphics("images/fin/media/image5.png")
 ```
 
 
 
 ```{r,dpi=50,fig.align='center',fig.cap='https://www.slideshare.net/VishalHarichund/20150129tkiscompanypresentationtranen (2021. 02. 10.)'}
-knitr::include_graphics("fin/media/image6.jpeg")
+knitr::include_graphics("images/fin/media/image6.jpeg")
 ```
 
 
 ```{r,dpi=50,fig.align='center',fig.cap='https://blogs.sap.com/2018/03/26/sap-labs-network-the-art-of-being-connected/ (2021. 02. 10.)'}
-knitr::include_graphics("fin/media/image7.png")
+knitr::include_graphics("images/fin/media/image7.png")
 ```
 
 
@@ -146,7 +146,7 @@ vállalatok egy részét tartalmazza.
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image8.png")
+knitr::include_graphics("images/fin/media/image8.png")
 ```
 
 
@@ -161,7 +161,7 @@ jogszabályokban rögzített jelentések.
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image9.png")
+knitr::include_graphics("images/fin/media/image9.png")
 ```
 
 
@@ -183,19 +183,19 @@ lehet, hogy célszerűbb a függőviszonyok egy részének - átgondolt -
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image10.png")
+knitr::include_graphics("images/fin/media/image10.png")
 ```
 
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image11.png")
+knitr::include_graphics("images/fin/media/image11.png")
 ```
 
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image12.png")
+knitr::include_graphics("images/fin/media/image12.png")
 ```
 
 
@@ -211,7 +211,7 @@ gazdasági események kontírozásának tekintetében lesz súlya.
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image13.png")
+knitr::include_graphics("images/fin/media/image13.png")
 ```
 
 
@@ -257,7 +257,7 @@ irányítást. Lásd.:
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image14.png")
+knitr::include_graphics("images/fin/media/image14.png")
 ```
 
 
@@ -266,7 +266,7 @@ knitr::include_graphics("fin/media/image14.png")
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image15.png")
+knitr::include_graphics("images/fin/media/image15.png")
 ```
 
 
@@ -339,7 +339,7 @@ elemezni a vállalat teljesítményét.
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image16.png")
+knitr::include_graphics("images/fin/media/image16.png")
 ```
 
 
@@ -360,7 +360,7 @@ center).]{.ul}**
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image17.png")
+knitr::include_graphics("images/fin/media/image17.png")
 ```
 
 
@@ -449,7 +449,7 @@ sorolhatók, valamint besorolhatók szegmensekbe is.
 
 
 ```{r,dpi=50,fig.align='center',fig.cap='<https://www.slideshare.net/bnanduri/profit-centeraccounting-50622317 (2021. 02. 06.)'}
-knitr::include_graphics("fin/media/image18.jpeg")
+knitr::include_graphics("images/fin/media/image18.jpeg")
 ```
 
 
@@ -465,7 +465,7 @@ milyen szinten szeretnénk mérni a nyereséget.
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image19.png")
+knitr::include_graphics("images/fin/media/image19.png")
 ```
 
 
@@ -477,7 +477,7 @@ részt vehet. A beszerzés szempontjábók az alábbi egyszerű példát nézzü
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image20.png")
+knitr::include_graphics("images/fin/media/image20.png")
 ```
 
 
@@ -488,7 +488,7 @@ nyereséget, de működtetése mégis pénzbe kerül a szervezetnek.
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("fin/media/image17.png")
+knitr::include_graphics("images/fin/media/image17.png")
 ```
 
 
@@ -552,7 +552,7 @@ potenciálisan felülmúlják a megszerzett ismeretek előnyeit.
 
 
 ```{r,dpi=50,fig.align='center',fig.cap='http://saphelp.ucc.ovgu.de/NW750/EN/70/acd65378024308e10000000a174cb4/ppt_img.gif (2021. 02.04.)'}
-knitr::include_graphics("fin/media/image21.gif")
+knitr::include_graphics("images/fin/media/image21.gif")
 ```
 
 

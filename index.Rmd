@@ -257,16 +257,16 @@ be lehet kerülni, és egy multis karriert lehet megalapozni vele.
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/image2.png")
+knitr::include_graphics("images/intro/image2.png")
 ```
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/image3.png")
+knitr::include_graphics("images/intro/image3.png")
 ```
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/image4.png")
+knitr::include_graphics("images/intro/image4.png")
 ```
 
 **Néhány kiszervezett (Shared Service) munkakörre vonatkozó olyan
@@ -274,11 +274,11 @@ knitr::include_graphics("intro/image4.png")
 le. **
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/image5.png")
+knitr::include_graphics("images/intro/image5.png")
 ```
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/image6.png")
+knitr::include_graphics("images/intro/image6.png")
 ```
 
 
@@ -329,7 +329,7 @@ adatokat a főkönyvnek. (Takács & Márkus, 2019, 92. o.)
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/2/image1.png")
+knitr::include_graphics("images/intro/2/image1.png")
 ```
 
 
@@ -352,7 +352,7 @@ időpontjának tárolása. Emellett meghatározó jelentőségű az
 felvezetése a főkönyvi számlákra.
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/2/image2.png")
+knitr::include_graphics("images/intro/2/image2.png")
 ```
 
 
@@ -362,7 +362,7 @@ nyelvű rendszerbeállítási monográfiával rendelkezem. A tárgyi eszköz
 könyvelésével összefüggésben van a beruházás menedzsment modul.
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/2/image3.png")
+knitr::include_graphics("images/intro/2/image3.png")
 ```
 
 
@@ -371,7 +371,7 @@ könyvelését az ingatlankezelő modulok segítik (Real Estate Mgmt.;
 Flexible Real Estate Mgmt.).
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/2/image4.png")
+knitr::include_graphics("images/intro/2/image4.png")
 ```
 
 
@@ -385,7 +385,7 @@ kötelezettségeinek, illetve az e mögött álló üzleti kapcsolatoknak a
 részletes nyilvántartása, menedzselése.
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/2/image5.png")
+knitr::include_graphics("images/intro/2/image5.png")
 ```
 
 
@@ -394,7 +394,7 @@ szereplő lízing nyilvántartását a lízing könyvelési (Lease Accounting)
 modul végzi.
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/2/image6.png")
+knitr::include_graphics("images/intro/2/image6.png")
 ```
 
 
@@ -405,7 +405,7 @@ található Service Master viszont az 5-ös számlaosztály költségnemeire
 beszerezhető szolgáltatásokat tartalmazza.
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/2/image7.png")
+knitr::include_graphics("images/intro/2/image7.png")
 ```
 
 Az analitikus feladatok elvégző modul legfontosabb feladata a vásárolt
@@ -419,7 +419,7 @@ utalások nyilvántartása, könyvelése, és a bankszámlakivonatok
 feldolgozása.
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/2/image8.png")
+knitr::include_graphics("images/intro/2/image8.png")
 ```
 
 
@@ -428,7 +428,7 @@ analitikus nyilvántartását a vevői modulban (Account Receivable)
 vezetjük.
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/2/image9.png")
+knitr::include_graphics("images/intro/2/image9.png")
 ```
 
 
@@ -436,7 +436,7 @@ knitr::include_graphics("intro/2/image9.png")
 Kötelezettségek áruszállításból és szolgáltatásból.**
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro/2/image10.png")
+knitr::include_graphics("images/intro/2/image10.png")
 ```
 
 
@@ -449,7 +449,7 @@ knitr::include_graphics("intro/2/image10.png")
 
 
 ```{r,dpi=60, fig.align='center'}
-knitr::include_graphics("intro/2/image11.png")
+knitr::include_graphics("images/intro/2/image11.png")
 ```
 
 
@@ -502,7 +502,7 @@ információt szolgáltatni.
 között értékeket a főkönyvi modulban tudunk mozgatni, illetve szintén a
 főkönyvi modulban tudunk kimutatásokat készíteni.
 
-![](intro\2\image12.png){width="4.458333333333333in"
+![](images\intro\2\image12.png){width="4.458333333333333in"
 height="2.4791666666666665in"}
 
 
@@ -519,7 +519,7 @@ teljes funkcionalitásukban (felhasználói és rendszerbeállítási szinten).
 
 
 ```{r,dpi=50,fig.align='center',fig.cap='https://www.hipfunggroup.com/sap-erp-system/ (2021. 02.10.)'}
-knitr::include_graphics("intro_sapbasics/media/image1.jpeg")
+knitr::include_graphics("images/intro/intro_sapbasics/media/image1.jpeg")
 ```
 
 
@@ -533,7 +533,7 @@ mappákban (Folder) vannak tárolva.
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro_sapbasics/media/image2.png")
+knitr::include_graphics("images/intro/intro_sapbasics/media/image2.png")
 ```
 
 
@@ -545,22 +545,22 @@ lévő feladatok nagy mértékben meghatározzák az intéző menüpont tartalmi
 felépítését. Ezt az Other menu kapcsolóval, illetve szerepek megadásával
 lehet szemléltetni.
 
-![](intro_sapbasics\media\image3.png){width="6.302083333333333in"
+![](images\intro\intro_sapbasics\media\image3.png){width="6.302083333333333in"
 height="0.78125in"}
 
 **[AIS_APAY_CLERK_US00 Szállítói számla könyvelő]{.ul}**
 
-![](intro_sapbasics\media\image4.png){width="6.291666666666667in"
+![](images\intro\intro_sapbasics\media\image4.png){width="6.291666666666667in"
 height="2.6770833333333335in"}
 
 **[Role VS:: AIS_AR_CLERK_US00 Vevői számla könyvelő]{.ul}**
 
-![](intro_sapbasics\media\image5.png){width="6.302083333333333in"
+![](images\intro\intro_sapbasics\media\image5.png){width="6.302083333333333in"
 height="2.6770833333333335in"}
 
 **[Role VS::FI_AA_ASSET_TRANSACTIONS Tárgyi eszköz könyvelő]{.ul}**
 
-![](intro_sapbasics\media\image6.png){width="6.291666666666667in"
+![](images\intro\intro_sapbasics\media\image6.png){width="6.291666666666667in"
 height="4.4375in"}
 
 Ezek és az ezekhez hasonló szerepek jogosultságokban tárgyiasulnak.
@@ -570,7 +570,7 @@ feladataikhoz szükséges tranzakciókat használhatják.
 
 **[Intézőnézet felépítése:]{.ul}**
 
-![](intro_sapbasics\media\image7.png){width="6.3in"
+![](images\intro\intro_sapbasics\media\image7.png){width="6.3in"
 height="5.954861111111111in"}
 
 Az intézőből tranzakciók érhetőek el. A tranzakciók mezőkből felépített
@@ -596,7 +596,7 @@ rendszerezetten:
 
 
 ```{r,dpi=50,fig.align='center',fig.cap='Saját szerkesztés (Lendvai Tamás)'}
-knitr::include_graphics("intro_sapbasics/media/image8.png")
+knitr::include_graphics("images/intro/intro_sapbasics/media/image8.png")
 ```
 
 
@@ -619,7 +619,7 @@ vonatkozó alapműveletek alapszintű használatát fogjuk elsajátítani.
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro_sapbasics/media/image9.png")
+knitr::include_graphics("images/intro/intro_sapbasics/media/image9.png")
 ```
 
 
@@ -638,13 +638,13 @@ lényegesnek, mert így látni lehet, hogy adott SAP-s munkakörök milyen
 jellemző feladatokat tartalmaznak, illetve világossá válik a szerepek és
 az intéző nézet közötti összefüggés.
 
-![](intro_sapbasics\media\image10.png){width="6.302083333333333in"
+![](images\intro\intro_sapbasics\media\image10.png){width="6.302083333333333in"
 height="2.5625in"}
 
-![](intro_sapbasics\media\image11.png){width="3.441626202974628in"
+![](images\intro\intro_sapbasics\media\image11.png){width="3.441626202974628in"
 height="1.7291666666666667in"}
 
-![](intro_sapbasics\media\image12.png){width="4.083333333333333in"
+![](images\intro\intro_sapbasics\media\image12.png){width="4.083333333333333in"
 height="3.709909230096238in"}
 
 A szerep kiválasztásának hatására az intézőben kizárólag a bankfiók
@@ -658,7 +658,7 @@ Amennyiben nem a szerepek kiválasztásával kívánjuk limitálni a listát,
 <div class="zoom">
 
 ```{r,dpi=50,fig.align='center'}
-knitr::include_graphics("intro_gif/Bank_route.gif")
+knitr::include_graphics("images/intro/intro_gif/Bank_route.gif")
 ```
 
 </div>
@@ -667,7 +667,7 @@ knitr::include_graphics("intro_gif/Bank_route.gif")
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro_sapbasics/media/image13.png")
+knitr::include_graphics("images/intro/intro_sapbasics/media/image13.png")
 ```
 
 
@@ -680,32 +680,32 @@ az FI01-es tranzakciót, és elsőként adjuk meg az országot HU, majd az A
 oszlopban található 8 számból álló bankfiók kódot (Branch office code)
 Bank Key-ként, majd enter.
 
-![](intro_sapbasics\media\image14.png){width="2.409448818897638in"
+![](images\intro\intro_sapbasics\media\image14.png){width="2.409448818897638in"
 height="1.125in"}
 
 Ezt követően értelemszerűen töltsük ki az űrlapot.
 
-![](intro_sapbasics\media\image15.png){width="6.3in"
+![](images\intro\intro_sapbasics\media\image15.png){width="6.3in"
 height="5.144132764654418in"}
 
 Ezt követően kattintsunk a lemez ikonra és mentsük el. Fogunk kapni egy
 értesítés a bal alsó sarokban, hogy sikerült a mentés.
 
-![](intro_sapbasics\media\image16.png){width="2.2916666666666665in"
+![](images\intro\intro_sapbasics\media\image16.png){width="2.2916666666666665in"
 height="0.4583333333333333in"}
 
 **FI02 - Módosítás**
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro_sapbasics/media/image17.png")
+knitr::include_graphics("images/intro/intro_sapbasics/media/image17.png")
 ```
 
 
 
 <div class="zoom">
 ```{r,dpi=50,fig.align='center'}
-knitr::include_graphics("intro_gif/FI02_Change.gif")
+knitr::include_graphics("images/intro/intro_gif/FI02_Change.gif")
 ```
 
 
@@ -715,14 +715,14 @@ knitr::include_graphics("intro_gif/FI02_Change.gif")
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro_sapbasics/media/image18.png")
+knitr::include_graphics("images/intro/intro_sapbasics/media/image18.png")
 ```
 
 
 <div class="zoom">
 
 ```{r,dpi=50,fig.align='center'}
-knitr::include_graphics("intro_gif/FI03_Display.gif")
+knitr::include_graphics("images/intro/intro_gif/FI03_Display.gif")
 ```
 </div>
 
@@ -730,14 +730,14 @@ knitr::include_graphics("intro_gif/FI03_Display.gif")
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro_sapbasics/media/image19.png")
+knitr::include_graphics("images/intro/intro_sapbasics/media/image19.png")
 ```
 
 
 <div class="zoom">
 
 ```{r,dpi=50,fig.align='center'}
-knitr::include_graphics("intro_gif/FI04_Display_Changes.gif")
+knitr::include_graphics("images/intro/intro_gif/FI04_Display_Changes.gif")
 ```
 
 </div>
@@ -747,7 +747,7 @@ Changes)**
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro_sapbasics/media/image20.png")
+knitr::include_graphics("images/intro/intro_sapbasics/media/image20.png")
 ```
 
 
@@ -755,7 +755,7 @@ knitr::include_graphics("intro_sapbasics/media/image20.png")
 
 
 ```{r,dpi=50,fig.align='center'}
-knitr::include_graphics("intro_gif/S_P00_07000008_Display_of_Bank_Changes.gif")
+knitr::include_graphics("images/intro/intro_gif/S_P00_07000008_Display_of_Bank_Changes.gif")
 ```
 
 </div>
@@ -768,7 +768,7 @@ Directory)**
 
 
 ```{r,dpi=60,fig.align='center'}
-knitr::include_graphics("intro_sapbasics/media/image21.png")
+knitr::include_graphics("images/intro/intro_sapbasics/media/image21.png")
 ```
 
 
@@ -777,7 +777,7 @@ knitr::include_graphics("intro_sapbasics/media/image21.png")
 <div class="zoom">
 
 ```{r,dpi=50,fig.align='center'}
-knitr::include_graphics("intro_gif/Display_Bank_Directory.gif")
+knitr::include_graphics("images/intro/intro_gif/Display_Bank_Directory.gif")
 ```
 
 </div>

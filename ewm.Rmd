@@ -559,9 +559,7 @@ Binjébe mehet</p>
 
 <p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Normál WM-ben
-ez volt a <u>DEF: Raktári mozgás típus (WM Movement type</u>), ami <span
-style='font-family:Wingdings'>L</span> nehezen megjegyezhető számokból állt <span
-style='font-family:Wingdings'>L</span> nem volt teljesen kompatibilis a <u>DEF:
+ez volt a <u>DEF: Raktári mozgás típus (WM Movement type</u>), ami &#9785; nehezen megjegyezhető számokból állt &#9785; nem volt teljesen kompatibilis a <u>DEF:
 Készletmozgás típusokkal (IM Movement Type</u>). Ezért itt 3 szintű hierarchia
 van:</p>
 

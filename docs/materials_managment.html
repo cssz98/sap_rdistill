@@ -2256,6 +2256,126 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 
+  /******** Text ********/
+
+  p {
+  	font-size: 13px;
+  	text-align: justify;
+  }
+
+  b, strong {
+  	font-weight: 700;
+  }
+
+  .uri {
+  	color: blue;
+  }
+
+
+  d-article li:last-child {
+  	margin-bottom: 0;
+  	font-size: 14px;
+  }
+
+
+
+  /******** Footer ********/
+
+  .distill-site-footer p {
+  	text-align: center;
+  }
+
+
+
+
+
+  /******** 2column ********/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+  /******** fig.cap ********/
+
+  figure .caption, .figure .caption, figure figcaption {
+  	font-size: 10px;
+  	text-align: center;
+  }
+
+
+
+
+  .algolia-autocomplete {
+  	display: inline-block;
+  	margin-left: 10px;
+  	vertical-align: sub;
+  	background-color: transparent;
+  	color: black;
+  	padding: 6px;
+  	padding-top: 8px;
+  	padding-bottom: 0;
+  	border-radius: 6px;
+  	border: 1px #0F2E3D solid;
+  	width: 180px;
+  }
+
+
+  figcaption {
+  	border-radius: 35px;
+  	border: 2px solid #296d98;
+  	width: auto;
+  	height: auto;
+  	padding: 14px;
+  }
+
+
+
+
+  /******** h1Title ********/
+
+
+  d-title h1 {
+  	font-size: 50px;
+  	border-left: none;
+  	text-decoration: none;
+  	color: black;
+  }
+
+
+
+  /******** Zoom on gif ********/
+
+  .zoom {
+    padding: auto;
+    transition: transform .2s;
+    width: auto;
+    margin: auto;
+  }
+
+  .zoom:hover {
+    transform: scale(1.5);
+  }
+
+
+
+
   /******** Hyperlink on image ********/
 
 
@@ -2329,110 +2449,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     animation-direction: normal, alternate;
   }
 
-
-  /******** Text ********/
-
-  p {
-  	font-size: 13px;
-  	text-align: justify;
-  }
-
-  b, strong {
-  	font-weight: 700;
-  }
-
-  .uri {
-  	color: blue;
-  }
-
-
-  d-article li:last-child {
-  	margin-bottom: 0;
-  	font-size: 14px;
-  }
-
-
-
-  /******** Footer ********/
-
-  .distill-site-footer p {
-  	text-align: center;
-  }
-
-
-
-
-
-
-
-  * {
-    box-sizing: border-box;
-  }
-
-  /* Create two equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: auto; /* Should be removed. Only for demonstration */
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-
-
-
-  figure .caption, .figure .caption, figure figcaption {
-  	font-size: 10px;
-  	text-align: center;
-  }
-
-
-
-
-  .algolia-autocomplete {
-  	display: inline-block;
-  	margin-left: 10px;
-  	vertical-align: sub;
-  	background-color: transparent;
-  	color: black;
-  	padding: 6px;
-  	padding-top: 8px;
-  	padding-bottom: 0;
-  	border-radius: 6px;
-  	border: 1px #0F2E3D solid;
-  	width: 180px;
-  }
-
-
-  figcaption {
-  	border-radius: 35px;
-  	border: 2px solid #296d98;
-  	width: auto;
-  	height: auto;
-  	padding: 14px;
-  }
-
-
-
-
-  /******** Zoom on gif ********/
-
-  .zoom {
-    padding: auto;
-    transition: transform .2s;
-    width: auto;
-    margin: auto;
-  }
-
-  .zoom:hover {
-    transform: scale(1.5);
-  }
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -2456,6 +2472,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html" class="title">SAP E-Study Guide</a>
 <a href="index.html">Introduction</a>
 <a href="fin.html">Financial Accounting</a>
+<a href="ewm.html">EWM</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
@@ -2476,530 +2493,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p><link href="styles/bootstrap.css" rel="stylesheet"> <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet"> <link href="styles/jquery.tocify.css" rel="stylesheet"></p>
-<body>
-<div id="toc">
-
-</div>
-<h2>
-<ol type="1">
-<li>General Overview: Materials Management (Készletmenedzsment)
-</h2>
-<strong>Materials Management.</strong> Az anyaggazdálkodás közvetlenül az SAP menüben lévő a Logisztika (Logistics) mappában található.</li>
-</ol>
-<p><img src="intro_keszletek/media/image1.png" style="width:3.55208in;height:3.40625in" /></p>
-<p>Az anyaggazdálkodás (Materials Management) legfontosabb feladata 2-es számlaosztályba tartozó anyag- és árukészlet részletes nyilvántartása. A modul elsősorban az alábbi mérlegelemeket és számlaosztályokat fedi le.</p>
-<p><img src="intro_keszletek/media/image2.png" style="width:6.29167in;height:4.71875in" /></p>
-<p>Másodsorban azonban lehetőség van 5-ös számlaosztályba tartozó, azonnali felhasználású, tehát nem továbbszámlázott szolgáltatások nyilvántartására.</p>
-<p><strong>Purchasing.</strong> A készlet beszerzését, a készletek beáramlását segíti a beszerzési modul (Purchasing), amely a beszerzési igénylés (Purchase Requisition), a beszerzési rendelés (Purchase Order), a szerződés (Outline Agreement), az árajánlat (RFQ/Quotation), valamint a törzsadat (Master Data) részmodult tartalmazza. A beszerzési modul üzemeltetése elsősorban a beszerzési osztályok és csoportok feladatkörébe tartozik. A készletek, illetve a tovább számlázott szolgáltatások mellett lehetőség van 5-ös számlaosztályra beszerezni azonnali felhasználású szolgáltatásokat, illetve 1-es számlaosztályra beszerezni tárgyi eszközöket.</p>
-<p><img src="intro_keszletek/media/image3.png" style="width:2.5625in;height:1.67708in" /></p>
-<p><strong>Inventory Management.</strong> A készlet mozgatását, az anyagáramlás alapszintű szabályozását a készletmenedzsment modul látja el. Legfontosabb területei az anyagmozgatás (Goods Movement), az anyagbizonylatok (Material Document) és az anyagfoglalások (Reservation). A modul üzemeltetéséhez elsősorban a készletkezelési feladatok ellátó csoportoknak van jogosultsága.</p>
-<p><img src="intro_keszletek/media/image4.png" style="width:2.85417in;height:1.71875in" /></p>
-<p><strong>Logistics Invoice Verification.</strong> A beszerzési folyamatok, különösen a készletrendelések könyvelését a LIV modul látja el. Az elnevezése arra utal, hogy a modulban lehet könyvelni a logisztikai előzményekkel rendelkező szállítói számlákat. A modulban a Document Entry mappában van lehetőség a számlák iktatására és könyvelésére, az Automatic Settlement mappa a költségek (pl.: szállítási, rakodási, stb.) szétosztást támogatja, a GR/IR Account Maintance mappában az áru/számla beérkeztetést időben elhatároló főkönyvi számla menedzselését segíti.</p>
-<p><img src="intro_keszletek/media/image5.png" style="width:2.83333in;height:2.08333in" /></p>
-<p><strong>Physical Inventory modul</strong> az anyag- és árukészlet leltározását segíti. Ebben a modulban hozhatók létre leltárbizonylatok (Physical Inventory Document), végezhetők el készletszámítások (Inventory Count) és az eltérések kezelése (Difference).</p>
-<p><img src="intro_keszletek/media/image6.png" style="width:3.61458in;height:2.44792in" /></p>
-<p><strong>Valuation modul</strong> a készlet értékelésére vonatkozik, és segédkönyveket használ. A Change in Material Price követi az anyagok értékben bekövetkezett változásokat. A Balance Sheet Valuation a mérleg / vagyonelemek szerinti értékelést számítja ki. Az ezen belül lévő mappák különböző számítási lehetőségeket tartalmaznak: legalacsonyabb költség meghatározása (Determination of Lowest Value), LIFO szerinti és FIFO szerinti értékelés, valamint ezek eredményei (Results). További értékelési lehetőséget tartalmaz a Balance Sheet Valuation with Material Ledger, és a Actual Costing/Material Ledger.</p>
-<p><img src="intro_keszletek/media/image7.png" style="width:3.86458in;height:3.19792in" /></p>
-<p><strong>Service Master modullban</strong> a jellemzően 5-ös számlaosztályra, költségnemre és költséghelyre könyvelendő szolgáltatásokat lehet nyilvántartani.</p>
-<p><img src="intro_keszletek/media/image8.png" style="width:3.40625in;height:3.15625in" /></p>
-<p>A szolgáltatás (Service) mappában lehet felvinni, megtekinteni és módosítani a szolgáltatások törzsadatait. A Standard Service Catalog-ban a szolgáltatásokból lehet katalógusokat, nyilvántartásokat létrehozni.</p>
-<p><strong>Material Master modulban</strong> lehet létrehozni olyan anyagokat, árukat és közvetített szolgáltatásokat, amelyek II/1 mérleg osztályba, illetve a 21-28-as számlacsoportba tartoznak.</p>
-<p><img src="intro_keszletek/media/image9.png" style="width:3.51042in;height:6.1875in" /></p>
-<p>Material Master mappában lehet felvinni, módosítani, megtekinteni anyagokat, árukat, továbbszámlázott szolgáltatásokat. A Profile mappában lehet létrehozn az automata beszerzési igények összeállítása miatt is lényeges MRP és Forecast Profile-okat (ezeket később az anyagokhoz lehet rendelni. A Batch mappában a sarsz számok beállítására van lehetőség. A Special Stock mappában konszignációs szállítói készletekkel kapcsolatos tranzakciók érhetők el.</p>
-<h2>
-<strong><u>Material Master</u></strong>
-</h2>
-<p><strong>1. General Overview</strong></p>
-<p>Mint korábban írtuk a Forgóeszköz \ Készletek mérlegosztályba, illetve a 2-es számlaosztályba tartozó anyag- és árukészletek analitikus nyilvántartására az Anyaggazdálkodási modulban (Materials Management) van lehetőség. A törzsadatokat a Material-ban tudjuk felvinni, megtekinteni és módosítani.</p>
-<p><img src="intro_mm/media/image1.png" style="width:4.74974in;height:6.52083in" /></p>
-<p><strong>A modul felépítése:</strong></p>
-<p>Az SAP ERP rendszerben előre megadott típusú anyagok értékeit tudjuk a Create (Special) és a Create (Genral) mappában felvinni. Az egyes anyagtípusok közvetve összevannak kötve a főkönyvi számlákkal. Ezek az anyagtípusok igazodnak a nemzetközi számviteli szabványok (IAS) alapján készült standard számlatükrökhöz (IFRS, US GAAP), valamint a standard magyar számlatükörhöz is. Az egyes típusok lefordításától eltekintünk, ugyanakkor az említett számlatükröket bemutatjuk.</p>
-<p><strong><u>IFRS</u></strong></p>
-<p><img src="intro_mm/media/image2.png" style="width:5.51042in;height:3.75in" /></p>
-<p><strong><u>US GAAP</u></strong></p>
-<p><img src="intro_mm/media/image3.png" style="width:5.66667in;height:2.19792in" /></p>
-<p><strong><u>Magyar standard számlatükör</u></strong></p>
-<p><img src="intro_mm/media/image4.png" style="width:6.29167in;height:2.79167in" /></p>
-<p><strong>A korábban felvitt készletbe tartozó anyagokat egyenként módosítani</strong> MM02-vel, egyedileg megtekinteni MM03-al, csoportosan módosítani és megtekinteni MM17-el tudunk. A már rögzített anyagok típusát MMAM-el tudjuk megváltoztatni. Minden változást a Display Changes mappában tudjuk figyelemmel kísérni. Ezek részletes használatáról később lesz szó.</p>
-<p><img src="intro_mm/media/image5.png" style="width:2.70833in;height:3.23958in" /></p>
-<p><strong>A Profil (Profile) mappában</strong> adhatunk meg különböző anyagigény-tervezési (MRP) és anyagigény-előrejelzési profilt. Mindkettőre az anyagbeszerzés automatizálásáért van szükség. Mindkettő esetében arról van szó, hogy előre meghatározunk szabályrendszereket, amelyeket később, az anyag törzsadatainak űrlapjain betudunk tölteni. Ennek lényege az, hogy már elkészült sablon jellegű standard szabályokat vegyünk át, és ne a törzsadatok létrehozása során tervezzük meg. Ezzel jelentősen csökkenthető a hiba lehetőségét.</p>
-<p><img src="intro_mm/media/image6.png" style="width:3.20833in;height:3.9375in" /></p>
-<p><strong>Sarzs számozást a Batch mappában tudunk létrehozni.</strong></p>
-<p><img src="intro_mm/media/image7.png" style="width:2.23958in;height:2.04167in" /></p>
-<p>Részletesebben a Batch-ről:</p>
-<p><a href="https://www.symbolenterprise.hu/modul/beszerzesi-azonosito-sarzs/" class="uri">https://www.symbolenterprise.hu/modul/beszerzesi-azonosito-sarzs/</a> (2021. 02. 04)</p>
-<p><a href="https://sioexcise.hu/aas_szoveg/file/452_lot_kod.pdf" class="uri">https://sioexcise.hu/aas_szoveg/file/452_lot_kod.pdf</a> (2021. 02. 04)</p>
-<p>A <strong>szállító konszignációs készlete</strong> a különleges készletállomány (Special Stock) mappában érhető el.</p>
-<p><img src="intro_mm/media/image8.png" style="width:2.65625in;height:2.07292in" /></p>
-<p>A konszignációs készletekkel kapcsolatban lásd:</p>
-<p>Oláh J. &amp; Vad V. A konszignációs készletek jellemzői az ellátási láncban. Vezetéstudomány. (15)8. 67-76. pp. <a href="https://core.ac.uk/download/pdf/161069385.pdf"><strong>https://core.ac.uk/download/pdf/161069385.pdf</strong></a> (2021. január 20.)</p>
-<p><strong><u>2. Alapanyag (Raw Materials)</u></strong></p>
-<p>Az alapanyag felvitelével létrehozunk egy logikai objektumot, amelyhez majd kapcsolódni fognak a szállítóktól beszerzett konkrét, fizikai termékek mennyiségben és értékben is. Ahhoz azonban, hogy a készletünk adatbázisában tárolni tudjuk a fizikai készletek valós adatait, elsőként a rekordokat kell felvinnünk. Másképpen megfogalmazza, ahhoz, hogy pl.: egy alapanyagra (pl.: almát, lisztet, cukrot, krumplit, tejet, dohányt, papírt) tudjunk kötni szerződést, megállapodást, megtudjuk rendelni, nyilván tudjuk tartani, áttudjuk adni a termelésnek (átalakításra), el tudjuk helyezni raktárházakban, üzemekben stb. elsőként az őt leíró logikai rekordot kell létrehoznunk. Ennek érdekében készítsük el egy tetszőleges alapanyag logikai rekordját.</p>
-<p><strong>Alapanyagok felvitele (központilag):</strong></p>
-<p><img src="intro_mm/media/image9.png" style="width:2.52083in;height:1.14583in" /></p>
-<p><img src="intro_mm/media/image10.png" style="width:3.21772in;height:2.9375in" /></p>
-<ul>
-<li><p><strong>Anyag (Material) cikkszáma, rövid megnevezése.</strong> Két lehetőségünk van. Vagy megadunk egy maximum 18 karakterből álló alfanumerikus kódot (megnevezést), vagy üresen hagyjuk és a rendszer az anyagtípushoz kapcsolódó alapértelmezett számintervallum alapján automatában legenerálja.</p></li>
-<li><p><strong>Iparág (Industry sector).</strong> Az alapanyaghoz tartozó releváns iparág. Lényege abban áll, hogy a rendszerbeállítástól függően meghatározhatja, a későbbi űrlapok felépítését, az elérhető mezők körét.</p></li>
-<li><p><strong>Material Type.</strong> Az anyag típusa megegyezik szinte minden esetben a főkönyvben szereplő megnevezésekkel (alapanyag, segédanyag, csomagolóanyag, stb.). Jelentősége számos más tényező mellett abban van, hogy a rendszerbeállítás hatására az anyagtípusokhoz kapcsolódnak a kiválasztható űrlapok köre, valamint a megadható főkönyvi számlák is.</p></li>
-<li><p><strong>Amennyiben anyagot egy már elkészült anyagról hozunk létre újat, akkor válasszuk a Copy from-ot,</strong> és adjuk meg a cikkszámot.</p></li>
-</ul>
-<p>Ezt követően kattintsunk a <strong>Select Views-ra</strong>, amely listaként sorolja fel az anyagtípushoz tartozó lehetséges űrlapokat. Azt, hogy melyik űrlapok tartozhatnak egy adott anyagtípushoz a rendszermenedzserek határozzák meg a háttérbeállításokban. Általánosságban elmondható, hogy az elérhető űrlapok köre anyagtípusonként eltér (pl.: az alapanyag esetében nem lesz elérhető az eladási űrlap, mivel az alapanyagokat nem értékesítési céllal vesszük meg, hasonlóan a késztermék esetében nem lesz beszerzési űrlap, mivel a késztermékeket magunk állítjuk el). Az alapanyag (ROH RAW Material) esetében a gyári beállításokkal az alábbi űrlapok érhetők el.</p>
-<p><img src="intro_mm/media/image11.png" style="width:3.28908in;height:4.04167in" /></p>
-<p>Az űrlapok kiválasztása, majd mezőkészleteinek kitöltése szükséges lesz később az egyes részmodulok üzemeltetéséhez. Pl.: beszerzési folyamatokat nem tudunk végezni, ha az anyagnak nincsen Purchasing űrlapja, érkeztetést nem tudunk végezni, ha nincsen megadva Plant / Storage Location / Warehouse Mgmt űrlap, könyvelést nem tudunk végezni, ha nincsen megadva az Accounting 1 &amp; 2 űrlap, értékesítést, ha nincsen Sales űrlap. Az alábbi ábrán próbáljuk szemléltetni a szerepüket:</p>
-<figure>
-<img src="intro_mm/media/image12.png" style="width:6.24601in;height:4.25in" alt="Képtalálatok a következőre: Material master views sap" /><figcaption aria-hidden="true">Képtalálatok a következőre: Material master views sap</figcaption>
-</figure>
-<p><a href="https://tekslate.com/sap-mm-material-master-data" class="uri">https://tekslate.com/sap-mm-material-master-data</a> (2021. 02. 04.)</p>
-<figure>
-<img src="intro_mm/media/image13.png" style="width:6.3in;height:4.11109in" alt="Képtalálatok a következőre: Material master views sap" /><figcaption aria-hidden="true">Képtalálatok a következőre: Material master views sap</figcaption>
-</figure>
-<p><a href="https://ganeshsapscm.files.wordpress.com/2015/07/mm-views.png?w=685" class="uri">https://ganeshsapscm.files.wordpress.com/2015/07/mm-views.png?w=685</a> (2021. 02. 04.)</p>
-<p>Az <strong>alapadatok 1, alapadatok 2 (Basic Data 1 &amp; Basic Data 2)</strong> az alapértékek (anyagcsoport, mértékegység, súly, kiterjedés, alapértelmezett felhasználási hely, stb.) megadását teszi lehetővé. A <strong>csoportosítás (Classification)</strong> ezzel szemben az adott anyag különböző variánsait tárolja el csoportonként. Ennek előnye, hogy ebben az esetben nem kell variánsok szerint újra és újra külön anyagokat felvinni, hanem elegendő egyet (vagy néhányat) és annak a variánsait megadni. A fenti példánál maradva felviszünk alapanyagként a tejsavó fehérjét, és megadunk különböző variánsait csoportosítva (izolátum, koncentrátum, laktózmentes izolátum, natív előállítású izolátum, stb.), ezzel mentesülhetünk az önálló anyagokként történő felvitelüktől. <strong>Beszerzés (Purchasing)</strong> űrlap esetében a beszerzéssel kapcsolatos alapértelmezett (később módosítható) értékeket tudjuk megadni. Ezeket gyakorlatilag valamennyi beszerzési részmodul felhasználja kiindulásképpen. A <strong>megrendelési szöveg (Purchase Order Text)</strong> a szállítónak eljuttatandó alapértelmezett beszerzési szöveget tárolja. A <strong>külkereskedelemhez szükséges alapértékeket a</strong> <strong>Foreign Trade</strong> űrlapon tartjuk nyilván. Ez az űrlap az SAP külkereskedelmi (FT) alkalmazás-összetevőjének szállítói, beszerzési információk, anyagok és vevői törzsrekordok használatához releváns adatok részletes tárolását teszi lehetővé. A rendszer automatizált külkereskedelmi feldolgozása a teljes törzsadatoktól függ. Forrás: <a href="https://sapbrainsonline.com/mm-tutorial/foreign-trade-data-in-master-records-sap-mm.html" class="uri">https://sapbrainsonline.com/mm-tutorial/foreign-trade-data-in-master-records-sap-mm.html</a> (2021. 02. 04.) A <strong>számviteli</strong> alapértelmezett értékeket (értékelési osztály, főkönyvi számla, árak) a könyvelési <strong>Accounting 1 &amp; Accounting 2</strong> űrlap tartalmazza. Az <strong>MRP: Material Requirement Planning</strong> űrlapon az anyagigénytervezés beállításaihoz szükséges értékeket tudjuk vezetni. Az anyag alapértelmezett üzemi adatait a <strong>General Plant Data 1 / Storage Location &amp; General Plant Data 2 / Storage Location</strong> űrlapon lehet megadni.</p>
-<p>Miután kiválasztottuk a szükséges űrlapokat, az adott alapanyagot el kell helyezni a szervezeti környezetben.</p>
-<p><strong>Szervezeti környezet (Organizational Levels)</strong></p>
-<p>A kiválasztott űrlapok alapján és függvényében meg kell adni, hogy az alapanyagot melyik szervezeti egységben, az alapanyag esetében üzemben (Plant), melyik tárolóhelységben (Storage Location) és melyik raktárházban (Warehouse No.) szeretnénk logikailag, illetve fizikailag elhelyezni. Megadhatunk standard, előre definiált MRP profilokat is. A szervezeti környezet objektumai alapértékekként töltődnek be az egyes űrlapokhoz. Órai keretek között használjuk az alábbi értékeket.</p>
-<p><img src="intro_mm/media/image14.png" style="width:4.71875in;height:2.87924in" /></p>
-<p><strong><u>Alapadatok 1. (Basic Data 1.)</u></strong></p>
-<p><strong>Általános adatok (General data)</strong></p>
-<p><img src="intro_mm/media/image15.png" style="width:6.29167in;height:2.90625in" /></p>
-<ul>
-<li><p><strong>Anyag nyilvántartási mértékegysége (Base Unit of Measure).</strong> A készletbe tartozó alapanyag alapértelmezett nyilvántartási mértékegysége (lehet pl.: darab, kg, köbméter). A mértékegység szerepe az, hogy minden attól eltérő mértékegységben megadott értéket erre az alapértelmezett mértékegységre fog konvertálni a rendszer (pl.: ha a szállító más mértékegységben szállítja az anyagot).</p></li>
-<li><p><strong>Divízió (Division).</strong> A divízió megadása az anyagok, termékek, szolgáltatások csoportosítására alkalmasak az eladás és értékesítés tekintetében, ez elsősorban nem az alapanyag, hanem az értékesítendő termékek esetén releváns. A rendszer divíziókat használ az értékesítési területek és üzletágak meghatározásához az egyes anyagok esetében.</p></li>
-<li><p><strong>X Plant matl status (Cross-</strong>plant material status, valid from): az adott anyaghoz lehet megadni különböző blokkolási státuszokat (anyagmozgatáshoz), illetve ennek a kezdő dátumát.</p></li>
-<li><p><strong>Anyagcsoport (Material Group).</strong> az anyagokat anyagcsoportba érdemes sorolni. Anyagcsoport segítségével a későbbiekben könnyen lehet keresni, kimutatni, riportálni és összegezni a csoportban szereplő anyagokat. Az anyagcsoport és az anyagtípus között nincsen kapcsolat. az órai munka során jelentősége lesz az anyagcsoportnak a lekérdezéske összeállításának szempontjából.</p></li>
-<li><p><strong>Laboratórium / Iroda.</strong> Az anyagot felhasználó szervezeti egységet lehet megadni.</p></li>
-</ul>
-<p><img src="intro_mm/media/image16.png" style="width:6.23958in;height:1.625in" /></p>
-<ul>
-<li><p><strong>A bruottó és nettó súly (Gross Weight, Net Weight)</strong> értékének megadása a raktárházakmenedzselés (Warehouse Mgmt) modulban megadott tárolókapacitás miatt lényeges.</p></li>
-<li><p><strong>A térfogat (Volume, Volume unit)</strong> az üzemi tárolás és szállítás tekintetében releváns</p></li>
-<li><p><strong>Méret / dimenziók (Size / dimensions)</strong> ennek csak tájékoztató szerepe van.</p></li>
-</ul>
-<p><img src="intro_mm/media/image17.png" style="width:6.29167in;height:1.63542in" /></p>
-<p>Amennyiben nem alapanyagot, hanem értékesítendő terméket viszünk fel, akkor célszerű megadni a csomagolóanyag referenciaszámát is.</p>
-<p><strong><u>Osztályozási űrlap</u></strong></p>
-<p><img src="intro_mm/media/image18.png" style="width:6.30208in;height:3.57292in" /></p>
-<p>Az űrlap lehetővé teszi, hogy egy adott alapanyagot további osztályokra és variánsokra lehessen bontani. Az eljárás előnye, hogy a Tej példánál maradva létre tudunk hozni csoportokat aszerint, hogy a tej, mint alapanyag ökológiai, biológiai, nagyüzemi, vagy szabadtartású tehenektől, illetve tejgazdaságokból származik. Ennek lényege abban van, hogy egy-egy késztermékhez különböző típusú tejre van szükség. Azonban nem kell négy féle alapanyagot felvinni, ehelyett elegendő egy általánosat létrehozni, és azt megbontani variánsok / típusok szerint.</p>
-<p><strong><u>Beszerzési űrlap (Purchase)</u></strong></p>
-<p>A beszerzési űrlapon szereplő értékek olyan alapértelmezett (default) információk, amelyeket a beszerzési folyamatok tranzakciói (más űrlapok) átfognak venni (azokban természetesen lehet módosítani).</p>
-<p><img src="intro_mm/media/image19.png" style="width:6.3in;height:3.19653in" /></p>
-<ul>
-<li><p>Az <strong>alapvető mértékegység</strong> (Base Unit of Measure) és a <strong>rendelés mértékegysége</strong> (Order Unit) mellett megadhatunk olyan <strong>beszerzési csoportot</strong> (Purchasing Group), amely az alapanyag operatív beszerzéséért felelős. Amennyiben az alapmértékegységet módosítjuk, úgy a Basic Data 1 űrlapon is módosulni fog. Az anyagcsoport értékét a Basic Data 1 űrlapról másolja át a rendszer, ha itt módosítjuk, ott is módosulni fog.</p></li>
-<li><p>Az űrlapon lévő egyik igen lényeges kapcsoló <strong>az automatikus beszerzési rendelés</strong> (Automate Purchase Order), ha ezt aktiváljuk, akkor a beszerzési igényekből automatizáltan tudunk megrendeléseket generálni.</p></li>
-<li><p>Az anyagfuvarozási <strong>csoport</strong> (Material freight group) az anyagok csoportosítására használják, annak érdekében, hogy azokat árufuvarozási kód és osztály szerint sorolhassák be. A fuvarozási kódokat és az árufuvarozási kódkészlet osztályait az anyagfuvarozási csoport határozza meg. Az árufuvarozási kódkészlet a fuvardíjak meghatározására és a szervizügynökökkel való kommunikációra szolgál.</p></li>
-<li><p>Szintén lényeges mező <strong>a sarzsszám (Batch management)</strong> aktiválása. Lásd ennek részletes leírását: <a href="https://erpcsere.hu/munka_adagszamokkal/" class="uri">https://erpcsere.hu/munka_adagszamokkal/</a> (2021. 02. 04.)</p></li>
-</ul>
-<p><img src="intro_mm/media/image20.png" style="width:6.25in;height:1.625in" /></p>
-<p>A beszerzési értékkulcs meghatározza:</p>
-<ul>
-<li><p><strong>Szállítókkal szemben megfogalmazott emlékeztetők, felszólítások (1st Rem./Exped. – 3rd Rem./Exped.)</strong> napokban kifejezve, arra az esetre, ha az üzleti partner nem szállítja le a a szerződés alapján összeállított és elküldött megrendelés szerinti árut.</p></li>
-<li><p><strong>Alulszállítási határérték (Underdelivery Tolerance Limit)</strong> az százalékos érték (a rendelési mennyiség alapján), ameddig a leszállított mennyiséget elfogadják. Pl.: a rendelési mennyiség 70%-a alatt nem veszem át a szállított mennyiséget, rész szállítást nem vételezek be.</p></li>
-<li><p><strong>Túlszállítási határérték (Overdelivery Tolerance Limit)</strong> az százalékos érték (a rendelési mennyiség alapján), ameddig a leszállított mennyiséget elfogadják. Pl.: a rendelési mennyiség 120%-a feletti árut mennyiséget nem veszem át.</p></li>
-<li><p><strong>Korlátlan (Indicator: Unlimited Overdelivery Allowed)</strong> eben az esetben bármilyen arányú túlszállítás elfogadható.</p></li>
-</ul>
-<p><img src="intro_mm/media/image21.png" style="width:6.25in;height:1.55208in" /></p>
-<ul>
-<li><p><strong>GR Processing Time (Good Receipt Processing Time):</strong> az anyagérkeztetés alapértelmezett ideje napban kifejezve. Az ellenőrzéshez szükséges anyag beérkezése és a raktárba helyezés után szükséges munkanapok száma.</p></li>
-<li><p><strong>Quota arrangement usage:</strong> Az itt megadott bejegyzés szabályozza, hogy a teljes rendelési mennyiség hogyan kerül kiszámításra a kvótarendszerben, és ezáltal az anyag melyik ellátási forrása kerül meghatározásra egy adott időpontban. Kvótaelrendezést adható meg a következő mezőkombinációkhoz:</p>
-<ul>
-<li><p>megrendelések: a már megrendelt anyag mennyiségét a kvótarendszer tartalmazza.</p></li>
-<li><p>beszerzési igények: az anyag beszerzési igénylésében kért teljes mennyiséget a kvótarendszer tartalmazza.</p></li>
-<li><p>ütemezési megállapodás: az anyag szállítási ütemtervében szereplő teljes mennyiséget a kvótarendszer tartalmazza.</p></li>
-<li><p>tervezett megrendelések: az anyag tervezett mennyiségben tervezett teljes mennyiségét a kvótarendszer tartalmazza.</p></li>
-<li><p>anyagtervezés (MRP): a kvótaelrendezési mechanizmust az anyagtervezésben is használják; vagyis az anyagtervezéssel létrehozott tervezett megrendeléseket és beszerzési igényeket a kvótarendszer tartalmazza.</p></li>
-<li><p>gyártási megrendelések Ennek az anyagnak az összes gyártási megrendelésének teljes mennyiségét a kvótarendszer tartalmazza.</p></li>
-</ul></li>
-<li><p><strong>Source list requirement:</strong> meghatározza, hogy a forráslistát fenn kell tartani egy bizonyos üzem külső beszerzése esetén. Aktiválás esetén az ellátási forrást meg kell adni a forráslistában, mielőtt vételi megbízást lehet létrehozni.</p></li>
-</ul>
-<p><img src="intro_mm/media/image22.png" style="width:6.29167in;height:5.04167in" /></p>
-<p>Az <strong>üzemi / tárolási adatok 1-ben</strong> lehet megadni a tárolás pontos helyét (Storage Bin és Picking Area), a tárolási hőmérsékletet (Temp. conditions), a konténer tulajdonságát (Container reqmts), a feliratozás típusát (Label type), az anyag kiadásának mértékegységét (ha ez eltérne az alapmértékegységtől), a tárolási feltételeket (Storage conditions), a veszélyességi besorolást (Haz. material number), valamint a tárolási időt (Shelf life data).</p>
-<p>A Storage Bin-t az alábbi kép szemlélteti:</p>
-<figure>
-<img src="intro_mm/media/image23.png" style="width:4.51042in;height:3.52083in" alt="Képtalálatok a következőre: picking area sap" /><figcaption aria-hidden="true">Képtalálatok a következőre: picking area sap</figcaption>
-</figure>
-<p><a href="https://www.wisdomjobs.com/e-university/sap-wm-tutorial-244/storage-section-7706.html" class="uri">https://www.wisdomjobs.com/e-university/sap-wm-tutorial-244/storage-section-7706.html</a> (2021. 02. 04.)</p>
-<p>A Picking Area-t pedig az alábbi:</p>
-<figure>
-<img src="intro_mm/media/image24.jpeg" style="width:6.3in;height:3.54375in" alt="Képtalálatok a következőre: Picking area" /><figcaption aria-hidden="true">Képtalálatok a következőre: Picking area</figcaption>
-</figure>
-<p><a href="https://boxes.curtec.com/en/customer-stories/internal-logistics/katoen-natie" class="uri">https://boxes.curtec.com/en/customer-stories/internal-logistics/katoen-natie</a> (2021. 02. 04.)</p>
-<p><img src="intro_mm/media/image25.png" style="width:6.27083in;height:1.47917in" /></p>
-<p>A Shelf Life data a tárolási időt értékeit tartalmazza. Max. storage period = a maximális tárolási idő.</p>
-<p><img src="intro_mm/media/image26.png" style="width:6.3in;height:3.75917in" /></p>
-<p>A méret és súly adatokat a Basic Data 1 űrlapról veszi át a program. A számunka léyeges mezőt az alapértelmezet Pénzügyi Központ megadása (Profit Center) jelenti. A beszerzési folyamatokban erre a pénzügyi központra fogja a program kontírozni az alapanyagot.</p>
-<p><strong>Beszerzési modul (Purchase)</strong></p>
-<p>A modulban található szerződések (Outline Agreement), árajánlatok (RFQ), beszerzési igények (Purchase Requisition) és rendelések (Purchase Order) elsősorban a 2-es számlaosztályba tartozó anyag- és árukészletbe sorolható vagyonelemekre vonatkoznak. Emellett lehetőség van 5-ös számlaosztályra is beszerezni, illetve költségként elszámolni szolgáltatásokat és anyagokat, valamint az 1-es számlaosztállyal kapcsolatban tárgyi eszközöket rendelni.</p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image1.png" width="251" style="display: block; margin: auto;" /></p>
-</div>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image2.png" width="466" style="display: block; margin: auto;" /></p>
-</div>
-<p>A tranzakciók használatának bemutatását megelőzően az alábbiakban a közös jellemzőket tekintjük át.</p>
-<p><strong><u>Beszerzési környezet</u></strong></p>
-<p><strong>A beszerzési szervezet (Purchase Organization)</strong> szervezeti egységként felelős az anyagok- és szolgáltatások biztosításáért az egyes üzemek (Plant) részére. Tevékenysége során elsősorban stratégiai szempontokat, és hosszú időtávot vesz alapul.</p>
-<p>Működése során kiválasztja és értékeli a szállítókat, megállapodásokban és szerződésekben rögzíti az árképzés konstrukcióját és a szállítási feltételeket. A beszerzési szervezet tevékenysége mindenekelőtt a gyártási folyamatok input oldalának, különösen az anyag- és árukészletek biztosítására terjed ki, de emellett a tárgyi eszközök és a szolgáltatások beszerzésében is meghatározó szerepe van. A szervezeti elhelyezkedés és hatáskör tekintetében meghatározó kérdés, hogy a beszerzési szervezet centralizált, és alatta helyezkedik el egy, vagy több vállalat (Company Code), vagy decentralizált és a vállalat alatt van(nak) a beszerzési szervezet(ek). Lehetőség van megadni üzemek szintjén definiált beszerzési szervezeteket is. Ebben az esetben adott beszerzési szervezethez adott üzem fog alapértelmezettként kapcsolódni.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
-<img src="mm/image3.jpeg" alt="https://i0.wp.com/www.erpdb.info/wp-content/uploads/2014/04/041814_2150_ManagingPur1.jpg?resize=576%2C233 (2021. 02. 04.)"  />
-<p class="caption">
-Figure 1: <a href="https://i0.wp.com/www.erpdb.info/wp-content/uploads/2014/04/041814_2150_ManagingPur1.jpg?resize=576%2C233" class="uri">https://i0.wp.com/www.erpdb.info/wp-content/uploads/2014/04/041814_2150_ManagingPur1.jpg?resize=576%2C233</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<p><strong>Beszerési szervezet (Purchase Organization) és az üzem (Plant) viszonya.</strong> A beszerzési szervezet <strong><u>az adott üzemekben jelentkező igénylések alapján</u></strong> az adott üzem részére végez beszerzési tevékenységet. SAP-ban egy beszerzési szervezethez több üzem is tartozhat, ugyanakkor egy-egy üzem esetében megadhatunk alapértelmezett beszerzési szervezetet. Ebben az esetben a kijelölt beszerzési szervezet felelősség- és jogkörébe fog tartozni az üzem ellátása. Az alábbi ábra a beszerzési szervezet és az üzem kapcsolatát szemlélteti.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
-<img src="mm/image4.png" alt="https://slideplayer.com/slide/12701168/76/images/5/Organizational+Entities+in+Purchasing.jpg (2021. 02. 04.)" width="612" />
-<p class="caption">
-Figure 2: <a href="https://slideplayer.com/slide/12701168/76/images/5/Organizational+Entities+in+Purchasing.jpg" class="uri">https://slideplayer.com/slide/12701168/76/images/5/Organizational+Entities+in+Purchasing.jpg</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<p><strong>Beszerzési csoport (Purchase Group)</strong> nem része a szervezeti hierarchiának, nem tartozik egyetlen szervezeti egységhez sem közvetlenül. A beszerzési szervezettől eltérően operatív feladatokat lát, az anyagok, vagy anyagcsoportok mindennapi beszerzésében vesz részt, és ennek részeként kapcsolatot tart a szállítókkal. A beszerzési csoportot a mindennapi beszerzési tevékenységért felelős alkalmazottak alkotják.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
-<img src="mm/image5.png" alt="https://image.slidesharecdn.com/introductiontosapr3mm-140118122254-phpapp01/95/introduction-to-sap-r3-mm-13-638.jpg?cb=1390047886 (2021. 02. 04.)" width="554" />
-<p class="caption">
-Figure 3: <a href="https://image.slidesharecdn.com/introductiontosapr3mm-140118122254-phpapp01/95/introduction-to-sap-r3-mm-13-638.jpg?cb=1390047886" class="uri">https://image.slidesharecdn.com/introductiontosapr3mm-140118122254-phpapp01/95/introduction-to-sap-r3-mm-13-638.jpg?cb=1390047886</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<p><strong>Üzem (Plant).</strong> A vállalat tevékenységeit konkrét telephelyen működő üzemek látják el, a legfontosabb jellemzője a fizikai, geográfiai elhelyezkedés. Az üzemek végezhetnek gyártást, szolgáltatást, vagy egyéb tevékenységet. Lehetnek pl.: egyetemi karok, vagy tanszékek is, tehát nem a funkciójuk a meghatározó. Minden esetben székhelyként, vagy telephelyként vannak bejegyezve, és minden esetben a vállalat fizikai működési szintjének tekinthetők. Az üzemekben mennek végbe a konkrét vállalati tevékenységek (termelés, raktározás, megrendelés, anyag- és eszközgazdálkodás, értékesítés). A készletmenedzsment tekintetében az üzem a legmagasabb olyan független fizikai egység, amely áru- és anyagkészleteket tárol.</p>
-<p><strong>A raktárhelyek (Storage Locations)</strong> az üzemek alatt helyezkednek a szervezeti hierarchiában.</p>
-<p>Lényeges, hogy <strong>az üzem és a raktárhely a készlet-, illetve leltárgazdálkodás (Inventory Managment)</strong> szintje, az alatt helyezkedik el a fizikai raktárgazdálkodás. A beszerzendő készletek, illetve eszközök mindkettőben megjelennek, azonban a készletgazdálkodás elsősorban a pénzügyi számvitel modul tekintetében meghatározó.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
-<img src="mm/image6.jpeg" alt="Képtalálatok a következőre: sap plant storage location hierarchy"  />
-<p class="caption">
-Figure 4: Képtalálatok a következőre: sap plant storage location hierarchy
-</p>
-</div>
-</div>
-<p>A beszerzési folyamatok célja az üzemekben található gyártási / szolgáltatási egységek kiszolgálása.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-7"></span>
-<img src="mm/image7.png" alt="Képtalálatok a következőre: sap plant storage location hierarchy" width="1333" />
-<p class="caption">
-Figure 5: Képtalálatok a következőre: sap plant storage location hierarchy
-</p>
-</div>
-</div>
-<p><strong>Beszerezhető tételek csoportja</strong></p>
-<div class="row">
-<div class="column">
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image8.png" width="325" /></p>
-</div>
-</div>
-<div class="column">
-<p><strong>A beszerzési környezet</strong> alapszintű bemutatását követően tekintsük át, hogy a beszerzési szervezet, illetve beszerzési csoportok <strong>milyen jellegű tételeket (anyagokat, árukat, szolgáltatásokat) tudnak beszerezni</strong> egy standard, nem fejlesztett SAP rendszerben. Megállapítható, hogy szinte valamennyi beszerzési bizonylat (szerződés, megállapodás, igénylés, rendelés) képes tárolni és menedzselni standard, konszignációs, alvállalkozói (bérmunka) és szolgáltatás típusú tételeket.</p>
-</div>
-</div>
-<p><strong>Standard:</strong> alapanyag beszerzése a szállítótól (a szállító késztermékét, vagy a tovább számlázandó szolgáltatását vásároljuk meg).</p>
-<p><strong>Consignment:</strong> a konszignációs készletre vonatkozó igénylés során a szállító által leszállított áru egészen addig a szállító tulajdonában marad, amíg nem adjuk ki a termelésre. Gazdasági esemény az anyag termelésbe történő kiadásával történik, ebben az időpontban kell a szállítói számlát is lekönyvelni. A konszignációs készlet a „beszállítók által vezérelt készletek (VMI Vendor Management Invantory) típusába tartozik." A konszignációs készletek esetében a vevő, tehát ebben az esetben mi „csak a felhasznált mennyiség után fizet. … A konszignációs készletek olyan készletek, melyeket a beszállító a vevői megrendelések alapján a vevő rendelkezésére bocsát, de egy későbbi időpontban történik meg a fizetés és a beszállított ám tulajdonjogának az átadás. A vevő csak a felhasznált, a gyártásnak átadott mennyiségeket fizeti ki a beszállító részére." Oláh J. &amp; Vad V. A konszignációs készletek jellemzői az ellátási láncban. Vezetéstudomány. (15)8. 67-76. pp. <a href="https://core.ac.uk/download/pdf/161069385.pdf" class="uri">https://core.ac.uk/download/pdf/161069385.pdf</a> (2021. január 20.)</p>
-<p><strong>Alvállalkozói szerződés, bérmunka (Subcontracting)</strong> esetében a vállalat a gyártási folyamatának egy részét alvállalkozónak szervezi ki. Pl.: dobozokat adunk át egy vállalatnak, amelyre matricákat / feliaratok nyomtatni, majd a matricával ellátott dobozokat visszajuttatják a vállalatunknak. Az alvállalkozó díjat számol fel a cégnél dobozonként nyújtott szolgáltatásokért.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-9"></span>
-<img src="mm/image9.jpeg" alt="https://4.bp.blogspot.com/-Y5jV2qi2piw/WT-5iUmWfiI/AAAAAAAAFEY/_SgHDJ7kmXgvxRZpBUGJ4_Yuv98j2ohOACLcB/s1600/Sub%2BCon%2BPic.jpg (2021. 02. 04.)"  />
-<p class="caption">
-Figure 6: <a href="https://4.bp.blogspot.com/-Y5jV2qi2piw/WT-5iUmWfiI/AAAAAAAAFEY/_SgHDJ7kmXgvxRZpBUGJ4_Yuv98j2ohOACLcB/s1600/Sub%2BCon%2BPic.jpg" class="uri">https://4.bp.blogspot.com/-Y5jV2qi2piw/WT-5iUmWfiI/AAAAAAAAFEY/_SgHDJ7kmXgvxRZpBUGJ4_Yuv98j2ohOACLcB/s1600/Sub%2BCon%2BPic.jpg</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
-<img src="mm/image10.png" alt="https://erproof.com/wp-content/uploads/2017/01/word-image-244.png (2021. 02. 04.)" width="573" />
-<p class="caption">
-Figure 7: <a href="https://erproof.com/wp-content/uploads/2017/01/word-image-244.png" class="uri">https://erproof.com/wp-content/uploads/2017/01/word-image-244.png</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<p><strong>Harmadik fél</strong> (<strong>Third Party)</strong> esetén a vevői rendelések alapján készülnek a beszerzési igények. A rendelési igény alapján készült beszerzési igények, illetve megrendelések egy harmadik a szállítónak kerülnek átadásra, azzal a feltétellel, hogy a szállító nem nekünk szállítja le az árut, hanem vevőnek és ezt követően számlázik a vállalatunknak. Tehát arról van szó, hogy a harmadik fél rendelése alapján megrendelést adunk le egy szállítónak áru szállítására vagy szolgáltatás nyújtására, a harmadik fél (vevőnk) részére. Tehát nem a saját vállalatunk szállítja le a szállítótól átvett anyagot, hanem a megrendelést továbbítjuk a szállítónak, aki ezt követően közvetlenül elküldi az anyagot az ügyfélnek, és számlázik Önnek.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-11"></span>
-<img src="mm/image11.png" alt="https://3.bp.blogspot.com/-NFAuVrPsFFk/VveLGuHpglI/AAAAAAAAACU/mq5qr88T0Nc-nee9kJvErJrCHdoHhBbDg/s1600/TPT%2B3.png (2021. 02. 04.)" width="1396" />
-<p class="caption">
-Figure 8: <a href="https://3.bp.blogspot.com/-NFAuVrPsFFk/VveLGuHpglI/AAAAAAAAACU/mq5qr88T0Nc-nee9kJvErJrCHdoHhBbDg/s1600/TPT%2B3.png" class="uri">https://3.bp.blogspot.com/-NFAuVrPsFFk/VveLGuHpglI/AAAAAAAAACU/mq5qr88T0Nc-nee9kJvErJrCHdoHhBbDg/s1600/TPT%2B3.png</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-12"></span>
-<img src="mm/image12.png" alt="https://help.sap.com/doc/PRODUCTION/78e0627c34ef43879d72718e21ea517b/6.18.13/en-US/loio4696b953495bb44ce10000000a174cb4_LowRes.png (2021. 02. 04.)" width="960" />
-<p class="caption">
-Figure 9: <a href="https://help.sap.com/doc/PRODUCTION/78e0627c34ef43879d72718e21ea517b/6.18.13/en-US/loio4696b953495bb44ce10000000a174cb4_LowRes.png" class="uri">https://help.sap.com/doc/PRODUCTION/78e0627c34ef43879d72718e21ea517b/6.18.13/en-US/loio4696b953495bb44ce10000000a174cb4_LowRes.png</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<p>A folyamatot az alábbi oktatóvideó mutatja be korrekten:</p>
-<div class="layout-chunk" data-layout="l-body">
-<iframe src="https://www.youtube.com/embed/n1W__-G4POw" width="624" height="400px">
-</iframe>
-</div>
-<p><strong>Készletátadás (Stock transfer)</strong> vállalaton / vállalatcsoporton belül történhet, pl.: két üzem között, illetve két vállalat között. Ebben az esetben az üzem (Plant) és az ellátó üzemet (Supply Plant) kell megadni. Lényeges, hogy kizárólag szabad felhasználású készletállományt (Unrestricted Use) mozgathatunk meg.</p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image13.png" width="432" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Service:</strong> jellemzően olyan törzsadatokkal rendelkező szolgáltatás, amelyet 5-ös számlaosztályra és költséghelyre könyvelünk. Szolgáltatás-vételi megrendeléseket belsőleg vagy külsőleg beszerzett szolgáltatásokhoz adunk meg. Ezek a vásárlási megrendelések eltérnek a szokásosaktól, mivel nincs szükség árubevételre és nincs készletük.</p>
-<div class="row">
-<div class="column">
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image14.png" width="538" /></p>
-</div>
-</div>
-<div class="column">
-<p><u><strong>Kontírozási kategória. (Account Assignment).</strong></u> A tranzakcióknak alkalmasak többek-között (A) tárgyi eszközzel, (C) értékesítéssel (vevői megrendeléssel), (F) gyártási rendeléssel, (K) költséghellyel, (P) projekttel kapcsolatban létrehozni rendelési bizonylatokat és ennek megfelelően kontírozni a rendelést.</p>
-</div>
-</div>
-<p><strong>1 – Harmadik fél (Third-party)</strong> kódot használunk, amennyiben a vevői rendelést a szállítónak továbbítjuk és az szállítja le a rendelést a vevőnek.</p>
-<p><strong>C – Vevői megrendelés (Sales order)</strong> utáni gyártás, vagy a megrendelés utáni beszerzés esetén merül fel. A gyártás tekintetében az MRP folyamatok futtatását a vevői megrendeléssel szembeni veszik fel. A másik esetben a vevői megrendelés specifikus tételére adunk le megrendelést. Ebben az esetben szerepet játszhatnak a harmadik fél ügyletek.</p>
-<p><strong>K – Költséghelyet (Cost Center)</strong> adunk meg abban az esetben, ha az adott anyagot, vagy szolgáltatást azonnal felhasználjuk, ezért azonnali költségként jelentkezik. Ebben az esetben az 5-ös számlaosztály valamely releváns költségszámlájára kontírozunk, illetve kiválasztjuk az ehhez tartozó költséghelyet a 6-os számlaosztályból.</p>
-<p><strong>O – Gyártási rendelés (Order)</strong> a gyártás / értékesítés ütemezéssel, és az ehhez kapcsolódó anyagigény-tervező modullal (MRP) van kapcsolatban. Az anyagigény-tervezés fő funkciója az anyag rendelkezésre állásának garantálása, vagyis a szükséges mennyiségek időben, időre történő beszerzése. Ez a folyamat magában foglalja a készletek nyomon követését, és különösen a beszerzési és termelési beszerzési javaslatok automatikus elkészítését. Az anyagigény tervező modul kiszámítja, hogy mikor és milyen mennyiségre kell megrendelési javaslatot létrehozni. Az MRP-vezérlőnek a mennyiségek kiszámításához szüksége van minden információra a készletekről, valamint a dátumok kiszámításához az átfutási időkre és a beszerzési időkre is szüksége van. Az MRP vezérlő minden anyaghoz meghatároz egy megfelelő MRP-t és tételméret-eljárást a beszerzési javaslatok meghatározásához.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
-<img src="mm/image15.jpeg" alt="https://www.batchmaster.com/wp-content/uploads/MRP-MPS-process-diagram.jpg (2021. 02. 04.)"  />
-<p class="caption">
-Figure 10: <a href="https://www.batchmaster.com/wp-content/uploads/MRP-MPS-process-diagram.jpg" class="uri">https://www.batchmaster.com/wp-content/uploads/MRP-MPS-process-diagram.jpg</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<p><strong>P – Projekt (Project)</strong> esetében készülhetnek rendelések projektelemekre is. Ez projektszervezet esetében, illetve projekt és pályázati elszámolás esetén lehet kiemelten hasznos.</p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image16.png" width="861" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Q – Megrendelésre gyártás (Project make-to order)</strong> esetén a beszerzés is ennek függvényében módosul. Példa: az ipari gépek csúcstechnológiájú gyártói általában „megrendelésre gyártanak", a gépeket vagy megbízás alapján gyártják, vagy összeszerelik, és a megrendelést leadó ügyfél hajlandó megvárni a szállítását. Az MTO többnyire egyedi, projekt jellegű gyártás esetén figyelhető meg.</p>
-<p>Részletesen lásd.: <a href="https://www.investopedia.com/terms/m/make-to-order.asp" class="uri">https://www.investopedia.com/terms/m/make-to-order.asp</a> (2021. 02. 04.)</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-18"></span>
-<img src="mm/image17.png" alt="https://www.allaboutlean.com/push-pull/make-to-oder-stock/ (2021. 02. 04.)" width="829" />
-<p class="caption">
-Figure 11: <a href="https://www.allaboutlean.com/push-pull/make-to-oder-stock/" class="uri">https://www.allaboutlean.com/push-pull/make-to-oder-stock/</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<p>A beszerzés tekintetében arról van szó, hogy a rendelések olyan termék gyártásához készülnek, amelyek nem tömeggyártásban, hanem egy-egy vevő igénye alapján készülnek el, egyedi specifikációkkal. Pécsen erre példa lehet a Körber Hungária Gépgyártó Kft. (Hauni) egyedi „vevői igényekre szabott" gépek és berendezések).</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-19"></span>
-<img src="mm/image18.jpeg" alt="http://www.hauni.hu/hu/technologiak/szerelouezem/ (2021. 02. 04.)"  />
-<p class="caption">
-Figure 12: <a href="http://www.hauni.hu/hu/technologiak/szerelouezem/" class="uri">http://www.hauni.hu/hu/technologiak/szerelouezem/</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<h2>
-<strong>1. Beszerzési igény (Purchase Requisition)</strong>
-</h2>
-<h3>
-<strong>1.1. General Overview</strong>
-</h3>
-<p><strong>A beszerzési igénylés moduláris felépítése és elhelyezkedése az SAP navigációs menüjében</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image19.png" width="319" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Beszerzési igénylés modul felépítése szerint a Logisztika \ Anyaggazdálkodás \ Beszerzés könyvtár</strong> főkönyvtárban lévő tranzakciókból és alkönyvtárakban elhelyezkedő tranzakciókból áll. A főkönyvtárban elérhető ME51-ennel egyedileg hozhatunk létre, az ME53N-nel egyedileg módosíthatunk, az ME53N-el egyedileg tekinthetünk meg igényléseket. Az MEMASSRQ-val tömegesen tudunk megtekinteni és szerkeszteni már elkészített igényléseket. A Release mappában az elkészült igényléseket hagyhatjuk jóvá egyedileg, vagy tömegesen. A List Displays-ban különböző lekérdezések és kimtatások érhetőek el, valamint listák generálhatóak, ahonnan szintén elérhetőek az egyes anyagigénylések megtekintésre és szerkesztésre. A Follow-On-Functions keretében további műveletek érhetők el, pl.: az igénylések megfelelő beállítás esetén megrendelésekké konvertálhatók.</p>
-<p><strong><u>A beszerzési igények fontosabb jelllemzőjük</u></strong></p>
-<p><strong>Tárgyuk szerint</strong> a beszerzési igények elsősorban az anyag- és árukészletbe tartozó javakra, tovább számlázott szolgáltatásokra, tárgyi eszközökre, valamint azonnal felhasználású anyagokra és szolgáltatásokra adhatók le.</p>
-<p><strong>Létrehozásukat</strong> meghatározza, hogy a gyártási folyamatok részeként jönnek létre, vagy attól függetlenül. Amennyiben tervezett gyártási folyamatról van szó, úgy a gyártásvezérlés (Production Order), valamint az MRP folyamatok hozzák létre automatikusan. Ezzel szemben a gyártási folyamatokon kívüli, eseti eljárások keretében manuálisan létrehozhatunk beszerzési igényeket. Hasonló eset, amikor egyedi tárgyi eszközre adunk le igénylést. Egy másik lehetőség, ha a munkavállalók a napi munkavégzésükhöz szükséges eszközökre, anyagokra adnak le belső rendelési igényeket, pl.: katalógusok használatával.</p>
-<p><strong>Környezetük</strong> az igényléseket beszerzési, felhasználási, tárolási és számviteli környezetbe sorolható objektumok veszik körül.</p>
-<p><strong>Forrásuk szerint</strong> a beszerzési igénylések készülhetnek korábban létrehozott beszerzési igénylésekből, azonban a beszerzési rendelésektől eltérően szerződések, megállapodások, stb. nem alapozhatnak meg beszerzési igényeket.</p>
-<p><strong>Felhasználásuk szerint a</strong> beszerzési igénylésekkel megalapozhatók, alapadataival létrehozhatók beszerzési rendelések, árajánlatok, keretszerződések, ütemezései megállapodások.</p>
-<p><strong>Kapcsolódásuk szerint</strong> igénylésekhez kapcsolhatók szerződések, megállapodások, és beszerzési infó rekordok, valamint szállítók is.</p>
-<p><strong>Beszerzési igények elhelyezése a magyar standard számlatükörben és a mérlegben:</strong></p>
-<p>Megállapítható, hogy beszerzési igényeket elsősorban a forgóeszköz mérlegosztály készleteibe tartozó anyagokra és árukra adunk le a gyártási folyamat részeként. Az anyagok esetében a gyártáshoz szükséges alapanyagok, segédanyagok, üzemanyagok és fenntartási anyagokról lehet szó (többnyire), az áruk esetében a változatlan formában értékesíteni kívánt kereskedelmi áruk és a tovább számlázott szolgáltatások igénylése merülhet fel. A mérleg tekintetében, beszerzési igényléssel eszköz, különösen anyagtartalommal rendelkező tárgyi eszköz megrendelése is megalapozható. Befektetett pénzügyi eszközök és immateriális javak nem képezhetik az igénylések alapját. A mérleg mellett lehetőségünk van közvetlen költséget is elszámolni, és ezzel kapcsolatban anyagot, vagy szolgáltatást azonnal felhasználni, tehát az 5-ös eredményosztályra, illetve költséghelyre igényelni.</p>
-<p><strong>A fentiekkel kapcsolatban alapvető kérdés</strong>, hogy mit szeretnénk, milyen mennyiségben, és hova igényelni (rendelni), valamint milyen konstrukcióban, kitől (szerződések, megállapodások, megegyezések szerint), milyen környezetben, illetve mikorra igényelni.</p>
-<p><strong>Tranzakció típusa:</strong> SAP-ban ME51 és ME51N-el lehet létrehozni beszerzési igénylést. A különbség abban van, hogy amíg az ME51 egy több képernyős felépítésű, úgynevezett classic tranzakció, addig az ME51N az új típusú, egy / osztott képernyős Enjoy single screen tranzakciók osztályába tartozik. Gyakorlatilag a táblázat és a tételrészletező egy képernyő szerepel, amely jelentősen transzparensebbé teszi a képernyőfelépítést.</p>
-<h3>
-<strong><u>1.2. ME51N – Create (PR)</u></strong>
-</h3>
-<h4>
-<strong>1.2.1. Áttekintés</strong>
-</h4>
-<p><img src="mm/image20.png" style="width:6.29167in;height:4.19792in" /></p>
-<h5>
-<strong>1.2.1.1 Document Type (Bizonylat típusa)</strong>
-</h5>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image21.png" width="186" style="display: block; margin: auto;" /></p>
-</div>
-<p>Az anyagigénylésünket egy bizonylat fogja tárolni, amely egy bizonylatrendszerben, bizonylatkörben helyezkedik el. Minden bizonylat mentés után egy egyedi számot fog kapni, amelynek segítségével transzparensen nyomonkövethetővé válnak. A bizonylat tulajdonságait pedig az őt leíró bizonylattípus beállításai fogják meghatározni. A legördülő menüben elérhető bizonylattípusok - kiválasztás esetén – meghatározzák egyrészt a bizonylat űtlaptáblázatának felépítését és szerkezetét (különösen az elérhető oszlopokat / mezőket), másrészt determinálják, hogy a bizonylat melyik számintervallumban fog elhelyezkedni. Ennek hátterében az áll, hogy SPRO-ban minden bizonylathoz tartozik egy előre definiált képernyőkép (Screen Layout), illetve egy bizonylatintervallum. A bizonylattípusok emellett meghatározhatják, hogy milyen típusú Account Assignment és Item Categoriek befogadására alkalmasak.</p>
-<p>A PTE TTK-s IDES rendszerben az alapértelmezett az NB Standard PR.</p>
-<h5>
-<strong>1.2.1.2: Document Overview</strong>
-</h5>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image22.png" width="246" style="display: block; margin: auto;" /></p>
-</div>
-<p>A Document Overview ON-ra kattintva a képernyő baloldalán megjelenik egy hasáb. A hasábon lévő műveletek segítségével korábban elkészült, az anyagigénylés szempontjából releváns előzményeket tudunk látszólag betölteni. Eredményeim szerint azonban reálisan kizárólag korábbi beszerzés igénykés másolható át új anyagigénylésre. A funkció értelmét az a koncepció adja, amely szerint új beszerzési igényléshez felhasználhatóak korábban elkészített bizonylatokat is.</p>
-<p>Purchase Order-ből, RFQ-ból, Conratcts-ból, Ütemezési megállapodásokból nem lehet átvenni adatokat új igénylésekhez (ez csak a Purchase Order esetében működik). Tehát csak a már korábban elkészített igénylés választható. Amennyiben nem a saját igényléseinket (My PR) választjuk, úgy egy összetett keresőfelület jön elő, amely érdemi segítséget jelent az egyes bizonylatok megtalásában. (Lásd videót)</p>
-<p><strong>1.2.1.3 Header</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image23.png" width="779" style="display: block; margin: auto;" /></p>
-</div>
-<p>A Header-ben, tehát fejlécben tudunk megadni olyan információt, amely igénylésre, illetve az igénylés valamennyi / egyes tételeire vonatkozik. Az 1-es változatban folyamatos szöveget tudunk megadni, a 2-es változatban pedig sorokra bontott szöveget tudunk felvinni.</p>
-<h5>
-<strong>1.2.1.4 Tételnyilvántartó</strong>
-</h5>
-<p><strong>Menüsáv ikonjainak szerepe:</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image24.png" width="1331" style="display: block; margin: auto;" /></p>
-</div>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image25.png" width="1091" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Alapadatok:</strong></p>
-<p>Material – anyag kódja I Short Text – anyag, rövid leírása I Quantity – mennyiség I Unit – mennyiség mértékegysége I Plant – üzem, ahová az anyagot igényeljük I Storage Location: az üzemhez tartozó raktárhely I Delivery date: szállítás naptári dátuma I Requested by: az igénylő neve, vagy kódja I Tracking No.: az igénylés nyomonkövetésének száma</p>
-<p>Az anyagigénylést a következő objektumokkal lehet összekapcsolni: Purchase Group: Beszerzési csoport I Requested by: anyagigénylés kérelmezője I Tracking Number: tétel követési száma I Des. Vendor: javasolt szállító I Fixed Vendor: rögzített szállító I Purchase Org.: beszerzési szervezet I Agreement: szerződés I Item: a szerződés tételének sorszáma pl.: 10 I Info Record: beszerzési adatok.</p>
-<p>Az Agreement-hez és az Info Record-hoz való hozzárendelés lényeges lehet, tekintettel arra, hogy az azokban foglalt kondíciók meghatározhatják az adott tétel tulajdonságait, pl.: árak és szállítási feltételek tekintetében. Később a Purchase Order (beszerzési megrendelés ezeket fogja átvenni).</p>
-<p>Kitöltés sorrendje: először adjuk meg az anyag kódját, utána a Plant (üzemet). A kettő kombinációjából a program az anyagtörzs adataiból kitölti a többi mezők egy részét, szintén adjuk meg a Storage Location-t, majd a többi szükséges mezőt. Az itt megadott adatokat később átveheti többek között a Contract (szerződés nyilvántartó modul), valamint a Purchase Order (megrendelések).</p>
-<h5>
-<strong>1.2.1.5 Tételrészletező</strong>
-</h5>
-<p><strong>Az 5-ös rész az egyes tételek részletezésre szolgál</strong></p>
-<p>Az egyes tételek részletes adatainak megtekintéséhez az Item drop down-ból válasszuk ki az adott tételt, majd azt követően nyissuk meg az egyes űrlapokat. Az űrlapok részben a táblázatban szereplő oszlop mezőket tartalmazzák csoportosítva, néhány esetben a táblázatban nem szereplő mezők és kapcsolók is rendelkezésre állnak.</p>
-<p><strong>Material Data</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image26.png" width="940" style="display: block; margin: auto;" /></p>
-</div>
-<p>A Material Data űrlapon az anyag kódja, az anyag rövid neve, a sarzs (Batch), és az anyag csoportja szerepel. Ezek az adatok az anyagtörzsből töltödnek ki. A Vendor Material szabadszöveges mezőben a szállító nyilvántartásában szereplő anyagnevet és / kódot lehet megadni, ennek értelme abban az esetben van, ha a szállító adatbázisában más kóddal és névvel fut az anyag, mint a saját SAP rendszerünkben. (In most cases, the vendor uses a different number for the material than the one used in this system. The vendor's material number can therefore also be quoted in a <a href="sapevent:DOCU_LINK\DS:GLOS.3526C0CEAFAB52B9E10000009B38F974"><strong>purchase order</strong></a> for identification purposes. from: SAP help menü) A Batch esetében a sarzs menedzsmentről van szó, amelynek segítségével bizonyos szempontok szerint az egy kötegbe tartozó anyagok mozgása transzparensen nyomon követhető. <em>(ehhez a részhez annyira nem értek, én az alábbi külső hivatkozásból indultam ki)</em></p>
-<p><strong>Mennyiség és dátumok (Quantity/Dates)</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image27.png" width="929" style="display: block; margin: auto;" /></p>
-</div>
-<p>Az űrlapon három mennyiséget találunk. Az első az igénylendő mennyiséget, a második az ebből megrendelt mennyiséget, a harmadik a kettő különbözetét a nyitott mennyiséget tartalmazza. A Closed-el lehet lezárni az igénylést. A jobb oldali hasábban lehet megadni a tervezett szállítás időpontját, és az engedélyeztetés időpontját. A kérelem időpontja alapértelmezetten az a nap lesz, amikor az igénylést elkészítjük. Ezek alatt megadhatjuk a tervezett szállítás időt, illetve az áruérkeztetéshez szükséges időmennyiséget.</p>
-<p><strong>Értékelés (Valuation)</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image28.png" width="907" style="display: block; margin: auto;" /></p>
-</div>
-<p>A Valuation űrlapon az anyagnak a mennyiségre / darabra vetített tervezett ára, pénzneme szerepel. Ennek értéke elsősorban az anyagtörzsből származhat. A Promotion alatt három kapcsoló szerepel. Az anyagérkeztetés (Good Receipt) aktiválásával azt jelezzük, hogy a tétel értékelése összefüggésben van a érkeztetéssel, a számlaérkeztetés (Invoice Receipt) estében, ha a számlaértkeztetéssel, a GR Non-Val. esetében, ha az olyan árut érkeztetünk, amelyet nem kell az ávételkor értékelnünk.</p>
-<p><strong>Kontírozás (Account Assignment)</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image29.png" width="931" style="display: block; margin: auto;" /></p>
-</div>
-<p>A kontírozás űrlap felépítését a legördülő listában elérhető kategóriák határozzák meg. Ennek informatikai alapját az adja, hogy SPRO-ban az egyes kategóriákhoz egyedi beállítások (űrlapfelépítések, mezőkészletek) tartoznak. Alapesetben, ha nem választunk kontírozási kategóriát (tehát az AccAssCat üres) akkor az igénylés a áru- és anyagkészletre fog vonatkozni. A Fund, Functional Area, Fund Center, Grant elsősorban az állami költségvetésből működő intézmények forrásgazdálkodásának adminisztrációját teszik lehetővé. Segítségükkel pl.: megadható, hogy adott igénylést milyen alapra kontírozzuk, illetve milyen támogatást használunk fel. A Commitment Item a kötelezettségvállalási, pénzügyi tételnek felel meg.</p>
-<p><strong>K Cost Center (költséghely)</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image30.png" width="928" style="display: block; margin: auto;" /></p>
-</div>
-<p>Költséghely kiválasztása elsősorban akkor indokolt, ha az anyagot, árut, vagy szolgáltatást közvetlenül költségként, pontosabban költségnemenként számoljuk el 5-ös számlaosztályban, és azonnal felhasználjuk. Az alapadatok tekintetében költséghelyet (Cost Center), a pénzügyi központot (Profit center), valamint az üzletágat (Business Area-t) adhatjuk meg. Az egyes objektumok összefüggésben állhatnak egymással a háttérbeállítástól függően, ezért pl.: a költséghely kitöltésével a pénzügyi központ és az üzletág is kitöltődhet automatikusan. Amennyiben költséghelyre adunk le beszerzési igényt, abban az esetben 5-ös számlaszámra fogjuk később könyvelni a beszerzésünket, egyúttal egy 6-os számvlteli költséghelyhez is hozzárendeljük azt. Az Unloading point mezőjében a kirakodás, illetve a felhasználás helyét tudjuk megadni, a mezőbe a költséghely fizikai elhelyezkedését célszerű megadni.</p>
-<p>Amennyiben egy tételt több költséghely szerint szeretnénk felosztani, úgy válasszuk az első kockát, a többszörös konítrozás beállítását.</p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image31.png" width="936" style="display: block; margin: auto;" /></p>
-</div>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image32.png" width="940" style="display: block; margin: auto;" /></p>
-</div>
-<div class="row">
-<div class="column">
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image33.png" width="411" /></p>
-</div>
-</div>
-<div class="column">
-<p>Amennyiben több költséghelyre szeretnénk kontírozni a beszerzendő tételt, úgy megosztás mezőben (Distribution) válasszuk ki a mennyiség, vagy a százalékos (arányos) formában való megosztást, és töltsük ki az alsó táblázatot.Ha az első sort kitötöttük, utána a Repeat on (második ikonnal) tudjuk másolni a sort.</p>
-</div>
-</div>
-<p><strong>Projekt</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image34.png" width="929" style="display: block; margin: auto;" /></p>
-</div>
-<p>Ha a beszerzési igénylést projekthez szeretnénk kapcsolni, úgy a P Project-et kell kiválasztani. A legtöbb mező azonos lesz a költséghely űrlapjával, ugyanakkor a WBS Element és a Network új elemként jelenik meg. A két mező kitöltése lehetővé teszi, hogy beszerzési igénylésünket a projekt megfelelő szintjével, elemével tudjuk összekapcsolni. Egy projekt alapszintű felépítését szemlélteti az alábbi ábra.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-35"></span>
-<img src="mm/image35.png" alt="https://help.sap.com/doc/PRODUCTION/5ecdd9085d344e6693e65fc60c3b5b0f/6.17.19/en-US/loio5d74ba53422bb54ce10000000a174cb4_LowRes.png (2021. 02. 04.)" width="922" />
-<p class="caption">
-Figure 13: <a href="https://help.sap.com/doc/PRODUCTION/5ecdd9085d344e6693e65fc60c3b5b0f/6.17.19/en-US/loio5d74ba53422bb54ce10000000a174cb4_LowRes.png" class="uri">https://help.sap.com/doc/PRODUCTION/5ecdd9085d344e6693e65fc60c3b5b0f/6.17.19/en-US/loio5d74ba53422bb54ce10000000a174cb4_LowRes.png</a> (2021. 02. 04.)
-</p>
-</div>
-</div>
-<p><a href="https://help.sap.com/viewer/5ecdd9085d344e6693e65fc60c3b5b0f/6.17.19/en-US/26d4b65334e6b54ce10000000a174cb4.html" class="uri">https://help.sap.com/viewer/5ecdd9085d344e6693e65fc60c3b5b0f/6.17.19/en-US/26d4b65334e6b54ce10000000a174cb4.html</a> (2021. január 20.)</p>
-<p>Az ábrán szereplő projekt esetében az egyes szintekhez tudunk anyagigényléseket rögzíteni.</p>
-<p><strong>Befejezetlen beruházás / Tárgyi eszköz (Asset)</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image36.png" width="1091" style="display: block; margin: auto;" /></p>
-</div>
-<p>Amennyiben tárgyi eszközt szeretnénk beszerezni, úgy az Asset-et válasszuk ki. A szokásos kontírozásos mezők mellett az igénylésünket rátudjuk vezetni egy / több befejezetlen beruházásra, vagy közvetlenül a tárgyi eszközre.</p>
-<p><strong>A beszerzési igény információ forrása (Source of Supply)</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image37.png" width="925" style="display: block; margin: auto;" /></p>
-</div>
-<p>Beszerzési igényekhez rendelhetünk különböző forrásdokumentumokat (keretszerződéseket, központi szerződéseket, vagy infó rekordokat). Ezek kiválasztásával alapesetben megjelenik az a rögzített szállító is, amelyet az adott dokuemtum tartalmaz. Emellett megadhatunk javasolt szállítót is. A keretszerződés, keretmegállapodás (amely jellemzően valamilyen Outline Agreement objektum) esetében meg kell adni, hogy az igénylés a szerződés melyik tételére vonatkozik, ellenkező esetben nem lesz összefüggés az igényelt tétel és a szerződés tétele között. Ez alól az információs rekord kivétel, ugyanis az mindig egy adott anyagra vonatkozik, szemben a szerződésekre, amelyek több tételt is tartalmazhatnak. Lényeges, hogy ezt csak abban az esetben tudjuk megtenni, ha azok (szerződések, infó rekordok) már elkészültek. Emellett szintén meg lehet adni a beszerzési szervezetet. A jelentősége ennek a Purchase Order létrehozása során lesz, a PO az igénylés adott tételéhez kapcsolt szerződésből fogja a kondíciók egy részét, pl.: az árat, a szállítási feltételeket kiolvasni.</p>
-<p><strong>Status</strong> (a beszerzési igénylés státusza)</p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image38.png" width="907" style="display: block; margin: auto;" /></p>
-</div>
-<p>A Status űrlapon a Process Status (feldolgozás státusza), a Block ID (az anyagigénylés blokkolása), és a Block text (a blokkolás szöveges indoklása adható meg).</p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image39.png" width="178" style="display: block; margin: auto;" /></p>
-</div>
-<p>Az aktív legördülő menüből az anyagigénylés állapota tekinthető meg. 03 = engedélyeztetés alatt, 05 = engedélyeztetés teljesítve, 08 = engedélyeztetés visszautasítva.</p>
-<p><strong>Contact Person</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image40.png" width="930" style="display: block; margin: auto;" /></p>
-</div>
-<p>Created by: a felhasználó neve, aki készítette (ez a bejelentkezési adatokból származik)</p>
-<p>Created Indicator: a létrehozás módjára utal</p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image41.png" width="311" style="display: block; margin: auto;" /></p>
-</div>
-<p>Amennyiben manuálisan hozzuk létre, úgy a Realtime (valós idejű, manuális létrehozás) lesz az alapértelmezett, B) esetben az anyagszükségletek tervezése hozza létre automatában, az F esetében a gyártás elrendelés hozza létre automatában.</p>
-<h3>
-<strong>1.3. Enviroment</strong>
-</h3>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image42.png" width="696" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Az Enviroment menüsorban</strong> lehet a tételhez kapcsolt rekordokat / objektumokat megtekinteni, illetve különböző kimutatásokat (pl.: készletek, szállítók értékeléseit) lekérni. A menüsor előnye, hogy külső tranzakciók nélkül is tudunk az adott tételhez tartozó objektumokat menedzselni.</p>
-<p><strong>Item Changes –</strong> Ez a tétel egyes elemeinek módosításait mutatja történeti megközelítésben (régi érték –&gt; új érték) kronológiailag.</p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image43.png" width="1004" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Material -&gt; A tétel, illetve az adott anyag törzsadatait nyitja meg</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image44.png" width="612" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Material Stock -&gt; Az adott anyagból rendelkezésre álló mennyiséget és elhelyezkedését mutatja meg vállalat \ gyár \ tárolási hely szerint:</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image45.png" width="919" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Vendor -&gt; A szállító törzsadatainak egy részét (alapadatokat, beszerzési adatokat) mutatja</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image46.png" width="580" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Vendor Evaluation -&gt; A szállító automata értékelését nézhetjük meg:</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image47.png" width="593" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Info Record -&gt; A tételhez kapcsolódó Infó Rekordot nyitja meg</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image48.png" width="594" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Contract – a tételhez kapcsolódó szerződést lehet megnézni / módosítani</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image49.png" width="597" style="display: block; margin: auto;" /></p>
-</div>
-<p><strong>Quota Arrangement -&gt; A tételhez tartozó kvótamegállapodásokat lehet megtekinteni / módosítani</strong></p>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="mm/image50.png" width="497" style="display: block; margin: auto;" /></p>
-</div>
-<p>Az alábbi videó az egyedi és csoportos megjelenítés és módosítás lehetőségeit mutatja be.</p>
-<script src="js/jquery-1.8.3.min.js"></script>
-<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.tocify.js"></script>
-<script>
-$(function() {
-
-var toc = $("#toc").tocify({
-selectors: "h2,h3,h4,h5"
-}).data("toc-tocify");
-
-
-});
-</script>
-</body>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

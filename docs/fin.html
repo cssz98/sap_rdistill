@@ -2256,6 +2256,126 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 
+  /******** Text ********/
+
+  p {
+  	font-size: 13px;
+  	text-align: justify;
+  }
+
+  b, strong {
+  	font-weight: 700;
+  }
+
+  .uri {
+  	color: blue;
+  }
+
+
+  d-article li:last-child {
+  	margin-bottom: 0;
+  	font-size: 14px;
+  }
+
+
+
+  /******** Footer ********/
+
+  .distill-site-footer p {
+  	text-align: center;
+  }
+
+
+
+
+
+  /******** 2column ********/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+  /******** fig.cap ********/
+
+  figure .caption, .figure .caption, figure figcaption {
+  	font-size: 10px;
+  	text-align: center;
+  }
+
+
+
+
+  .algolia-autocomplete {
+  	display: inline-block;
+  	margin-left: 10px;
+  	vertical-align: sub;
+  	background-color: transparent;
+  	color: black;
+  	padding: 6px;
+  	padding-top: 8px;
+  	padding-bottom: 0;
+  	border-radius: 6px;
+  	border: 1px #0F2E3D solid;
+  	width: 180px;
+  }
+
+
+  figcaption {
+  	border-radius: 35px;
+  	border: 2px solid #296d98;
+  	width: auto;
+  	height: auto;
+  	padding: 14px;
+  }
+
+
+
+
+  /******** h1Title ********/
+
+
+  d-title h1 {
+  	font-size: 50px;
+  	border-left: none;
+  	text-decoration: none;
+  	color: black;
+  }
+
+
+
+  /******** Zoom on gif ********/
+
+  .zoom {
+    padding: auto;
+    transition: transform .2s;
+    width: auto;
+    margin: auto;
+  }
+
+  .zoom:hover {
+    transform: scale(1.5);
+  }
+
+
+
+
   /******** Hyperlink on image ********/
 
 
@@ -2329,110 +2449,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     animation-direction: normal, alternate;
   }
 
-
-  /******** Text ********/
-
-  p {
-  	font-size: 13px;
-  	text-align: justify;
-  }
-
-  b, strong {
-  	font-weight: 700;
-  }
-
-  .uri {
-  	color: blue;
-  }
-
-
-  d-article li:last-child {
-  	margin-bottom: 0;
-  	font-size: 14px;
-  }
-
-
-
-  /******** Footer ********/
-
-  .distill-site-footer p {
-  	text-align: center;
-  }
-
-
-
-
-
-
-
-  * {
-    box-sizing: border-box;
-  }
-
-  /* Create two equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: auto; /* Should be removed. Only for demonstration */
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-
-
-
-  figure .caption, .figure .caption, figure figcaption {
-  	font-size: 10px;
-  	text-align: center;
-  }
-
-
-
-
-  .algolia-autocomplete {
-  	display: inline-block;
-  	margin-left: 10px;
-  	vertical-align: sub;
-  	background-color: transparent;
-  	color: black;
-  	padding: 6px;
-  	padding-top: 8px;
-  	padding-bottom: 0;
-  	border-radius: 6px;
-  	border: 1px #0F2E3D solid;
-  	width: 180px;
-  }
-
-
-  figcaption {
-  	border-radius: 35px;
-  	border: 2px solid #296d98;
-  	width: auto;
-  	height: auto;
-  	padding: 14px;
-  }
-
-
-
-
-  /******** Zoom on gif ********/
-
-  .zoom {
-    padding: auto;
-    transition: transform .2s;
-    width: auto;
-    margin: auto;
-  }
-
-  .zoom:hover {
-    transform: scale(1.5);
-  }
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -2456,6 +2472,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html" class="title">SAP E-Study Guide</a>
 <a href="index.html">Introduction</a>
 <a href="fin.html">Financial Accounting</a>
+<a href="ewm.html">EWM</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
@@ -2488,21 +2505,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <strong><u>Pénzügyi és vezetői számviteli környezet felépítése SAP-ban</u></strong>
 </h2>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image1.png" width="574" style="display: block; margin: auto auto auto 0;" /></p>
+<p><img src="images/fin/media/image1.png" width="574" style="display: block; margin: auto auto auto 0;" /></p>
 </div>
 <p>A szeminárium során elsősorban felhasználói tranzakciókat használunk, azonban lényegesnek tartjuk megemlíteni és igény esetén szemléltetni a pénzügyi és a vezetői számvitel környezetének objektumait, illetve lehetőséget adni azok létrehozására. Az alábbi ismeretek azoknak igazán hasznos, akik szeretnék érteni, hogy milyen szervezeti tényezők, szervezeti egységek szerepelnek a könyvelési folyamatok hátterében, azokat hogyan lehet beállítani, illetve milyen környezetet lehet kialakítani. Más tekintetben a felhasználói szint szempontjából a kontírozási, hozzárendelések miatt lényegesek.</p>
 <p>Elöljáróban megállapítható, hogy az SAP rendszerekben (ERP R/3, S/4 HANA) két eltérő funkciójú, mégis több szálon kapcsolódó szervezeti környezet működhet részben egymással kapcsolatban, részben párhuzamosan. Az egyik a Financial Accounting, tehát a Pénzügyi Számvitel, amelynek alapvető feladata a külső környezet szereplőinek, pl: adóhatóságok, pl.: NAV tájékoztatása a vállalat, vagy annak egységeinek vagyoni helyzetéről mérleg-, eredmény és pénzügyi beszámolók formájában. Ennek a környezetnek a klasszikus részét a Business Area, Consolidated Business Area és részben a Segement adja. Ezzel szemben a Controlling modul a belső tájékoztatást látja el, a vállalat valós teljesítményéről ad számot a menedzsmentnek. Ebben az esetben Controlling Area-ban elhelyezkedő, eredmények kimutatását lehetővé tevő Profit Center, valamint az ez alatt lévő, költségeket gyűjtő Cost Center-ek szerepelnek. A helyzetet az bonyolítja, hogy a Business Area (FI) alá tartozhat Cost Cenrer, a Segment alá pedig Profit Center és Cost Center. Tehát a két eltérő funkciójú szervezeti objektumok összekapcsolhatók.</p>
 <p><u><strong>Vállalatcsoport</strong> <strong>(Company) / Kliens (Client)</strong></u></p>
 <p>Az SAP rendszerben két, egymással vertikális kapcsolatban álló vállalati szint különíthető el. A felső szintet a vállalatcsoport (Company), az alsó szintet a vállalat (Comapny Code) jelenti. Egy vállalatcsoportban több egymással azonos, mellérendelt, horizontális szinten lévő vállalat helyezkedik el. A magasabb szint a vállalatcsoport), az alacsonyabb szint a vállalat. A vállalatcsoportba, amely több országban, esetleg kontinensen is tevékenykedik - pl. ThyssenKr*pp - tartoznak a vállalatok. Company szinten lehet benyújtani pl.: konszolidált pénzügyi beszámolót. Ezzel szemben a vállalatok Company Codes) azok a jogi entitások, amelyekre az adott ország jogszabályai vonatkoznak, illetve amelyeknek pl.: az adóhatóságoknak kell adatszolgáltatás végezniük. SAP rendszerben elsőként a vállalatcsoportot célszerű beállítani, ha ez indokolt (pl.: azokban az esetekben, ha csak Magyarországon működik a vállalat (szervezet), pl.: PTE, illetve más felsőoktatási intézmények, nem kell megadni vállalatcsoportot, mivel ez nem releváns).</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image2.png" width="451" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image2.png" width="451" style="display: block; margin: auto;" /></p>
 </div>
 <p>Tehát megállapítható, hogy a szervezeti hierarchia legmagasabb pontján a vállalatcsoport áll. A különböző formában, pl.: konszernként, holdingként, konglomerátumkén megjelenő vállalatcsoportok elsősorban a transznacionális és multinacionális szervezetekre jellemzők. Az ügyfél / kliens / vállalatcsoport az SAP rendszer legmagasabb hierarchikus szintjén helyezkedik. A rendszeren belül, saját adataival, törzsrekordjaival és független táblákkal rendelkezik. Üzleti szempontból az ügyfél vállalati csoportot alkot, ügyfél jogi és szervezeti szempontból is önálló. A gyökér (root) a vállalati csoport szintjét képviseli. A hierarchia összes többi csomópontjának nem kell fix szemantikával rendelkeznie. Ez azt jelenti, hogy hierarchiáját jogi személyek (például leányvállalatok) és üzleti egységek (például értékesítés) keverékével állíthatja össze.</p>
 <p>Forrás: <a href="https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/1503%20SP%206/en-US/a8ffcc537cbf224be10000000a174cb4.html" class="uri">https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/1503%20SP%206/en-US/a8ffcc537cbf224be10000000a174cb4.html</a> (2021. 02. 10.)</p>
 <p>Az alábbiakban nézzünk meg két standard, szabványos SAP szervezeti ábrát:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
-<img src="fin/media/image3.png" alt="http://sapmoduletutor.blogspot.com/2015/11/sap-mm-organizational-structure-in-sap.html (2021. 02. 10.)" width="1179" />
+<img src="images/fin/media/image3.png" alt="http://sapmoduletutor.blogspot.com/2015/11/sap-mm-organizational-structure-in-sap.html (2021. 02. 10.)" width="1179" />
 <p class="caption">
 Figure 1: <a href="http://sapmoduletutor.blogspot.com/2015/11/sap-mm-organizational-structure-in-sap.html" class="uri">http://sapmoduletutor.blogspot.com/2015/11/sap-mm-organizational-structure-in-sap.html</a> (2021. 02. 10.)
 </p>
@@ -2510,7 +2527,7 @@ Figure 1: <a href="http://sapmoduletutor.blogspot.com/2015/11/sap-mm-organizatio
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
-<img src="fin/media/image4.gif" alt="https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/1503%20SP%206/en-US/a8ffcc537cbf224be10000000a174cb4.html (2021. 02. 10.)"  />
+<img src="images/fin/media/image4.gif" alt="https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/1503%20SP%206/en-US/a8ffcc537cbf224be10000000a174cb4.html (2021. 02. 10.)"  />
 <p class="caption">
 Figure 2: <a href="https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/1503%20SP%206/en-US/a8ffcc537cbf224be10000000a174cb4.html" class="uri">https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/1503%20SP%206/en-US/a8ffcc537cbf224be10000000a174cb4.html</a> (2021. 02. 10.)
 </p>
@@ -2518,11 +2535,11 @@ Figure 2: <a href="https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/150
 </div>
 <p>Példák a vállalatcsoportokra:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image5.png" width="729" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image5.png" width="729" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-7"></span>
-<img src="fin/media/image6.jpeg" alt="https://www.slideshare.net/VishalHarichund/20150129tkiscompanypresentationtranen (2021. 02. 10.)"  />
+<img src="images/fin/media/image6.jpeg" alt="https://www.slideshare.net/VishalHarichund/20150129tkiscompanypresentationtranen (2021. 02. 10.)"  />
 <p class="caption">
 Figure 3: <a href="https://www.slideshare.net/VishalHarichund/20150129tkiscompanypresentationtranen" class="uri">https://www.slideshare.net/VishalHarichund/20150129tkiscompanypresentationtranen</a> (2021. 02. 10.)
 </p>
@@ -2530,7 +2547,7 @@ Figure 3: <a href="https://www.slideshare.net/VishalHarichund/20150129tkiscompan
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
-<img src="fin/media/image7.png" alt="https://blogs.sap.com/2018/03/26/sap-labs-network-the-art-of-being-connected/ (2021. 02. 10.)" width="975" />
+<img src="images/fin/media/image7.png" alt="https://blogs.sap.com/2018/03/26/sap-labs-network-the-art-of-being-connected/ (2021. 02. 10.)" width="975" />
 <p class="caption">
 Figure 4: <a href="https://blogs.sap.com/2018/03/26/sap-labs-network-the-art-of-being-connected/" class="uri">https://blogs.sap.com/2018/03/26/sap-labs-network-the-art-of-being-connected/</a> (2021. 02. 10.)
 </p>
@@ -2538,39 +2555,39 @@ Figure 4: <a href="https://blogs.sap.com/2018/03/26/sap-labs-network-the-art-of-
 </div>
 <p>Az alábbi lista a világviszonylatban is meghatározó transznacionális vállalatok egy részét tartalmazza.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image8.png" width="960" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image8.png" width="960" style="display: block; margin: auto;" /></p>
 </div>
 <p><strong><u>Vállalat (Company Code)</u></strong></p>
 <p>A vállalatcsoport alatt helyezkedik a vállalat. A vállalat, többnyire a cégcsoport leányvállalata jogilag bejegyzett, Magyarország esetében a cégjegyzékben szereplő entitás. Ezen a szinten készülnek el az országspecifikus, az adott ország adóhatósága számára készülő, jogszabályokban rögzített jelentések.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image9.png" width="463" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image9.png" width="463" style="display: block; margin: auto;" /></p>
 </div>
 <p>Vállalatot (2. szint) létrehozhatunk teljesen üres állapotból, illetve átmásolhatjuk más vállalat adatait az új vállalatunkba. A második lehetőség azért előnyösebb (esetünkben), mivel a másolással minden korábbi függőségeket is átmásolhatunk, nem kell előröl minden kapcsolatot kiépíteni, tehát ez jelentős időmegtakarítás, maximum módosítani kell a függőségeket az igények szerint. Ezzel szemben az új létrehozásával valamennyi függőviszonyt (100-as nagyságrend) ki kell építeni. A függőviszony pontos megnevezése: "company code-specific parameters". SAP bevezetés esetében lehet teljesen üres állapotról kezdeni, de ha egy vállalatcsoportba több vállalat tartozik, akkor lehet, hogy célszerűbb a függőviszonyok egy részének - átgondolt - átvétele.</p>
 <p><strong><u>Üzletág a vállalatcsoport alatt (Business Area under Company)</u></strong></p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image10.png" width="699" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image10.png" width="699" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image11.png" width="730" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image11.png" width="730" style="display: block; margin: auto;" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image12.png" width="711" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image12.png" width="711" style="display: block; margin: auto;" /></p>
 </div>
 <p>Mint a Körber Solution példája is mutatja, megállapítható, hogy transznacionális vállalatcsoportok tevékenységüket egymástól jól elkülönült üzletágakban végzik. Lényeges, hogy egy üzletágba több leányvállalat is tartozhat, illetve egy-egy leányvállalat több üzletágban is érdekelt lehet. Ennek az összetett lehetőségnek a gazdasági események kontírozásának tekintetében lesz súlya.</p>
 <p><strong><u>Üzletág (Business Area)</u></strong></p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image13.png" width="471" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image13.png" width="471" style="display: block; margin: auto;" /></p>
 </div>
 <p>Az üzletágak kialakítására az SAP standard megoldásaiban két lehetőséget ad. Az egyik lehetőség a (Segment -) Pénzügyi központ (csoport) – költséghely kombináció, a másik pedig a klasszikus Üzletág – költséghely (Business Area – Cost Center) megoldás.</p>
 <p>Az üzletág egy adott üzleti szegmensnek vagy felelősségi körnek felel meg. A pénzügyi könyvelésbe bevitt értékmozgások üzleti területekhez vannak rendelve. Pénzügyi kimutatások (mérleg- és eredménykimutatások készíthetők üzleti területekre belső célokra. Az üzleti terület egy külön szervezeti egységet képvisel a pénzügyi könyvelésben, amely az üzleti tevékenység külön területét képviseli. Könyvelési sorokhoz rendelhető és ennek előnye, hogy ezen üzleti területek alapján belső pénzügyi kimutatást készíthetünk. Mondhatjuk, hogy belső jelentési célokra használható. Az üzleti területeket a külső szegmensjelentésekben (a vállalati kódokon felül) használják, a vállalat jelentős működési területei alapján (például termékvonalak, fióktelepek).</p>
 <p>Az üzletágak meghatározását követően, a gazdasági események rögzítésével a főkönyvi számlák tranzakciós adatait külön lehet értékelni belső kimutatási célokból. Ezért létrehozhatunk belső pénzügyi kimutatásokat az üzleti területekre vonatkozóan. Üzleti területre való könyveléshez minden esetben meg kell adni vagy az üzletág alá tartozó költséghelyet, vagy közvetlenül magát az adott üzletágat. A Business Area előnye, hogy vállalatcsoporton belüli vállalatok között Cross-Company könyvelés esetén egy bizonylaton gyakorlatilag az összes vállalati kód különböző üzleti területeire könyvelhetünk el egy dokumentumban. Ennek eredményeként a vállalati kód és az üzleti terület tetszőleges számú kombinációja lehetséges.</p>
 <p>Az üzletág és a pénzügyi központ közötti egyik meghatározó eltérés, hogy az üzletág célja szerint inkább beszámolási célokra szolgál, míg a profit központ lehetővé teszi a felelősségterületek elemzését és a felelősség decentralizált egységekre (pl. a vállalaton belüli különféle divíziókra) való átruházását. Így a profit központot alapvetően "egy vállalaton belüli társaságként" kezelik, és biztosítja a hatékony irányítást. Lásd.: <a href="https://answers.sap.com/questions/6828792/business-area-vs-segment.html" class="uri">https://answers.sap.com/questions/6828792/business-area-vs-segment.html</a> (2021. 02. 10.)</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image14.png" width="740" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image14.png" width="740" style="display: block; margin: auto;" /></p>
 </div>
 <p><strong><u>Üzleti szegmens (Segment) / Szegmens riport (Segment report)</u></strong></p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image15.png" width="718" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image15.png" width="718" style="display: block; margin: auto;" /></p>
 </div>
 <p>A szegmens a vállalkozás olyan alkotóeleme, amely saját bevételeket generál, és saját termékeket, termékvonalakat vagy szolgáltatásokat kínál. A szegmenseknek jellemzően kapcsolódó költségeik és műveleteik vannak. A szegmenseket "üzleti szegmenseknek" is nevezik. Általában, ha egy üzleti egység elkülöníthető vagy kiemelhető a vállalat egészéből, és továbbra is önellátó marad, akkor az megfelel az üzleti szegmensbe sorolás kritériumainak. Az egyes szegmensek tevékenységeire és teljesítményére vonatkozóan pénzügyi információknak kell rendelkezésre állniuk.</p>
 <p>(Forrás: <a href="https://www.investopedia.com/terms/s/segment.asp" class="uri">https://www.investopedia.com/terms/s/segment.asp</a> (2021. 02. 04.)</p>
@@ -2581,14 +2598,14 @@ Figure 4: <a href="https://blogs.sap.com/2018/03/26/sap-labs-network-the-art-of-
 <p>A szegmensjelentések segítségével a társaság részvényesei teljes képet kaphatnak a cég működéséről. A szegmensjelentés részletes perspektívát ad hozzá, amely kritikus fontosságú a felső vezetés döntéshozatala szempontjából. Az összevont mérleg- és eredménykimutatás mellett felmerülhet igény arra, hogy egy adott befektető, vagy befektetői csoport mélyebben szeretne beleolvasni a vállalat gazdasági adataiba, pl.: üzleti szegmensenként (földrajzi régiónként vagy üzletáganként) elemezni a vállalat teljesítményét.</p>
 <p><strong><u>Példa az üzleti szegmensek felépítésére</u></strong></p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image16.png" width="1000" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image16.png" width="1000" style="display: block; margin: auto;" /></p>
 </div>
 <p>A legtöbb nagybank különféle üzleti funkcióik alapján több részlegből áll (fogyasztói hitelezés, kereskedelmi hitelezés és hitelkártya). A bank pénzügyi kimutatásainak összeállításakor a pénzügyi tisztviselőnek el kell különítenie mindhárom ilyen divíziót jövedelemtételeik, valamint a mérlegben felsorolt ​​eszközök tekintetében.</p>
 <p><strong><u>Kapcsolódás SAP-ban:</u></strong></p>
 <p>SAP rendszerben a szegmenshez közvetlenül a pénzügyi központ kapcsolódhat, amelyhez pedig közvetlenül kapcsolódhat a költséghely.</p>
 <p><strong><u>Pénzügyi központ, vagy más néven nyerségközpont (Profit center).</u></strong></p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image17.png" width="714" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image17.png" width="714" style="display: block; margin: auto;" /></p>
 </div>
 <p>A pénzügyi központ csoportok és pénzügyi központok egy adott üzletág, üzleti terület alatt helyezkednek el. A vezetői számvitel részének tekinthető pénzügyi központok lényeges tulajdonsága, hogy a vállalat belső területeiként felelősek a megcélzott nyereség és / vagy a termelékenységi célok eléréséért. A pénzügyi központba a költséghelyekről érkező költségek és a pénzügyi központba közvetlenül érkező bevételek tartoznak. A pénzügyi központok vállalaton belül vállalatként is lehet értékelni.</p>
 <p>A <strong>pénzügyi központ hierarchia</strong> a vezetői számvitel szervezeti egysége, amely tükrözi a szervezet vezetésorientált struktúráját a belső ellenőrzés céljából. A pénzügyi központ célja egy adott termékcsalád, üzem vagy üzleti egység bevételeinek és költségeinek elemzése. Pénzügyi központok szerint lehet készíteni mérleg- és eredménykimutatásokat, azonban ezeket a kimutatásokat alapvetően belső célokra lehet felhasználni. A Profit Center könyvelése a belső felelősségi körök nyereségének meghatározására szolgál. Ez lehetővé teszi, hogy meghatározza a nyereséget és a veszteséget akár az időszaki elszámolás, akár az értékesítési költség megközelítés segítségével.</p>
@@ -2604,7 +2621,7 @@ Figure 4: <a href="https://blogs.sap.com/2018/03/26/sap-labs-network-the-art-of-
 <p><strong><u>Szervezeti felépítés:</u></strong></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-19"></span>
-<img src="fin/media/image18.jpeg" alt="&lt;https://www.slideshare.net/bnanduri/profit-centeraccounting-50622317 (2021. 02. 06.)"  />
+<img src="images/fin/media/image18.jpeg" alt="&lt;https://www.slideshare.net/bnanduri/profit-centeraccounting-50622317 (2021. 02. 06.)"  />
 <p class="caption">
 Figure 5: &lt;<a href="https://www.slideshare.net/bnanduri/profit-centeraccounting-50622317" class="uri">https://www.slideshare.net/bnanduri/profit-centeraccounting-50622317</a> (2021. 02. 06.)
 </p>
@@ -2613,15 +2630,15 @@ Figure 5: &lt;<a href="https://www.slideshare.net/bnanduri/profit-centeraccounti
 <p><strong><u>SAP pénzügyi központ felépítése:</u></strong></p>
 <p>SAP rendszerben a pénzügyi központok pénzügyi központ csoportba sorolhatók. Az alábbi ábra szerint a járművek pénzügyi központ csoportba tartozik a motorkerékpár és a személyautó. Ezeket tovább lehetne bontani: robbanómotoros személyautó, elektromos személyautó, robbanó motoros kerékpár, elektromos motorkerékpár. Az egyik kérdés az, hogy milyen szinten szeretnénk mérni a nyereséget.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image19.png" width="502" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image19.png" width="502" style="display: block; margin: auto;" /></p>
 </div>
 <p><strong>Lényeges,</strong> hogy egy adott pénzügyi központhoz több vállalati kód is kapcsolódhat. Tehát például a motorkerékpár gyártásban több vállalat is részt vehet. A beszerzés szempontjábók az alábbi egyszerű példát nézzük át.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image20.png" width="775" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image20.png" width="775" style="display: block; margin: auto;" /></p>
 </div>
 <p><strong>Költséghely, költségközpont (Cost Center).</strong> A költséghely egy szervezeten belüli részleg vagy funkció, amely közvetlenül nem növeli a nyereséget, de működtetése mégis pénzbe kerül a szervezetnek.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="fin/media/image17.png" width="714" style="display: block; margin: auto;" /></p>
+<p><img src="images/fin/media/image17.png" width="714" style="display: block; margin: auto;" /></p>
 </div>
 <p>A költségközpontok csak közvetett módon járulnak hozzá a társaság nyereségességéhez, ellentétben a profitközponttal, amely tevékenységeivel közvetlenül járul hozzá a nyereségességhez. A költségközpontok vezetői, például az emberi erőforrások és a könyvelési osztályok felelősek azért, hogy költségeik a költségvetésben megfeleljenek vagy alacsonyabbak legyenek. A magyar standard főkönyv esetében a 6-os számlaosztályok tekinthetők költséghelyeknek.</p>
 <ul>
@@ -2638,7 +2655,7 @@ Figure 5: &lt;<a href="https://www.slideshare.net/bnanduri/profit-centeraccounti
 <p><strong><u>SAP költséghely felépítése:</u></strong></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-23"></span>
-<img src="fin/media/image21.gif" alt="http://saphelp.ucc.ovgu.de/NW750/EN/70/acd65378024308e10000000a174cb4/ppt_img.gif (2021. 02.04.)"  />
+<img src="images/fin/media/image21.gif" alt="http://saphelp.ucc.ovgu.de/NW750/EN/70/acd65378024308e10000000a174cb4/ppt_img.gif (2021. 02.04.)"  />
 <p class="caption">
 Figure 6: <a href="http://saphelp.ucc.ovgu.de/NW750/EN/70/acd65378024308e10000000a174cb4/ppt_img.gif" class="uri">http://saphelp.ucc.ovgu.de/NW750/EN/70/acd65378024308e10000000a174cb4/ppt_img.gif</a> (2021. 02.04.)
 </p>
