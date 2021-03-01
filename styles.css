@@ -1,4 +1,4 @@
-/******** TOC ********/
+/******** Half ********/
 
 
 
@@ -32,19 +32,22 @@
 
 /******** Cover ********/
 
-.hero-image {
-	position: relative;
-	margin-bottom: 0em;
-	background-image: linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ), url(images/hero_image.jpg);
-	height: 120px;
-	background-size: cover;
-	background-color: #141c25f2;
-	background-position: center center;
+
+section.module.parallax {
+  height: 180px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-items: center;
-	margin-top: 3em;
+  
 }
+
+
+section.module.parallax-1 { background-image: url("images/hero_image.jpg"); }
 
 
 .ml5 {
@@ -52,6 +55,7 @@
   font-weight: 300;
   font-size: 4.5em;
   color: #402d2d;
+  margin-bottom: -35px;
 }
 
 .ml5 .text-wrapper {
@@ -208,28 +212,31 @@ d-article li:last-child {
 /******** Footer ********/
 
 .distill-site-footer p {
+
 	text-align: center;
+	color:white;
+}
+
+.distill-site-footer {
+	margin-top: 0px;
 }
 
 
-
-
-
-/******** 2column ********/
 
 * {
   box-sizing: border-box;
 }
 
-/* Create two equal columns that floats next to each other */
+/******** Column ********/
+
 .column {
   float: left;
   width: 50%;
   padding: 10px;
-  height: auto; /* Should be removed. Only for demonstration */
+  height: auto; 
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
@@ -269,10 +276,25 @@ figcaption {
 	width: auto;
 	height: auto;
 	padding: 14px;
+	margin-bottom: 2em;
+	margin-top: -30px;
 }
 
-
-
+.figure .caption {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.7) 4%,
+    rgba(255, 255, 255, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  margin-top: 1em;
+}
 
 /******** h1Title ********/
 
@@ -282,6 +304,8 @@ d-title h1 {
 	border-left: none;
 	text-decoration: none;
 	color: black;
+	color: var(--secondary-color);
+	transition: all 300ms ease;
 }
 
 
@@ -300,77 +324,135 @@ d-title h1 {
 }
 
 
+/******** Dark/light mode ********/
 
+:root {
+	--primary-color: #ffffff;
+	--secondary-color: #000000;
+}
 
-/******** Hyperlink on image ********/
-
-
-#container {
-    position:relative;
+d-title {
+	background-color: var(--primary-color);
+	transition: all 300ms ease;
 }
 
 
-/* Bob */
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
+d-article {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	transition: all 300ms ease;
 }
-@keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
+
+.container {
+	max-width: 500px;
+	margin: 0 20px;
 }
-@-webkit-keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
+
+
+button {
+	border: none;
+	padding: 15px;
+	outline: none;
+	font-size: 0.85em;
+	font-family: 'Montserrat', sans-serif;
+	cursor: pointer;
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+	transition: all 200ms ease;
 }
-@keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
+
+button:hover {
+	opacity: 0.6;
 }
-.pr img {
+
+p {
+	color: var(--secondary-color);
+	line-height: 1.5em;
+	transition: all 300ms ease;
+}
+
+a {
+	color: blueviolet;
+}
+
+
+d-article h2 {
+  	color: var(--secondary-color);
+}
+
+
+/******** Mobil ********/
+
+@media only screen and (max-width: 600px) {
+.ml5 .letters {
+	display: inline-block;
+	opacity: 0;
+	font-size: 32px;
+	transition: all 300ms ease;
+}
+.distill-site-header .title {
+	display: none;
+}
+.distill-site-nav {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 13px;
+	font-weight: 300;
+}
+}
+
+/******** Img ********/
+
+img {
+  border-radius: 10px;
+}
+
+/******** Hyperlink ********/
+
+
+.uri {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-.pr img:hover, .pr img:focus, .pr img:active {
-  -webkit-animation-name: hvr-bob-float, hvr-bob;
-  animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
+.uri:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
+.uri:hover, .uri:focus, .uri:active {
+  color: white;
+}
+.uri:hover:before, .uri:focus:before, .uri:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+
+
+
+
+

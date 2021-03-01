@@ -1,7 +1,8 @@
 ---
 title: "Financial Accounting"
 description: |
-
+  Pénzügyi és vezetői számviteli környezet felépítése SAP-ban <br />
+  Legutóbb frissítve: `r Sys.Date()`
 ---
 
 
@@ -15,25 +16,23 @@ knitr::opts_chunk$set(echo = FALSE)
 <link href="styles/jquery.tocify.css" rel="stylesheet">
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://unpkg.com/darken"></script>
+
 <body>
 
 <div id="toc">
 </div>
 
 
+<button id="dm-toggle" style="font-size:24px; border-radius: 20px;"> <i class="far fa-moon"></i> </button>
 
 
-```{r out.height = "800px", out.width='100%'}
-knitr::include_graphics("geo_.pdf")
-```
+<h2>[**Pénzügyi és vezetői számviteli környezet felépítése SAP-ban**]{.ul}</h2>
 
 
-
-
-<h2>**[Pénzügyi és vezetői számviteli környezet felépítése SAP-ban]{.ul}**</h2>
-
-
-```{r,dpi=60,fig.align='left'}
+```{r,dpi=60,fig.align='center'}
 knitr::include_graphics("images/fin/media/image1.png")
 ```
 
@@ -106,7 +105,7 @@ személyek (például leányvállalatok) és üzleti egységek (például
 értékesítés) keverékével állíthatja össze.
 
 Forrás:
-<https://help.sap.com/doc/e2b9d153e8b34208e10000000a174cb4/1503%20SP%206/en-US/a8ffcc537cbf224be10000000a174cb4.html>
+<https://shorturl.at/ilEK6>
 (2021. 02. 10.)
 
 Az alábbiakban nézzünk meg két standard, szabványos SAP szervezeti
@@ -220,6 +219,8 @@ Az üzletágak kialakítására az SAP standard megoldásaiban két lehetősége
 ad. Az egyik lehetőség a (Segment -) Pénzügyi központ (csoport) --
 költséghely kombináció, a másik pedig a klasszikus Üzletág --
 költséghely (Business Area -- Cost Center) megoldás.
+
+
 
 Az üzletág egy adott üzleti szegmensnek vagy felelősségi körnek felel
 meg. A pénzügyi könyvelésbe bevitt értékmozgások üzleti területekhez
@@ -448,7 +449,7 @@ sorolhatók, valamint besorolhatók szegmensekbe is.
 
 
 
-```{r,dpi=50,fig.align='center',fig.cap='<https://www.slideshare.net/bnanduri/profit-centeraccounting-50622317 (2021. 02. 06.)'}
+```{r,dpi=50,fig.align='center',fig.cap='https://www.slideshare.net/bnanduri/profit-centeraccounting-50622317 (2021. 02. 06.)'}
 knitr::include_graphics("images/fin/media/image18.jpeg")
 ```
 
@@ -558,7 +559,7 @@ knitr::include_graphics("images/fin/media/image21.gif")
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQur75852cbezwweM1n64uUe4CQMPNr6umhUCoJ1yfuP8jrjIzF505pIoqTXPiBbnOk6CEI-_K2mriu/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="height: 600px;"></iframe>
 
-<figcaption>https://docs.google.com/spreadsheets/d/1ka_UpCylIc1JJzWflMofiyK8SDgXsCCznGPBd6biJJQ/edit?usp=sharing&fbclid=IwAR1OoMnsMeVmoHpTTXH8Qs-TarcPM6-BrBNivQp2I48JtnRqTFoUX10V3Ic </figcaption>
+<figcaption>https://docs.google.com/spreadsheets/d/1ka_UpCylIc1JJzWflMofiyK8SDgXsCCznGPBd6biJJQ/edit?fbclid=IwAR1OoMnsMeVmoHpTTXH8Qs-TarcPM6-BrBNivQp2I48JtnRqTFoUX10V3Ic#gid=0</figcaption>
 
 
 
@@ -579,6 +580,16 @@ selectors: "h2,h3,h4,h5"
 });
 </script>
 
+
+<script>
+		const darkmode = new darken({
+			toggle: "#dm-toggle",
+			variables: {
+				"--primary-color": ["#ffffff", "#191919"],
+				"--secondary-color": ["#000000", "#ffffff"],
+			}
+		});
+</script>
 
 
 

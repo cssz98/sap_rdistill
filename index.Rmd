@@ -1,7 +1,8 @@
 ---
 title: "Introduction"
 description: |
-
+ Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai <br />
+ Legutóbb frissítve: `r Sys.Date()`
 site: distill::distill_website
 ---
 
@@ -15,11 +16,16 @@ knitr::opts_chunk$set(echo = FALSE)
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
 <link href="styles/jquery.tocify.css" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://unpkg.com/darken"></script>
 
 <body>
 
 <div id="toc">
 </div>
+
+<button id="dm-toggle" style="font-size:24px; border-radius: 20px;"> <i class="far fa-moon"></i></button>
 
 
 <h2>**Bevezetés**</h2>
@@ -71,14 +77,13 @@ ismeretek tekintetében az alábbi könyvek elolvasása javasolt
 részhez melyik fejezetet szükséges elolvasni. Ezek elolvasása szükséges
 az órai programhasználat szakmai / tartalmi dimenziójának megértéséhez.
 
--   **Tarcsi Ádám, Molnár Bálint: Vállalatirányítási rendszerek
-    gazdaságinformatikai megközelítésben (SAP).** ELTE
-    Társadalomtudományi Kar, 2011. Elérhető:
-    <https://regi.tankonyvtar.hu/hu/tartalom/tamop412A/2011-0052_40_vallalatiranyitasi_rendszerek_gazdasaginformatikai_megkozelitesben/index.scorml>
+- **Tarcsi Ádám, Molnár Bálint: Vállalatirányítási rendszerek gazdaságinformatikai megközelítésben (SAP).** 
+    ELTE Társadalomtudományi Kar, 2011. Elérhető:
+    <https://shorturl.at/djtuE>
     (2021. 02. 04.)
 
--   **Takács András, Márkus Gábor: Számviteli alapismeretek.** PTE
-    Közgazdaságtudományi Kar. Pécs, 2019. Elérhető:
+-   **Takács András, Márkus Gábor: Számviteli alapismeretek.** 
+    PTE Közgazdaságtudományi Kar. Pécs, 2019. Elérhető:
     <https://digitalia.lib.pte.hu/hu/pub/takacs-a-markus-g-szamviteli-alapismeretek-pte-ktk-pecs-2019-4393>
     (2021. 02. 04.)
 
@@ -90,7 +95,7 @@ az órai programhasználat szakmai / tartalmi dimenziójának megértéséhez.
     ami felhasználói és rendszerbeállítás szintjén előfordul a
     beszerzési modulban, (személyes véleményem szerint ennyi pénzért
     kiemelt mértékben megéri.) Megvásárolható:
-    <https://www.amazon.com/SAP-MM-PURCHASING-TECHNICAL-REFERENCE-ebook/dp/B00LPGBWX2/ref=sr_1_4?crid=2ZAJO773J9HX9&dchild=1&keywords=sap+purchasing&qid=1610966550&sprefix=sap+purchase%2Caps%2C483&sr=8-4>
+    <https://shorturl.at/aptQ9>
     (2021. 02. 04.)
 
 **[Financial Accounting modulhoz (ingyenesen elérhető szakkönyvek):]{.ul}**
@@ -104,7 +109,7 @@ az órai programhasználat szakmai / tartalmi dimenziójának megértéséhez.
      International Limited. 2010. Elérhető: <https://www.academia.edu/8036298/SAP_FICO_USER_GUIDE>
  (2021. 02. 04.)
 
--   **<https://erproof.com/fi/free-training/>** (2021. 02. 04.)
+-   <https://erproof.com/fi/free-training/> (2021. 02. 04.)
 
  **Saját tananyag:**
 
@@ -184,7 +189,7 @@ feldolgozóipari nagyvállalatok területi elhelyezkedése és adatbázisa.**
 knitr::include_url("https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b")
 ```
 
-<figcaption>https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b (2021. 02. 04.)</figcaption>
+<figcaption>https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b </figcaption>
 
 
 
@@ -784,9 +789,6 @@ knitr::include_graphics("images/intro/intro_gif/Display_Bank_Directory.gif")
 
 
 
-
-
-
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -802,7 +804,15 @@ selectors: "h2,h3,h4,h5"
 });
 </script>
 
-
+<script>
+		const darkmode = new darken({
+			toggle: "#dm-toggle",
+			variables: {
+				"--primary-color": ["#ffffff", "#191919"],
+				"--secondary-color": ["#000000", "#ffffff"],
+			}
+		});
+</script>
 
 
 </body>
