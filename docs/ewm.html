@@ -88,27 +88,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>SAP E-Study Guide: EWM</title>
 
-  <meta property="description" itemprop="description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-01"/>
+  <meta property="description" itemprop="description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-04"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="SAP E-Study Guide: EWM"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-01"/>
+  <meta property="og:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-04"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="SAP E-Study Guide"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="SAP E-Study Guide: EWM"/>
-  <meta property="twitter:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-01"/>
+  <meta property="twitter:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-04"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["EWM"]},{"type":"character","attributes":{},"value":["SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-01"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["EWM"]},{"type":"character","attributes":{},"value":["SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-04"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2086,9 +2086,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   @media (max-width: 767px) {
-      #toc {
-        display: none;
-      }
+    #toc {
+      visibility: hidden;
+    }
   	.zoom {
   		/*CSS transitions*/
   		-o-transition-property: none !important;
@@ -2535,8 +2535,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
 
+  /******** @Mozilla ********/
 
 
+  #toc {
+    display:none;
+  }
+
+
+  @-moz-document url-prefix() {
+  #toc {
+      display: unset;
+    }
+  }
 
 
 
@@ -2552,7 +2563,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"EWM","description":"SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-01","authors":[]}
+{"title":"EWM","description":"SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-04","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2579,7 +2590,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>EWM</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br /> Legutóbb frissítve: 2021-03-01</p></p>
+<p><p>SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br /> Legutóbb frissítve: 2021-03-04</p></p>
 </div>
 
 
@@ -2627,7 +2638,7 @@ SAP MM Notes
     text-align:justify;
     punctuation-wrap:simple;
     text-autospace:none;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;}
 h1
     {mso-style-link:"Címsor 1 Char";
@@ -2687,7 +2698,7 @@ h4
     text-autospace:none;
     border:none;
     padding:0cm;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;
     color:blue;
     text-decoration:underline;}
@@ -2701,7 +2712,7 @@ h5
     text-autospace:none;
     border:none;
     padding:0cm;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;
     color:#1F497D;
     text-decoration:underline;}
@@ -2715,7 +2726,7 @@ h6
     text-autospace:none;
     border:none;
     padding:0cm;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;
     color:black;
     text-decoration:underline;}
@@ -2728,7 +2739,7 @@ p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
     text-indent:-35.4pt;
     punctuation-wrap:simple;
     text-autospace:none;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial",sans-serif;}
 p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
     {margin-top:12.0pt;
@@ -2739,7 +2750,7 @@ p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
     text-indent:-35.4pt;
     punctuation-wrap:simple;
     text-autospace:none;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial",sans-serif;
     font-style:italic;}
 p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
@@ -2759,7 +2770,7 @@ p.MsoToc1, li.MsoToc1, div.MsoToc1
     text-align:justify;
     punctuation-wrap:simple;
     text-autospace:none;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;}
 p.MsoToc2, li.MsoToc2, div.MsoToc2
     {margin-top:0cm;
@@ -2769,7 +2780,7 @@ p.MsoToc2, li.MsoToc2, div.MsoToc2
     text-align:justify;
     punctuation-wrap:simple;
     text-autospace:none;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;}
 p.MsoToc3, li.MsoToc3, div.MsoToc3
     {margin-top:0cm;
@@ -2779,7 +2790,7 @@ p.MsoToc3, li.MsoToc3, div.MsoToc3
     text-align:justify;
     punctuation-wrap:simple;
     text-autospace:none;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;}
 p.MsoHeader, li.MsoHeader, div.MsoHeader
     {margin-top:0cm;
@@ -2791,7 +2802,7 @@ p.MsoHeader, li.MsoHeader, div.MsoHeader
     text-autospace:none;
     border:none;
     padding:0cm;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;}
 p.MsoFooter, li.MsoFooter, div.MsoFooter
     {margin-top:1.0pt;
@@ -2803,7 +2814,7 @@ p.MsoFooter, li.MsoFooter, div.MsoFooter
     text-autospace:none;
     border:none;
     padding:0cm;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;}
 p.MsoList, li.MsoList, div.MsoList
     {margin-top:0cm;
@@ -2815,7 +2826,7 @@ p.MsoList, li.MsoList, div.MsoList
     text-autospace:none;
     border:none;
     padding:0cm;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;}
 p.MsoList2, li.MsoList2, div.MsoList2
     {margin-top:0cm;
@@ -2827,7 +2838,7 @@ p.MsoList2, li.MsoList2, div.MsoList2
     text-autospace:none;
     border:none;
     padding:0cm;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;}
 p.MsoList3, li.MsoList3, div.MsoList3
     {margin-top:0cm;
@@ -2840,7 +2851,7 @@ p.MsoList3, li.MsoList3, div.MsoList3
     text-autospace:none;
     border:none;
     padding:0cm;
-    font-size:8.0pt;
+    font-size:12.0pt;
     font-family:"Arial Narrow",sans-serif;}
 p.MsoTitle, li.MsoTitle, div.MsoTitle
     {margin-top:12.0pt;
@@ -2894,14 +2905,18 @@ ul
 <i class="far fa-moon"></i>
 </button>
 <div class="WordSection1">
-<p><b><u><span style="font-size:10.0pt;font-family:&quot;Arial Narrow&quot;,sans-serif;
-color:red"><br clear=all style='page-break-before:always'> </span></u></b></p>
-<h1 id="kiegészítés-sap-ewm">Kiegészítés : SAP EWM</h1>
+<p><span style="font-size:8.0pt;font-family:&quot;Arial Narrow&quot;,sans-serif"><br
+clear=all style='page-break-before:always'> </span></p>
+<p class="MsoNormal" align="left" style="margin-left:0cm;text-align:left;
+punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other">
+<b><u><span style="font-size:9.0pt;color:aqua"><span style="text-decoration:none"> </span></span></u></b>
+</p>
+<h1 id="sap-kiterjesztett-raktárkezelés-extended-warehouse-managementewm">1. SAP Kiterjesztett raktárkezelés (Extended Warehouse Management,EWM)</h1>
 <div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:14.2pt;margin-right:0cm">
 <h2 style="margin-left:7.1pt">
-<a name="_Toc63691782"><span style="text-decoration:
-none"> 1.1.</span>DEF: SAP Kiterjessztett raktárkezelés (Extended Warehouse Management, EWM)</a>
+<a name="_Toc65589341"><span style="text-decoration:
+none"> 1.1.</span>Helye az SAP architektúrában</a>
 </h2>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
@@ -2909,6 +2924,16 @@ margin-left:42.55pt;margin-right:0cm">
 <p class="MsoList" style="margin-left:7.1pt">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Az SAP <u>DEF: Ellátási lánc (Supply Chain Management, SCM</u>): az alap SAP Vállalatirányítási (Enterprise Resource Management, ERP) moduloktól külön megvásárolható modul egy részrendszere az EWM
 </p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589342"><span style="text-decoration:
+none"> 1.2.</span>Különbségei a hagyományos WM-hez képest</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
 <p class="MsoList" style="margin-left:7.1pt">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>A hagyományos <u>DEF: Raktárkezeléshez (Warehouse Management, WM</u>: az anyagok fizikai tárolási helyének pontos azonosítása)-hez pluszban WM-en belül old meg olyan funkciókat, amelyek korábban külön voltak:
 </p>
@@ -2940,18 +2965,51 @@ margin-left:49.65pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Beszállítói készletkezelés (Vendor Managed Inventory, VMI</u>): Beszállító látja vevő készletfogyását és automatikusan szállít, ha eléri a biztonsági készletet (pl. pótalkatrész)
 </p>
 <p class="MsoList2" style="margin-left:7.05pt">
-<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Sorozatszámozás (Serial numbering S/N)</u>: Nagyértékű saját <u>DEF: Késztermékek (Finished Goods, FG</u>), vagy <u>DEF: Gyártóberendezések (Equipment</u>) egyedi azonosítására szolgáló, szabályok alapján auto-generált, életciklusában nyomonkövethető azonosító
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Sorozatszámozás (Serial Number, S/N</u>):
 </p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>ERP: Nagyértékű gyártóeszközöket, berendezéseket azonosít,
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Adott szabályrendszer szerint növekvő alafanumerikus számmal,
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Életciklusa mentén történő bejegyzésekkel,
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>Karbantartó modulban (Plant Maintenenace, PM</u>) használatos
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>EWM: EWM raktárban mozgó <u>Termékek (Product</u>) kísérőszáma
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Több, <u>küldő (Sender</u>) - <u>fogadó (Reciever</u>) mozgáson keresztül is követi
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
 <p class="MsoList2" style="margin-left:7.05pt">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Gyártási erőforrások (Production Resource Tools, PRT</u>): speciális szűkös szaktudás, segédanyagok, nem helyhez kötött szerszámok optimalizált felhasználása
 </p>
 </div>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691783"><span style="text-decoration:
-none"> 1.1.1.</span>EWM értéknövelt szolgáltatásokat is nyújt:</a>
-</h3>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589343"><span style="text-decoration:
+none"> 1.3.</span>EWM értéknövelt szolgáltatásokat is nyújt:</a>
+</h2>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:49.65pt;margin-right:0cm">
@@ -2962,7 +3020,7 @@ margin-left:49.65pt;margin-right:0cm">
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:56.15pt;margin-right:0cm">
 <p class="MsoList3" style="margin-left:7.65pt">
-<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Klasszikus általános tároló StorTyp mellé bejön:
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Klasszikus általános tároló StrTyp mellé bejön:
 </p>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
@@ -2986,7 +3044,7 @@ margin-left:63.25pt;margin-right:0cm">
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:56.15pt;margin-right:0cm">
 <p class="MsoList3" style="margin-left:7.65pt">
-<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:</u> <u>Munkaállomások (Work center</u>) rendelődhetnek a StorTyp alá (<b>StorTyp:WorkCtr=m:m</b>) a következő tevékenységekkel:
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:</u> <u>Munkaállomások (Work center</u>) rendelődhetnek a StrTyp alá (<b>StrTyp:WorkCtr=m:m</b>) a következő tevékenységekkel:
 </p>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
@@ -3007,27 +3065,69 @@ margin-left:56.15pt;margin-right:0cm">
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:49.65pt;margin-right:0cm">
 <p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Értéknövelt szolgáltatások megrendelése (Value Added Services, VAS Order</u>): utasítás a WH személyzetének bizonyos ki/be tárhoz kapcsolódó tevékenységek elvégzésére:
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>Fejléc (Header</u>): mely munkaállomás
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>Tevékenység (Activity</u>): mely tevékenységfajtát
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>Tétel (Item</u>): milyen EWM Product tételekre ajtsa végre
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>Segédanyag (AuxMat</u>): Milyen csomagolóanyag felhasználásával
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Rugalmasabb csomagolás szállítmányoknál: 1 <u>DEF: Szállítmány kezelési egység (Handling Unit, HU</u>): pl. konténer több <u>DEF: Raktáregységet (Storage Unit, SU</u>): pl. raklap-ot tartalmazhat, az <u>többféle DEF: Anyagtörzsbeli anyagot (Material Master, MM</u>), ezeket <u>DEF: Lekövetheti (Cross-Docking</u>) több köztes állomáson keresztül, és lehetséges őket a célban <u>DEF: Megbontva (Deconsolidation</u>) több StorSec-be elpakolni
 </p>
 <p class="MsoList2" style="margin-left:7.05pt">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>A DEF: Automatizált betárolásban (Bin identification/putaway</u>) nemcsak sorfolytonosan tudja lerakni cuccokat a következő sorszámú, szabályoknak megfelelő Bin-ben, hanem <u>DEF: Réskijelölést (Slotting</u>) alkalmaz: azonos Materialok azonos StorSec-be lerakása
 </p>
 <p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Rádiófrekvenciás ID környezet (RF Environment</u>):(saját áramforrás nélküli, 60cm-ről olvasható/írható öntapadós chip) környezet kiterjesztett támogatása alap WM-hez képest:
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF:<u>Raktári rendelés szabályok (WH Order Rule</u>): milyen raktári rendelések létezhetnek különböző Productok és Locationok esetén, hogyan szülnek egy hierarchiában leszármazott rendeléseket, mik lesznek ezek prioritásai, aszerint hogy melyik ActivityArea-ról szólnak
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF:<u>Raktári rendelés (WH Order</u>): Pick, Pack, Pass
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR: Automatikus: leszármazott rendelések a prioritási sor alapján hajtódnak végre
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR: Manuális: kézzel összeállított <u>DEF: Anyagfolyam rendszer (Material Flow System, MFS</u>) utasítások alapján dől el a sorrend
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Integráció SAP <u>KörnyEgészsMunkabizt (Environm. Health Safety, EHS</u>) modullal <u>DEF: Veszélyes anyag (HazMat</u>) kezelésre
 </p>
 <p class="MsoList2" style="margin-left:7.05pt">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Új <u>Grafikus Felhasználói Felület (Graphic User Interface, GUI</u>): Warehouse cockpit: teljesítmény/hatékonyság riportolás
 </p>
-<p class="MsoList2" style="margin-left:7.05pt">
-<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>RF környezet támogatása
-</p>
 </div>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691784"><span style="text-decoration:
-none"> 1.1.2.</span>DEF: Raktári Folyamat Típusok (Warehouse Process Type, WPT)</a>
-</h3>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589344"><span style="text-decoration:
+none"> 1.4.</span>DEF: Raktári Folyamat Típusok (Warehouse Process Type, WPT)</a>
+</h2>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:42.55pt;margin-right:0cm">
@@ -3035,7 +3135,7 @@ margin-left:42.55pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Egy szabály rendszert határoz meg, hogy cucc mely StrTyp mely Binjéből mely StrTyp mely Binjébe mehet
 </p>
 <p class="MsoList" style="margin-left:7.1pt">
-<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Normál WM-ben ez volt a <u>DEF: Raktári mozgás típus (WM Movement type</u>), ami ☹ nehezen megjegyezhető számokból állt ☹ nem volt teljesen kompatibilis a <u>DEF: Készletmozgás típusokkal (IM Movement Type</u>). Ezért itt 3 szintű hierarchia van:
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Normál WM-ben ez volt a <u>DEF: Raktári mozgás típus (WM Movement type</u>), ami <span> ☹</span> nehezen megjegyezhető számokból állt <span> ☹</span> nem volt teljesen kompatibilis a <u>DEF: Készletmozgás típusokkal (IM Movement Type</u>). Ezért itt 3 szintű hierarchia van:
 </p>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
@@ -3065,12 +3165,12 @@ margin-left:70.35pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Munkacsomag|Végrehajtandó feladat (WorkPack|ExecutableTask</u>) listát lehet beállítani, előírt <u>DEF: Normaidőkkel (LabourTime</u>) hogyan kell ellátni raktári feladatokat.
 </p>
 </div>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691785"><span style="text-decoration:
-none"> 1.1.3.</span>DEF: Telepítése (Deployment) lehet:</a>
-</h3>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589345"><span style="text-decoration:
+none"> 1.5.</span>DEF: Telepítése (Deployment) lehet:</a>
+</h2>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:49.65pt;margin-right:0cm">
@@ -3081,12 +3181,12 @@ margin-left:49.65pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Standalone EWM: csak a vele kapcsolatos SCM szerver rész működik, és ezt érik el közvetlenül az ERP-k
 </p>
 </div>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691786"><span style="text-decoration:
-none"> 1.1.4.</span>Hogyan kommunikál egymással az EWM és az ERP, SCM szerveren keresztül?</a>
-</h3>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589346"><span style="text-decoration:
+none"> 1.6.</span>Hogyan kommunikál egymással az EWM és az ERP, SCM szerveren keresztül?</a>
+</h2>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:49.65pt;margin-right:0cm">
@@ -3097,16 +3197,16 @@ margin-left:49.65pt;margin-right:0cm">
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:56.15pt;margin-right:0cm">
 <p class="MsoList3" style="margin-left:7.65pt">
-<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>ERP: (DEF:Vevő (Customer), DEF:Beszállító(Vendor), DEF:Gyár(Plant), DEF:Leszállítási pont(Shipping point)) <span style="font-family:Symbol">«</span> EWM: (Partner, Location)
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>ERP: (DEF:<u>Vevő (Customer</u>), DEF:<u>Beszállító(Vendor</u>), DEF:<u>Gyár(Plant</u>), DEF:<u>Leszállítási pont(Shipping point</u>)) <span style="font-family:Symbol">«</span> EWM: (DEF:<u>Partner (Partner</u>), DEF:<u>Lokáció (Location</u>))
 </p>
 <p class="MsoList3" style="margin-left:7.65pt">
-<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>ERP: (MM) <span style="font-family:Symbol">«</span> EWM: (Product)
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>ERP: (MM) <span style="font-family:Symbol">«</span> EWM: DEF:<u>Termék (Product</u>)
 </p>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:49.65pt;margin-right:0cm">
 <p class="MsoList2" style="margin-left:7.05pt">
-<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Tranzakció adatokra (Transaction Data</u>): gyorsan változó, DEF: Kereskedelmi bizonylat (Document) jellegű adatokra: SAP <u>Termékinterfész (Product Interface, PI</u>) részerendszer ütemez <u>DEF: iDoc</u>: http protokollú webservice-ben küldött XML fájlokat vagy <u>DEF: Távoli Függvény Hívásokat (Remote Function Call, RFC</u>):
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Tranzakció adatokra (Transaction Data</u>): gyorsan változó, DEF: <u>Kereskedelmi bizonylat (Document</u>) jellegű adatokra: SAP <u>Termékinterfész (Product Interface, PI</u>) részerendszer ütemez <u>DEF: iDoc</u>: http protokollú webservice-ben küldött XML fájlokat vagy <u>DEF: Távoli Függvény Hívásokat (Remote Function Call, RFC</u>):
 </p>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
@@ -3115,19 +3215,13 @@ margin-left:56.15pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>ERP: (IBD, OBD) <span style="font-family:Symbol">«</span> EWM: (IBD Request, OBD Notification)
 </p>
 </div>
+<h2 id="ewm-gui-tranzakciók">2. EWM GUI tranzakciók</h2>
 <div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:14.2pt;margin-right:0cm">
 <h2 style="margin-left:7.1pt">
-<a name="_Toc63691787"><span style="text-decoration:
-none"> 1.2.</span>EWM GUI tranzakciók</a>
+<a name="_Toc65589348"><span style="text-decoration:
+none"> 2.1.</span>Workcenter becsatolása StorTyp alá</a>
 </h2>
-</div>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691788"><span style="text-decoration:
-none"> 1.2.1.</span>Workcenter becsatolása StorTyp alá</a>
-</h3>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:42.55pt;margin-right:0cm">
@@ -3153,12 +3247,12 @@ margin-left:42.55pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:Save</b>
 </p>
 </div>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691789"><span style="text-decoration:
-none"> 1.2.2.</span>Bin létrehozás, esetleges tiltásokkal</a>
-</h3>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589349"><span style="text-decoration:
+none"> 2.2.</span>Bin létrehozás, esetleges tiltásokkal</a>
+</h2>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:42.55pt;margin-right:0cm">
@@ -3190,12 +3284,12 @@ margin-left:49.65pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:Save</b>
 </p>
 </div>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691790"><span style="text-decoration:
-none"> 1.2.3.</span>WarehProcTyp létrehozás másolással, módosítva</a>
-</h3>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589350"><span style="text-decoration:
+none"> 2.3.</span>WarehProcTyp létrehozás másolással, módosítva</a>
+</h2>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:42.55pt;margin-right:0cm">
@@ -3224,18 +3318,19 @@ margin-left:42.55pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:Save</b>
 </p>
 </div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589351"><span style="text-decoration:
+none"> 2.4.</span>EWM anyag importálás ERP-ből</a>
+</h2>
+</div>
 <div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:21.25pt;margin-right:0cm">
 <h3 style="margin-left:7.1pt">
-<a name="_Toc63691791"><span style="text-decoration:
-none"> 1.2.4.</span>EWM anyag importálás ERP-ből</a>
+<a name="_Toc65589352"><span style="text-decoration:
+none"> 2.4.1.</span>ERP anyag kijelölésre exportra</a>
 </h3>
-</div>
-<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:1.0cm;margin-right:0cm">
-<h4 style="margin-left:7.1pt">
-<span style="text-decoration:none"> 1.2.4.1.</span>ERP anyag kijelölésre exportra
-</h4>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:42.55pt;margin-right:0cm">
@@ -3258,11 +3353,12 @@ margin-left:42.55pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:Save</b>
 </p>
 </div>
-<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:1.0cm;margin-right:0cm">
-<h4 style="margin-left:7.1pt">
-<span style="text-decoration:none"> 1.2.4.2.</span>Anyagkijelölés ellenőrzése EWM-ben
-</h4>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589353"><span style="text-decoration:
+none"> 2.4.2.</span>Anyagkijelölés ellenőrzése EWM-ben</a>
+</h3>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:42.55pt;margin-right:0cm">
@@ -3282,11 +3378,12 @@ margin-left:49.65pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:Display|TAB:Storage|CHK:Pilferable=Yes</b>
 </p>
 </div>
-<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:1.0cm;margin-right:0cm">
-<h4 style="margin-left:7.1pt">
-<span style="text-decoration:none"> 1.2.4.3.</span>CIF: MatRecTransfer <span style="font-family:Symbol">®</span> WarehProdMast:
-</h4>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589354"><span style="text-decoration:
+none"> 2.4.3.</span>CIF: MatRecTransfer </a><span style="font-family:Symbol">®</span> WarehProdMast:
+</h3>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:42.55pt;margin-right:0cm">
@@ -3315,57 +3412,1639 @@ margin-left:42.55pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:Save</b>
 </p>
 </div>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691792"><span style="text-decoration:
-none"> 1.2.5.</span>TRN:/SCWM/MON: WH monitor</a>
-</h3>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589355"><span style="text-decoration:
+none"> 2.5.</span>Kiszállítási oldal felkonfigurálása</a>
+</h2>
 </div>
-<p class="MsoNormal">
- 
-</p>
 <div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:21.25pt;margin-right:0cm">
 <h3 style="margin-left:7.1pt">
-<a name="_Toc63691793"><span style="text-decoration:
-none"> 1.2.6.</span>TRN:/SCWM/RFUI: RF kezelő</a>
-</h3>
-</div>
-<p class="MsoNormal">
- 
-</p>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691794"><span style="text-decoration:
-none"> 1.2.7.</span>TRN:/SCWM/PRDI: IBDReq</a>
-</h3>
-</div>
-<p class="MsoNormal">
- 
-</p>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691795"><span style="text-decoration:
-none"> 1.2.8.</span>TRN:/SCWM/PRDO: OBDNotif</a>
-</h3>
-</div>
-<p class="MsoNormal">
- 
-</p>
-<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
-margin-left:21.25pt;margin-right:0cm">
-<h3 style="margin-left:7.1pt">
-<a name="_Toc63691796"><span style="text-decoration:
-none"> 1.2.9.</span>TRN:/SCWM/TO_CONF: WH task DEF: Visszajelentés (Confirm)</a>
+<a name="_Toc65589356"><span style="text-decoration:
+none"> 2.5.1.</span>TRN:/SCWM/GI/Srategies/Storage type search sequence</a>
 </h3>
 </div>
 <div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:42.55pt;margin-right:0cm">
 <p class="MsoList" style="margin-left:7.1pt">
-<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span> 
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: Automatikus OBD-re történő pickelés során milyen sorrendben keresse fel a StorTyp-eket
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:WH=MyWH</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Next</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>COL:StorageTypeSearchSeqID=MyID</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>COL:Description=MyText</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Select| BTN:New Entry|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:StorageTyp=MyStorageTyp|BTN:Save</b>
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589357"><span style="text-decoration:
+none"> 2.5.2.</span>TRN:/SCWM/GI/Srategies/Stock removal strategy</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: Automatikus OBD-re történő pickelés során az azonosított StorTyp-en belül milyen sorrenben pickeljen a binek közt
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif;
+background:red">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><span style="background:red">…</span>
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589358"><span style="text-decoration:
+none"> 2.5.3.</span>TRN:/SCWM/GI/Srategies/Pick denial activation</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: Automatikus OBD-re történő pickelés során, elégtelen készlet vagy készleteltérés esetén megtagadja a pickelést
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN: WH| CHK: Activate Pick denial=Yes</b>
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589359"><span style="text-decoration:
+none"> 2.6.</span>Folyamat-felkonfigurálások</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589360"><span style="text-decoration:
+none"> 2.6.1.</span>TRN:/SCWM/WorkSched/WaveMan/Maintain Waves</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: IBD/OBD|Item-ek kiszállítási <u>Hullámokra(Wave</u>) történő feltörése bármely EWM-es jellemzőjük alapján (pl. Product, Activity, Routing). 1 hullám több IBD/OBD|Item-ből tevődhet össze. Lehet automatikus vagy manuális.
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN: Create</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>FRM:WaveHDR|LIN1|COL|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>TBX:WaveID</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>TBX:WaveDescr</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:WaveType</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:FactoryCalendar </b>- mely nap ünnep?
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:StartDate</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:StartTime</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:CutoffDate</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:CutoffTime</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>FRM:WaveItem|LIN1|COL|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:Wave </b>- hullám azonosító
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:Item </b>- ennek tétele
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:DocNum </b>- IBD vagy OBD
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:ItemNum </b>- ennek tétele
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:WHSplit </b>- bizonylat adott EWM-es WH-ba eső része
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:DocCat</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:DocType</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:ItemCat</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:ItemType</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:Routing</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:Product</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:Owner</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:Batch </b>- gyártási sorozat
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>TBX:Quantity</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:MeasUnit</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>TBX:Weight</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:WeightUnit</b>
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589361"><span style="text-decoration:
+none"> 2.6.2.</span>TRN:/SCWM/CrossProcess/WHTask/ProcOrientStorContr</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: <u>Raktárvezérlés (StorageControl</u>) Annak meghatározása, hogy Putaway és Pick folyamatok során honnan hova mozoghat product
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>STEP1: <u>Folyamatvezérelt (Process Oriented</u>): abból indul ki hogy milyen Putaway és Pick taskokat kell végrehajtani
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>STEP2: <u>Elrendezés-vezérelt(Layout Oriented</u>): az előző fázis mozgatási javaslatait ellenőrzi, nem borítják-e fel WH Layoutot?
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|FRM:Left|LIN:ExtStrorageProcStep| </b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:New entry|… |BTN:Save</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|FRM:Left|LIN:StrorageProcDef|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:New entry|DDN:WH, TBX:StorageProcID, … BTN:Save</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|FRM:Left|LIN:StrorageProcDef|LIN:AssignStorageProcStep|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:New entry|DDN:ExtProcStep, TBX:Desc, DDN:InternalProcStep, DDN:Direction, BTN:Save</b>
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589362"><span style="text-decoration:
+none"> 2.6.3.</span>TRN:/SCWM/Master/PackagingSpec/Maintain: Csomagolási specifikáció (Packaging Specification):</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF:<b> </b>A hagyományos WM mgengedett DEF:<u>Raktáregységeket (Storage Unit, SU, Storage Unit Type, SUT</u>) (pl. UER, Angol, Japán, USA szabványú raklap) tud hozzárendelni egyes StrTyp-hez. Ezt az EWM tovább finomítja, amikor Product szinten adhatunk meg csomagolási instrukciókat
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Open|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:PackagingSpecif=FindOneValid|BTN:Copy|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:1|COL:Product=MyProd</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:Activate</b>
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589363"><span style="text-decoration:
+none"> 2.6.4.</span>TRN:/SCWM/GoodsIssueProc/DefineConsolidationGrp/</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: <u>Dekonszolidáció (Deconsolidation</u>): Hagyományos WM <u>DEF:Kezelési egységek (Handling Unit: HU</u>):(szállításra becsomagolt SU-k, pl. raklapok konténerbe rakva) kezelésének felbontása eltérő Routing|Task|WorkCtr-en keresztül eltérő Binekbe Putaway-olásra. 3 oka lehet:
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>HU-ban többféle Product van, melyek eltérő DEF:Konszolidációs csoport (Consolidation Group, ConsGrp) tagjai, máshova kell rakni őket
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>HU-ban egyféle Product van, de több ConsGrp részei
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>HU-ban egyféle Product van, egy ConsGrp részei, de a HU-t kezelő WokCtr túlterhelődne, és ezért többfelé dobjuk a Taskot
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Open|LIN1|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>COL:WH</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>COL:Route</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>COL:partner</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>COL:DelivPriority</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>COL:WHDoor</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>COL:ConsolidGrp</b>
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589364"><span style="text-decoration:
+none"> 2.6.5.</span>TRN:/SCWM/<span style="background:red">?????</span>/Slotting</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.6.5.1.</span>DEF: Raktári réselés (WH Slotting):
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Klasszikus WH sorfolytonos Bin-töltése helyett, Product paraméter-függő StrTyp|StrSect|Bin-zónák feltötése, ami hatékonyabb raktárhely kihasználást, és kevesebb anyagmozgatási igényt eredményez
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.6.5.2.</span>Slotting paraméterek
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Storage Condition - időjárásállóság
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Rotate Indicator - forgatható
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Theft-prone - lopásveszély
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Handling code - törékenység
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Demand quality - havi keresleti nagyságrend, WH mértékegységben
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Number of order lines - hány bizonylatsoron szerepel
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Recommended storage quality - polc minősége
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Storage class - tűzveszélyesség
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Water pollution storage quality - környezeti ártalmak
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Nesting factor(s) - tárolt tárgyak hány százalékig csúsztathatók egymásba
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Packing type - palettatípus
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Material length - dimenziók
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Material width
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Material height
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Material weight
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589365"><span style="text-decoration:
+none"> 2.7.</span>TRN:/SCWM/WorkSched/?????/ Labor management</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589366"><span style="text-decoration:
+none"> 2.7.1.</span>DEF: Munkaerő menedzsment (Labor management)</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Raktári munkaerő optimális kihasználását és teljesítményének <u>DEF: Kulcsindikátorokkal (Key Performance Indicator, KPI</u>) mérését lehetővé tevő alrendszer
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589367"><span style="text-decoration:
+none"> 2.7.2.</span>Törzsadatok: /MD/Role processor</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Role: munkaerő jogosultságai
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Step: lehetséges műveleti lépések
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Rate: a lépések költsége
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589368"><span style="text-decoration:
+none"> 2.7.3.</span>TRN:/SCWM/EWM/Monitoring/Warehouse management monitor</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>KPI-ok ellenőrzése
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|DDN:WH, BTN:Run</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Labor management|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Labor utilization</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Planned workload</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Executed workload</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Indirect costs</b>
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589369"><span style="text-decoration:
+none"> 2.7.4.</span>TRN:/SCWM/EWM/MastData/Resources/Processor/Create</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Raktári munkakör (Processor</u>): EWM kihivatkozik egy HCM modulban már definált <u>DEF:Munkavállalóra (Personnell</u>) és beosztja egy supply chain szervezetben routing lépésekkel leírt munkakörbe, EWM-es usernevet adva neki.
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>TAB:Identification|DDN:PersonellNum </b>- HCM modulba csatoló ID,<b> TBX:UserName </b>- EWM user
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>TAB:LM Attribute|DDN:WH, DDN:WorkCtr </b>- helye a supply chain szervezetben
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>TAB:WHAssign|LIN:WHNum|BTN:CreateExternalStep|…|BTN:Save|STS:ProcessorNum </b>- adott raktári folyamat(ok)ba történő beosztás azonosítója
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589370"><span style="text-decoration:
+none"> 2.8.</span>TRN:/SCWM/RFUI</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:Rádiófrekvenciás mobil adatbevitel (Radio Frequency Mobile Data Entry, RF</u>): RF ID-k leolvasása Handheld számítógépekkel
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:Képernyőprofil (Display Profile)</u>: Hogyan jelenjen meg ugyanazon funkcionalitású SAP munkaképernyő eltérő felbontású mobileszközökön vagy webbrowserben.
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:Funkciógombok (Function buttons</u>): A teljes méretű billentyűzet nélküli, érintőképernyős mobileszközök gyors kezelését teszi lehetővé munkavédelmi kesztyűben: <b>KEY:F5</b>-összes gomb, <b>KEY:F6</b>-minden input töröl, <b>KEY:F7</b>-előző képernyő, <b>KEY:F8</b>:-DDN legördülő listája külön képernyőn, <b>KEY:F9</b>-teljes üzenetszöveg külön képernyőn
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Lehetséges műveletek: Unload =&gt; Deconsolid =&gt; Putaway =&gt; Pick =&gt; Pack =&gt; Load, PI, Replenishment
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589371"><span style="text-decoration:
+none"> 2.9.</span>PRC:Expected Goods Receipt (EGR)</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589372"><span style="text-decoration:
+none"> 2.9.1.</span>EGR Fogalma</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:Várható anyagérkeztetés (Expected Goods Receipt, EGR</u>): EWM egy részrendszere, ami segít IBD-ket automatizáltan létrehozni, de ERP leállás esetén, anélkül is használható SCM-be letükrözött PurchOrd-ból történő közvetlen érkeztetésre, EGR Notification, és EGR bizonylatokon keresztül.
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>ERP által <u>nyomott (Push</u>) folyamat: <b>SAP Menu/SPE/INB_EGR_CREATE</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>EWM áltar <u>húzott (Pull</u>) folyamat: <b>TRN:SCWM/ERP_DLV_DELETE</b>
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589373"><span style="text-decoration:
+none"> 2.9.2.</span>EGR létrehozása</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.9.2.1.</span>TRN:SCWM/DelivProc/InbDeliv/EGR/Generate/
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|DDN:WH, DDN:Mandant|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>FRM:SpecSelPar|DDN:ProdOrd</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>FRM:SpecTimeInterv|DDN:Type=FreeInterv|DDN:StartDate, DDN:EndDate</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>FRM:TechSet|CHK:Create, CHK:Delete</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>BTN:Execute|SCR:Creation error signals</b>
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.9.2.2.</span>TRN:SCWM/DelivProc/InbDeliv/EGR/MaintainNotifications/
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|DDN:ProdOrd, BTN:Execute search|LIN:</b>Az EGR bizonylat lista megfigyelhető
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589374"><span style="text-decoration:
+none"> 2.10.</span>PRC:EWM Inbound logistics</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589375"><span style="text-decoration:
+none"> 2.10.1.</span>DEF: ERP Beszerzési igény (Purchase Requisition, PR):</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Anyag, Mennyiség, Határidő, Plant, Sloc
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589376"><span style="text-decoration:
+none"> 2.10.2.</span>DEF: ERP Beszerzési megrendelés (Purchase Order, PO):</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Beszállító, PIR, Árazás
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589377"><span style="text-decoration:
+none"> 2.10.3.</span>DEF: EWM Beszerzési megredelésre felhívás (Purchase Order Request, POR)</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>XOR: Kereslet húzta folyamat (Demand Pull</u>): POR=&gt; PO beszállítónak =&gt; IBD =&gt; GR
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>XOR: Kínálat tolta folyamat (Supply Push</u>): POR=&gt; PO|Ctrl key=ASN relevant =&gt; IBD =&gt; DEF: <u>Beszállítói előszállítás értesítés (Advance Shipping Notification, ASN</u>) =&gt; GR
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589378"><span style="text-decoration:
+none"> 2.10.4.</span>DEF: EWM Bejövő szállítmány értesítés (IBD Notification, IBDN)</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>ERP: IBD GR azonosítja Plant, Storloc, Storloc bázis WH
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>EWM: IBDN készül, ha WH EWM-releváns:
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>EWM GR
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>Szállítási egység (Transportation Unit, TU</u>) felülvizsgálat
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>Minőség-ellenőrzés (Quality Inspection, QI</u>)
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>EWM WH <u>Műveleti terv (Routing</u>) meghívása <u>elpakolásra (Putaway</u>)
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>EWM: IBD letükrüzve itt is létrejön, keresztbe frissül ERP IBD-vel
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>EWM: IBD teljes végrehajtása esetén <u>DEF: Szállítási igazolás (Proof of Delivery, POD</u>) készül, visszamegy a beszállítónak (hasonlóan az ERP-s folyamathoz)
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.10.4.1.</span>TRN:SCWM/EWM/Delivery/Inbound/Maintain
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|DDN:WH, DDN:Find=PO number, DDN:DocNum=</b><span class="MakrszvegeChar"><span style="font-size:12.0pt">MyPONum</span></span><b>, KEY:Enter|LIN: </b>- megtekinthet
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.10.4.2.</span>TRN:SCWM/CICO/
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:EWM ellenőrzőpont (Checkpoint</u>): EWM folyamat különböző pontjaihoz paramétereket állíthat be/olvashat ki
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|DDN:WH, DDN:Find= Vehicle/TU|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Main|DDN:Departure, DDN:Arrival</b>
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.10.4.3.</span>TRN:SCWM/YMOVE/
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>TU mozgás lekövetés
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.10.4.4.</span>TRN:SCWM/UNLOAD/
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>TU lerakása raktáron belüli szállítóeszközről HU-ba
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589379"><span style="text-decoration:
+none"> 2.11.</span>TRN:/SCWM/<span style="background:red">?????</span>:Serial numbering</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: <u>Sorozatszám profil (Serial number profile</u>):
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Azon szabályrendszer ami alapján Productoknak sorozatszámot lehet osztani, (max 30 karakter, de 18 ajánlott hogy ERP-vel kompatibilis legyen), 2 féle típusa van:
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589380"><span style="text-decoration:
+none"> 2.11.1.</span>ERP: DEF: Általános gyári (Sales General Plant S/N):</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>ERP GI és GR során lehet rögzíteni <u>DEF: Ideiglenes sorozatszámot (Provisorial S/N</u>): <span class="MakrszvegeChar"><span style="font-size:12.0pt">$XXXXXXXXXXXXXXXXXX</span></span>
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Adott bizonylaton belül oszt S/N-t, hogy azonosítani lehessen a vevő azt <u>DEF:Küldte vissza (Return</u>) amit megreklamált.
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589381"><span style="text-decoration:
+none"> 2.11.2.</span>EWM: DEF: Műhelyvezérlő rendszeres (LES S/N):</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Az EWM Product master része, a következő fajtái lehetnek:
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.11.2.1.</span>XOR: DEF: Statikus igénylésű (Static WH requirement):
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Adott WH-n belül minden Productnak kötelezően osztott egyedi azonosító
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.11.2.2.</span>XOR: DEF: Opcionális igénylésű (Optional WH requirement):
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Csak opcionálisan oszthat Productoknak, de nem kötelező!
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.11.2.3.</span>XOR: DEF: Mozgásra egyedi (Movement WH requirement):
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Raktári ki-be mozgások kötelező sorozatszámozása
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589382"><span style="text-decoration:
+none"> 2.12.</span>TRN:/SCWM/EWM/Execution/Create confirmation to VAS: VAS visszajelentése (Confirm)</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: Következtében a HU|Product készlet megjelenik a célpont Locationon, VAS Order|Routing|WorkCent szinten felszámolódnak a költségek
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Open|DDN:WH=MyWH, DDN:WorkCent=MyWorkCent,</b> <b>DDN:HU=MyHandlingUnit, BTN: Run</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>TAB: VAS Activity and items|DDN:HU=MyHandlUnit, BTN:Confirm process step</b>
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589383"><span style="text-decoration:
+none"> 2.13.</span>Physical Inventory</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589384"><span style="text-decoration:
+none"> 2.13.1.</span>DEF: Leltározás (Physical Inventory, PI):</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Logikai és fizikai készlet összevetése a fizikai nem informált periodikus leszámlálásával leltárfelelős által
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Készlet számviteli felértékelése, készlethiány/többlet veszteségként/nyereségként elkönyvelése
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589385"><span style="text-decoration:
+none"> 2.13.2.</span>Hatókör</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR: Bin specifikus
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR: Product specifikus
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589386"><span style="text-decoration:
+none"> 2.13.3.</span>DEF: Készletfelhasználási kategóriák (Stock Usability Categóries, SUC)</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>(Unrestricted, Blocked, QualInsp) × (In putaway, In WH)
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589387"><span style="text-decoration:
+none"> 2.13.4.</span>Időben</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR: Periodikus
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR: Folyamatos
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR: Ciklusszámlálós: Productok fontosság szerint A,B, C, D kategóriákba, más ciklusidőkkel leltároz, ami fontos azt sűrűbben
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589388"><span style="text-decoration:
+none"> 2.13.5.</span>Folyamata (ad hoc)</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm">
+<h5 style="margin-left:7.1pt">
+<u><span style="text-decoration:none"> 2.13.5.1.1.</span></u>TRN:/SCWM/EWM/Monitoring/Warehouse management monitor
+</h5>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Készlet ellenőrzése fix binben
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|DDN:WH, BTN:Run</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Stock and Bin|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Physical stock|DDN:Product, BTN:Run|TBX:Stock = </b><span class="MakrszvegeChar"><b><span style="font-size:12.0pt">XXX</span></b></span><b> - </b>observe it!
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm">
+<h5 style="margin-left:7.1pt">
+<u><span style="text-decoration:none"> 2.13.5.1.2.</span></u>TRN:/SCWM/EWM/PI/Create PI doc
+</h5>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Készlet ellenőrzési dokumentum létrehozása
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|DDN:WH, DDN:Type = AdHocBin, KEY:Enter|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:Find=Bin, DDN:Bin=MyBin, BTN:Run|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LINXX|BTN:Block, BTN:SetFlag, BTN:Save</b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>STS:Observe </b><span class="MakrszvegeChar"><b><span style="font-size:12.0pt">PIDocNum</span></b></span>
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589389"><span style="text-decoration:
+none"> 2.14.</span>PRC:Cross-Docking</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589390"><span style="text-decoration:
+none"> 2.14.1.</span>Cross-Docking fogalma</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:Keresztdokkolás (Cross-Docking</u>): EWM-en belüli több lépéses bonyolult mozgatási folyamatot (pl. anyag nem-LIFO jellegű be/kitárolása) egyetlen bizonylattal ír le, ezért csökkenti az EWM adminisztrációs költségeit. Stratégiái:
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR:Transportation - Szállítócég árukezelése közbülső depókkal
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR:Merchandise distribution - kisker áruterítés
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR:Push - beszállítói kezdeményezés, levezényli SCM-en keresztül az EWM WH végső bin-be helyezésig
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR:Pick from GR - A WH-be bevételezett anyagnak nem kell végső Bin-jébe kerülni, hanem gép és kamion már etethető az ideiglenes bevételezési területről is
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>XOR:Opportunistic - ad-hoc raktárműveletekhez
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589391"><span style="text-decoration:
+none"> 2.14.2.</span>Opportunista Cross-Docking folyamata</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:0cm;text-indent:0cm">
+Customer:PurchOrd=&gt;Me:SalOrd=&gt;Me:OBD, GI=&gt;Anyag a WH GI-zone ideiglenes tárolóterületén=&gt;Me:IBD
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.14.2.1.</span>TRN:Logist/LE/Inbound/GR for IBD/IBD/Create/Single (VL31N)
+</h4>
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.14.2.2.</span>TRN:SCWM/Deliv/Inbound/Maintain/
+</h4>
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.14.2.3.</span>TRN:Logist/SD/SalesOrd/Create/
+</h4>
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.14.2.4.</span>TRN:Logist/LE/Outbound/GI for OBD/OBD/Create/Single (VL01N)
+</h4>
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.14.2.5.</span>TRN:SCWM/ - Create and confirm EWM Task for OBD
+</h4>
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.14.2.6.</span>TRN:SCM//??? - Create and confirm EWM Task for IBD
+</h4>
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.14.2.7.</span>TRN:Logist/LE/Outbound/GI for OBD/OBD/Maintain (VL32N)
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Post OBD GI
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589392"><span style="text-decoration:
+none"> 2.15.</span>PRC:Replenishment</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589393"><span style="text-decoration:
+none"> 2.15.1.</span>DEF: Újratöltés (Replenishment):</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Kamionterminál rakodóinak WM-ből töltésére szolgáló Bin-ek rendszeres automatikus újratöltése adott szabályrendszer alapján
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589394"><span style="text-decoration:
+none"> 2.15.2.</span>Adatstruktúrák</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>StrTyp
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Bin
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Replenishment Control Type
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Replenishment Control
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:70.35pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: <u>Min készlet (Min Stock</u>)
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: <u>Max készlet (Max Stock</u>)
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>DEF: <u>Újratöltési egység (Replenish Quant</u>)
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589395"><span style="text-decoration:
+none"> 2.15.3.</span>Újratöltési stratégiák</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.15.3.1.</span>Planned:
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Minimimum elérésekor 1 egység újratölt
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.15.3.2.</span>Order related:
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Ha van teljesítendő megrendelés, minimum elérésekor töltési egység többszörösével újratölt, egy kicsit a maximumot is túllépheti
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.15.3.3.</span>Automatic:
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>WH Task indításakor ha eléri minimumot, 1 egység újratölt
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.15.3.4.</span>Direct:
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Ha Pick denial anyaghiány miatt, újra tölt: csak fix binre működik, üres bin a minimuma, teljes bin kapacitást újratölti
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm">
+<h5 style="margin-left:7.1pt">
+<u><span style="text-decoration:none"> 2.15.3.4.1.</span></u>TRN:/SCWM/EWM/MD/Bin/Fixed bin to product
+</h5>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Product kijelölése fix binhez kötésre
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:WH, DDN:Product, DDN:StrTyp, TBX:NumberOfBins, BTN:Run</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm">
+<h5 style="margin-left:7.1pt">
+<u><span style="text-decoration:none"> 2.15.3.4.2.</span></u>TRN:/SCWM/EWM/MD/Prod/Maintain WH Product
+</h5>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>A product fix bin direct replenishment beállításai
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:WH, DDN:Product, DDN:PartyToDispose </b>- ki állíthatja le fix hozzárendelést?<b>, BTN:Create</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>MENU:Navigate to fixed bin|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:StrTyp, TBX:MinStock, TBX:MaxStock, DDN:MeasUnit</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm">
+<h5 style="margin-left:7.1pt">
+<u><span style="text-decoration:none"> 2.15.3.4.3.</span></u>TRN:/SCWM/EWM/Monitoring/Warehouse management monitor
+</h5>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Készlet ellenőrzése fix binben
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|DDN:WH, BTN:Run</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Stock and Bin</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Physical stock|DblClick|DDN:Product, BTN:Run</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm">
+<h5 style="margin-left:7.1pt">
+<u><span style="text-decoration:none"> 2.15.3.4.4.</span></u>TRN:/SCWM/EWM/WorkSched/ScheduleReplenish
+</h5>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Újratöltés beütemezése
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:WH, DDN:Product, CHK:PlannedRepl=Yes, DDN: PartyToDispose, BTN:Run</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>STS: Please observe </b><span class="MakrszvegeChar"><b><span style="font-size:12.0pt">WHTaskNumber</span></b></span>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm">
+<h5 style="margin-left:7.1pt">
+<u><span style="text-decoration:none"> 2.15.3.4.5.</span></u>TRN:/SCWM/EWM/Execution/ConfirmWHTask
+</h5>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Újratöltés végrehajtása
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:Find=WHTask, DDN:WHTaskNum=</b><span class="MakrszvegeChar"><b><span style="font-size:12.0pt">WHTaskNumber</span></b></span><b> BTN:Run|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:WHOrd|COL:Select=Yes, BTN:Confirm+Save</b>
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589396"><span style="text-decoration:
+none"> 2.16.</span>PRC:Production Supply</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589397"><span style="text-decoration:
+none"> 2.16.1.</span>Alapfogalmak</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:Termelésellátás (Production supply</u>): EWM raktárból termelőgépek <u>DEF:anyagelőkészítése (Staging</u>) rendszeres automatizált folyamatban, PO-k <u>DEF:Darabjegyzéke (Bill Of Material, BOM</u>)-ja alapján: milyen komponens anyagokból, milyen fix/konfigurálható fajlagos fogyasztás van, mily mértékegységben, a termék anyag egy termelési egységére, a komponensek logikai kapcsolata milyen:(kötelező alkatrész/ opcionális/ egymást kizáró/ nem anyagi, szabadon szaporítható komponens, pl. szoftver)
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: IM-es Termelés raktárhely (Plant|ProdStrorloc)</u>: <b>Material|Plant|TAB:MRP2|DDN:ProdStorLoc</b> beállított nyersanyag komponenst IM-ből gépre <u>DEF: töltő (Staging</u>), gépről elkészült komponenst IM-be <u>DEF: érkeztető (Goods Receipt, GR</u>) virtuális tároló
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: IM-es Termelés Ellátási Terület (IM Supply Area, SuplAr</u>): <b>Material|Plant|ProdStorLoc</b> gépetetéssel kapcsolatos logikai része, neve megegyezik a WorkCtr gyártógépének nevével
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:Termelés ellátási terület (Production Supply Area, PSA)</u>: EWM raktár gépeket elátó területe, az IM-es SuplAr EWM-es megfelelője. 1 vagy több bin lehet bennük, amelyek 1:1 megfelelnek a PO-knak, és nevük a PO bizonylatszáma. PSA Típusai lehetnek:
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Összeválogatott komponensek (Pick Parts</u>)
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Termelésindító komponensek (Release Order Parts</u>)
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Csomagolandó komponensek (Crate parts</u>)
+</p>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589398"><span style="text-decoration:
+none"> 2.16.2.</span>Felkonfigurálási folyamata</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.16.2.1.</span>TRN:Logist/Prod/MD/BOM/BOM/Mat BOM/Display/
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|DDN:MatNum, DDN:Plant, DDN:BOMUsage, KEY:Enter|</b>
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Main|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:MatNum|TAB:Status|DDN:ProdStorLoc </b>- feljegyez<b>, DDN:SupplyArea </b>- feljegyez
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.16.2.2.</span>TRN:Logist/LE/MD/WH/ProdSupply/ControlCyc/Create/
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:Szabályozási kör(Control Cycle</u>): IM és WM gépetetést összekötő objektum
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Start|DDN:Material, DDN:Plant, DDN:SupplyArea, KEY:Enter|</b>
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>SCR:Main|</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>FRM:Stage|DDN:WH, DDN:StorTyp, DDN:Bin </b>- manuális megadás
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>FRM:ContrCyc|DDN:ProdSupplyArea </b>- bekötés EWM-es PSA-hoz
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>FRM:Destination|DDN:StagingInd </b>- meghív egy szabályrendszert, ami StorTyp preferencia sorrendben, azon belül StorSec sorszám, majd Bin sorszám szerint keres gépre tölthető készletet
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589399"><span style="text-decoration:
+none"> 2.17.</span>TRN:/SCWM/PRDO: OBDRequest</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm">
+<h3 style="margin-left:7.1pt">
+<a name="_Toc65589400"><span style="text-decoration:
+none"> 2.17.1.</span>DEF: Vevőnek kiszállítási folyamat</a>
+</h3>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.17.1.1.</span>ERP:
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Vevői megrendelés (Sales Order, SalOrd</u>) =&gt; OBD =&gt;
+</p>
+</div>
+<div style="border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm">
+<h4 style="margin-left:7.1pt">
+<span style="text-decoration:none"> 2.17.1.2.</span>EWM:
+</h4>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Kiszállítási igény (Outbound Delivery Request, OBDR</u>) =&gt;
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>LIN: Item|DDN: WarehProcType=Category2
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Kiszállítási igény (Outbound Delivery Order, OBDO</u>) =&gt;
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Letükrözött OBD, EWM releváns tételekkel, tételekhez:
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Warehouse Process = Category2
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>Activity = Pick
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF: Raktártípus keresési sorrend (Storage type search sequence</u>) paraméterek:
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:WH=MyWH, </b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>CHK:2stepPick=Yes, </b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:Prodmast|StockRemovInd, </b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:WarehProcTyp, </b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:QuantityClassif, </b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:StockType, DDN:StockUsage, </b>
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>DDN:HazardRate</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span>GI
+</p>
+</div>
+<div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm">
+<h2 style="margin-left:7.1pt">
+<a name="_Toc65589401"><span style="text-decoration:
+none"> 2.18.</span>TRN:/SCWM/EWM/Monitoring/WH manag monitor</a>
+</h2>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm">
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><u>DEF:WH monitor munkaképernyő (<b>SCR:WHMon</b></u>): <b>FRM:Left</b> - WH objektum hierarchia tartalomjegyzék, <b>FRM:Top</b> - fejléci adatok, <b>FRM:Bottom</b> - tétel adatok
+</p>
+<p class="MsoList" style="margin-left:7.1pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>FRM:Left</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Outb</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Inb</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:PI</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Docs</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Stock and bin</b>
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm">
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Bin </b>- bin tulajdonságai
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Stock overview </b>- bin teljes készlet
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Physical stock </b>- fizikailag jelen
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Available stock </b>- logikailag elérhető
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:SLED </b>- lejárati idők
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Not in UoM </b>- különleges mértékegységű
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Resource </b>- épp darun lévő készlet
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:HU </b>- HU-ba csomagolt készl.
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:TU </b>- Raktári szállítóeszközön lévő HU-k készlete
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:S/N </b>- sorozatszámonkénti
+</p>
+<p class="MsoList3" style="margin-left:7.65pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Yard </b>- mi van rakodóudvaron
+</p>
+</div>
+<div style="border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm">
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Resource</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Alert</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Labor</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:MaterialFlowSys</b>
+</p>
+<p class="MsoList2" style="margin-left:7.05pt">
+<span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Tools</b>
 </p>
 </div>
 </div>

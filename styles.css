@@ -3,9 +3,9 @@
 
 
 @media (max-width: 767px) {
-    #toc {
-      display: none;
-    }
+  #toc {
+    visibility: hidden;
+  }
 	.zoom {
 		/*CSS transitions*/
 		-o-transition-property: none !important;
@@ -452,7 +452,18 @@ img {
 }
 
 
+/******** @Mozilla ********/
 
 
+#toc {
+  display:none;
+}
+
+
+@-moz-document url-prefix() {
+#toc {
+    display: unset;
+  }
+}
 
 

@@ -2083,9 +2083,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   @media (max-width: 767px) {
-      #toc {
-        display: none;
-      }
+    #toc {
+      visibility: hidden;
+    }
   	.zoom {
   		/*CSS transitions*/
   		-o-transition-property: none !important;
@@ -2532,8 +2532,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
 
+  /******** @Mozilla ********/
 
 
+  #toc {
+    display:none;
+  }
+
+
+  @-moz-document url-prefix() {
+  #toc {
+      display: unset;
+    }
+  }
 
 
 
