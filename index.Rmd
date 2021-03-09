@@ -20,12 +20,40 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <script src="https://unpkg.com/darken"></script>
 
+
+
+
+<style>
+.title+ a {
+	color: white;
+	background-image: linear-gradient(0deg, transparent 91%, rgb(32, 152, 209) 9%);
+}
+</style>
+
+
 <body>
 
 <div id="toc">
 </div>
 
-<button id="dm-toggle" style="font-size:24px; border-radius: 20px;"> <i class="far fa-moon"></i></button>
+
+
+
+<div class="row">
+<div class="column">
+
+<button data-hypothesis-trigger style="font-size:24px; border-radius: 20px;width: 100%;">
+<i class="far fa-sticky-note"></i>
+</button>
+
+
+</div>
+<div class="column">
+
+<button id="dm-toggle" style="font-size:24px; border-radius: 20px;width: 100%;"> <i class="far fa-moon"></i></button>
+
+</div>
+</div>
 
 
 <h2>**Bevezetés**</h2>
@@ -77,15 +105,15 @@ ismeretek tekintetében az alábbi könyvek elolvasása javasolt
 részhez melyik fejezetet szükséges elolvasni. Ezek elolvasása szükséges
 az órai programhasználat szakmai / tartalmi dimenziójának megértéséhez.
 
-- **Tarcsi Ádám, Molnár Bálint: Vállalatirányítási rendszerek gazdaságinformatikai megközelítésben (SAP).** 
-    ELTE Társadalomtudományi Kar, 2011. Elérhető:
-    <https://shorturl.at/djtuE>
-    (2021. 02. 04.)
+**Tarcsi Ádám, Molnár Bálint: Vállalatirányítási rendszerek gazdaságinformatikai megközelítésben (SAP).** 
+ELTE Társadalomtudományi Kar, 2011. Elérhető:
+<https://regi.tankonyvtar.hu/hu/tartalom/tamop412A/2011-0052_40_vallalatiranyitasi_rendszerek_gazdasaginformatikai_megkozelitesben/index.scorml>
+(2021. 02. 04.)
 
--   **Takács András, Márkus Gábor: Számviteli alapismeretek.** 
-    PTE Közgazdaságtudományi Kar. Pécs, 2019. Elérhető:
-    <https://digitalia.lib.pte.hu/hu/pub/takacs-a-markus-g-szamviteli-alapismeretek-pte-ktk-pecs-2019-4393>
-    (2021. 02. 04.)
+**Takács András, Márkus Gábor: Számviteli alapismeretek.** 
+PTE Közgazdaságtudományi Kar. Pécs, 2019. Elérhető:
+<https://digitalia.lib.pte.hu/hu/pub/takacs-a-markus-g-szamviteli-alapismeretek-pte-ktk-pecs-2019-4393>
+(2021. 02. 04.)
 
 **[Beszerzési részhez (ajánlott):]{.ul}**
 
@@ -95,7 +123,7 @@ az órai programhasználat szakmai / tartalmi dimenziójának megértéséhez.
     ami felhasználói és rendszerbeállítás szintjén előfordul a
     beszerzési modulban, (személyes véleményem szerint ennyi pénzért
     kiemelt mértékben megéri.) Megvásárolható:
-    <https://shorturl.at/aptQ9>
+    <https://www.amazon.com/SAP-MM-PURCHASING-TECHNICAL-REFERENCE-ebook/dp/B00LPGBWX2/ref=sr_1_4?crid=2ZAJO773J9HX9&dchild=1&keywords=sap+purchasing&qid=1610966550&sprefix=sap+purchase%2Caps%2C483&sr=8-4>
     (2021. 02. 04.)
 
 **[Financial Accounting modulhoz (ingyenesen elérhető szakkönyvek):]{.ul}**
@@ -813,6 +841,8 @@ selectors: "h2,h3,h4,h5"
 			}
 		});
 </script>
+
+
 
 
 </body>

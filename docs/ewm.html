@@ -88,27 +88,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>SAP E-Study Guide: EWM</title>
 
-  <meta property="description" itemprop="description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-05"/>
+  <meta property="description" itemprop="description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-09"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="SAP E-Study Guide: EWM"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-05"/>
+  <meta property="og:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-09"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="SAP E-Study Guide"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="SAP E-Study Guide: EWM"/>
-  <meta property="twitter:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-05"/>
+  <meta property="twitter:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-09"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["EWM"]},{"type":"character","attributes":{},"value":["SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-05"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["EWM"]},{"type":"character","attributes":{},"value":["SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-09"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2048,10 +2048,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <script type="application/json" class="js-hypothesis-config">
     {
-      "theme": "clean"
+      "theme": "clean",
+      "showHighlights": "whenSidebarOpen",
+      "enableExperimentalNewNoteButton": true,
+      "branding": {
+        "appBackgroundColor": "white"
+      }
     }
   </script>
   <script async src="https://hypothes.is/embed.js"></script>
+
+
+
+
   <section class="module parallax parallax-1">
     <div class="container-hero">
   <p class="ml5">
@@ -2109,6 +2118,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   		-ms-animation: none !important;
   		animation: none !important;
   	  }
+  	.distill-site-header.responsive a, .distill-site-header.responsive .nav-dropdown {
+  	  display: block;
+  	  text-align: left;
+  	  text-align: center;
+      }
   }
 
 
@@ -2183,9 +2197,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /******** Navbar menu ********/
 
-
-
-  /* Rectangle In */
   .title+ a {
     display: inline-block;
     vertical-align: middle;
@@ -2193,41 +2204,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    background: #3F5763;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    overflow: hidden;
   }
   .title+ a:before {
     content: "";
     position: absolute;
     z-index: -1;
-    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: #0F2E3D;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition-property: transform;
-    transition-property: transform;
+    right: 100%;
+    top: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .title+ a:hover, .title+ a:focus, .title+ a:active {
-    color: white;
-  }
   .title+ a:hover:before, .title+ a:focus:before, .title+ a:active:before {
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    right: 0;
   }
 
 
 
-  /* Rectangle In */
   .title~ a {
     display: inline-block;
     vertical-align: middle;
@@ -2235,36 +2235,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    background: #3F5763;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    overflow: hidden;
   }
   .title~ a:before {
     content: "";
     position: absolute;
     z-index: -1;
-    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: #0F2E3D;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition-property: transform;
-    transition-property: transform;
+    right: 100%;
+    top: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .title~ a:hover, .title~ a:focus, .title~ a:active {
-    color: white;
-  }
   .title~ a:hover:before, .title~ a:focus:before, .title~ a:active:before {
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    right: 0;
   }
 
 
@@ -2491,47 +2481,47 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /******** Hyperlink ********/
 
+  .uri {
+    background: #b621fe;
+    border: none;
+    z-index: 1;
+  }
+  .uri:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #006cb5;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .uri:hover {
+    color: #fff;
+  }
+  .uri:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .uri:active {
+    top: 2px;
+  }
 
   .uri {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    width: auto;
+    height: auto;
+    color: var(--secondary-color);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.6s ease;
     position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-  }
-  .uri:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #2098D1;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .uri:hover, .uri:focus, .uri:active {
-    color: white;
-  }
-  .uri:hover:before, .uri:focus:before, .uri:active:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    display: inline-block;
+    outline: none;
   }
 
 
@@ -2550,12 +2540,33 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
 
-
+  /******** Search ********/
 
   #algolia-autocomplete-listbox-0 h3 {
     color: black;
     text-decoration: unset;
   }
+
+  .algolia-autocomplete {
+    width: inherit;
+  }
+
+
+  /******** 2col1row ********/
+
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
 
   </style>
@@ -2570,7 +2581,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"EWM","description":"SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-05","authors":[]}
+{"title":"EWM","description":"SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-09","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2597,7 +2608,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>EWM</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br /> Legutóbb frissítve: 2021-03-05</p></p>
+<p><p>SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br /> Legutóbb frissítve: 2021-03-09</p></p>
 </div>
 
 
@@ -2709,6 +2720,10 @@ h4
     font-family:"Arial Narrow",sans-serif;
     color:blue;
     text-decoration:underline;}
+a:nth-child(4)
+  {
+  color: white;
+    background-image: linear-gradient(0deg, transparent 91%, rgb(32, 152, 209) 9%)}
 h5
     {margin-top:0cm;
     margin-right:0cm;
@@ -2908,17 +2923,20 @@ ul
 <div id="toc">
 
 </div>
-<button id="dm-toggle" style="font-size:24px; border-radius: 20px;">
+<div class="row">
+<div class="column">
+<button data-hypothesis-trigger style="font-size:24px; border-radius: 20px;width: 100%;">
+<i class="far fa-sticky-note"></i>
+</button>
+</div>
+<div class="column">
+<button id="dm-toggle" style="font-size:24px; border-radius: 20px;width: 100%;">
 <i class="far fa-moon"></i>
 </button>
-<div class="WordSection1">
-<p><span style="font-size:8.0pt;font-family:&quot;Arial Narrow&quot;,sans-serif"><br
-clear=all style='page-break-before:always'> </span></p>
-<p class="MsoNormal" align="left" style="margin-left:0cm;text-align:left;
-punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other">
-<b><u><span style="font-size:9.0pt;color:aqua"><span style="text-decoration:none"> </span></span></u></b>
-</p>
-<h1 id="sap-kiterjesztett-raktárkezelés-extended-warehouse-managementewm">1. SAP Kiterjesztett raktárkezelés (Extended Warehouse Management,EWM)</h1>
+</div>
+</div>
+<section id="sap-kiterjesztett-raktárkezelés-extended-warehouse-managementewm" class="WordSection1">
+<h1>1. SAP Kiterjesztett raktárkezelés (Extended Warehouse Management,EWM)</h1>
 <div style="border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:14.2pt;margin-right:0cm">
 <h2 style="margin-left:7.1pt">
@@ -5054,7 +5072,7 @@ margin-left:49.65pt;margin-right:0cm">
 <span style="font-family:&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">   </span></span><b>LIN:Tools</b>
 </p>
 </div>
-</div>
+</section>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
 <script src="js/bootstrap.js"></script>

@@ -121,6 +121,10 @@ h4
 	font-family:"Arial Narrow",sans-serif;
 	color:blue;
 	text-decoration:underline;}
+a:nth-child(4)
+  {
+  color: white;
+	background-image: linear-gradient(0deg, transparent 91%, rgb(32, 152, 209) 9%)}
 h5
 	{margin-top:0cm;
 	margin-right:0cm;
@@ -326,19 +330,23 @@ ul
 </div>
 
 
-<button id="dm-toggle" style="font-size:24px; border-radius: 20px;"> <i class="far fa-moon"></i></button>
+<div class="row">
+<div class="column">
 
+<button data-hypothesis-trigger style="font-size:24px; border-radius: 20px;width: 100%;">
+<i class="far fa-sticky-note"></i>
+</button>
+
+
+</div>
+<div class="column">
+
+<button id="dm-toggle" style="font-size:24px; border-radius: 20px;width: 100%;"> <i class="far fa-moon"></i></button>
+
+</div>
+</div>
 
 <div class=WordSection1>
-
-
-<span style='font-size:8.0pt;font-family:"Arial Narrow",sans-serif'><br
-clear=all style='page-break-before:always'>
-</span>
-
-<p class=MsoNormal align=left style='margin-left:0cm;text-align:left;
-punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other'><b><u><span
-style='font-size:9.0pt;color:aqua'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
 
 
 

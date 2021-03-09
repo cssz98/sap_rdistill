@@ -20,13 +20,37 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <script src="https://unpkg.com/darken"></script>
 
+
+<style>
+a:nth-child(3) {
+	color: white;
+	background-image: linear-gradient(0deg, transparent 91%, rgb(32, 152, 209) 9%);
+}
+</style>
+
+
+
 <body>
 
 <div id="toc">
 </div>
 
 
-<button id="dm-toggle" style="font-size:24px; border-radius: 20px;"> <i class="far fa-moon"></i> </button>
+<div class="row">
+<div class="column">
+
+<button data-hypothesis-trigger style="font-size:24px; border-radius: 20px;width: 100%;">
+<i class="far fa-sticky-note"></i>
+</button>
+
+
+</div>
+<div class="column">
+
+<button id="dm-toggle" style="font-size:24px; border-radius: 20px;width: 100%;"> <i class="far fa-moon"></i></button>
+
+</div>
+</div>
 
 
 <h2>[**Pénzügyi és vezetői számviteli környezet felépítése SAP-ban**]{.ul}</h2>
@@ -104,9 +128,6 @@ szemantikával rendelkeznie. Ez azt jelenti, hogy hierarchiáját jogi
 személyek (például leányvállalatok) és üzleti egységek (például
 értékesítés) keverékével állíthatja össze.
 
-Forrás:
-<https://shorturl.at/ilEK6>
-(2021. 02. 10.)
 
 Az alábbiakban nézzünk meg két standard, szabványos SAP szervezeti
 ábrát:

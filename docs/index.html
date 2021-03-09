@@ -88,27 +88,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>SAP E-Study Guide: Introduction</title>
 
-  <meta property="description" itemprop="description" content="Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-05"/>
+  <meta property="description" itemprop="description" content="Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-09"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="SAP E-Study Guide: Introduction"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-05"/>
+  <meta property="og:description" content="Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-09"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="SAP E-Study Guide"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="SAP E-Study Guide: Introduction"/>
-  <meta property="twitter:description" content="Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-05"/>
+  <meta property="twitter:description" content="Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-09"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Introduction"]},{"type":"character","attributes":{},"value":["Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai <br />\nLegutóbb frissítve: 2021-03-05\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Introduction"]},{"type":"character","attributes":{},"value":["Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai <br />\nLegutóbb frissítve: 2021-03-09\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2048,10 +2048,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <script type="application/json" class="js-hypothesis-config">
     {
-      "theme": "clean"
+      "theme": "clean",
+      "showHighlights": "whenSidebarOpen",
+      "enableExperimentalNewNoteButton": true,
+      "branding": {
+        "appBackgroundColor": "white"
+      }
     }
   </script>
   <script async src="https://hypothes.is/embed.js"></script>
+
+
+
+
   <section class="module parallax parallax-1">
     <div class="container-hero">
   <p class="ml5">
@@ -2109,6 +2118,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   		-ms-animation: none !important;
   		animation: none !important;
   	  }
+  	.distill-site-header.responsive a, .distill-site-header.responsive .nav-dropdown {
+  	  display: block;
+  	  text-align: left;
+  	  text-align: center;
+      }
   }
 
 
@@ -2183,9 +2197,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /******** Navbar menu ********/
 
-
-
-  /* Rectangle In */
   .title+ a {
     display: inline-block;
     vertical-align: middle;
@@ -2193,41 +2204,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    background: #3F5763;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    overflow: hidden;
   }
   .title+ a:before {
     content: "";
     position: absolute;
     z-index: -1;
-    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: #0F2E3D;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition-property: transform;
-    transition-property: transform;
+    right: 100%;
+    top: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .title+ a:hover, .title+ a:focus, .title+ a:active {
-    color: white;
-  }
   .title+ a:hover:before, .title+ a:focus:before, .title+ a:active:before {
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    right: 0;
   }
 
 
 
-  /* Rectangle In */
   .title~ a {
     display: inline-block;
     vertical-align: middle;
@@ -2235,36 +2235,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    background: #3F5763;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    overflow: hidden;
   }
   .title~ a:before {
     content: "";
     position: absolute;
     z-index: -1;
-    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: #0F2E3D;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition-property: transform;
-    transition-property: transform;
+    right: 100%;
+    top: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .title~ a:hover, .title~ a:focus, .title~ a:active {
-    color: white;
-  }
   .title~ a:hover:before, .title~ a:focus:before, .title~ a:active:before {
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    right: 0;
   }
 
 
@@ -2491,47 +2481,47 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /******** Hyperlink ********/
 
+  .uri {
+    background: #b621fe;
+    border: none;
+    z-index: 1;
+  }
+  .uri:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #006cb5;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .uri:hover {
+    color: #fff;
+  }
+  .uri:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .uri:active {
+    top: 2px;
+  }
 
   .uri {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    width: auto;
+    height: auto;
+    color: var(--secondary-color);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.6s ease;
     position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-  }
-  .uri:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #2098D1;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .uri:hover, .uri:focus, .uri:active {
-    color: white;
-  }
-  .uri:hover:before, .uri:focus:before, .uri:active:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    display: inline-block;
+    outline: none;
   }
 
 
@@ -2550,12 +2540,33 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
 
-
+  /******** Search ********/
 
   #algolia-autocomplete-listbox-0 h3 {
     color: black;
     text-decoration: unset;
   }
+
+  .algolia-autocomplete {
+    width: inherit;
+  }
+
+
+  /******** 2col1row ********/
+
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
 
   </style>
@@ -2570,7 +2581,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Introduction","description":"Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai <br />\nLegutóbb frissítve: 2021-03-05","authors":[]}
+{"title":"Introduction","description":"Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai <br />\nLegutóbb frissítve: 2021-03-09","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2597,7 +2608,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Introduction</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai <br /> Legutóbb frissítve: 2021-03-05</p></p>
+<p><p>Bevezetés, SAP számviteli felépítésének alapjai, SAP használat alapjai <br /> Legutóbb frissítve: 2021-03-09</p></p>
 </div>
 
 
@@ -2605,13 +2616,28 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><link href="styles/bootstrap.css" rel="stylesheet"> <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet"> <link href="styles/jquery.tocify.css" rel="stylesheet"></p>
 <p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></p>
 <script src="https://unpkg.com/darken"></script>
+<style>
+.title+ a {
+    color: white;
+    background-image: linear-gradient(0deg, transparent 91%, rgb(32, 152, 209) 9%);
+}
+</style>
 <body>
 <div id="toc">
 
 </div>
-<button id="dm-toggle" style="font-size:24px; border-radius: 20px;">
+<div class="row">
+<div class="column">
+<button data-hypothesis-trigger style="font-size:24px; border-radius: 20px;width: 100%;">
+<i class="far fa-sticky-note"></i>
+</button>
+</div>
+<div class="column">
+<button id="dm-toggle" style="font-size:24px; border-radius: 20px;width: 100%;">
 <i class="far fa-moon"></i>
 </button>
+</div>
+</div>
 <h2>
 <strong>Bevezetés</strong>
 </h2>
@@ -2620,13 +2646,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><strong>Határidők.</strong> 2021. február 13-ig mindenkinek csapatot kell választania, és be kell jelentkeznie az SAP rendszerbe.</p>
 <p><strong>A tantárgy célja.</strong> A szeminárium elsődleges célja az SAP-s felhasználói szintű, gazdasági munkakörök betöltésének megalapozása. Álláspontom szerint a PTE Közgazdaságtudományi Kar képzésein szerezhető magas színvonalú, versenyképes tudásra épített SAP vállalatirányítási rendszer ismerete lehetővé teszi a szakmai gyakorlatok, gyakornoki programok, valamint belépő szintű pozíciók sikeres megpályázását. A minőségi pozíciókra kiírt álláshirdetések gyakran fogalmazzák meg elvárásként az SAP ismereteket. Tekintettel arra, hogy a felsőoktatási versenyben más intézmények ezt felismerték az álláspályázatok során jó eséllyel olyan pályázókkal kell versenyezni, akik ilyen tudással rendelkezhetnek. Annak érdekében, hogy más egyetemeken végzett hallgatókkal szemben eredményesen lehessen fellépni egy-egy pozíció elnyeréséért, kulcsfontosságúnak tartom az elméleti alapozottságú, gyakorlati megközelítésű SAP ismereteket.</p>
 <p><strong>Tantárgy szakirodalma.</strong> A tantárgyhoz egy elektronikus tananyag fejlesztése zajlik a PTE TTK keretében, dr. Pauler Gábor szakmai felügyeletével. A tananyag jellegzetessége, hogy tartalmát tekintve nem zárt és statikus jellegű, hanem dinamikus ezért az újabb tudáselemek megjelenésével folyamatosan bővül és módosul. Az elektronikus tananyag nem vállalkozik azonban a részletes monográfiák idézésére. Ezért a vállalatirányítási rendszerek, a beszerzési folyamatok és a számviteli ismeretek tekintetében az alábbi könyvek elolvasása javasolt (erőteljesen). Az elektronikus tananyagban elhelyezem, hogy az adott részhez melyik fejezetet szükséges elolvasni. Ezek elolvasása szükséges az órai programhasználat szakmai / tartalmi dimenziójának megértéséhez.</p>
-<ul>
-<li><p><strong>Tarcsi Ádám, Molnár Bálint: Vállalatirányítási rendszerek gazdaságinformatikai megközelítésben (SAP).</strong> ELTE Társadalomtudományi Kar, 2011. Elérhető: <a href="https://shorturl.at/djtuE" class="uri">https://shorturl.at/djtuE</a> (2021. 02. 04.)</p></li>
-<li><p><strong>Takács András, Márkus Gábor: Számviteli alapismeretek.</strong> PTE Közgazdaságtudományi Kar. Pécs, 2019. Elérhető: <a href="https://digitalia.lib.pte.hu/hu/pub/takacs-a-markus-g-szamviteli-alapismeretek-pte-ktk-pecs-2019-4393" class="uri">https://digitalia.lib.pte.hu/hu/pub/takacs-a-markus-g-szamviteli-alapismeretek-pte-ktk-pecs-2019-4393</a> (2021. 02. 04.)</p></li>
-</ul>
+<p><strong>Tarcsi Ádám, Molnár Bálint: Vállalatirányítási rendszerek gazdaságinformatikai megközelítésben (SAP).</strong> ELTE Társadalomtudományi Kar, 2011. Elérhető: <a href="https://regi.tankonyvtar.hu/hu/tartalom/tamop412A/2011-0052_40_vallalatiranyitasi_rendszerek_gazdasaginformatikai_megkozelitesben/index.scorml" class="uri">https://regi.tankonyvtar.hu/hu/tartalom/tamop412A/2011-0052_40_vallalatiranyitasi_rendszerek_gazdasaginformatikai_megkozelitesben/index.scorml</a> (2021. 02. 04.)</p>
+<p><strong>Takács András, Márkus Gábor: Számviteli alapismeretek.</strong> PTE Közgazdaságtudományi Kar. Pécs, 2019. Elérhető: <a href="https://digitalia.lib.pte.hu/hu/pub/takacs-a-markus-g-szamviteli-alapismeretek-pte-ktk-pecs-2019-4393" class="uri">https://digitalia.lib.pte.hu/hu/pub/takacs-a-markus-g-szamviteli-alapismeretek-pte-ktk-pecs-2019-4393</a> (2021. 02. 04.)</p>
 <p><strong><u>Beszerzési részhez (ajánlott):</u></strong></p>
 <ul>
-<li><strong>P. K. Agrawal:</strong> <strong>SAP MM Purchasing: Technical Reference and Learning Guide.</strong> PHI Learning Private Limited. Delhi, 2014. 912. p. 13 Euróért elérhető E-bookként. (Ebben a könyvben minden benne van, ami felhasználói és rendszerbeállítás szintjén előfordul a beszerzési modulban, (személyes véleményem szerint ennyi pénzért kiemelt mértékben megéri.) Megvásárolható: <a href="https://shorturl.at/aptQ9" class="uri">https://shorturl.at/aptQ9</a> (2021. 02. 04.)</li>
+<li><strong>P. K. Agrawal:</strong> <strong>SAP MM Purchasing: Technical Reference and Learning Guide.</strong> PHI Learning Private Limited. Delhi, 2014. 912. p. 13 Euróért elérhető E-bookként. (Ebben a könyvben minden benne van, ami felhasználói és rendszerbeállítás szintjén előfordul a beszerzési modulban, (személyes véleményem szerint ennyi pénzért kiemelt mértékben megéri.) Megvásárolható: <a href="https://www.amazon.com/SAP-MM-PURCHASING-TECHNICAL-REFERENCE-ebook/dp/B00LPGBWX2/ref=sr_1_4?crid=2ZAJO773J9HX9&amp;dchild=1&amp;keywords=sap+purchasing&amp;qid=1610966550&amp;sprefix=sap+purchase%2Caps%2C483&amp;sr=8-4" class="uri">https://www.amazon.com/SAP-MM-PURCHASING-TECHNICAL-REFERENCE-ebook/dp/B00LPGBWX2/ref=sr_1_4?crid=2ZAJO773J9HX9&amp;dchild=1&amp;keywords=sap+purchasing&amp;qid=1610966550&amp;sprefix=sap+purchase%2Caps%2C483&amp;sr=8-4</a> (2021. 02. 04.)</li>
 </ul>
 <p><strong><u>Financial Accounting modulhoz (ingyenesen elérhető szakkönyvek):</u></strong></p>
 <ul>
