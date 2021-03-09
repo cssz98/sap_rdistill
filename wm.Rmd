@@ -1,0 +1,1428 @@
+---
+title: "WM"
+description: |
+  SAP WM (Warehouse Management) Config Jegyzet
+  <br />
+  Legutóbb frissítve: `r Sys.Date()`
+---
+
+
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1250">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+
+<link href="styles/bootstrap.css" rel="stylesheet">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+<link href="styles/jquery.tocify.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://unpkg.com/darken"></script>
+
+
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sendnya;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+h1
+	{mso-style-link:"Címsor 1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	text-indent:-7.1pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:14px;
+	border-left: 1px solid red;
+	font-size:30pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:red;
+	text-decoration:underline;}
+h2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.3pt;
+	text-indent:-7.1pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:aqua;
+	text-decoration:underline;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:1.0cm;
+	text-indent:-7.1pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:#00B050;
+	text-decoration:underline;}
+h4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:35.45pt;
+	text-indent:-7.1pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:blue;
+	text-decoration:underline;}
+a:nth-child(5)
+  {
+  color: white;
+	background-image: linear-gradient(0deg, transparent 91%, rgb(32, 152, 209) 9%)}
+h5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	text-indent:-7.1pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:#1F497D;
+	text-decoration:underline;}
+h6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:85.1pt;
+	text-indent:-42.55pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:black;
+	text-decoration:underline;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:106.3pt;
+	text-align:justify;
+	text-indent:-35.4pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:141.7pt;
+	text-align:justify;
+	text-indent:-35.4pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:177.1pt;
+	text-align:justify;
+	text-indent:-35.4pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:8.0pt;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:16.0pt;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:1.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:1.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	text-align:justify;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:49.65pt;
+	text-indent:-7.1pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:2.0cm;
+	text-indent:-7.05pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoList3, li.MsoList3, div.MsoList3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:63.8pt;
+	text-align:justify;
+	text-indent:-7.65pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	font-weight:bold;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.Cmsor1Char
+	{mso-style-name:"Címsor 1 Char";
+	mso-style-link:"Címsor 1";
+	font-family:"Arial Narrow",sans-serif;
+	color:red;
+	font-weight:bold;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:42.55pt 42.55pt 51.05pt 42.55pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+
+
+</head>
+
+<body lang=HU link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div id="toc">
+</div>
+
+
+<div class="row">
+<div class="column">
+
+<button data-hypothesis-trigger style="font-size:24px; border-radius: 20px;width: 100%;">
+<i class="far fa-sticky-note"></i>
+</button>
+
+
+</div>
+<div class="column">
+
+<button id="dm-toggle" style="font-size:24px; border-radius: 20px;width: 100%;"> <i class="far fa-moon"></i></button>
+
+</div>
+</div>
+
+
+
+
+
+# 1. SAP Raktárkezelési szervezet (Warehouse Management, WM Orgainization) alapfogalmai
+
+
+
+<div style='border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm'>
+
+<h2 style='margin-left:7.1pt'><a name="_Toc66118446"><span style='text-decoration:
+none'> 1.1.</span>DEF: Raktár (Warehouse, WH)</a></h2>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Általában 3
+jegyű szám egyedi azonosítóval</p>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Fizikailag
+létező épület, amelyben fizikai hely szerint követjük a készleteket</p>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Magas szintű
+összeköttetést létesít a <u>DEF: SAP Készletkezelés (Inventory management, IM</u>):(anyagok
+készletét  felhasználási cél szerint követi nyomon, ha van bevezetett WM, akkor
+nem jelent fizikai helyet, különben igen) rendszerrel: <b><span
+style='color:lime'>1</span></b> <u>DEF: IM Gyárban (Plant</u>) lévő <b><span
+style='color:lime'>több</span></b> <u>DEF: IM Raktárhely (Storage Location,
+StorLoc</u>) hivatkozhat <b><span style='color:lime'>1</span></b> WH-ra, de <b><span
+style='color:lime'>1</span></b> StorLoc-nak csak <b><span style='color:lime'>1</span></b>
+bázis WH-a lehet (vagy nincs neki, és nem WM kezelt): <b>WH:StorLoc = <span
+style='color:lime'>1:m</span></b>. Amíg WH nincs egy StorLoc-hoz sem kapcsolva
+addig nem aktív.</p>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+<h3 style='margin-left:7.1pt'><a name="_Toc66118447"><span style='text-decoration:
+none'> 1.1.1.</span>DEF: Raktártípus (StorageType, StorTyp)</a></h3>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Általában 3
+jegyű alfanumerikus egyedi azonosítóval</p>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Azonos fizikai
+tárolási mód (pl. magaspolcos rendszer, mélyhűtő)</p>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Nagyjából
+azonos fajlagos helyköltséggel</p>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Azonos
+szabályok alapján:</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: WM Anyag-életciklus
+(WM Material lifecycle</u>) beli helye: </p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: Anyagérkeztetés
+(Goods Receipt, GR</u>) =&gt; </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Karantén téves/ minőségi hibás érkezettnek (Quarantine</u>) =&gt;</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Általános tárolás (Open, Bulk</u>) =&gt; </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: Előre
+tervezett helyre betárolás (Putaway</u>)=&gt; </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: Gépetetés
+(Stage</u>) =&gt; </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: Selejt
+(Scrap</u>) =&gt; </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Késztermék kiszállítás leállási túlcsordulási tároló (Overflow</u>) =&gt; </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Kiszállításra összeválogató (Pick</u>) =&gt; </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Csomagoló (Pack</u>) =&gt; </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Szállítóeszköz töltés (Load</u>) =&gt; </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Anyagkiadás (Good Issue, GI</u>) </p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Keverhetőség:
+Berakhatók-e eltérő <u>DEF: SAP MM Anyagok (Material</u>), ezen belül eltérő <u>DEF:
+Gyártási sorozatok (Batch</u>)</p>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Becsomagoltság:
+Anyag csak DEF: Raktáregységbe (Storage Unit) csomagolva rakható-e be vagy nem</p>
+
+</div>
+
+<div style='border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+<h4 style='margin-left:7.1pt'><span style='text-decoration:none'> 1.1.1.1.</span>DEF:
+Raktárszekció (Storage Section, StorSec)</h4>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Általában 3
+jegyű numerikus egyedi azonosító</p>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Számozott,
+azonos szabályrendszerű részek (pl. egyes polcok egymás után)</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:35.45pt;margin-right:0cm'>
+
+<h5 style='margin-left:7.1pt'><u><span style='text-decoration:none'> 1.1.1.1.1.</span></u>DEF:
+Tároló (Bin)</h5>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Általában 4-5
+jegyű alfanumerikus egyedi azonosító</p>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Növekvő
+sorrendbe rendezve</p>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Fizikai tároló
+adott szabályrendszerrel és kapacitással (pl. egy hely a polcon)</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<h6 style='margin-left:42.55pt'><span style='text-decoration:none'> 1.1.1.1.1.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span>DEF:
+Raktáregység (Storage Unit, SU)</h6>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>WM készletbeli
+anyagok valamilyen <u>DEF: Raktáregység típusba (Storage Unit Type, SUT</u>):(PEU:
+EU raklap, PUS: USA raklap, PAL: UK raklap, műanyagdoboz, stb.) csomagolva</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Opcionális
+szervezeti szint, a StorTyp előírhatja, milyen SUT-okat fogadhatnak a benne
+lévő StorSec-ek és Bin-ek, de lehet hogy nem ír elő semmit!</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: SSCC
+címke (SSCC</u>) egyedi azonosítóval azonosítva: 2-3 versenyző világszabvány
+szerinti öntapadós <u>DEF: vonalkódos (Barcode</u>) / <u>DEF: QR-kódos (QR</u>)
+/ <u>DEF: RFID-s (RF</u>) címke a következő tartalommal:</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: MM
+Anyagszám (MM Material Number</u>)</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: Gyártó
+kódja (Manufacturer</u>)</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Gyártási sorozat kódja (Batch</u>)</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Lejárati idő (SLED, Best before</u>)</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: Mennyiség
+(Quantity)</u></p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Beszállítói WM kibocsátási mértékegység (Vendor WM UnitOfIssue, UoI</u>)</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><span
+style='color:lime'>1 vagy több</span></b><span style='color:lime'> </span>SU
+belemehet <b><span style='color:lime'>1</span></b> <u>DEF: Kezelési egységbe
+(Handling Unit, HU</u>): </p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>TRN:LT03</b>
+<u>DEF: Összeválogatás/csomagolás (Pick/Pack</u>) során a korábban <b>TRN:VL10I</b>-vel
+létrehozott üres <u>DEF: Kiszállítás (Outbound Delivery, OBD</u>) bizonylatra
+felcsomagolódnak a HU-kba ágyazott SU-k, és a HU-kat rakják szállítóeszközre
+(pl. raklapokat csomagolnak konténerbe, és azt hajóra rakják).</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>TRN:LT0G </b>-
+a téves becsomagolás visszacsinálható, HU-ból SU-k kicsomagolódnak HU megszűnik</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>TRN:HUMO </b>-
+követhető a HU-k mozgása szállítóeszközön </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>TRN:VL31N</b>-el
+az eladó által létrehozott <u>DEF: Bejövő szállítmány (Inbound Delivery, IBD</u>)
+bizonylatról a vevő által végrehajtott <b>TRN:LT03</b>-al <u>DEF: Elpakolás
+(Putaway</u>) során a HU-k ból kicsomagolódnak az SU-k, HU megszűnik.</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b><u>DEF:
+Kvant (Quant</u></b>):</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Mesterséges,
+autoszámozott 8 jegyű egyedi azonosító</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Adott <b>WH|StorTyp|StorSec|Bin|<i>SU</i></b>
+adott mennyiségű része <u>DEF: WM alapmértékegységben (WH Meausure Unit, WMU</u>)
+mérve, ami WM-ben valaha együtt mozgatásra került</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Meg van
+határozva, hogy IM-ben mely <b>Material|Plant|StorLoc|Batch|</b><u>DEF:
+Készletfelhasználási kategória (Stock Usability Category, <b>SUC</b></u>):(Szabad,
+Selejtes blokkolt, Betervezett termelésre blokkolt, Minőségellenőrzési) része,
+és ez WM-es mozgatás során nem változhat meg, a Quant az új fizikai helyére is
+viszi ezen tulajdonságokat</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>A Quant
+alacsony szintű összekötése az IM-el lehetővé teszi, hogy a SAP WM borzasztó
+rugalmasan használja ki a helyet a nagyon drága StorTypekben is (pl. -80C°-os
+hűtő), mert <b><span style='color:lime'>1</span></b> Bin <b><span
+style='color:lime'>több</span></b> SU-jában is <b><span style='color:lime'>több</span></b>
+StorLoc (felhasználási cél) tartalma keverhető: <b>WH|StrTyp|StrSec|Bin|SU :
+Plant|StorLoc|Batch|SUC = <span style='color:lime'>m:m</span></b><span
+style='color:lime'> </span></p>
+
+</div>
+
+
+# 2. A WM szervezet konfigurációja: TRN:SPRO
+
+
+
+<div style='border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm'>
+
+<h2 style='margin-left:7.1pt'><a name="_Toc66118449"><span style='text-decoration:
+none'> 2.1.</span>WH</a></h2>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+<h3 style='margin-left:7.1pt'><a name="_Toc66118450"><span style='text-decoration:
+none'> 2.1.1.</span>WH definiálás:</a></h3>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>IMG|EntStruct|Def|LE|Define…WH|SCR:Start|</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>LIN:Copy/
+Del/ Check existing</b> - <span style='color:red'>ha lehet mindig létező WH
+kopizzunk, sok munkát takarít meg a belső részek másolásával! SAP IDES-ben az
+alapértelmezett WH a 001, ha speciális igények nem merülnek fel másoljunk
+erről!</span></p>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>LIN:Define|BTN:New
+entry|TBX:WHNum=###</b> - 3 jegyű szám, adott cég DEF: Adatkezelési felelőse
+(Data Governance, DG) dönt róla, <b>TBX:Description=”MyWH”</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+<h3 style='margin-left:7.1pt'><a name="_Toc66118451"><span style='text-decoration:
+none'> 2.1.2.</span>WH inicializálás, StorLoc-hoz kötés:</a></h3>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>WH akkor <u>DEF:
+aktiválódik (WH Activate</u>), ha legalább egy IM StorLoc meghivatkozza bázis
+WH-ként (több is meghivatkozhatja), és az <u>DEF: WM-kezelt (WM-relevant</u>)
+lesz:</p>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>IMG|EntStruct|Assign|LE|Assign
+WH to StorLoc|SCR:Start|</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>BTN:NewAssign|DDN:Plant,
+DDN:StorLoc, DDN:WH, BTN:Save</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+<h3 style='margin-left:7.1pt'><a name="_Toc66118452"><span style='text-decoration:
+none'> 2.1.3.</span>WH kontrol paraméterek (TBL:T3000):</a></h3>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>IMG|LE|WM|MD|Define
+control param for WH|SCR:Start|</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>LIN:WH|Goto|Detail|</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:Weight,</b>
+- 3 értékes tizedesjegy csak!!!, </p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:Volume, </b>-
+3 értékes tizedesjegy csak!!!,</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:UoM1, </b>-
+1. Tartalék WM mértékegység: ha anyagnak nincs<b> TRN:MM01|TAB:WH1|WMUnit</b>-ja,
+átugratja erre, ha anyagban van definiálva valahol ily mértékegység</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:UoM2, </b>-
+2. Tartalék WM mértékegység, ha ez sincs definiálva anyagban akkor <b>TRN:MM01|TAB:Basic1|BMU
+</b>- alap IM mértékegys lesz érvényes</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:TimeUnit
+</b>- WH folyamatok elemi időosztása</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:BlockMethod
+</b>- többfelhasználós <u>DEF:WM Transzfer igény/Rendelés (WM Transfer
+Requirement/Order, TR/TO</u>) bin elérés vezérlése:</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=Empty </b>-
+WHAnyagBlokk+BinBlokk 1 usernek</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=A </b>-
+BinBlokk 1 usernek</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=B(Default) </b>-
+NoBlokk</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:PartialPick
+</b>- Anyaghiány esetén kivehető-e részlegesen <b><span style='color:lime'>1</span></b>
+<u>DEF:Kimenő szállítmány (Otbound delivery, OBD</u>) <b><span
+style='color:lime'>több</span></b> TR/TO-ja a binből?</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=Empty </b>-
+sem OBD sem TR nem vágható</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=1 - </b>OBD
+vágható TR nem</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=2 </b>- TR
+vágható, OBD nem</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=3 </b>-
+mindkettő vágható</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:SUManaged
+</b>- egész WH csak SU-s StorTyp tartalmazhat</p>
+
+</div>
+
+<span style='font-size:8.0pt;font-family:"Arial Narrow",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal align=left style='margin-left:0cm;text-align:left;
+punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other'><b><u><span
+style='font-size:9.0pt;color:aqua'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<div style='border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm'>
+
+<h2 style='margin-left:7.1pt'><a name="_Toc66118453"><span style='text-decoration:
+none'> 2.2.</span>StorTyp:</a></h2>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+<h3 style='margin-left:7.1pt'><a name="_Toc66118454"><span style='text-decoration:
+none'> 2.2.1.</span>DEF: SAP sztenderd (Standard StorTyp)-ek:</a></h3>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: Gyorsan
+mozgó anyagok (StorTyp=FastMoveMat</u>): GR area és GI area/ staging binek
+közti út minimális legyen</p>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: Polcos
+tártípus (StorTyp=RackStorage)</u>: kicsi vagy törékeny anyagokat kezel, de
+rossz helykihasználás</p>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF:
+Raklapos tártípus (StorTyp=BulkPalletStorage</u>): jó helykihasználás, nehéz
+hozzáférés, nem lehet törékeny, <b>TRN:MM01|TAB:WH1|TBX:Bulk</b> mondja meg
+anyagból hány raklap rakható egymásra</p>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><u>DEF: Lassan
+mozgó anyagk (StorTyp=SlowMovMat)</u>: nyersanyag, félkész, ami évente 1.5-nél
+kevesebbszer forog, vagy késztermék, amire 1 évig nincs kereslet (kb. készterm
+$ eladások 20%-a generálja készletek 80%-át): </p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>GR/GI area-tól
+minél távolabb rakni</p>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>1 év után
+kidobni a kínálatból, kiv. Ha a biztos ellátás belőle segít megtartani a vevőt,
+és benne döglő pénz bejön más eladáson, vagy csak csekély költségű</p>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+<h3 style='margin-left:7.1pt'><a name="_Toc66118455"><span style='text-decoration:
+none'> 2.2.2.</span>DEF: Speciális raktártípus (Special StorTyp):</a></h3>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Ügyfél egyedi
+igényei <u>DEF: forró (Hot</u>), <u>DEF: mélyhűtött (Refrig</u>), <u>DEF:
+veszélyesanyag (HazMat</u>), <u>DEF: romlandó (Perish</u>) tárolótípusokra</p>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+<h3 style='margin-left:7.1pt'><a name="_Toc66118456"><span style='text-decoration:
+none'> 2.2.3.</span>StorTyp definiálása:</a></h3>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>IMG|LE|WM|MD|Define
+StorTyp|SCR:Start|</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>LIN:WH|StrTyp|BTN:Copy</b>
+<span style='color:red'>- mindig másolni ajánlott létezőről!</span></p>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>BTN:NewEntry|SCR:New
+StrTyp|</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:WH,
+TBX:StorTyp, TBX:Descript</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+<h4 style='margin-left:7.1pt'><span style='text-decoration:none'> 2.2.3.1.</span>Bejövő
+oldali beállítások</h4>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:SUManaged
+</b>- anyag csak SU-ban rakható bele</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:IDPnt</b>
+- StrTyp a raktári tevékenységek egy kijelölhető <u>DEF: Azonosítási pontja (ID
+Point, IDPnt</u>):(ha nincs bin meghatározva ez azonosítja StrTyp-be érkezést) <b>IMG|LE|WM|SU|Activity|DefineIDPnt</b>-ban</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:IDPnt </b>-
+előre definiált IDPnt-okból választás a StrTyp azonosítására</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:PutawayStrat</b>
+- <u>DEF:Automatikus bin azonosítás (AutoBinIdentif</u>) dorán milyen
+stratégiát használ</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:RequirConfirm</b>
+- WM mozgatás <u>DEF:Konfirmációt (Confirm, Cnf) igényel</u>: (magasabb
+jogosultságú user jóváhagyása) <b>TRN:LT01|SCR:Main|CHK:Confirm</b> kell nyomni
+vagy külön <b>TRN:LT12</b> anyag lerakáshoz</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:DestBinChgDuringCnf=1</b>
+- Cnf során bin megváltoztatható</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:Mixed </b>-
+mi keverhető StrTyp-ben? Keverés növeli a rugalmasságot, de a tévesztési
+kockázatot is:</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=Empty </b>-
+nem keverhető semmi</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=A </b>- (1bin|1SU)
+: (1anyag|1batch)</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=B </b>- (1bin|1SU)
+: (1anyag|Mbatch)</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=C - (</b>1bin:1anyag|Mbatch)
+| (1SU:1batch)</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=P </b>-
+(1bin:1SU) | (1SU:Manyag|Mbatch)</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=X </b>- (1bin|1SU)
+: (Manyag|Mbatch) - teljes keverés</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:AdditStock
+</b>- hozzáadhat-e hasonló anyagot|batchet binhez?<b> =Empty </b>- nem,<b> =X </b>-igen</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:ActCapCheck</b>
+- berakáskor ellenőrzi befér-e cucc binbe?</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:CapCheck</b>
+- ellenőrzési módszer<b>:</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=Empty</b> -
+nincs</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=1</b> -
+súlykorlát</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=2</b> -
+előírt SUT1 hány raklapot enged</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=3</b> - bin
+max kapacitása WM unitban</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:SUCheck </b>-
+berakáskor van-e SU előírt SUT-tal</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:SectionCheck</b>
+- AutoBinIdent során keressen StorSec-et</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:StockPlacmtBlock</b>
+- több felhasználós környezetben mit blokkol berakás során:</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=Empty </b>-
+Bin + Quant</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=1 </b>- bin</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=2 </b>-
+quant</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:UserExit
+- </b>az SPRO-ban felkonfigurált AutoBinIdent módszer helyett <u>DEF:
+Felhasználó által adott eseményhez beszúrt ABAP programkód (User Exit</u>)
+határozza meg az auto elpakolási algoritmust</p>
+
+</div>
+
+<div style='border:none;border-left:solid blue 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:1.0cm;margin-right:0cm'>
+
+<h4 style='margin-left:7.1pt'><span style='text-decoration:none'> 2.2.3.2.</span>Kimenő
+oldali beállítások</h4>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:PickPnt</b>
+- StrTyp-ból ki lehet pickelni más számára raktári folyamatokban</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:StockRemovStrat</b>
+- készlet pick stratégia:</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=A </b>-
+részleges kivételt enged WH|DDN:PartialPick alapján</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=F </b>-
+FIFO</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=H </b>- <u>DEF:
+lejárati idő (Best before/ Shelf life, SLED</u>) sorrendjében</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=L </b>-
+LIFO</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=M </b>- ???</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=P </b>-
+anyag által előírt fix bin</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=R </b>- 2
+dimenziós bin koordinátát számít anyag tulajdonságaiból</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=G </b>-
+FIFO, de nem a GR dátuma, hanem mesterségesen hozzárendelt GUID alapján</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:StockRemovCnf
+</b>- kivételre Cnf kell</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:AllowNegatStock
+</b>- csak <b>900..999</b> <u>DEF: Ideglenes raktártípusra (Iterim StorTyp</u>)</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:FullRemoval</b>
+- 1 SUT összes Quantját ki kell venni egyszerre</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:ZeroCheck</b>
+- kivétel után lemegy-e nullára készlet ellenőrzés aktív</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>TBX:RoundOff</b>
+- kivételi mennyiségek kerekítése ezen mennyiség többszöröseire, ez finomabban
+szabályozható <b>MM01|Plant|StorLoc|WH|StorTyp|TAB:WM2|TBX:RoundQuant</b>
+segítségével</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:HUPickControl
+</b>- Ha 1 vagy több SU HU-ba csomagolva csücsül bin-ben és így pickelik, mi
+legyen  a kivett HU?</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=Empty </b>-
+ugyanaz a HU bele ágyazott al-HU-kkal megmarad</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=1 </b>-
+ugyanaz a HU megmarad, de beágyazott HU-k megszűnnek, tartalmukat hozzácsapja
+fő HU-hoz</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=2 </b>- WM
+mozgáskód dönti el, milyen előre definiált HU-ba megy</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=3 </b>- HU
+tartalma beágyazott al-HU-kkal új HU-ba megy</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:StockRemovalBlock</b>
+- több felhasználós környezetben mit blokkol pick során:</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:63.25pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=Empty </b>-
+Bin + Quant</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=1 </b>- bin</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>=2 </b>-
+quant</p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:56.15pt;margin-right:0cm'>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:PickPoint=StrType
+</b>- <u>DEF: Felszedési pont (PickPoint, PickPnt)</u><b>: </b>ha tártípus SU-s
+ÉS az aktuális SUT csak egyben mozgatható ÉS a Bin Quantjaira nincs előirva az
+együttmozgatási kényszer <b>StrType|CHK:FullRemoval</b>-nál ÉS valamely OBD
+keretében az SU Quantjainak csak egy részét pickeli, AKKOR a visszamaradó
+Quantok erre az (általában ideiglenes) StorType-ra kerüljenek automatikusan. A
+bejövő oldali IDPnt kimenő oldali párja a PickPnt.</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>DDN:ReturnStorTyp</b>
+- <u>DEF: Vevői visszaküldés (Return</u>) erre a másik StorTyp-re érkezzen
+vissza, ha pickelt OBD-ből vevő később visszaküld.</p>
+
+<p class=MsoList3 style='margin-left:7.65pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>CHK:UserExitAct</b>
+- ne az SPRO beállítása határozzák meg AutoPick-et, hanem külön UserExit</p>
+
+</div>
+
+<div style='border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm'>
+
+<h2 style='margin-left:7.1pt'><a name="_Toc66118457"><span style='text-decoration:
+none'> 2.3.</span>StorSec:</a></h2>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+<h3 style='margin-left:7.1pt'><a name="_Toc66118458"><span style='text-decoration:
+none'> 2.3.1.</span>DEF: Egyszekciós tártípus (Single Section StrTyp):</a> </h3>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>A szekcióknak
+nincs szerepe, a 001 létezik csak</p>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+<h3 style='margin-left:7.1pt'><a name="_Toc66118459"><span style='text-decoration:
+none'> 2.3.2.</span>DEF: Többszekciós tártípus (Multi Section StorTyp):</a></h3>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>A szekciók
+fontos szerepet játszanak az AutoBinIdent és AutoStocRemov folyamatokban (pl.
+magas polcos tároló szintjei képezhetnek szekciókat, mert más rakodóeszköz kell
+hozzájuk)</p>
+
+</div>
+
+<div style='border:none;border-left:solid #009900 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:21.25pt;margin-right:0cm'>
+
+<h3 style='margin-left:7.1pt'><a name="_Toc66118460"><span style='text-decoration:
+none'> 2.3.3.</span>StorSec definíció:</a></h3>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:42.55pt;margin-right:0cm'>
+
+<p class=MsoList style='margin-left:7.1pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>IMG|LE|WM|MD|Define
+StorSec|SCR:Start|BTN:NewEntry|</b></p>
+
+</div>
+
+<div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:49.65pt;margin-right:0cm'>
+
+<p class=MsoList2 style='margin-left:7.05pt'><span style='font-family:"Arial",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>TBX:StorSecID=###,
+TBX:Descr, DDN:WH, DDN:StorTyp</b></p>
+
+</div>
+
+<span style='font-size:8.0pt;font-family:"Arial Narrow",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal align=left style='margin-left:0cm;text-align:left;
+punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other'><b><u><span
+style='font-size:9.0pt;color:aqua'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
+<div style='border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
+margin-left:14.2pt;margin-right:0cm'>
+
+<h2 style='margin-left:7.1pt'><a name="_Toc66118461"><span style='text-decoration:
+none'> 2.4.</span>StorBin:</a></h2>
+
+</div>
+
+</div>
+
+
+
+
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.tocify.js"></script>
+<script>
+$(function() {
+
+var toc = $("#toc").tocify({
+selectors: "h1,h2,h3,h4,h5,h6"
+}).data("toc-tocify");
+
+
+});
+</script>
+
+
+
+<script>
+		const darkmode = new darken({
+			toggle: "#dm-toggle",
+			variables: {
+				"--primary-color": ["#ffffff", "#191919"],
+				"--secondary-color": ["#000000", "#ffffff"],
+			}
+		});
+</script>
+
+
+</body>
+
+</html>
+

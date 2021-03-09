@@ -10,6 +10,10 @@ navbar:
     href: fin.html
   - text: EWM
     href: ewm.html
+  - text: WM
+    href: wm.html
+  - text: TEMP
+    href: materials_managment.html
 output: 
   distill::distill_article:
     css: "styles.css"

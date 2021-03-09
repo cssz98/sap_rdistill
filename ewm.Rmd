@@ -11,7 +11,7 @@ description: |
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1250">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
-<title>SAP MM Notes</title>
+
 
 
 <link href="styles/bootstrap.css" rel="stylesheet">
