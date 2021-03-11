@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 **Lendvai Tamás**
 
-**B/II Forgóeszközök / Készletek**
+**B. Forgó eszközök I. Készletek**
 
 **Materials Management.** Az anyaggazdálkodás közvetlenül az SAP menüben
 lévő a Logisztika (Logistics) mappában található.
