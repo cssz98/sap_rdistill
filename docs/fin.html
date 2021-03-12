@@ -88,27 +88,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>SAP E-Study Guide: Financial Accounting</title>
 
-  <meta property="description" itemprop="description" content="Pénzügyi és vezetői számviteli környezet felépítése SAP-ban &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-11"/>
+  <meta property="description" itemprop="description" content="Pénzügyi és vezetői számviteli környezet felépítése SAP-ban &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-12"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="SAP E-Study Guide: Financial Accounting"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Pénzügyi és vezetői számviteli környezet felépítése SAP-ban &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-11"/>
+  <meta property="og:description" content="Pénzügyi és vezetői számviteli környezet felépítése SAP-ban &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-12"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="SAP E-Study Guide"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="SAP E-Study Guide: Financial Accounting"/>
-  <meta property="twitter:description" content="Pénzügyi és vezetői számviteli környezet felépítése SAP-ban &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-11"/>
+  <meta property="twitter:description" content="Pénzügyi és vezetői számviteli környezet felépítése SAP-ban &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-12"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Financial Accounting"]},{"type":"character","attributes":{},"value":["Pénzügyi és vezetői számviteli környezet felépítése SAP-ban <br />\nLegutóbb frissítve: 2021-03-11"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Financial Accounting"]},{"type":"character","attributes":{},"value":["Pénzügyi és vezetői számviteli környezet felépítése SAP-ban <br />\nLegutóbb frissítve: 2021-03-12"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2549,6 +2549,53 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .algolia-autocomplete {
     width: inherit;
+    text-align: center;
+  }
+
+  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  	outline: none;
+  	border: none;
+  	height: 2em;
+  	top: -7px;
+  	width: 4em;
+  }
+
+  #distill-search::placeholder{
+    color:transparent;
+  }
+
+  input[type="text"] {
+  	box-sizing: border-box;
+  	border: 2px solid #ccc;
+  	border-radius: 4px;
+  	font-size: 16px;
+  	background-color: white;
+  	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png');
+  	background-position: 3px 5px;
+  	background-repeat: no-repeat;
+  	padding: 14px 24px 14px 30px;
+  	-webkit-transition: width 0.4s ease-in-out;
+  	transition: width 0.4s ease-in-out;
+  	background-size: 25px;
+  }
+
+  input[type=text]:focus {
+    width: 15em;
+    animation: glow 3s ease-out infinite alternate;
+  	border-color: #393;
+  	box-shadow: 0 0 5px rgba(0, 108, 181,.2), inset 0 0 5px rgba(0, 108, 181,.1), 0 2px 0 #000;
+  }
+
+
+  @keyframes glow {
+      0% {
+  		border-color: #393;
+  		box-shadow: 0 0 5px rgba(0, 108, 181,.2), inset 0 0 5px rgba(0, 108, 181,.1), 0 2px 0 #000;
+      }	
+      100% {
+  		border-color: #6f6;
+  		box-shadow: 0 0 20px rgba(0, 108, 181,.6), inset 0 0 10px rgba(0, 108, 181,.4), 0 2px 0 #000;
+      }
   }
 
 
@@ -2569,6 +2616,92 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 
+
+
+
+
+
+
+
+
+
+  /* Curl Top Left */
+  .aa-suggestion {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    text-align: justify;
+  }
+  .aa-suggestion:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: white;
+    /* IE9 */
+    background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+    /*For IE7-8-9*/
+    z-index: 1000;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+  }
+  .aa-suggestion:hover:before, .aa-suggestion:focus:before, .aa-suggestion:active:before {
+    width: 25px;
+    height: 25px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  h3
+  	{margin-top:0cm;
+  	margin-right:0cm;
+  	margin-bottom:0cm;
+  	margin-left:0cm;
+  	text-indent:19pt;
+  	page-break-after:avoid;
+  	punctuation-wrap:simple;
+  	text-autospace:none;
+  	border:none;
+  	padding:0cm;
+  	font-size:9.0pt;
+  	font-family:"Arial Narrow",sans-serif;
+  	color:#00B050;
+  	text-decoration:underline;}
+
+
+
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -2581,7 +2714,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Financial Accounting","description":"Pénzügyi és vezetői számviteli környezet felépítése SAP-ban <br />\nLegutóbb frissítve: 2021-03-11","authors":[]}
+{"title":"Financial Accounting","description":"Pénzügyi és vezetői számviteli környezet felépítése SAP-ban <br />\nLegutóbb frissítve: 2021-03-12","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2610,7 +2743,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Financial Accounting</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Pénzügyi és vezetői számviteli környezet felépítése SAP-ban <br /> Legutóbb frissítve: 2021-03-11</p></p>
+<p><p>Pénzügyi és vezetői számviteli környezet felépítése SAP-ban <br /> Legutóbb frissítve: 2021-03-12</p></p>
 </div>
 
 
