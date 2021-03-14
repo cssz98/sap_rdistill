@@ -61,11 +61,8 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-a:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
+
+
 a:hover,
 a:active {
   outline: 0;
@@ -1148,14 +1145,7 @@ select[multiple],
 select[size] {
   height: auto;
 }
-select:focus,
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
+
 .uneditable-input,
 .uneditable-textarea {
   color: #999999;
@@ -1786,11 +1776,7 @@ legend + .control-group {
   -o-transition: background-position 0.1s linear;
   transition: background-position 0.1s linear;
 }
-.btn:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
+
 .btn.active,
 .btn:active {
   background-color: #e6e6e6;
@@ -4821,10 +4807,7 @@ button.close {
     display: block;
     line-height: 20px;
   }
-  input[type="checkbox"],
-  input[type="radio"] {
-    border: 1px solid #ccc;
-  }
+
   .form-horizontal .control-group > label {
     float: none;
     width: auto;

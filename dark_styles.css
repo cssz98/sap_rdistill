@@ -1,0 +1,82 @@
+[data-theme="dark"] {
+  background-color: #111 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+
+[data-theme="dark"] p {
+  color: white !important;
+}
+
+[data-theme="dark"] d-title {
+	background-color: #0000 !important;
+}
+
+[data-theme="dark"] d-article {
+	background-color: #0000 !important;
+}
+
+[data-theme="dark"] .distill-site-footer {
+	background-color: #252525 !important;
+}
+
+[data-theme="dark"] .distill-site-nav {
+	background-color: #333 !important;;
+}
+
+[data-theme="dark"] d-title h1 {
+	color: white !important;
+}
+
+[data-theme="dark"] .nav-list > .active > a, .nav-list > .active > a:hover {
+	background-color: #003e69 !important;
+}
+
+[data-theme="dark"] .github-corner {
+	fill: #333 !important;
+}
+
+[data-theme="dark"] .tocify {
+	color: white !important;
+}
+
+[data-theme="dark"] .ml5 .line {
+	background-color: #003e69 !important;
+}
+
+[data-theme="dark"] .title+ a:before {
+  background: #006cb5 !important;
+}
+
+[data-theme="dark"] .title~ a:before {
+  background: #006cb5 !important;
+}
+
+[data-theme="dark"] d-article h2 {
+  color: white !important;
+}
+
+[data-theme="dark"] li {
+	color: white !important;
+}
+
+[data-theme="dark"] figcaption {
+	border: 2px solid #003e69 !important;
+}
+
+[data-theme="dark"] .figure .caption a {
+	color: white !important;
+}

@@ -266,14 +266,6 @@ figcaption {
   padding: 0.1em 0.4em;
   border-radius: 0.8em 0.3em;
   background: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.7) 4%,
-    rgba(255, 255, 255, 0.3)
-  );
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
   margin-top: 1em;
 }
 
@@ -362,6 +354,114 @@ d-article h2 {
 }
 
 
+.toggle_switch{
+  width: auto;
+  height: 54px;
+  position: relative;
+}
+
+input[type="checkbox"].custom-control-input{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  outline: 0;
+  z-index: 1;
+}
+
+svg.checkbox .outer-ring{
+  stroke-dasharray: 375;
+  stroke-dashoffset: 375;
+  -webkit-animation: resetRing .35s ease-in-out forwards;
+          animation: resetRing .35s ease-in-out forwards;
+}
+
+input[type="checkbox"].custom-control-input:checked + svg.checkbox .outer-ring{
+  -webkit-animation: animateRing .35s ease-in-out forwards;
+          animation: animateRing .35s ease-in-out forwards;
+}
+
+input[type="checkbox"].custom-control-input:checked + svg.checkbox .is_checked{
+  opacity: 1;
+  -webkit-transform: translateX(0) rotate(0deg);
+          transform: translateX(0) rotate(0deg);
+}
+
+input[type="checkbox"].custom-control-input:checked + svg.checkbox .is_unchecked{
+  opacity: 0;
+  -webkit-transform: translateX(-200%) rotate(180deg);
+          transform: translateX(-200%) rotate(180deg);
+}
+
+
+svg.checkbox {
+	position: absolute;
+	top: 10%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 80%;
+}
+
+svg.checkbox .is_checked{
+  opacity: 0;
+  fill: yellow;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(200%) rotate(45deg);
+          transform: translateX(200%) rotate(45deg);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+svg.checkbox .is_unchecked{
+  opacity: 1;
+  fill: #fff;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(0) rotate(0deg);
+          transform: translateX(0) rotate(0deg);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+@-webkit-keyframes animateRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #b0aa28;
+  }
+}
+
+@keyframes animateRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #b0aa28;
+  }
+}
+
+@-webkit-keyframes resetRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #233043;
+  }
+}
+
+@keyframes resetRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #233043;
+  }
+}
+
+
 /******** Mobil ********/
 
 @media only screen and (max-width: 600px) {
@@ -389,47 +489,9 @@ img {
 
 /******** Hyperlink ********/
 
-.uri {
-  background: #b621fe;
-  border: none;
-  z-index: 1;
-}
-.uri:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #006cb5;
-  border-radius: 5px;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  transition: all 0.3s ease;
-}
-.uri:hover {
-  color: #fff;
-}
-.uri:hover:after {
-  left: 0;
-  width: 100%;
-}
-.uri:active {
-  top: 2px;
-}
-
-.uri {
-  width: auto;
-  height: auto;
-  color: var(--secondary-color);
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.6s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
+d-article a {
+	border-bottom: none;
+	text-decoration: none;
 }
 
 
@@ -506,34 +568,6 @@ input[type=text]:focus {
     }
 }
 
-
-/******** 2col1row ********/
-
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Curl Top Left */
 .aa-suggestion {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -566,31 +600,6 @@ input[type=text]:focus {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 h3
 	{margin-top:0cm;
 	margin-right:0cm;
@@ -608,4 +617,17 @@ h3
 	text-decoration:underline;}
 
 
+/******** 2col1row ********/
 
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
