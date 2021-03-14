@@ -490,7 +490,7 @@ img {
 /******** Hyperlink ********/
 
 d-article a {
-	border-bottom: none;
+	border-bottom: 1px solid black;
 	text-decoration: none;
 }
 
