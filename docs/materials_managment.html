@@ -2350,7 +2350,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   	height: auto;
   	padding: 14px;
   	margin-bottom: 2em;
-  	margin-top: -30px;
+  	margin-top: -25px;
+  	text-align: center;
   }
 
   .figure .caption {
@@ -2406,6 +2407,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   	background-color: var(--primary-color);
   	color: var(--secondary-color);
   	transition: all 300ms ease;
+  	font-size: inherit;
   }
 
   .container {
@@ -2581,8 +2583,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /******** Hyperlink ********/
 
-  d-article a {
-  	border-bottom: 1px solid black;
+  d-article a, d-article a:hover{
+  	border-bottom: none;
   	text-decoration: none;
   }
 
@@ -2594,6 +2596,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     display:none;
   }
 
+  #toc a {
+  	border-bottom: 1px solid black;
+  }
 
   @-moz-document url-prefix() {
   #toc {
@@ -2804,6 +2809,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   [data-theme="dark"] .figure .caption a {
   	color: white !important;
+  }
+
+  [data-theme="dark"] #toc a {
+  	border-bottom: 1px solid white !important;
   }
 
   /*!
@@ -8527,7 +8536,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<h1 id="section">1</h1>
+<p><link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></p>
+<body>
+<div id="toc">
+
+</div>
+<h2 id="materials-management">Materials management</h2>
 <p><strong>Lendvai Tamás</strong></p>
 <p><strong>B. Forgó eszközök I. Készletek</strong></p>
 <p><strong>Materials Management.</strong> Az anyaggazdálkodás közvetlenül az SAP menüben lévő a Logisztika (Logistics) mappában található.</p>
@@ -8672,7 +8686,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>A Shelf Life data a tárolási időt értékeit tartalmazza. Max. storage period = a maximális tárolási idő.</p>
 <p><img src="TEMP_1/media/image35.png" style="width:6.3in;height:3.75917in" /></p>
 <p>A méret és súly adatokat a Basic Data 1 űrlapról veszi át a program. A számunka léyeges mezőt az alapértelmezet Pénzügyi Központ megadása (Profit Center) jelenti. A beszerzési folyamatokban erre a pénzügyi központra fogja a program kontírozni az alapanyagot.</p>
-<h1 id="section-1">2</h1>
+<h2 id="purchase">purchase</h2>
 <p><strong>Lendvai Tamás</strong></p>
 <p><strong>Beszerzési modul (Purchase)</strong></p>
 <p><img src="TEMP_3/media/image1.png" style="width:3.27083in;height:2.45833in" /></p>
@@ -8857,7 +8871,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><strong>Quota Arrangement -&gt; A tételhez tartozó kvótamegállapodásokat lehet megtekinteni / módosítani</strong></p>
 <p><img src="TEMP_3/media/image50.png" style="width:5.39583in;height:4.04167in" /></p>
 <p>Az alábbi videó az egyedi és csoportos megjelenítés és módosítás lehetőségeit mutatja be.</p>
-<h1 id="section-2">3</h1>
+<h2 id="szerződés">szerződés</h2>
 <p><strong>1. Keretszerződés (Outline Agreement)</strong></p>
 <p><img src="TEMP_2/media/image1.png" style="width:3.94792in;height:4.14583in" /></p>
 <p>SAP ERP rendszerben alapesetben mennyiség-, érték-, és ütemezési típusú keretszerződések, kivonatolt nyilvántartására van lehetőség bizonylatokon. A szerződés jellemzően közép- és hosszútávra jön létre a vállalat (beszerzési szervezete) és a szállító között. A szerződésben megállapodás történik a tételek, vagy a teljes szerződés célértékéről, a szállítási és fizetési feltételekről, valamint az áruérkeztetés szabályairól. A mennyiség és érték típusú szerződések tranzakciói a Contract mappában, az ütemezési megállapodások a Scheduling Agreement mappában találhatók. Lényeges, hogy nem a teljes szerződést, hanem annak a beszerzési folyamatokban felhasználható részeit rögzíthetjük, a kitölthető, illetve rendelkezésre álló mezőket meghatározza a szerződés rögzítésére szolgáló bizonylat háttérbeállítása.</p>
@@ -8951,6 +8965,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Amennyiben a Line Item-re kattintunk, úgy megnyitja a lekérdezés a rögzített szerződést. A diagram ikonra kattintva a szerződéshez kapcsolt beszerzési rendeléseket listázza ki.</p>
 <p><img src="TEMP_2/media/image14.png" style="width:6.30208in;height:1.86458in" /></p>
 <p>A megjelenített mezőket lehet bővíteni, csökkenteni, rendezni a Change Layout funkcióval.</p>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.tocify.js"></script>
+<script src="js/dark-mode-switch.min.js"></script>
+<script>
+$(function() {
+
+var toc = $("#toc").tocify({
+selectors: "h2,h3,h4,h5"
+}).data("toc-tocify");
+
+
+});
+</script>
+</body>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <section class="footnotes" role="doc-endnotes">
 <hr />

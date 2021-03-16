@@ -11,6 +11,55 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
+```{scss}
+.underline {
+    --line: blue;
+    --color: blue;
+    text-decoration: none;
+    color: var(--color);
+    position: relative;
+    span {
+        background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: var(--background-size, 100%) 1px;
+        transition: background-size .2s linear var(--background-delay, .15s);
+        font-size: 16px;
+        line-height: 20px;
+        transform: translateZ(0);
+    }
+    svg {
+        vertical-align: top;
+        display: inline;
+        line-height: 1;
+        width: 13px;
+        height: 20px;
+        position: relative;
+        left: -2px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        stroke: var(--line);
+        stroke-dasharray: 7.95 30;
+        stroke-dashoffset: var(--stroke-dashoffset, 46);
+        transition: stroke-dashoffset var(--stroke-duration, .15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
+    }
+    &:hover {
+        --background-size: 0%;
+        --background-delay: 0s;
+        --stroke-dashoffset: 26;
+        --stroke-duration: .3s;
+        --stroke-easing: cubic-bezier(.3, 1.5, .5, 1);
+        --stroke-delay: .195s;
+    }
+}
+
+
+
+```
+
+
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -280,7 +329,13 @@ felelősség decentralizált egységekre (pl. a vállalaton belüli különféle
 divíziókra) való átruházását. Így a profit központot alapvetően \"egy
 vállalaton belüli társaságként\" kezelik, és biztosítja a hatékony
 irányítást. Lásd.:
-<https://answers.sap.com/questions/6828792/business-area-vs-segment.html>
+
+<a href="https://answers.sap.com/questions/6828792/business-area-vs-segment.html" class="underline">
+<span>
+Business Area vs Segment
+</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
 (2021. 02. 10.)
 
 
@@ -307,10 +362,14 @@ ha egy üzleti egység elkülöníthető vagy kiemelhető a vállalat egészéb�
 és továbbra is önellátó marad, akkor az megfelel az üzleti szegmensbe
 sorolás kritériumainak. Az egyes szegmensek tevékenységeire és
 teljesítményére vonatkozóan pénzügyi információknak kell rendelkezésre
-állniuk.
-
-(Forrás: <https://www.investopedia.com/terms/s/segment.asp> (2021. 02.
-04.)
+állniuk. Forrás:
+<a href="https://www.investopedia.com/terms/s/segment.asp" class="underline">
+<span>
+investopedia.com
+</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
+(2021. 02. 04.)
 
 Az üzleti szegmensek szerinti jelentések a vállalat pénzügyi adatait a
 részlegek, földrajzi elhelyezkedés, vagy más szegmensek szerint bontják
@@ -337,7 +396,12 @@ lehetőségek és kockázatok. Ez a megfelelés azokra a vállalatokra
 vonatkozik, amelyek részvény- és hitelviszonyt megtestesítő
 értékpapírjaival nyilvános kereskedést folytatnak, és értékpapírokat is
 kibocsátanak a nyilvánosság számára. Forrás:
-<https://answers.sap.com/questions/6828792/business-area-vs-segment.html>
+<a href="https://answers.sap.com/questions/6828792/business-area-vs-segment.html" class="underline">
+<span>
+Business Area vs Segment
+</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
 (2021. 02. 10.)
 
 A Pénzügyi Számviteli Standard Testület (FASB) meghatározza az üzleti
@@ -423,7 +487,13 @@ közötti különbség az, hogy a költségközpont az adott időszakban
 felmerült egyedi költségeket jelenti. A pénzügyi központ biztosítja
 azoknak a jövedelmezőség jelentési követelményeit, amelyek nem
 illeszkednek a vállalati kód szerkezetéhez. (Forrás:
-<https://www.apprisia.com/blog/sap-ecc/sap-profit-center-accounting/> )
+<a href="https://www.apprisia.com/blog/sap-ecc/sap-profit-center-accounting/" class="underline">
+<span>
+SAP Profit Center Accounting
+</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
+)
 
 **[Investopedia meghatározása szerint:]{.ul}**
 
@@ -467,7 +537,14 @@ jövedelmezőség megkönnyítésére szolgál. A profit optimalizálása
 nagyon jövedelmező területekre, miközben csökkenti az allokációkat
 kevésbé jövedelmező vagy veszteséget okozó egységekre.
 
-(Forrás: <https://www.investopedia.com/terms/p/profitcentre.asp> )
+(Forrás: 
+<a href="https://www.investopedia.com/terms/p/profitcentre.asp" class="underline">
+<span>
+Investopedia Profit Center
+</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
+)
 
 **Kapcsolódások:** a pénzügyi központok pénzügyi központ csoportba
 sorolhatók, valamint besorolhatók szegmensekbe is.
@@ -573,8 +650,14 @@ munkakörrel kapcsolatos összes költséget. Ennek a finom részletességnek
 a hátránya az információkövetés nehéz követelményei, amelyek
 potenciálisan felülmúlják a megszerzett ismeretek előnyeit.
 
-(Forrás: <https://www.investopedia.com/terms/c/cost-center.asp> (2021.
-02. 04.)
+Forrás:
+<a href="https://www.investopedia.com/terms/c/cost-center.asp" class="underline">
+<span>
+Investopedia Cost Center
+</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
+(2021.02.04.)
 
 **[SAP költséghely felépítése:]{.ul}**
 
@@ -586,7 +669,14 @@ knitr::include_graphics("images/fin/media/image21.gif")
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQur75852cbezwweM1n64uUe4CQMPNr6umhUCoJ1yfuP8jrjIzF505pIoqTXPiBbnOk6CEI-_K2mriu/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="height: 600px;"></iframe>
 
-<figcaption>https://docs.google.com/spreadsheets/d/1ka_UpCylIc1JJzWflMofiyK8SDgXsCCznGPBd6biJJQ/edit?fbclid=IwAR1OoMnsMeVmoHpTTXH8Qs-TarcPM6-BrBNivQp2I48JtnRqTFoUX10V3Ic#gid=0</figcaption>
+<figcaption>
+<a href="https://docs.google.com/spreadsheets/d/1ka_UpCylIc1JJzWflMofiyK8SDgXsCCznGPBd6biJJQ/edit?fbclid=IwAR1OoMnsMeVmoHpTTXH8Qs-TarcPM6-BrBNivQp2I48JtnRqTFoUX10V3Ic#gid=0" class="underline">
+<span>
+Bankafiók adatok : Munkalap1
+</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
+</figcaption>
 
 
 

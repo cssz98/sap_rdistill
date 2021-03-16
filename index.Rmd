@@ -11,6 +11,54 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
+```{scss}
+.underline {
+    --line: blue;
+    --color: blue;
+    text-decoration: none;
+    color: var(--color);
+    position: relative;
+    span {
+        background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: var(--background-size, 100%) 1px;
+        transition: background-size .2s linear var(--background-delay, .15s);
+        font-size: 16px;
+        line-height: 20px;
+        transform: translateZ(0);
+    }
+    svg {
+        vertical-align: top;
+        display: inline;
+        line-height: 1;
+        width: 13px;
+        height: 20px;
+        position: relative;
+        left: -2px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        stroke: var(--line);
+        stroke-dasharray: 7.95 30;
+        stroke-dashoffset: var(--stroke-dashoffset, 46);
+        transition: stroke-dashoffset var(--stroke-duration, .15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
+    }
+    &:hover {
+        --background-size: 0%;
+        --background-delay: 0s;
+        --stroke-dashoffset: 26;
+        --stroke-duration: .3s;
+        --stroke-easing: cubic-bezier(.3, 1.5, .5, 1);
+        --stroke-delay: .195s;
+    }
+}
+
+
+
+```
+
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -27,7 +75,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div id="toc">
 </div>
-
 
 
 
@@ -110,12 +157,18 @@ az órai programhasználat szakmai / tartalmi dimenziójának megértéséhez.
 
 **Tarcsi Ádám, Molnár Bálint: Vállalatirányítási rendszerek gazdaságinformatikai megközelítésben (SAP).** 
 ELTE Társadalomtudományi Kar, 2011. Elérhető:
-<https://regi.tankonyvtar.hu/hu/tartalom/tamop412A/2011-0052_40_vallalatiranyitasi_rendszerek_gazdasaginformatikai_megkozelitesben/index.scorml>
+<a href="https://regi.tankonyvtar.hu/hu/tartalom/tamop412A/2011-0052_40_vallalatiranyitasi_rendszerek_gazdasaginformatikai_megkozelitesben/index.scorml" class="underline">
+<span>VÁLLALATIRÁNYÍTÁSI RENDSZEREK GAZDASÁGINFORMATIKAI MEGKÖZELÍTÉSBEN</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
 (2021. 02. 04.)
 
 **Takács András, Márkus Gábor: Számviteli alapismeretek.** 
 PTE Közgazdaságtudományi Kar. Pécs, 2019. Elérhető:
-<https://digitalia.lib.pte.hu/hu/pub/takacs-a-markus-g-szamviteli-alapismeretek-pte-ktk-pecs-2019-4393>
+<a href="https://digitalia.lib.pte.hu/hu/pub/takacs-a-markus-g-szamviteli-alapismeretek-pte-ktk-pecs-2019-4393" class="underline">
+<span>SZÁMVITELI ALAPISMERETEK</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
 (2021. 02. 04.)
 
 **[Beszerzési részhez (ajánlott):]{.ul}**
@@ -126,25 +179,43 @@ PTE Közgazdaságtudományi Kar. Pécs, 2019. Elérhető:
     ami felhasználói és rendszerbeállítás szintjén előfordul a
     beszerzési modulban, (személyes véleményem szerint ennyi pénzért
     kiemelt mértékben megéri.) Megvásárolható:
-    <https://www.amazon.com/SAP-MM-PURCHASING-TECHNICAL-REFERENCE-ebook/dp/B00LPGBWX2/ref=sr_1_4?crid=2ZAJO773J9HX9&dchild=1&keywords=sap+purchasing&qid=1610966550&sprefix=sap+purchase%2Caps%2C483&sr=8-4>
-    (2021. 02. 04.)
+<a href="https://www.amazon.com/SAP-MM-PURCHASING-TECHNICAL-REFERENCE-ebook/dp/B00LPGBWX2/ref=sr_1_4?crid=2ZAJO773J9HX9&dchild=1&keywords=sap+purchasing&qid=1610966550&sprefix=sap+purchase%2Caps%2C483&sr=8-4" class="underline">
+<span>SAP MM PURCHASING TECHNICAL REFERENCE</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
+ (2021. 02. 04.)
 
 **[Financial Accounting modulhoz (ingyenesen elérhető szakkönyvek):]{.ul}**
 
 -   **FICO Team GCL & PETL: SAP-FI-CO User Manual.** Greaves Cotton
      Limited & Premium Energy & Transmissions Limited. Mumbai, 2009.Elérhető:
- <https://sapfidocz.files.wordpress.com/2013/01/sap-fico-complete-end-user-manual-realtime-project.pdf>
+<a href="https://sapfidocz.files.wordpress.com/2013/01/sap-fico-complete-end-user-manual-realtime-project.pdf" class="underline">
+<span>SAP-FI-CO MANUAL</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
 (2021. 02. 04.)
 
 -   **Jayachandran KS MBA (Fin), SAP FI: SAP FICO User Guide.** Flemingo
-     International Limited. 2010. Elérhető: <https://www.academia.edu/8036298/SAP_FICO_USER_GUIDE>
+     International Limited. 2010. Elérhető: 
+<a href="https://www.academia.edu/8036298/SAP_FICO_USER_GUIDE" class="underline">
+<span>SAP FICO USER GUIDE</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
+ (2021. 02. 04.)
+ 
+
+- 
+<a href="https://erproof.com/fi/free-training/" class="underline">
+<span>ERPROOF FREE TRAINIG</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
  (2021. 02. 04.)
 
--   <https://erproof.com/fi/free-training/> (2021. 02. 04.)
-
- **Saját tananyag:**
-
--  <https://github.com/cssz98/sap_rdistill>
+-   **Saját tananyag:**
+<a href="https://github.com/cssz98/sap_rdistill" class="underline">
+<span>GitHub</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
 
 **A tantárgy tartalma, kiegészítések.** A szeminárium a beszerzési
 folyamatokra, a szállítói modulra, valamint a főkönyvi lekérdezések
@@ -220,7 +291,14 @@ feldolgozóipari nagyvállalatok területi elhelyezkedése és adatbázisa.**
 knitr::include_url("https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b")
 ```
 
-<figcaption>https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b </figcaption>
+<figcaption>
+<a href="https://drlendvaitamas2.maps.arcgis.com/apps/webappviewer/index.html?id=4003254591f94cc4bd3b919c1d3c131b" class="underline">
+<span>
+500 fő feletti, feldolgozóiparban, külföldi tőkével működő nagyvállalatok területi elhelyezkedése (2020. 07. állapotok szerint)
+</span>
+<svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+</a>
+</figcaption>
 
 
 

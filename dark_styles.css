@@ -80,3 +80,7 @@
 [data-theme="dark"] .figure .caption a {
 	color: white !important;
 }
+
+[data-theme="dark"] #toc a {
+	border-bottom: 1px solid white !important;
+}

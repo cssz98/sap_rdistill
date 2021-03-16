@@ -13,7 +13,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-# 1
+
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body>
+
+<div id="toc">
+</div>
+
+## Materials management
 
 **Lendvai Tamás**
 
@@ -537,7 +547,7 @@ számunka léyeges mezőt az alapértelmezet Pénzügyi Központ megadása
 központra fogja a program kontírozni az alapanyagot.
 
 
-# 2
+## purchase
 
 **Lendvai Tamás**
 
@@ -1279,7 +1289,7 @@ Az alábbi videó az egyedi és csoportos megjelenítés és módosítás
 lehetőségeit mutatja be.
 
 
-# 3
+## szerződés
 
 **1. Keretszerződés (Outline Agreement)**
 
@@ -1643,5 +1653,27 @@ Layout funkcióval.
 
 
 
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.tocify.js"></script>
+<script src="js/dark-mode-switch.min.js"></script>
+
+<script>
+$(function() {
+
+var toc = $("#toc").tocify({
+selectors: "h2,h3,h4,h5"
+}).data("toc-tocify");
+
+
+});
+</script>
+
+
+
+
+
+</body>
 
 
