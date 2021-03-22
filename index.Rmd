@@ -55,43 +55,133 @@ knitr::opts_chunk$set(echo = FALSE)
     }
 }
 
-
-
 ```
 
-<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link href="site_libs_toc/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet" />
+
+<script src="site_libs_toc/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs_toc/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs_toc/tocify-1.9.1/jquery.tocify.js"></script>
 
 
 <style>
+@media (max-width: 768px) {
+  .title~ a {
+    display: none;
+  }
+}
+
 .title+ a {
 	color: white;
 	background-image: linear-gradient(0deg, transparent 91%, rgb(32, 152, 209) 9%);
 }
+
+#algolia-autocomplete-listbox-0 h3 {
+  color: black;
+  text-decoration: unset;
+}
+
+.algolia-autocomplete {
+  width: inherit;
+  text-align: center;
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+	outline: none;
+	border: none;
+	height: 2em;
+	top: -7px;
+	width: 4em;
+}
+
+#distill-search::placeholder{
+  color:transparent;
+}
+
+input[type="text"] {
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png');
+	background-position: 3px 5px;
+	background-repeat: no-repeat;
+	padding: 14px 24px 14px 30px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	background-size: 25px;
+}
+
+.aa-suggestion {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  text-align: justify;
+}
+.aa-suggestion:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: white;
+  /* IE9 */
+  background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  /*For IE7-8-9*/
+  z-index: 1000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.aa-suggestion:hover:before, .aa-suggestion:focus:before, .aa-suggestion:active:before {
+  width: 25px;
+  height: 25px;
+}
+
+
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	text-indent:19pt;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Arial Narrow",sans-serif;
+	color:#00B050;
+	text-decoration:underline;}
+
 </style>
+
 
 
 <body>
 
-<div id="toc">
-</div>
-
-
-
 <div class="row">
-<div class="column">
 
-<button data-hypothesis-trigger style="font-size:24px; border-radius: 20px;width: 100%;">
-<i class="far fa-sticky-note"></i>
+<div class="column">
+<button data-hypothesis-trigger style="font-size:17px;width: 100%;color: white;border-radius: 10px;">
+<i class="far fa-sticky-note" style="font-size:20px"></i>
 </button>
 
-
 </div>
+
 <div class="column">
-
-
 <div class="custom-control custom-switch">
-<button class="toggle_switch" style="font-size:24px; border-radius: 20px;width: 100%;">
+<button class="toggle_switch" style="font-size:24px; width: 100%;border-radius: 10px;">
 <input type="checkbox" class="custom-control-input" id="darkSwitch">
 <svg class="checkbox" xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" viewBox="0 0 168 80">
 <path class="outer-ring" d="M41.534 9h88.932c17.51 0 31.724 13.658 31.724 30.482 0 16.823-14.215 30.48-31.724 30.48H41.534c-17.51 0-31.724-13.657-31.724-30.48C9.81 22.658 24.025 9 41.534 9z" fill="none" stroke="#233043" stroke-width="3" stroke-linecap="square" stroke-miterlimit="3"/>
@@ -100,13 +190,17 @@ knitr::opts_chunk$set(echo = FALSE)
 </svg>
 </button>
 </div>
-
-</div>
 </div>
 
+</div>
 
 
-<h2>**Bevezetés**</h2>
+<div id="TOC" class="tocify">
+</div>
+
+
+
+<h1>**Bevezetés**</h1>
 
 **Köszönetnyilvánítás.** A tantárgy a Pécsi Tudományegyetem
 Természettudományi Kar, a PTE TTK Szentágothai Szakkollégium és a
@@ -398,7 +492,7 @@ knitr::include_graphics("images/intro/image6.png")
 
 
 
-<h2>**SAP számviteli felépítésének alapjai I.**</h2>
+<h1>**SAP számviteli felépítésének alapjai I.**</h1>
 
 
 
@@ -623,7 +717,7 @@ height="2.4791666666666665in"}
 
 
 
-<h2>**[SAP használat alapjai]{.ul}**</h2>
+<h1>**[SAP használat alapjai]{.ul}**</h1>
 
 A PTE Természettudományi Kar, illetve a szeminárium keretében elérhető
 SAP ERP R/3-as rendszerben az alábbi modulok, illetve az azokhoz
@@ -875,8 +969,6 @@ knitr::include_graphics("images/intro/intro_gif/S_P00_07000008_Display_of_Bank_C
 </div>
 
 
-
-
 **S_P99_41000166 -- Bankok listaszerű lekérdezése (Display Bank
 Directory)**
 
@@ -897,26 +989,13 @@ knitr::include_graphics("images/intro/intro_gif/Display_Bank_Directory.gif")
 </div>
 
 
-
-<script src="js/jquery-1.8.3.min.js"></script>
-<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.tocify.js"></script>
 <script src="js/dark-mode-switch.min.js"></script>
 
 <script>
 $(function() {
-
-var toc = $("#toc").tocify({
-selectors: "h2,h3,h4,h5"
-}).data("toc-tocify");
-
-
+    $("#TOC").tocify();
 });
+              
 </script>
-
-
-
-
 
 </body>

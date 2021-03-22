@@ -13,12 +13,11 @@ description: |
 <meta name=Generator content="Microsoft Word 15 (filtered)">
 
 
+<link href="site_libs_toc/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet" />
 
-
-<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+<script src="site_libs_toc/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs_toc/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs_toc/tocify-1.9.1/jquery.tocify.js"></script>
 
 
 <style>
@@ -56,58 +55,57 @@ description: |
 	text-autospace:none;
 	font-size:12.0pt;
 	font-family:"Arial Narrow",sans-serif;}
-h1
+h1 a
 	{mso-style-link:"Címsor 1 Char";
 	margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:0cm;
-	margin-left:14.2pt;
+	margin-left:0pt;
 	text-indent:-7.1pt;
 	page-break-after:avoid;
 	punctuation-wrap:simple;
 	text-autospace:none;
 	border:none;
 	padding-left: 2%;
-	border-left: 1px solid red;
 	font-size:30pt;
 	font-family:"Arial Narrow",sans-serif;
 	color:red;
 	text-decoration:underline;}
-h2
+h2 a
 	{margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:0cm;
-	margin-left:21.3pt;
+	margin-left:0pt;
 	text-indent:-7.1pt;
 	page-break-after:avoid;
 	punctuation-wrap:simple;
 	text-autospace:none;
 	border:none;
 	padding:0cm;
-	font-size:9.0pt;
+	font-size:26.0pt;
 	font-family:"Arial Narrow",sans-serif;
 	color:aqua;
 	text-decoration:underline;}
-h3
+h3 a
 	{margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:0cm;
-	margin-left:1.0cm;
+	margin-left:0cm;
 	text-indent:-7.1pt;
 	page-break-after:avoid;
 	punctuation-wrap:simple;
 	text-autospace:none;
 	border:none;
 	padding:0cm;
-	font-size:9.0pt;
+	font-size:23pt;
 	font-family:"Arial Narrow",sans-serif;
 	color:#00B050;
 	text-decoration:underline;}
-h4
+h4 a
 	{margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:0cm;
-	margin-left:35.45pt;
+	margin-left:0pt;
 	text-indent:-7.1pt;
 	page-break-after:avoid;
 	punctuation-wrap:simple;
@@ -118,15 +116,15 @@ h4
 	font-family:"Arial Narrow",sans-serif;
 	color:blue;
 	text-decoration:underline;}
-a:nth-child(4)
+a:nth-child(5)
   {
   color: white;
 	background-image: linear-gradient(0deg, transparent 91%, rgb(32, 152, 209) 9%)}
-h5
+h5 a
 	{margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:0cm;
-	margin-left:42.55pt;
+	margin-left:0pt;
 	text-indent:-7.1pt;
 	punctuation-wrap:simple;
 	text-autospace:none;
@@ -136,11 +134,11 @@ h5
 	font-family:"Arial Narrow",sans-serif;
 	color:#1F497D;
 	text-decoration:underline;}
-h6
+h6 a
 	{margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:0cm;
-	margin-left:85.1pt;
+	margin-left:0pt;
 	text-indent:-42.55pt;
 	punctuation-wrap:simple;
 	text-autospace:none;
@@ -148,7 +146,7 @@ h6
 	padding:0cm;
 	font-size:12.0pt;
 	font-family:"Arial Narrow",sans-serif;
-	color:black;
+	color:crimson;
 	text-decoration:underline;}
 p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
 	{margin-top:12.0pt;
@@ -161,6 +159,79 @@ p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
 	text-autospace:none;
 	font-size:12.0pt;
 	font-family:"Arial",sans-serif;}
+@media (max-width: 768px) {
+  .title~ a {
+    display: none;
+  }
+}
+
+#algolia-autocomplete-listbox-0 h3 {
+  color: black;
+  text-decoration: unset;
+}
+
+.algolia-autocomplete {
+  width: inherit;
+  text-align: center;
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+	outline: none;
+	border: none;
+	height: 2em;
+	top: -7px;
+	width: 4em;
+}
+
+#distill-search::placeholder{
+  color:transparent;
+}
+
+input[type="text"] {
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png');
+	background-position: 3px 5px;
+	background-repeat: no-repeat;
+	padding: 14px 24px 14px 30px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	background-size: 25px;
+}
+
+.aa-suggestion {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  text-align: justify;
+}
+.aa-suggestion:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: white;
+  /* IE9 */
+  background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  /*For IE7-8-9*/
+  z-index: 1000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.aa-suggestion:hover:before, .aa-suggestion:focus:before, .aa-suggestion:active:before {
+  width: 25px;
+  height: 25px;
+}
 p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
 	{margin-top:12.0pt;
 	margin-right:0cm;
@@ -322,24 +393,20 @@ ul
 </head>
 
 <body lang=HU link=blue vlink="#954F72" style='word-wrap:break-word'>
-<div id="toc">
-</div>
 
 
 <div class="row">
-<div class="column">
 
-<button data-hypothesis-trigger style="font-size:24px; border-radius: 20px;width: 100%;">
-<i class="far fa-sticky-note"></i>
+<div class="column">
+<button data-hypothesis-trigger style="font-size:17px;width: 100%;color: white;border-radius: 10px;">
+<i class="far fa-sticky-note" style="font-size:20px"></i>
 </button>
 
-
 </div>
+
 <div class="column">
-
-
 <div class="custom-control custom-switch">
-<button class="toggle_switch" style="font-size:24px; border-radius: 20px;width: 100%;">
+<button class="toggle_switch" style="font-size:24px; width: 100%;border-radius: 10px;">
 <input type="checkbox" class="custom-control-input" id="darkSwitch">
 <svg class="checkbox" xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" viewBox="0 0 168 80">
 <path class="outer-ring" d="M41.534 9h88.932c17.51 0 31.724 13.658 31.724 30.482 0 16.823-14.215 30.48-31.724 30.48H41.534c-17.51 0-31.724-13.657-31.724-30.48C9.81 22.658 24.025 9 41.534 9z" fill="none" stroke="#233043" stroke-width="3" stroke-linecap="square" stroke-miterlimit="3"/>
@@ -348,19 +415,18 @@ ul
 </svg>
 </button>
 </div>
-
-</div>
 </div>
 
+</div>
 
+
+<div id="TOC" class="tocify">
+</div>
 
 <div class=WordSection1>
 
-
-
-# 1. SAP Kiterjesztett raktárkezelés (Extended Warehouse Management,EWM)
-
-
+<h1 style='margin-left:7.1pt'><a name="_Toc65589341"><span style='text-decoration:
+none'> 1.</span>SAP Kiterjesztett raktárkezelés (Extended Warehouse Management,EWM)</a></h1>
 
 <div style='border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:14.2pt;margin-right:0cm'>
@@ -846,11 +912,8 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>ERP: (IBD, OBD)
 
 </div>
 
-
-
-## 2. EWM GUI tranzakciók
-
-
+<h1 style='margin-left:7.1pt'><a name="_Toc65589341"><span style='text-decoration:
+none'> 2.</span> EWM GUI tranzakciók</a></h1>
 
 <div style='border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:14.2pt;margin-right:0cm'>
@@ -3332,26 +3395,14 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>LIN:Tools</b>
 </div>
 
 
-
-<script src="js/jquery-1.8.3.min.js"></script>
-<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.tocify.js"></script>
 <script src="js/dark-mode-switch.min.js"></script>
-
 
 <script>
 $(function() {
-
-var toc = $("#toc").tocify({
-selectors: "h1,h2,h3,h4,h5"
-}).data("toc-tocify");
-
-
+    $("#TOC").tocify();
 });
+              
 </script>
-
-
 
 </body>
 
