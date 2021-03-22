@@ -86,6 +86,7 @@ a:nth-child(4) {
 .algolia-autocomplete {
   width: inherit;
   text-align: center;
+  border: none;
 }
 
 .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {

@@ -87,6 +87,7 @@ knitr::opts_chunk$set(echo = FALSE)
 .algolia-autocomplete {
   width: inherit;
   text-align: center;
+  border: none;
 }
 
 .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
