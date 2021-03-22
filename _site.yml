@@ -27,3 +27,4 @@ output:
       - header.html
       - hypothesis.html
       - hero-image.html
+      - toc.html

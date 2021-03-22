@@ -196,8 +196,7 @@ h3
 </div>
 
 
-<div id="TOC" class="tocify">
-</div>
+
 
 
 

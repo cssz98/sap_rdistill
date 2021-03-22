@@ -478,15 +478,11 @@ d-article h1, d-article h2, d-article h3{
 /******** TOC ********/
 
 #TOC {
-  margin: 25px 0px 20px -405px;
+	margin: 25px 0px 20px 0px;
+	z-index: 1;
+	max-height: 41em;
+	overflow-y: scroll;
 }
-
-@-moz-document url-prefix() {
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-}
-
 
 @media print {
 .toc-content {

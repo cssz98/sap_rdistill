@@ -195,8 +195,6 @@ h3
 </div>
 
 
-<div id="TOC" class="tocify">
-</div>
 
 
 <h1>[**Pénzügyi és vezetői számviteli környezet felépítése SAP-ban**]{.ul}</h1>

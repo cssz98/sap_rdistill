@@ -5,7 +5,6 @@ description: |
   Legutóbb frissítve: `r Sys.Date()`
 ---
 
-
 <html>
 
 <head>
@@ -420,9 +419,6 @@ ul
 
 </div>
 
-
-<div id="TOC" class="tocify">
-</div>
 
 <div class=WordSection1>
 

@@ -2084,6 +2084,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     </script>
   </body>
 
+  <div id="TOC" class="tocify">
+  </div>
   <style type="text/css">
   /******** Half ********/
 
@@ -2565,15 +2567,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /******** TOC ********/
 
   #TOC {
-    margin: 25px 0px 20px -405px;
+  	margin: 25px 0px 20px 0px;
+  	z-index: 1;
+  	max-height: 41em;
+  	overflow-y: scroll;
   }
-
-  @-moz-document url-prefix() {
-  #TOC {
-    margin: 25px 0px 20px 0px;
-  }
-  }
-
 
   @media print {
   .toc-content {
@@ -2741,9 +2739,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <link href="site_libs_toc/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs_toc/tocify-1.9.1/jquery.tocify.js"></script>
 <body>
-<div id="TOC" class="tocify">
-
-</div>
 <h1 id="materials-management">Materials management</h1>
 <p><strong>Lendvai Tamás</strong></p>
 <p><strong>B. Forgó eszközök I. Készletek</strong></p>

@@ -422,8 +422,6 @@ ul
 </div>
 
 
-<div id="TOC" class="tocify">
-</div>
 
 <div class=WordSection1>
 

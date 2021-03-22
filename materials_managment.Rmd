@@ -22,8 +22,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <body>
 
-<div id="TOC" class="tocify">
-</div>
 
 # Materials management
 

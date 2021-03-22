@@ -2084,6 +2084,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     </script>
   </body>
 
+  <div id="TOC" class="tocify">
+  </div>
   <style type="text/css">
   /******** Half ********/
 
@@ -2565,15 +2567,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /******** TOC ********/
 
   #TOC {
-    margin: 25px 0px 20px -405px;
+  	margin: 25px 0px 20px 0px;
+  	z-index: 1;
+  	max-height: 41em;
+  	overflow-y: scroll;
   }
-
-  @-moz-document url-prefix() {
-  #TOC {
-    margin: 25px 0px 20px 0px;
-  }
-  }
-
 
   @media print {
   .toc-content {
@@ -3127,9 +3125,6 @@ ul
 </button>
 </div>
 </div>
-</div>
-<div id="TOC" class="tocify">
-
 </div>
 <div class="WordSection1">
 <h1 style="margin-left:7.1pt">
