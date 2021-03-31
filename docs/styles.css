@@ -480,8 +480,9 @@ d-article h1, d-article h2, d-article h3{
 #TOC {
 	margin: 25px 0px 20px 0px;
 	z-index: 1;
-	max-height: 41em;
+	height: 41em;
 	overflow-y: scroll;
+	float: right;
 }
 
 @media print {
@@ -501,8 +502,18 @@ div.main-container {
 
 div.tocify {
 	width: auto;
-	max-width: 400px;
+	max-width: 300px;
 	max-height: 75%;
+  overflow-y: scroll;
+  mask-image: linear-gradient(to top, transparent, black),
+    linear-gradient(to left, transparent 17px, black 17px);
+  mask-size: 100% 20000px;
+  mask-position: left bottom;
+  -webkit-mask-image: linear-gradient(to top, transparent, black),
+    linear-gradient(to left, transparent 17px, black 17px);
+  -webkit-mask-size: 100% 20000px;
+  -webkit-mask-position: left bottom;
+  transition: mask-position 0.3s, -webkit-mask-position 0.3s;
 }
 
 .tocify ul, .tocify li {
@@ -515,6 +526,16 @@ div.tocify {
 
 .tocify .list-group-item {
   border-radius: 0px;
+}
+
+.tocify:hover {
+  -webkit-mask-position: left top;
+}
+
+#TOC a{
+  color: #000;
+  font-size: 10px;
+  text-decoration: underline;
 }
 
 /******** SearchBar ********/

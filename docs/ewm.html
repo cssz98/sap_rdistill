@@ -88,27 +88,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>SAP E-Study Guide: EWM</title>
 
-  <meta property="description" itemprop="description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-22"/>
+  <meta property="description" itemprop="description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-31"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="SAP E-Study Guide: EWM"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-22"/>
+  <meta property="og:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-31"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="SAP E-Study Guide"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="SAP E-Study Guide: EWM"/>
-  <meta property="twitter:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-22"/>
+  <meta property="twitter:description" content="SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) &lt;br /&gt;&#10;Legutóbb frissítve: 2021-03-31"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["EWM"]},{"type":"character","attributes":{},"value":["SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-22"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["EWM"]},{"type":"character","attributes":{},"value":["SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-31"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2084,8 +2084,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     </script>
   </body>
 
+  <link href="site_libs_toc/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet" />
+
+  <script src="site_libs_toc/jqueryui-1.11.4/jquery-ui.min.js"></script>
+  <link href="site_libs_toc/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+  <script src="site_libs_toc/tocify-1.9.1/jquery.tocify.js"></script>
+
   <div id="TOC" class="tocify">
   </div>
+
+  <script>
+  $(function() {
+      $("#TOC").tocify();
+  });
+                
+  </script>
   <style type="text/css">
   /******** Half ********/
 
@@ -2569,8 +2582,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   #TOC {
   	margin: 25px 0px 20px 0px;
   	z-index: 1;
-  	max-height: 41em;
+  	height: 41em;
   	overflow-y: scroll;
+  	float: right;
   }
 
   @media print {
@@ -2590,8 +2604,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   div.tocify {
   	width: auto;
-  	max-width: 400px;
+  	max-width: 300px;
   	max-height: 75%;
+    overflow-y: scroll;
+    mask-image: linear-gradient(to top, transparent, black),
+      linear-gradient(to left, transparent 17px, black 17px);
+    mask-size: 100% 20000px;
+    mask-position: left bottom;
+    -webkit-mask-image: linear-gradient(to top, transparent, black),
+      linear-gradient(to left, transparent 17px, black 17px);
+    -webkit-mask-size: 100% 20000px;
+    -webkit-mask-position: left bottom;
+    transition: mask-position 0.3s, -webkit-mask-position 0.3s;
   }
 
   .tocify ul, .tocify li {
@@ -2604,6 +2628,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .tocify .list-group-item {
     border-radius: 0px;
+  }
+
+  .tocify:hover {
+    -webkit-mask-position: left top;
+  }
+
+  #TOC a{
+    color: #000;
+    font-size: 10px;
+    text-decoration: underline;
   }
 
   /******** SearchBar ********/
@@ -2681,6 +2715,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     background-color: #808080 !important;
   }
 
+  [data-theme="dark"] #TOC a {
+    color: #fff !important;
+  }
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -2694,7 +2732,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"EWM","description":"SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-22","authors":[]}
+{"title":"EWM","description":"SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br />\nLegutóbb frissítve: 2021-03-31","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2729,7 +2767,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>EWM</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br /> Legutóbb frissítve: 2021-03-22</p></p>
+<p><p>SAP Kiterjessztett raktárkezelés (Extended Warehouse Management) <br /> Legutóbb frissítve: 2021-03-31</p></p>
 </div>
 
 
@@ -2738,10 +2776,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1250">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
-<p><link href="site_libs_toc/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet" /></p>
-<script src="site_libs_toc/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs_toc/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs_toc/tocify-1.9.1/jquery.tocify.js"></script>
 <style>
 <!--
  /* Font Definitions */
@@ -2909,7 +2943,9 @@ p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
 #distill-search::placeholder{
   color:transparent;
 }
-
+d-article h4 {
+    color: blue;
+}
 input[type="text"] {
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -5271,12 +5307,6 @@ margin-left:49.65pt;margin-right:0cm">
 </div>
 </div>
 <script src="js/dark-mode-switch.min.js"></script>
-<script>
-$(function() {
-    $("#TOC").tocify();
-});
-              
-</script>
 </body>
 </html>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>

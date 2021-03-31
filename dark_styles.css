@@ -62,3 +62,7 @@
 [data-theme="dark"] button {
   background-color: #808080 !important;
 }
+
+[data-theme="dark"] #TOC a {
+  color: #fff !important;
+}

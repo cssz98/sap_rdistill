@@ -57,15 +57,6 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-
-
-<link href="site_libs_toc/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet" />
-
-<script src="site_libs_toc/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs_toc/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs_toc/tocify-1.9.1/jquery.tocify.js"></script>
-
-
 <style>
 a:nth-child(4) {
 	color: white;
@@ -769,12 +760,6 @@ Bankafiók adatok : Munkalap1
 
 <script src="js/dark-mode-switch.min.js"></script>
 
-<script>
-$(function() {
-    $("#TOC").tocify();
-});
-              
-</script>
 
 </body>
 

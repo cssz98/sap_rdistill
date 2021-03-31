@@ -2084,8 +2084,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     </script>
   </body>
 
+  <link href="site_libs_toc/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet" />
+
+  <script src="site_libs_toc/jqueryui-1.11.4/jquery-ui.min.js"></script>
+  <link href="site_libs_toc/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+  <script src="site_libs_toc/tocify-1.9.1/jquery.tocify.js"></script>
+
   <div id="TOC" class="tocify">
   </div>
+
+  <script>
+  $(function() {
+      $("#TOC").tocify();
+  });
+                
+  </script>
   <style type="text/css">
   /******** Half ********/
 
@@ -2569,8 +2582,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   #TOC {
   	margin: 25px 0px 20px 0px;
   	z-index: 1;
-  	max-height: 41em;
+  	height: 41em;
   	overflow-y: scroll;
+  	float: right;
   }
 
   @media print {
@@ -2590,8 +2604,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   div.tocify {
   	width: auto;
-  	max-width: 400px;
+  	max-width: 300px;
   	max-height: 75%;
+    overflow-y: scroll;
+    mask-image: linear-gradient(to top, transparent, black),
+      linear-gradient(to left, transparent 17px, black 17px);
+    mask-size: 100% 20000px;
+    mask-position: left bottom;
+    -webkit-mask-image: linear-gradient(to top, transparent, black),
+      linear-gradient(to left, transparent 17px, black 17px);
+    -webkit-mask-size: 100% 20000px;
+    -webkit-mask-position: left bottom;
+    transition: mask-position 0.3s, -webkit-mask-position 0.3s;
   }
 
   .tocify ul, .tocify li {
@@ -2604,6 +2628,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .tocify .list-group-item {
     border-radius: 0px;
+  }
+
+  .tocify:hover {
+    -webkit-mask-position: left top;
+  }
+
+  #TOC a{
+    color: #000;
+    font-size: 10px;
+    text-decoration: underline;
   }
 
   /******** SearchBar ********/
@@ -2681,6 +2715,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     background-color: #808080 !important;
   }
 
+  [data-theme="dark"] #TOC a {
+    color: #fff !important;
+  }
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
@@ -2734,10 +2772,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p><link href="site_libs_toc/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet" /></p>
-<script src="site_libs_toc/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs_toc/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs_toc/tocify-1.9.1/jquery.tocify.js"></script>
 <body>
 <h1 id="materials-management">Materials management</h1>
 <p><strong>Lendvai Tamás</strong></p>
@@ -3163,12 +3197,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Amennyiben a Line Item-re kattintunk, úgy megnyitja a lekérdezés a rögzített szerződést. A diagram ikonra kattintva a szerződéshez kapcsolt beszerzési rendeléseket listázza ki.</p>
 <p><img src="TEMP_2/media/image14.png" style="width:6.30208in;height:1.86458in" /></p>
 <p>A megjelenített mezőket lehet bővíteni, csökkenteni, rendezni a Change Layout funkcióval.</p>
-<script>
-$(function() {
-    $("#TOC").tocify();
-});
-              
-</script>
 </body>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <section class="footnotes" role="doc-endnotes">
