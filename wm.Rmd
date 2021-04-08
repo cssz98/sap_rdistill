@@ -416,9 +416,6 @@ ul
 
 <div class=WordSection1>
 
-<p class=MsoNormal align=left style='margin-left:0cm;text-align:left;
-punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other'><b><u><span
-style='font-size:9.0pt;color:aqua'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
 
 <h1 style='margin-left:7.1pt'><a name="_Toc68006718"><span style='text-decoration:
 none'> 1.</span>SAP Raktárkezelési szervezet (Warehouse Management, WM Organization)
@@ -2057,9 +2054,6 @@ változtató GR, GI, TO bizonylatok adatai</p>
 clear=all style='page-break-before:always'>
 </span>
 
-<p class=MsoNormal align=left style='margin-left:0cm;text-align:left;
-punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other'><b><u><span
-style='font-size:10.0pt;color:red'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
 
 
 <h1 style='margin-left:7.1pt'><a name="_Toc68006745"><span style='text-decoration:
@@ -2539,10 +2533,6 @@ TBX:Quantity1=1.00, DDN:MeasUnit1, TBX:Quantity2</b></p>
 <span style='font-size:8.0pt;font-family:"Arial Narrow",sans-serif'><br
 clear=all style='page-break-before:always'>
 </span>
-
-<p class=MsoNormal align=left style='margin-left:0cm;text-align:left;
-punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other'><b><u><span
-style='font-size:10.0pt;color:red'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
 
 
 <h1 style='margin-left:7.1pt'><a name="_Toc68006750"><span style='text-decoration:
@@ -6002,9 +5992,6 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>TRN:LT01|KEY:
 clear=all style='page-break-before:always'>
 </span>
 
-<p class=MsoNormal align=left style='margin-left:0cm;text-align:left;
-punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other'><b><u><span
-style='font-size:10.0pt;color:red'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
 
 <h1 style='margin-left:7.1pt'><a name="_Toc68006798"><span style='text-decoration:
 none'> 7.</span>WM Anyagérkeztetés (Goods Receipt, GR)</a></h1>
@@ -6728,9 +6715,6 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><b>TRN:LS24</b>
 clear=all style='page-break-before:always'>
 </span>
 
-<p class=MsoNormal align=left style='margin-left:0cm;text-align:left;
-punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other'><b><u><span
-style='font-size:10.0pt;color:red'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
 
 <h1 style='margin-left:7.1pt'><a name="_Toc68006815"><span style='text-decoration:
 none'> 8.</span>WM Anyagkiadás (WM Goods Issue, GI)</a></h1>

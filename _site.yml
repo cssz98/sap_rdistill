@@ -13,8 +13,8 @@ navbar:
     href: ewm.html
   - text: WM
     href: wm.html
-  - text: TEMP
-    href: materials_managment.html
+  - text: MM
+    href: mm.html
   right:
     - icon: fab fa-github
       href: https://github.com/cssz98/sap_rdistill
