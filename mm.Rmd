@@ -416,16 +416,8 @@ ul
 
 <div class=WordSection1>
 
-
-<b><u><span style='font-size:10.0pt;font-family:"Arial Narrow",sans-serif;
-color:red'><br clear=all style='page-break-before:always'>
-</span></u></b>
-
-
 <h1 style='margin-left:7.1pt'><span style='text-decoration:none'></span> <a
 name="_Toc68458419">1. DEF: MM modul architektura (MM Architecture)</a></h1>
-
-
 
 <div style='border:none;border-left:solid aqua 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:14.2pt;margin-right:0cm'>
@@ -568,11 +560,9 @@ none'> 1.2.3.</span>DEF: Leltározás (Physical Invetory, PI)</a></h3>
 
 </div>
 
-
 <h1 style='margin-left:7.1pt'><a name="_Toc68458431"><span style='text-decoration:
 none'> 2.</span>DEF:IM Szervezet konfigurációja (IM Organization) egy Kliensen/Mandanton(Client/Mandant)
 belül</a></h1>
-
 
 <div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
 margin-left:42.55pt;margin-right:0cm'>
@@ -1083,10 +1073,13 @@ DDN:FromYr, DDN:FromPer, DDN:ToYear, DDN:ToPer</b></p>
 clear=all style='page-break-before:always'>
 </span>
 
+<p class=MsoNormal align=left style='margin-left:0cm;text-align:left;
+punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other'><b><u><span
+style='font-size:10.0pt;color:red'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+
 
 <h1 style='margin-left:7.1pt'><a name="_Toc68458436"><span style='text-decoration:
 none'> 3.</span>DEF: Törzsadatok kezelése (Master Data, MD)</a></h1>
-
 
 
 <div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
@@ -4624,10 +4617,12 @@ GI: VL02</h4>
 clear=all style='page-break-before:always'>
 </span>
 
+<p class=MsoNormal align=left style='margin-left:0cm;text-align:left;
+punctuation-wrap:hanging;text-autospace:ideograph-numeric ideograph-other'><b><u><span
+style='font-size:10.0pt;color:red'><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
 
 <h1 style='margin-left:7.1pt'><a name="_Toc68458465"><span style='text-decoration:
 none'> 4.</span>PROC: Beszerzés (Procurement)</a></h1>
-
 
 
 <div style='border:none;border-left:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm;
@@ -7953,6 +7948,7 @@ esetén egy minta PO alapján újra rendelek</p>
 </div>
 
 </body>
+
 
 <script src="js/dark-mode-switch.min.js"></script>
 
