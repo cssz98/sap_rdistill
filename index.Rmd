@@ -555,9 +555,7 @@ knitr::include_graphics("images/intro/2/image2.png")
 ```
 
 
-A szeminárium során nem vesszük a tárgyi eszközök modult, azonban két,
-SAP tanácsadó irodától származó magyar nyelvű leírásom, és egy angol
-nyelvű rendszerbeállítási monográfiával rendelkezem. A tárgyi eszköz
+A szeminárium során nem vesszük a tárgyi eszközök modult. A tárgyi eszköz
 könyvelésével összefüggésben van a beruházás menedzsment modul.
 
 ```{r,dpi=60,fig.align='center'}
