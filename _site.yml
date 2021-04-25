@@ -15,9 +15,6 @@ navbar:
     href: wm.html
   - text: MM
     href: mm.html
-  right:
-    - icon: fab fa-github
-      href: https://github.com/cssz98/sap_rdistill
 output: 
   distill::distill_article:
     css: ['styles.css','dark_styles.css']
