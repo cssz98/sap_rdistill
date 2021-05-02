@@ -32,7 +32,10 @@
 	  display: block;
 	  text-align: center;
     }
-    
+      .distill-site-header {
+	overflow-y: scroll;
+	overflow-x: hidden;
+  }
 }
 
 
