@@ -415,7 +415,7 @@ ul
 </div>
 
 
-<div class=WordSection1>
+<div class=WordSection1 style="overflow-wrap:anywhere;overflow:auto">
 
 <h1 style='margin-left:7.1pt'><a name="_Toc65589341"><span style='text-decoration:
 none'> 1.</span>SAP Kiterjesztett raktárkezelés (Extended Warehouse Management,EWM)</a></h1>
